@@ -1,0 +1,3646 @@
+﻿{
+  "name": "defaultTheme",
+  "palette": [
+    {
+      "name": "ScreenBkgColor",
+      "value": "RGBA(255,255,255,1)",
+      "type": "c"
+    },
+    {
+      "name": "PrimaryColor1",
+      "value": "RGBA(0, 128, 137, 1)",
+      "type": "c"
+    },
+    {
+      "name": "PrimaryColor2",
+      "value": "RGBA(106, 208, 214, 1)",
+      "type": "c"
+    },
+    {
+      "name": "PrimaryColor3",
+      "value": "RGBA(195, 238, 240, 1)",
+      "type": "c"
+    },
+    {
+      "name": "PrimaryColor4",
+      "value": "RGBA(200, 200, 200, 1)",
+      "type": "c"
+    },
+    {
+      "name": "PrimaryColor6",
+      "value": "RGBA(0, 183, 195, 1)",
+      "type": "c"
+    },
+    {
+      "name": "PrimaryColor7",
+      "value": "RGBA(102, 102, 102, 1)",
+      "type": "c"
+    },
+    {
+      "name": "PrimaryColor8",
+      "value": "RGBA(234, 234, 234, 1)",
+      "type": "c"
+    },
+    {
+      "name": "PrimaryColor9",
+      "value": "RGBA(33, 33, 33, 1)",
+      "type": "c"
+    },
+    {
+      "name": "PrimaryColor10",
+      "value": "RGBA(0, 156, 166, 1)",
+      "type": "c"
+    },
+    {
+      "name": "Transparency",
+      "value": "RGBA(0, 0, 0, 0)",
+      "type": "c"
+    },
+    {
+      "name": "SelectionColor",
+      "value": "RGBA(48, 98, 214, 1)",
+      "type": "c"
+    },
+    {
+      "name": "TextLinkColor",
+      "value": "RGBA(0, 134, 208, 1)",
+      "type": "c"
+    },
+    {
+      "name": "TextColor1",
+      "value": "RGBA(102, 102, 102, 1)",
+      "type": "c"
+    },
+    {
+      "name": "TextColor2",
+      "value": "RGBA(51, 51, 51, 1)",
+      "type": "c"
+    },
+    {
+      "name": "DisabledColor1",
+      "value": "RGBA(166, 166, 166, 1)",
+      "type": "c"
+    },
+    {
+      "name": "DisabledColor2",
+      "value": "RGBA(68, 68, 68, 1)",
+      "type": "c"
+    },
+    {
+      "name": "DisabledColor3",
+      "value": "RGBA(136, 136, 136, 1)",
+      "type": "c"
+    },
+    {
+      "name": "DisabledColor4",
+      "value": "RGBA(154, 154, 154, 1)",
+      "type": "c"
+    },
+    {
+      "name": "DisabledColor5",
+      "value": "RGBA(220, 220, 220, 1)",
+      "type": "c"
+    },
+    {
+      "name": "ReservedWhiteColor",
+      "value": "RGBA(255, 255, 255, 1)",
+      "type": "c"
+    },
+    {
+      "name": "ReservedBlackColor",
+      "value": "RGBA(0, 0, 0, 1)",
+      "type": "c"
+    },
+    {
+      "name": "ReservedSuccessColor",
+      "value": "RGBA(141, 198, 63, 1)",
+      "type": "c"
+    },
+    {
+      "name": "ReservedWarningColor",
+      "value": "RGBA(252, 219, 2, 1)",
+      "type": "c"
+    },
+    {
+      "name": "ReservedErrorColor",
+      "value": "RGBA(246, 88, 16, 1)",
+      "type": "c"
+    },
+    {
+      "name": "ReservedCriticalErrorColor",
+      "value": "RGBA(237, 28, 36, 1)",
+      "type": "c"
+    },
+    {
+      "name": "ReservedChartColorSet",
+      "value": "[RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]",
+      "type": "![]"
+    },
+    {
+      "name": "TextBodyFontWeight",
+      "value": "%FontWeight.RESERVED%.Normal",
+      "type": "e"
+    },
+    {
+      "name": "TextEmphasisFontWeight",
+      "value": "%FontWeight.RESERVED%.Semibold",
+      "type": "e"
+    },
+    {
+      "name": "TextBodyFontFace",
+      "value": "%Font.RESERVED%.Lato",
+      "type": "e"
+    },
+    {
+      "name": "InputBorderThickness",
+      "value": "1",
+      "type": "n"
+    },
+    {
+      "name": "InputFocusedBorderThickness",
+      "value": "2",
+      "type": "n"
+    },{
+      "name": "RadioButtonsize",
+      "value": "70",
+      "type": "n"
+    },
+    {
+      "name": "TextHeaderFontSize",
+      "value": "16",
+      "type": "n",
+      "phoneValue": "16"
+    },
+    {
+      "name": "TextTitleFontSize",
+      "value": "16",
+      "type": "n",
+      "phoneValue": "16"
+    },
+    {
+      "name": "TextEmphasisFontSize",
+      "value": "18",
+      "type": "n",
+      "phoneValue": "18"
+    },
+    {
+      "name": "TextBodyFontSize",
+      "value": "19",
+      "type": "n",
+      "phoneValue": "19"
+    },
+    {
+      "name": "TextFooterFontSize",
+      "value": "11",
+      "type": "n",
+      "phoneValue": "18"
+    },
+    {
+      "name": "TextMiniFontSize",
+      "value": "9",
+      "type": "n",
+      "phoneValue": "15"
+    },
+    {
+      "name": "defaultRadius",
+      "value": "0",
+      "type": "n"
+    },
+    {
+      "name": "defaultBorderTickness",
+      "value": "1",
+      "type": "n"
+    },
+    {
+      "name": "ButtonDefaultWidth",
+      "value": "575",
+      "type": "n"
+    },
+    {
+      "name": "ToggleDefaultWidth",
+      "value": "75",
+      "type": "n"
+    },
+    {
+      "name": "ImageDefaultWidth",
+      "value": "300",
+      "type": "n"
+    },
+    {
+      "name": "ButtonDefaultHeight",
+      "value": "65",
+      "type": "n"
+    },
+    {
+      "name": "ListboxDefaultHeight",
+      "value": "163",
+      "type": "n"
+    },
+    {
+      "name": "ToggleDefaultHeight",
+      "value": "37",
+      "type": "n"
+    },
+    {
+      "name": "DefaultBorderStyle",
+      "value": "%BorderStyle.RESERVED%.Solid",
+      "type": "e"
+    },
+    {
+      "name": "DefaultBorderStyleNone",
+      "value": "%BorderStyle.RESERVED%.None",
+      "type": "e"
+    },
+    {
+      "name": "DefaultPadding",
+      "value": "5",
+      "type": "n"
+    },
+    {
+      "name": "TextPadding",
+      "value": "12",
+      "type": "n"
+    },
+    {
+      "name": "NoPadding",
+      "value": "0",
+      "type": "n"
+    },
+    {
+      "name": "DefaultAlign",
+      "value": "%Align.RESERVED%.Left",
+      "type": "e"
+    },
+    {
+      "name": "DefaultButtonAlign",
+      "value": "%Align.RESERVED%.Center",
+      "type": "e"
+    },
+    {
+      "name": "DefaultVerticalAlign",
+      "value": "%VerticalAlign.RESERVED%.Middle",
+      "type": "e"
+    },
+    {
+      "name": "DefaultLineHeight",
+      "value": "1.2",
+      "type": "n"
+    },
+    {
+      "name": "DefaultUnderline",
+      "value": "false",
+      "type": "b"
+    },
+    {
+      "name": "DefaultItalic",
+      "value": "false",
+      "type": "b"
+    },
+    {
+      "name": "DefaultStrikethrough",
+      "value": "false",
+      "type": "b"
+    }
+  ],
+
+  "styles": [
+    {
+      "name": "defaultScreenStyle",
+      "controlTemplateName": "screen",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.ScreenBkgColor%"
+        }
+      ]
+    },
+
+    {
+      "name": "defaultLabelStyle",
+      "controlTemplateName": "label",
+      "propertyValuesMap": [
+        {
+          "property": "LineHeight",
+          "value": "%Palette.DefaultLineHeight%"
+        },
+        {
+          "property": "AutoHeight",
+          "value": "false"
+        },
+        {
+          "property": "Wrap",
+          "value": "true"
+        },
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor4%"
+        },
+        {
+          "property": "PressedColor",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "HoverColor",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "PressedBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextBodyFontSize%"
+        },
+        {
+          "property": "FontWeight",
+          "value": "%Palette.TextBodyFontWeight%"
+        },
+        {
+          "property": "Italic",
+          "value": "%Palette.DefaultItalic%"
+        },
+        {
+          "property": "Underline",
+          "value": "%Palette.DefaultUnderline%"
+        },
+        {
+          "property": "Strikethrough",
+          "value": "%Palette.DefaultStrikethrough%"
+        },
+        {
+          "property": "PaddingTop",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingRight",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingBottom",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingLeft",
+          "value": "%Palette.NoPadding%"
+        },
+        {
+          "property": "Align",
+          "value": "%Palette.DefaultAlign%"
+        },
+        {
+          "property": "VerticalAlign",
+          "value": "%Palette.DefaultVerticalAlign%"
+        }
+      ]
+    },
+    {
+      "name": "defaultToggleSwitchStyle",
+      "controlTemplateName": "toggleSwitch",
+      "propertyValuesMap": [
+        {
+          "property": "HandleFill",
+          "value": "%Palette.ScreenBkgColor%"
+        },
+        {
+          "property": "RailFill",
+          "value": "%Palette.PrimaryColor7%"
+        },
+        {
+          "property": "RailHoverFill",
+          "value": "%Palette.TextColor2%"
+        },
+        {
+          "property": "ValueFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "ValueHoverFill",
+          "value": "%Palette.PrimaryColor10%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "PressedBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ToggleDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ToggleDefaultHeight%"
+        }
+      ]
+    },
+
+    {
+      "name": "defaultRatingStyle",
+      "controlTemplateName": "rating",
+      "propertyValuesMap": [
+        {
+          "property": "RatingFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        }
+      ]
+    },
+    {
+      "name": "defaultCheckboxStyle",
+      "controlTemplateName": "checkbox",
+      "propertyValuesMap": [
+        {
+          "property": "CheckboxSize",
+          "value": "%Palette.RadioButtonsize%"
+        },
+        {
+          "property": "CheckmarkFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "CheckboxBackgroundFill",
+          "value": "%Palette.ScreenBkgColor%"
+        },
+        {
+          "property": "CheckboxBorderColor",
+          "value": "%Palette.PrimaryColor7%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "PressedBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor3%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextBodyFontSize%"
+        },
+        {
+          "property": "PressedColor",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "HoverColor",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "FontWeight",
+          "value": "%Palette.TextBodyFontWeight%"
+        },
+        {
+          "property": "Italic",
+          "value": "%Palette.DefaultItalic%"
+        },
+        {
+          "property": "Underline",
+          "value": "%Palette.DefaultUnderline%"
+        },
+        {
+          "property": "Strikethrough",
+          "value": "%Palette.DefaultStrikethrough%"
+        },
+        {
+          "property": "PaddingTop",
+          "value": "%Palette.NoPadding%"
+        },
+        {
+          "property": "PaddingRight",
+          "value": "%Palette.NoPadding%"
+        },
+        {
+          "property": "PaddingBottom",
+          "value": "%Palette.NoPadding%"
+        },
+        {
+          "property": "PaddingLeft",
+          "value": "%Palette.NoPadding%"
+        },
+        {
+          "property": "VerticalAlign",
+          "value": "%Palette.DefaultVerticalAlign%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        }
+      ]
+    },
+    {
+      "name": "defaultRadioStyle",
+      "controlTemplateName": "radio",
+      "propertyValuesMap": [
+        {
+          "property": "RadioSize",
+          "value": "%Palette.RadioButtonsize%"
+        },
+        {
+          "property": "RadioSelectionFill",
+          "value": "%Palette.TextColor2%"
+        },
+        {
+          "property": "RadioBackgroundFill",
+          "value": "%Palette.ReservedWhiteColor%"
+        },
+        {
+          "property": "RadioBorderColor",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor1%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextBodyFontSize%"
+        },
+        {
+          "property": "FontWeight",
+          "value": "%Palette.TextBodyFontWeight%"
+        },
+        {
+          "property": "Italic",
+          "value": "%Palette.DefaultItalic%"
+        },
+        {
+          "property": "Underline",
+          "value": "%Palette.DefaultUnderline%"
+        },
+        {
+          "property": "Strikethrough",
+          "value": "%Palette.DefaultStrikethrough%"
+        },
+        {
+          "property": "PaddingTop",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingRight",
+          "value": "%Palette.NoPadding%"
+        },
+        {
+          "property": "PaddingBottom",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingLeft",
+          "value": "%Palette.NoPadding%"
+        },
+        {
+          "property": "Align",
+          "value": "%Palette.DefaultAlign%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ListboxDefaultHeight%"
+        },
+        {
+          "property": "HoverColor",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "PressedColor",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.Transparency%"
+        }
+      ]
+    },
+    {
+      "name": "defaultListboxStyle",
+      "controlTemplateName": "listbox",
+      "propertyValuesMap": [
+        {
+          "property": "SelectionColor",
+          "value": "%Palette.ReservedWhiteColor%"
+        },
+        {
+          "property": "SelectionFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "DisabledSelectionColor",
+          "value": "%Palette.DisabledColor3%"
+        },
+        {
+          "property": "DisabledSelectionFill",
+          "value": "%Palette.DisabledColor2%"
+        },
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "HoverColor",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "PressedColor",
+          "value": "%Palette.ReservedWhiteColor%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor3%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.ScreenBkgColor%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.PrimaryColor8%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.PrimaryColor9%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.DisabledColor5%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextBodyFontSize%"
+        },
+        {
+          "property": "FontWeight",
+          "value": "%Palette.TextBodyFontWeight%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.PrimaryColor4%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyle%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.DisabledColor4%"
+        },
+        {
+          "property": "PressedBorderColor",
+          "value": "%Palette.PrimaryColor7%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.PrimaryColor7%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ListboxDefaultHeight%"
+        },
+        {
+          "property": "PaddingTop",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingRight",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingBottom",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingLeft",
+          "value": "%Palette.DefaultPadding%"
+        }
+      ]
+    },
+    {
+      "name": "defaultDropdownStyle",
+      "controlTemplateName": "dropdown",
+      "propertyValuesMap": [
+        {
+          "property": "SelectionColor",
+          "value": "%Palette.ReservedWhiteColor%"
+        },
+        {
+          "property": "ChevronFill",
+          "value": "%Palette.PrimaryColor7%"
+        },
+        {
+          "property": "ChevronHoverFill",
+          "value": "%Palette.PrimaryColor7%"
+        },
+        {
+          "property": "ChevronDisabledFill",
+          "value": "%Palette.DisabledColor3%"
+        },
+        {
+          "property": "ChevronBackground",
+          "value": "%Palette.ScreenBkgColor%"
+        },
+        {
+          "property": "ChevronHoverBackground",
+          "value": "%Palette.PrimaryColor8%"
+        },
+        {
+          "property": "ChevronDisabledBackground",
+          "value": "%Palette.DisabledColor4%"
+        },
+        {
+          "property": "SelectionFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor2%"
+        },
+        {
+          "property": "HoverColor",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "PressedColor",
+          "value": "%Palette.ReservedWhiteColor%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor3%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.PrimaryColor4%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.DisabledColor4%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.PrimaryColor7%"
+        },
+        {
+          "property": "PressedBorderColor",
+          "value": "%Palette.PrimaryColor7%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyle%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.ReservedWhiteColor%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.PrimaryColor9%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.PrimaryColor9%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.PrimaryColor8%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextBodyFontSize%"
+        },
+        {
+          "property": "FontWeight",
+          "value": "%Palette.TextBodyFontWeight%"
+        },
+        {
+          "property": "Italic",
+          "value": "%Palette.DefaultItalic%"
+        },
+        {
+          "property": "Underline",
+          "value": "%Palette.DefaultUnderline%"
+        },
+        {
+          "property": "Strikethrough",
+          "value": "%Palette.DefaultStrikethrough%"
+        },
+        {
+          "property": "PaddingTop",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingRight",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingBottom",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingLeft",
+          "value": "%Palette.TextPadding%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        }
+      ]
+    },
+    {
+      "name": "defaultDatePickerStyle",
+      "controlTemplateName": "datepicker",
+      "propertyValuesMap": [
+        {
+          "property": "IconFill",
+          "value": "%Palette.ReservedWhiteColor%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.PrimaryColor4%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.DisabledColor4%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.DisabledColor4%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyle%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.ScreenBkgColor%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextBodyFontSize%"
+        },
+        {
+          "property": "FontWeight",
+          "value": "%Palette.TextBodyFontWeight%"
+        },
+        {
+          "property": "Italic",
+          "value": "%Palette.DefaultItalic%"
+        },
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor2%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor1%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        },
+        {
+          "property": "PaddingTop",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingRight",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingBottom",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingLeft",
+          "value": "%Palette.TextPadding%"
+        },
+        {
+          "property": "SelectedDateFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "HoverDateFill",
+          "value": "%Palette.PrimaryColor3%"
+        },
+        {
+          "property": "CalendarHeaderFill",
+          "value": "%Palette.PrimaryColor2%"
+        }
+      ]
+    },
+    {
+      "name": "defaultLookupStyle",
+      "controlTemplateName": "lookup",
+      "propertyValuesMap": [
+        {
+          "property": "BorderColor",
+          "value": "%Palette.PrimaryColor4%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyle%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "ChevronBackground",
+          "value": "%Palette.PrimaryColor8%"
+        },
+        {
+          "property": "ChevronFill",
+          "value": "%Palette.PrimaryColor7%"
+        },
+        {
+          "property": "ChevronHoverBackground",
+          "value": "%Palette.PrimaryColor8%"
+        },
+        {
+          "property": "ChevronHoverFill",
+          "value": "%Palette.PrimaryColor7%"
+        },
+        {
+          "property": "ChevronDisabledBackground",
+          "value": "%Palette.DisabledColor5%"
+        },
+        {
+          "property": "ChevronDisabledFill",
+          "value": "%Palette.DisabledColor3%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.DisabledColor5%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor3%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.DisabledColor5%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.ScreenBkgColor%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "FontWeight",
+          "value": "%Palette.TextBodyFontWeight%"
+        },
+        {
+          "property": "HoverColor",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.PrimaryColor8%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextBodyFontSize%"
+        },
+        {
+          "property": "PressedColor",
+          "value": "%Palette.ScreenBkgColor%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.PrimaryColor9%"
+        },
+        {
+          "property": "SelectionColor",
+          "value": "%Palette.ReservedWhiteColor%"
+        },
+        {
+          "property": "SelectionFill",
+          "value": "%Palette.SelectionColor%"
+        },
+        {
+          "property": "FooterSize",
+          "value": "%Palette.TextFooterFontSize%"
+        }
+      ]
+    },
+    {
+      "name": "defaultTextStyle",
+      "controlTemplateName": "text",
+      "propertyValuesMap": [
+        {
+          "property": "BorderColor",
+          "value": "%Palette.PrimaryColor4%"
+        },
+        {
+          "property": "RadiusTopLeft",
+          "value": "%Palette.defaultRadius%"
+        },
+        {
+          "property": "RadiusBottomRight",
+          "value": "%Palette.defaultRadius%"
+        },
+        {
+          "property": "RadiusTopRight",
+          "value": "%Palette.defaultRadius%"
+        },
+        {
+          "property": "RadiusBottomLeft",
+          "value": "%Palette.defaultRadius%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.DisabledColor4%"
+        },
+        {
+          "property": "PressedBorderColor",
+          "value": "%Palette.PrimaryColor7%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.PrimaryColor7%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyle%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor2%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor3%"
+        },
+        {
+          "property": "PressedColor",
+          "value": "%Palette.PrimaryColor7%"
+        },
+        {
+          "property": "HoverColor",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.ReservedWhiteColor%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.DisabledColor4%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.ReservedWhiteColor%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.ReservedWhiteColor%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextBodyFontSize%"
+        },
+        {
+          "property": "FontWeight",
+          "value": "%Palette.TextBodyFontWeight%"
+        },
+        {
+          "property": "Italic",
+          "value": "%Palette.DefaultItalic%"
+        },
+        {
+          "property": "Underline",
+          "value": "%Palette.DefaultUnderline%"
+        },
+        {
+          "property": "Strikethrough",
+          "value": "%Palette.DefaultStrikethrough%"
+        },
+        {
+          "property": "Align",
+          "value": "%Palette.DefaultAlign%"
+        },
+        {
+          "property": "PaddingTop",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingRight",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingBottom",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingLeft",
+          "value": "%Palette.TextPadding%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        }
+      ]
+    },
+    {
+      "name": "searchTextStyle",
+      "controlTemplateName": "text",
+      "propertyValuesMap": [
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.PrimaryColor4%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyle%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.PrimaryColor7%"
+        },
+        {
+          "property": "HoverColor",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.ScreenBkgColor%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "FontWeight",
+          "value": "%Palette.TextBodyFontWeight%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.DisabledColor5%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor3%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.DisabledColor5%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextBodyFontSize%"
+        }
+      ]
+    },
+    {
+      "name": "defaultSliderStyle",
+      "controlTemplateName": "slider",
+      "propertyValuesMap": [
+        {
+          "property": "ValueFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "RailFill",
+          "value": "%Palette.DisabledColor1%"
+        },
+        {
+          "property": "HandleFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "HandleHoverFill",
+          "value": "%Palette.PrimaryColor6%"
+        },
+        {
+          "property": "HandleActiveFill",
+          "value": "%Palette.PrimaryColor6%"
+        },
+        {
+          "property": "RailHoverFill",
+          "value": "%Palette.DisabledColor1%"
+        },
+        {
+          "property": "ValueHoverFill",
+          "value": "%Palette.PrimaryColor6%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "PressedBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ToggleDefaultWidth%"
+        }
+      ]
+    },
+    {
+      "name": "defaultButtonStyle",
+      "controlTemplateName": "button",
+      "propertyValuesMap": [
+        {
+          "property": "BorderColor",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "RadiusTopLeft",
+          "value": "%Palette.defaultRadius%"
+        },
+        {
+          "property": "RadiusBottomRight",
+          "value": "%Palette.defaultRadius%"
+        },
+        {
+          "property": "RadiusTopRight",
+          "value": "%Palette.defaultRadius%"
+        },
+        {
+          "property": "RadiusBottomLeft",
+          "value": "%Palette.defaultRadius%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.DisabledColor4%"
+        },
+        {
+          "property": "PressedBorderColor",
+          "value": "%Palette.PrimaryColor6%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.PrimaryColor6%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "Color",
+          "value": "%Palette.ReservedWhiteColor%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor3%"
+        },
+        {
+          "property": "PressedColor",
+          "value": "%Palette.ReservedWhiteColor%"
+        },
+        {
+          "property": "HoverColor",
+          "value": "%Palette.ReservedWhiteColor%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.DisabledColor4%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.PrimaryColor6%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.PrimaryColor6%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextEmphasisFontSize%"
+        },
+        {
+          "property": "FontWeight",
+          "value": "%Palette.TextBodyFontWeight%"
+        },
+        {
+          "property": "Italic",
+          "value": "%Palette.DefaultItalic%"
+        },
+        {
+          "property": "Underline",
+          "value": "%Palette.DefaultUnderline%"
+        },
+        {
+          "property": "Strikethrough",
+          "value": "%Palette.DefaultStrikethrough%"
+        },
+        {
+          "property": "Align",
+          "value": "%Palette.DefaultButtonAlign%"
+        },
+        {
+          "property": "VerticalAlign",
+          "value": "%Palette.DefaultVerticalAlign%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        }
+      ]
+    },
+    {
+      "name": "cancelButtonStyle",
+      "controlTemplateName": "button",
+      "propertyValuesMap": [
+        {
+          "property": "Color",
+          "value": "%Palette.ReserevedWhiteColor%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor3%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.DisabledColor2%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor3%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "FontWeight",
+          "value": "%Palette.TextEmphasisFontWeight%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextEmphasisFontSize%"
+        }
+      ]
+    },
+    {
+      "name": "rezervedOkButtonStyle",
+      "controlTemplateName": "button",
+      "propertyValuesMap": [
+        {
+          "property": "Color",
+          "value": "%Palette.ReservedWhiteColor%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor3%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.DisabledColor2%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "FontWeight",
+          "value": "%Palette.TextEmphasisFontWeight%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextEmphasisFontSize%"
+        }
+      ]
+    },
+    {
+      "name": "rezervedCancelButtonStyle",
+      "controlTemplateName": "button",
+      "propertyValuesMap": [
+        {
+          "property": "Color",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor3%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.DisabledColor2%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.ReservedWhiteColor%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "FontWeight",
+          "value": "%Palette.TextEmphasisFontWeight%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextEmphasisFontSize%"
+        }
+      ]
+    },
+    {
+      "name": "defaultLineChartStyle",
+      "controlTemplateName": "lineChart",
+      "propertyValuesMap": [
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "PressedBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextEmphasisFontSize%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        },
+        {
+          "property": "ItemColorSet",
+          "value": "%Palette.ReservedChartColorSet%"
+        }
+      ]
+    },
+    {
+      "name": "monochromeAccentLineChartStyle",
+      "controlTemplateName": "lineChart",
+      "propertyValuesMap": [
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "ItemColorSet",
+          "value": "[%Palette.PrimaryColor1%]"
+        },
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor1%"
+        }
+      ]
+    },
+    {
+      "name": "defaultPieChartStyle",
+      "controlTemplateName": "pieChart",
+      "propertyValuesMap": [
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "PressedBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextEmphasisFontSize%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        },
+        {
+          "property": "ItemColorSet",
+          "value": "%Palette.ReservedChartColorSet%"
+        }
+      ]
+    },
+    {
+      "name": "monochromeAccentPieChartStyle",
+      "controlTemplateName": "pieChart",
+      "propertyValuesMap": [
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "ItemColorSet",
+          "value": "[%Palette.PrimaryColor1%]"
+        },
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor1%"
+        }
+      ]
+    },
+    {
+      "name": "defaultBarChartStyle",
+      "controlTemplateName": "barChart",
+      "propertyValuesMap": [
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "PressedBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextEmphasisFontSize%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        },
+        {
+          "property": "ItemColorSet",
+          "value": "%Palette.ReservedChartColorSet%"
+        }
+      ]
+    },
+    {
+      "name": "monochromeAccentBarChartStyle",
+      "controlTemplateName": "barChart",
+      "propertyValuesMap": [
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "ItemColorSet",
+          "value": "[%Palette.PrimaryColor1%]"
+        },
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor1%"
+        }
+      ]
+    },
+    {
+      "name": "defaultLegendStyle",
+      "controlTemplateName": "legend",
+      "propertyValuesMap": [
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.PrimaryColor7%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "PressedBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.DisabledColor2%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "FontWeight",
+          "value": "%Palette.TextBodyFontWeight%"
+        },
+        {
+          "property": "Italic",
+          "value": "%Palette.DefaultItalic%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextFooterFontSize%"
+        }
+      ]
+    },
+    {
+      "name": "separatorShapeStyle",
+      "controlTemplateName": "rectangle",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.DisabledColor2%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        }
+      ]
+    },
+    {
+      "name": "defaultVideoPlaybackStyle",
+      "controlTemplateName": "videoPlayback",
+      "propertyValuesMap": [
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ImageDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ImageDefaultWidth%"
+        }
+      ]
+    },
+    {
+      "name": "defaultTimerStyle",
+      "controlTemplateName": "timer",
+      "propertyValuesMap": [
+        {
+          "property": "BorderColor",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.DisabledColor2%"
+        },
+        {
+          "property": "PressedBorderColor",
+          "value": "%Palette.PrimaryColor6%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.PrimaryColor6%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor2%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor3%"
+        },
+        {
+          "property": "PressedColor",
+          "value": "%Palette.TextColor2%"
+        },
+        {
+          "property": "HoverColor",
+          "value": "%Palette.TextColor2%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.DisabledColor2%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.PrimaryColor6%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.PrimaryColor6%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextBodyFontSize%"
+        },
+        {
+          "property": "FontWeight",
+          "value": "%Palette.TextBodyFontWeight%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        }
+      ]
+    },
+    {
+      "name": "defaultTriangleStyle",
+      "controlTemplateName": "triangle",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.DisabledColor2%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        }
+      ]
+    },
+    {
+      "name": "defaultStarStyle",
+      "controlTemplateName": "star",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        }
+      ]
+    },
+    {
+      "name": "defaultPentagonStyle",
+      "controlTemplateName": "pentagon",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.DisabledColor2%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        }
+      ]
+    },
+    {
+      "name": "defaultPartialCircleStyle",
+      "controlTemplateName": "partialCircle",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        }
+      ]
+    },
+    {
+      "name": "defaultOctagonStyle",
+      "controlTemplateName": "octagon",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.DisabledColor2%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        }
+      ]
+    },
+    {
+      "name": "defaultHexagonStyle",
+      "controlTemplateName": "hexagon",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.DisabledColor2%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        }
+      ]
+    },
+    {
+      "name": "primary2HexagonStyle",
+      "controlTemplateName": "hexagon",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        }
+      ]
+    },
+    {
+      "name": "primary3HexagonStyle",
+      "controlTemplateName": "hexagon",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        }
+      ]
+    },
+    {
+      "name": "primary3FadeHexagonStyle",
+      "controlTemplateName": "hexagon",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        }
+      ]
+    },
+    {
+      "name": "screenHexagonStyle",
+      "controlTemplateName": "hexagon",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.ScreenBkgColor%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        }
+      ]
+    },
+    {
+      "name": "defaultCircleStyle",
+      "controlTemplateName": "circle",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        }
+      ]
+    },
+    {
+      "name": "primary2CircleStyle",
+      "controlTemplateName": "circle",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        }
+      ]
+    },
+    {
+      "name": "primary3CircleStyle",
+      "controlTemplateName": "circle",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        }
+      ]
+    },
+    {
+      "name": "primary3FadeCircleStyle",
+      "controlTemplateName": "circle",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        }
+      ]
+    },
+    {
+      "name": "defaultArrowStyle",
+      "controlTemplateName": "arrow",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.Transparency%"
+        }
+      ]
+    },
+    {
+      "name": "defaultIconStyle",
+      "controlTemplateName": "icon",
+      "propertyValuesMap": [
+        {
+          "property": "Color",
+          "value": "%Palette.PrimaryColor7%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.PrimaryColor10%"
+        },
+        {
+          "property": "PressedColor",
+          "value": "%Palette.TextColor2%"
+        },
+        {
+          "property": "HoverColor",
+          "value": "%Palette.TextColor2%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        },
+        {
+          "property": "PaddingBottom",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingLeft",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyle%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "PressedBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        }
+      ]
+    },
+    {
+      "name": "primary1IconStyle",
+      "controlTemplateName": "icon",
+      "propertyValuesMap": [
+        {
+          "property": "Color",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor2%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.Transparency%"
+        }
+      ]
+    },
+    {
+      "name": "primary3IconStyle",
+      "controlTemplateName": "icon",
+      "propertyValuesMap": [
+        {
+          "property": "Color",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor2%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.Transparency%"
+        }
+      ]
+    },
+    {
+      "name": "defaultMicrophoneStyle",
+      "controlTemplateName": "microphone",
+      "propertyValuesMap": [
+        {
+          "property": "Color",
+          "value": "%Palette.PrimaryColor3%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor3%"
+        },
+        {
+          "property": "PressedColor",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "HoverColor",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.PrimaryColor4%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.DisabledColor1%"
+        },
+        {
+          "property": "PressedBorderColor",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyle%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.DisabledColor2%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        }
+      ]
+    },
+    {
+      "name": "defaultInkControlStyle",
+      "controlTemplateName": "inkcontrol",
+      "propertyValuesMap": [
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextEmphasisFontSize%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.PrimaryColor4%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        }
+      ]
+    },
+    {
+      "name": "defaultImportStyle",
+      "controlTemplateName": "import",
+      "propertyValuesMap": [
+        {
+          "property": "RadiusTopLeft",
+          "value": "%Palette.defaultRadius%"
+        },
+        {
+          "property": "RadiusTopRight",
+          "value": "%Palette.defaultRadius%"
+        },
+        {
+          "property": "RadiusBottomLeft",
+          "value": "%Palette.defaultRadius%"
+        },
+        {
+          "property": "RadiusBottomRight",
+          "value": "%Palette.defaultRadius%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.DisabledColor2%"
+        },
+        {
+          "property": "PressedBorderColor",
+          "value": "%Palette.PrimaryColor6%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.PrimaryColor6%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor2%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor3%"
+        },
+        {
+          "property": "PressedColor",
+          "value": "%Palette.ReservedWhiteColor%"
+        },
+        {
+          "property": "HoverColor",
+          "value": "%Palette.TextColor2%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.DisabledColor2%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.PrimaryColor6%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.PrimaryColor6%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextBodyFontSize%"
+        },
+        {
+          "property": "FontWeight",
+          "value": "%Palette.TextBodyFontWeight%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        }
+      ]
+    },
+    {
+      "name": "defaultImageStyle",
+      "controlTemplateName": "image",
+      "propertyValuesMap": [
+        {
+          "property": "Width",
+          "value": "%Palette.ImageDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ImageDefaultWidth%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "RadiusTopLeft",
+          "value": "%Palette.defaultRadius%"
+        },
+        {
+          "property": "RadiusTopRight",
+          "value": "%Palette.defaultRadius%"
+        },
+        {
+          "property": "RadiusBottomLeft",
+          "value": "%Palette.defaultRadius%"
+        },
+        {
+          "property": "RadiusBottomRight",
+          "value": "%Palette.defaultRadius%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "PressedBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "PaddingTop",
+          "value": "%Palette.NoPadding%"
+        },
+        {
+          "property": "PaddingRight",
+          "value": "%Palette.NoPadding%"
+        },
+        {
+          "property": "PaddingBottom",
+          "value": "%Palette.NoPadding%"
+        },
+        {
+          "property": "PaddingLeft",
+          "value": "%Palette.NoPadding%"
+        }
+      ]
+    },
+    {
+      "name": "defaultHtmlViewerStyle",
+      "controlTemplateName": "htmlviewer",
+      "propertyValuesMap": [
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.DisabledColor1%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextBodyFontSize%"
+        }
+      ]
+    },
+    {
+      "name": "typedDataCardHtmlViewerStyle",
+      "controlTemplateName": "htmlviewer",
+      "propertyValuesMap": [
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.DisabledColor1%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextBodyFontSize%"
+        },
+        {
+          "property": "Color",
+          "value": "%Palette.TextLinkColor%"
+        }
+      ]
+    },
+    {
+      "name": "defaultExportStyle",
+      "controlTemplateName": "export",
+      "propertyValuesMap": [
+        {
+          "property": "RadiusTopLeft",
+          "value": "%Palette.defaultRadius%"
+        },
+        {
+          "property": "RadiusTopRight",
+          "value": "%Palette.defaultRadius%"
+        },
+        {
+          "property": "RadiusBottomLeft",
+          "value": "%Palette.defaultRadius%"
+        },
+        {
+          "property": "RadiusBottomRight",
+          "value": "%Palette.defaultRadius%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.DisabledColor2%"
+        },
+        {
+          "property": "PressedBorderColor",
+          "value": "%Palette.PrimaryColor6%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.PrimaryColor6%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor2%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor3%"
+        },
+        {
+          "property": "PressedColor",
+          "value": "%Palette.ReservedWhiteColor%"
+        },
+        {
+          "property": "HoverColor",
+          "value": "%Palette.TextColor2%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.DisabledColor2%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.PrimaryColor6%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.PrimaryColor6%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextBodyFontSize%"
+        },
+        {
+          "property": "FontWeight",
+          "value": "%Palette.TextBodyFontWeight%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        }
+      ]
+    },
+    {
+      "name": "defaultAddMediaStyle",
+      "controlTemplateName": "addMedia",
+      "propertyValuesMap": [
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        }
+      ]
+    },
+    {
+      "name": "defaultAudioPlaybackStyle",
+      "controlTemplateName": "audioplayback",
+      "propertyValuesMap": [
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        }
+      ]
+    },
+    {
+      "name": "defaultRectangleStyle",
+      "controlTemplateName": "rectangle",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.DisabledColor3%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        }
+      ]
+    },
+    {
+      "name": "primary2RectangleStyle",
+      "controlTemplateName": "rectangle",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        }
+      ]
+    },
+    {
+      "name": "primary3RectangleStyle",
+      "controlTemplateName": "rectangle",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        }
+      ]
+    },
+    {
+      "name": "primary3FadeRectangleStyle",
+      "controlTemplateName": "rectangle",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        }
+      ]
+    },
+    {
+      "name": "invertedBackgroundRectangleStyle",
+      "controlTemplateName": "rectangle",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        }
+      ]
+    },
+    {
+      "name": "defaultEntityFormStyle",
+      "controlTemplateName": "entityForm",
+      "propertyValuesMap": [
+        {
+          "property": "PrimaryColor1",
+          "value": "%Palette.PrimaryColor1%"
+        },
+        {
+          "property": "PrimaryColor2",
+          "value": "%Palette.PrimaryColor2%"
+        },
+        {
+          "property": "PrimaryColor3",
+          "value": "%Palette.PrimaryColor3%"
+        },
+        {
+          "property": "InputBackgroundColor",
+          "value": "%Palette.ScreenBkgColor%"
+        },
+        {
+          "property": "DisabledTextColor",
+          "value": "%Palette.DisabledColor3%"
+        },
+        {
+          "property": "TextColor",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "InputTextColor",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.ScreenBkgColor%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.PrimaryColor4%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyle%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "FontWeight",
+          "value": "%Palette.TextBodyFontWeight%"
+        },
+        {
+          "property": "Width",
+          "value": "%Palette.ButtonDefaultWidth%"
+        },
+        {
+          "property": "Height",
+          "value": "%Palette.ButtonDefaultHeight%"
+        }
+      ]
+    },
+    {
+      "name": "defaultGalleryStyle",
+      "controlTemplateName": "gallery",
+      "propertyValuesMap": [
+         {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        }
+      ]
+    },
+    {
+      "name": "defaultDataCardStyle",
+      "controlTemplateName": "typedDataCard",
+      "propertyValuesMap": [
+        {
+          "property": "Fill",
+          "value": "%Palette.PrimaryColor1%"
+        }
+      ]
+    },
+        {
+          "name": "titleLabelStyle",
+          "controlTemplateName": "label",
+          "propertyValuesMap": [
+            {
+          "property": "LineHeight",
+          "value": "%Palette.DefaultLineHeight%"
+        },
+        {
+          "property": "AutoHeight",
+          "value": "false"
+        },
+        {
+          "property": "Wrap",
+          "value": "true"
+        },
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor4%"
+        },
+        {
+          "property": "PressedColor",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "HoverColor",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "PressedBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextBodyFontSize%"
+        },
+        {
+          "property": "FontWeight",
+          "value": "%Palette.TextBodyFontWeight%"
+        },
+        {
+          "property": "Italic",
+          "value": "%Palette.DefaultItalic%"
+        },
+        {
+          "property": "Underline",
+          "value": "%Palette.DefaultUnderline%"
+        },
+        {
+          "property": "Strikethrough",
+          "value": "%Palette.DefaultStrikethrough%"
+        },
+        {
+          "property": "PaddingTop",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingRight",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingBottom",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingLeft",
+          "value": "%Palette.NoPadding%"
+        },
+        {
+          "property": "Align",
+          "value": "%Palette.DefaultAlign%"
+        },
+        {
+          "property": "VerticalAlign",
+          "value": "%Palette.DefaultVerticalAlign%"
+        }
+          ]
+        },
+    {
+      "name": "subtitleLabelStyle",
+      "controlTemplateName": "label",
+      "propertyValuesMap": [
+        {
+          "property": "LineHeight",
+          "value": "%Palette.DefaultLineHeight%"
+        },
+        {
+          "property": "AutoHeight",
+          "value": "false"
+        },
+        {
+          "property": "Wrap",
+          "value": "true"
+        },
+        {
+          "property": "Color",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "DisabledColor",
+          "value": "%Palette.DisabledColor4%"
+        },
+        {
+          "property": "PressedColor",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "HoverColor",
+          "value": "%Palette.TextColor1%"
+        },
+        {
+          "property": "BorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "PressedBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "HoverBorderColor",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "BorderStyle",
+          "value": "%Palette.DefaultBorderStyleNone%"
+        },
+        {
+          "property": "BorderThickness",
+          "value": "%Palette.InputBorderThickness%"
+        },
+        {
+          "property": "FocusedBorderThickness",
+          "value": "%Palette.InputFocusedBorderThickness%"
+        },
+        {
+          "property": "Fill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "DisabledFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "PressedFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "HoverFill",
+          "value": "%Palette.Transparency%"
+        },
+        {
+          "property": "Font",
+          "value": "%Palette.TextBodyFontFace%"
+        },
+        {
+          "property": "Size",
+          "value": "%Palette.TextBodyFontSize%"
+        },
+        {
+          "property": "FontWeight",
+          "value": "%Palette.TextBodyFontWeight%"
+        },
+        {
+          "property": "Italic",
+          "value": "%Palette.DefaultItalic%"
+        },
+        {
+          "property": "Underline",
+          "value": "%Palette.DefaultUnderline%"
+        },
+        {
+          "property": "Strikethrough",
+          "value": "%Palette.DefaultStrikethrough%"
+        },
+        {
+          "property": "PaddingTop",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingRight",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingBottom",
+          "value": "%Palette.DefaultPadding%"
+        },
+        {
+          "property": "PaddingLeft",
+          "value": "%Palette.NoPadding%"
+        },
+        {
+          "property": "Align",
+          "value": "%Palette.DefaultAlign%"
+        },
+        {
+          "property": "VerticalAlign",
+          "value": "%Palette.DefaultVerticalAlign%"
+        }
+      ]
+    },
+        {
+            "name": "defaultPowerbiStyle",
+            "controlTemplateName": "powerbi",
+            "propertyValuesMap": [
+              {
+                "property": "BorderColor",
+                "value": "%Palette.PrimaryColor3%" }
+            ]
+        }
+        ,
+        {
+            "name": "defaultFormStyle",
+            "controlTemplateName": "form",
+            "propertyValuesMap": [
+              {
+                "property": "BorderColor",
+                "value": "%Palette.PrimaryColor3%"
+              },
+              {
+                "property": "Fill",
+                "value": "%Palette.PrimaryColor1%"
+              }
+            ]
+        },
+        {
+            "name": "defaultFormViewerStyle",
+            "controlTemplateName": "formViewer",
+            "propertyValuesMap": [
+              {
+                "property": "BorderColor",
+                "value": "%Palette.PrimaryColor3%"
+              }
+            ]
+        },
+        {
+          "name": "defaultPdfViewerStyle",
+          "controlTemplateName": "pdfViewer",
+          "propertyValuesMap": [
+            {
+              "property": "Fill",
+              "value": "%Palette.ScreenBkgColor%"
+            },
+            {
+              "property": "BorderColor",
+              "value": "%Palette.PrimaryColor3%"
+            }
+          ]
+        }
+  ]
+}

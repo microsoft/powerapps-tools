@@ -1,0 +1,118 @@
+﻿<Window x:Class="PowerApps_Theme_Editor.AddPalette"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ignore="http://www.galasoft.ch/ignore"
+        xmlns:converters="clr-namespace:PowerApps_Theme_Editor.Converters"
+        xmlns:util="clr-namespace:PowerApps_Theme_Editor.Utility"
+        xmlns:controls="clr-namespace:PowerApps_Theme_Editor.Controls"
+        xmlns:talex="http://schemas.talex-soft.com/2010/xaml/presentation"
+        xmlns:viewModel="clr-namespace:PowerApps_Theme_Editor.ViewModel"
+        xmlns:model="clr-namespace:PowerApps_Theme_Editor.Model"
+        xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+        mc:Ignorable="d ignore"
+        WindowStyle="ToolWindow"
+        Title="New palette" Height="160" Width="432.122"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="CanMinimize">
+    <Window.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Skins/MainSkin.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Style x:Key="FocusVisual">
+                <Setter Property="Control.Template">
+                    <Setter.Value>
+                        <ControlTemplate>
+                            <Rectangle Margin="2" SnapsToDevicePixels="true" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2" />
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <converters:ColorConverter x:Key="ColorConverter" />
+            <converters:KeyToColorConverter x:Key="keyToColorConverter" />
+            <converters:LookUpConverter x:Key="LookUpConverter" />
+            <converters:FontFormatConverter x:Key="FontFormatConverter" />
+            <converters:StringToIntConverter x:Key="StringToIntConverter" />
+            <converters:KeyToNumberConverter x:Key="KeyToNumberConverter" />
+            <converters:KeyToFontConverter x:Key="KeyToFontConverter" />
+            <converters:KeyToNumberThicknessConverter x:Key="KeyToNumberThicknessConverter" />
+            <converters:FontWeightFormatConverter x:Key="FontWeightFormatConverter" />
+            <converters:BorderStyleFormatConverter x:Key="BorderStyleFormatConverter" />
+            <converters:KeyToFontWeightConverter x:Key="KeyToFontWeightConverter" />
+            <converters:NullVisibilityConverter x:Key="NullVisibilityConverter" />
+            <converters:PropertyPaletteConverter x:Key="PropertyPaletteConverter" />
+            <converters:StyleNameConverter x:Key="StyleNameConverter" />
+            <converters:AddingPaletteTypeConverter x:Key="AddingPaletteTypeConverter" />
+            <converters:PaletteNameToValue x:Key="PaletteNameToValue" />
+            <converters:AlignStyleFormatConverter x:Key="AlignStyleFormatConverter" />
+            <converters:VerticalAlignStyleFormatConverter x:Key="VerticalAlignStyleFormatConverter" />
+
+            <DataTemplate x:Key="AddPaletteBoolean">
+                <ComboBox ItemsSource="{Binding Path=DataContext.Boolean, RelativeSource={RelativeSource AncestorType={x:Type Border}}}" SelectedItem="{Binding Path=DataContext.toBeAdded.value,RelativeSource={RelativeSource AncestorType={x:Type Border}}, Mode=TwoWay}" />
+            </DataTemplate>
+            <DataTemplate x:Key="AddPaletteAlign">
+                <ComboBox ItemsSource="{Binding Path=DataContext.AlignStyles, RelativeSource={RelativeSource AncestorType={x:Type Border}}}" SelectedItem="{Binding Path=DataContext.toBeAdded.value,RelativeSource={RelativeSource AncestorType={x:Type Border}}, Converter={StaticResource AlignStyleFormatConverter}, Mode=TwoWay}" />
+            </DataTemplate>
+            <DataTemplate x:Key="AddPaletteVerticalAlign">
+                <ComboBox ItemsSource="{Binding Path=DataContext.VerticalAlignStyles, RelativeSource={RelativeSource AncestorType={x:Type Border}}}" SelectedItem="{Binding Path=DataContext.toBeAdded.value,RelativeSource={RelativeSource AncestorType={x:Type Border}}, Converter={StaticResource VerticalAlignStyleFormatConverter}, Mode=TwoWay}"  Grid.Row="1"  Background="Black" Margin="5,0,0,0" />
+            </DataTemplate>
+
+            <DataTemplate x:Key="AddPaletteColor">
+                <talex:ColorChip x:Name="colorChip_add" Grid.Column="1"  SelectedColor="{Binding Path=DataContext.toBeAdded.value,RelativeSource={RelativeSource AncestorType={x:Type Border}}, Converter={StaticResource ColorConverter}, Mode=TwoWay}" Content="{Binding Path=DataContext.toBeAdded.value,RelativeSource={RelativeSource AncestorType={x:Type Border}},Mode=TwoWay}" Grid.Row="1"  Background="Black" Margin="5,0,0,0" />
+            </DataTemplate>
+            <DataTemplate x:Key="AddPaletteFont">
+                <ComboBox  ItemsSource="{Binding RelativeSource={RelativeSource AncestorType={x:Type Border}}, Path=DataContext.AllowedFonts }" SelectedItem="{Binding Path=DataContext.toBeAdded.value,RelativeSource={RelativeSource AncestorType={x:Type Border}}, Converter={StaticResource FontFormatConverter}, Mode=TwoWay}" ></ComboBox>
+            </DataTemplate>
+
+            <DataTemplate x:Key="AddPaletteFontWeight">
+                <ComboBox ItemsSource="{Binding RelativeSource={RelativeSource AncestorType={x:Type Border}}, Path=DataContext.FontWeights }" SelectedItem="{Binding Path=DataContext.toBeAdded.value,RelativeSource={RelativeSource AncestorType={x:Type Border}}, Converter={StaticResource FontWeightFormatConverter}, Mode=TwoWay}" ></ComboBox>
+            </DataTemplate>
+
+            <DataTemplate x:Key="AddPaletteBorderStyle">
+                <ComboBox ItemsSource="{Binding RelativeSource={RelativeSource AncestorType={x:Type Border}}, Path=DataContext.BorderStyles }"  SelectedItem="{Binding Path=DataContext.toBeAdded.value,RelativeSource={RelativeSource AncestorType={x:Type Border}}, Converter={StaticResource BorderStyleFormatConverter}, Mode=TwoWay}"  ></ComboBox>
+            </DataTemplate>
+
+            <DataTemplate x:Key="AddPaletteNumber">
+                <Grid>
+                    <talex:NumericUpDown Minimum="0" Maximum="2000" Value="{Binding Path=DataContext.toBeAdded.value,RelativeSource={RelativeSource AncestorType={x:Type Border}}, Converter={StaticResource StringToIntConverter}, Mode=TwoWay}" Height="22" VerticalAlignment="Center" Width="80" Grid.Row="1" Margin="0,0,4,0" FlowDirection="LeftToRight" />
+                </Grid>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Window.DataContext>
+        <Binding Path="Main" Source="{StaticResource Locator}" />
+    </Window.DataContext>
+    <Border Grid.Row="2" BorderBrush="#FF979797" BorderThickness="1" Padding="2">
+        <Grid Margin="2" DataContext="{Binding toBeAdded}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="119*" />
+                <ColumnDefinition Width="138*" />
+                <ColumnDefinition Width="103" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <TextBox x:Name="PaletteItemTextBox" Text="New Palette Name" TextWrapping="Wrap" Grid.ColumnSpan="2" Grid.Row="0"  Grid.Column="1" Margin="3.5,2,5.5,2" />
+            <Button x:Name="AddPalette_button" Click="AddPalette_Click" Content="Add Palette" Grid.Row="2" FontSize="14" VerticalContentAlignment="Stretch"  Margin="106,23,0,10" Grid.Column="1" Grid.ColumnSpan="2" />
+
+            <ComboBox x:Name="PaletteTypeGallery" Margin="5,2,1.334,2" SelectionChanged="PaletteTypeGallery_Selected" SelectedItem="{Binding type, Converter={StaticResource AddingPaletteTypeConverter},Mode=OneWayToSource}" Grid.Row="1" Foreground="#FF636363">
+                <ComboBoxItem Content="Color" Tag="{StaticResource AddPaletteColor}"  IsSelected="True" />
+                <ComboBoxItem Content="Number" Tag="{StaticResource AddPaletteNumber}" />
+                <ComboBoxItem Content="Font" Tag="{StaticResource AddPaletteFont}" />
+                <ComboBoxItem Content="Font Weight" Tag="{StaticResource AddPaletteFontWeight}" />
+                <ComboBoxItem Content="Border Style" Tag="{StaticResource AddPaletteBorderStyle}" />
+                <ComboBoxItem Content="Boolean" Tag="{StaticResource AddPaletteBoolean}" />
+                <ComboBoxItem Content="Align" Tag="{StaticResource AddPaletteAlign}" />
+                <ComboBoxItem Content="Vertical Align" Tag="{StaticResource AddPaletteVerticalAlign}" />
+            </ComboBox>
+
+            <ContentPresenter ContentTemplate="{Binding ElementName=PaletteTypeGallery, Path=SelectedItem.Tag}" Grid.Row="1" Grid.Column="1"  Margin="5,0,0,0" />
+            <TextBlock x:Name="textBlock" Margin="5.5,5,4.5,6" TextWrapping="Wrap" Text="Palette Item Name" VerticalAlignment="Bottom" Foreground="#FF636363" />
+        </Grid>
+    </Border>
+</Window>

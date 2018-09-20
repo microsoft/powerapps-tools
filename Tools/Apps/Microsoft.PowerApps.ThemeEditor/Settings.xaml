@@ -1,0 +1,70 @@
+﻿<Window x:Class="PowerApps_Theme_Editor.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ignore="http://www.galasoft.ch/ignore"
+        xmlns:converters="clr-namespace:PowerApps_Theme_Editor.Converters"
+        xmlns:util="clr-namespace:PowerApps_Theme_Editor.Utility"
+        xmlns:controls="clr-namespace:PowerApps_Theme_Editor.Controls"
+        xmlns:talex="http://schemas.talex-soft.com/2010/xaml/presentation"
+        xmlns:viewModel="clr-namespace:PowerApps_Theme_Editor.ViewModel"
+        xmlns:model="clr-namespace:PowerApps_Theme_Editor.Model"
+        xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+        mc:Ignorable="d ignore"
+        WindowStyle="ToolWindow"
+        Title="Options" Height="300" Width="500"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="CanMinimize">
+    <Window.Resources>
+
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Skins/MainSkin.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <DataTemplate x:Key="ApplyThemeTab">
+                <StackPanel  Orientation="Vertical">
+                    <StackPanel  Orientation="Horizontal" Margin="10 10">
+                        <CheckBox VerticalAlignment="Center" IsChecked="{Binding RelativeSource={RelativeSource AncestorType={x:Type Grid}}, Path=DataContext.apply_dimension,  Mode=TwoWay}" />
+                        <Label VerticalAlignment="Center">
+                            Include Dimensions (i.e Width and Height)
+                        </Label>
+                    </StackPanel>
+                    <StackPanel  Orientation="Horizontal" Margin="10 0">
+                        <CheckBox VerticalAlignment="Center" IsChecked="{Binding RelativeSource={RelativeSource AncestorType={x:Type Grid}}, Path=DataContext.apply_theme_styles, Mode=TwoWay}" />
+                        <Label VerticalAlignment="Center">
+                            Apply Theme to controls automatically
+                        </Label>
+                    </StackPanel>
+                </StackPanel>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid HorizontalAlignment="Right" Width="495" Background="#FFE2E2E2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="SettingsMenu" Grid.Column="0" Margin="10">
+            <ListBoxItem  Tag="{StaticResource ApplyThemeTab}" IsSelected="True">
+                <TextBlock Text="Apply Theme styles" TextAlignment="Center" Width="130" />
+            </ListBoxItem>
+        </ListBox>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="0.5*" />
+            </Grid.RowDefinitions>
+
+            <ContentPresenter ContentTemplate="{Binding ElementName=SettingsMenu, Path=SelectedItem.Tag}" Grid.Row="0" />
+
+            <StackPanel  Grid.Row="1" Orientation="Horizontal">
+                <Button  Width="90" Height="25"  Margin="100 0" Click="Button_Save">
+                    Save
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

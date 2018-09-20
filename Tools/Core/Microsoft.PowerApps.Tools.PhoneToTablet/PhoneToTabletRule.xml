@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<PhoneToTablet>
+   <DocumentLayoutWidth>1366.0</DocumentLayoutWidth>
+   <DocumentLayoutHeight>768.0</DocumentLayoutHeight>
+   <DocumentLayoutOrientation>landscape</DocumentLayoutOrientation>
+   <DocumentAppType>DesktopOrTablet</DocumentAppType>
+</PhoneToTablet>

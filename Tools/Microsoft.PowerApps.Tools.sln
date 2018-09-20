@@ -1,0 +1,95 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{79753EF5-3649-4FEF-AE7A-D6C36C1E4212}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{2B7BC998-46F2-4886-98F9-6550E2B2DEFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{C6E4B023-46D2-4022-863F-2C5E4FCDA2B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.PowerApps.Tools.PhoneAppConverter", "Apps\Microsoft.PowerApps.Tools.PhoneAppConverter\Microsoft.PowerApps.Tools.PhoneAppConverter.csproj", "{76E5655B-F7B6-43FA-A14E-58E7FC9EE13D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.PowerApps.Tools.ThemeEditor", "Apps\Microsoft.PowerApps.ThemeEditor\Microsoft.PowerApps.Tools.ThemeEditor.csproj", "{0A202314-1AA9-458D-9DC9-A559D2BB2192}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.PowerApps.Tools.AppMerger", "Apps\Microsoft.PowerApps.Tools.AppMerger\Microsoft.PowerApps.Tools.AppMerger.csproj", "{6D4EBC37-8E64-44E4-A32F-90CE3B1D39D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.PowerApps.Tools.AppChangeFinder", "Apps\Microsoft.PowerApps.Tools.AppChangeFinder\Microsoft.PowerApps.Tools.AppChangeFinder.csproj", "{BAF1C50B-59A8-4110-824E-EC08CD2CBA76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.PowerApps.Tools.AppEntities", "Common\Microsoft.PowerApps.Tools.AppEntities\Microsoft.PowerApps.Tools.AppEntities.csproj", "{7E9A1E0C-E645-409A-88B0-C0756641C511}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.PowerApps.Tools.Zipper", "Common\Microsoft.PowerApps.Tools.Zipper\Microsoft.PowerApps.Tools.Zipper.csproj", "{1C592A39-8FA3-4FD5-B0BC-74DC9F271AFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerApps.Tools.Utilities", "Common\PowerApps.Tools.Utilities\PowerApps.Tools.Utilities.csproj", "{1DBB6ABD-AE6B-45FA-BA1A-3558098E7F92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.PowerApps.Tools.AppChangeManager", "Core\Microsoft.PowerApps.Tools.AppChangeManager\Microsoft.PowerApps.Tools.AppChangeManager.csproj", "{A93476A3-9DBD-4BD9-B119-23279C95D6AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.PowerApps.Tools.PhoneToTablet", "Core\Microsoft.PowerApps.Tools.PhoneToTablet\Microsoft.PowerApps.Tools.PhoneToTablet.csproj", "{CBC13603-A1FF-484B-A47B-47771FD486F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{71D55287-EAF3-4C62-AB6D-CDC390A6BCEA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Icons", "Icons", "{362B7D80-E54F-4D8D-A171-45DD3A8DF78B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76E5655B-F7B6-43FA-A14E-58E7FC9EE13D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E5655B-F7B6-43FA-A14E-58E7FC9EE13D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E5655B-F7B6-43FA-A14E-58E7FC9EE13D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E5655B-F7B6-43FA-A14E-58E7FC9EE13D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A202314-1AA9-458D-9DC9-A559D2BB2192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A202314-1AA9-458D-9DC9-A559D2BB2192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A202314-1AA9-458D-9DC9-A559D2BB2192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A202314-1AA9-458D-9DC9-A559D2BB2192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D4EBC37-8E64-44E4-A32F-90CE3B1D39D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D4EBC37-8E64-44E4-A32F-90CE3B1D39D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D4EBC37-8E64-44E4-A32F-90CE3B1D39D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D4EBC37-8E64-44E4-A32F-90CE3B1D39D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAF1C50B-59A8-4110-824E-EC08CD2CBA76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAF1C50B-59A8-4110-824E-EC08CD2CBA76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAF1C50B-59A8-4110-824E-EC08CD2CBA76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAF1C50B-59A8-4110-824E-EC08CD2CBA76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E9A1E0C-E645-409A-88B0-C0756641C511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E9A1E0C-E645-409A-88B0-C0756641C511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E9A1E0C-E645-409A-88B0-C0756641C511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E9A1E0C-E645-409A-88B0-C0756641C511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C592A39-8FA3-4FD5-B0BC-74DC9F271AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C592A39-8FA3-4FD5-B0BC-74DC9F271AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C592A39-8FA3-4FD5-B0BC-74DC9F271AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C592A39-8FA3-4FD5-B0BC-74DC9F271AFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DBB6ABD-AE6B-45FA-BA1A-3558098E7F92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DBB6ABD-AE6B-45FA-BA1A-3558098E7F92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DBB6ABD-AE6B-45FA-BA1A-3558098E7F92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DBB6ABD-AE6B-45FA-BA1A-3558098E7F92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A93476A3-9DBD-4BD9-B119-23279C95D6AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A93476A3-9DBD-4BD9-B119-23279C95D6AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A93476A3-9DBD-4BD9-B119-23279C95D6AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A93476A3-9DBD-4BD9-B119-23279C95D6AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBC13603-A1FF-484B-A47B-47771FD486F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC13603-A1FF-484B-A47B-47771FD486F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC13603-A1FF-484B-A47B-47771FD486F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC13603-A1FF-484B-A47B-47771FD486F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{76E5655B-F7B6-43FA-A14E-58E7FC9EE13D} = {C6E4B023-46D2-4022-863F-2C5E4FCDA2B9}
+		{0A202314-1AA9-458D-9DC9-A559D2BB2192} = {C6E4B023-46D2-4022-863F-2C5E4FCDA2B9}
+		{6D4EBC37-8E64-44E4-A32F-90CE3B1D39D3} = {C6E4B023-46D2-4022-863F-2C5E4FCDA2B9}
+		{BAF1C50B-59A8-4110-824E-EC08CD2CBA76} = {C6E4B023-46D2-4022-863F-2C5E4FCDA2B9}
+		{7E9A1E0C-E645-409A-88B0-C0756641C511} = {79753EF5-3649-4FEF-AE7A-D6C36C1E4212}
+		{1C592A39-8FA3-4FD5-B0BC-74DC9F271AFF} = {79753EF5-3649-4FEF-AE7A-D6C36C1E4212}
+		{1DBB6ABD-AE6B-45FA-BA1A-3558098E7F92} = {79753EF5-3649-4FEF-AE7A-D6C36C1E4212}
+		{A93476A3-9DBD-4BD9-B119-23279C95D6AD} = {2B7BC998-46F2-4886-98F9-6550E2B2DEFC}
+		{CBC13603-A1FF-484B-A47B-47771FD486F5} = {2B7BC998-46F2-4886-98F9-6550E2B2DEFC}
+		{362B7D80-E54F-4D8D-A171-45DD3A8DF78B} = {71D55287-EAF3-4C62-AB6D-CDC390A6BCEA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B77FB140-6422-4230-9596-970C3A011393}
+	EndGlobalSection
+EndGlobal
