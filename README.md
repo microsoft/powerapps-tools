@@ -1,3 +1,6 @@
+PowerApps Tools include a Theme Editor, App Merger,  Code Review utility and a phone to tablet converter.
+
+![Theme Editor](https://pahandsonlab.blob.core.windows.net/tools/ThemeEditor.png)
 
 # Contributing
 
