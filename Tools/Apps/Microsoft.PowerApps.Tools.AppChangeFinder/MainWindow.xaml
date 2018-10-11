@@ -10,7 +10,7 @@
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="Change Finder" Height="800" Width="1200" Icon="palogo.ico"
+        Title="PowerAppps Review Tool" Height="800" Width="1200" Icon="palogo.ico"
         StateChanged="Window_StateChanged">
     <Window.DataContext>
         <local:ChangeFinderViewModel />
@@ -105,8 +105,8 @@
             </Button>
         </Grid>
         <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Width="125" Content="Save as HTML"  Height="22" Command="{Binding DownloadHTMLBtnClick}" Margin="0,10,10,0" ></Button>
-            <Button  Content="Export " Height="22" Width="86.86" Command="{Binding ExportToJSONBtnClick}" Margin="0,10,0,0" />
+            <Button Width="125" Content="Save as HTML"  Height="Auto" Command="{Binding DownloadHTMLBtnClick}" Margin="0,10,10,-6" ></Button>
+            <Button  Content="Export " Height="Auto" Width="87" Command="{Binding ExportToJSONBtnClick}" Margin="0,10,0,-6" />
         </StackPanel>
         <TabControl Grid.Row="2" Margin="0,0,0,-1">
             <TabItem>
