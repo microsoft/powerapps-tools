@@ -10,7 +10,7 @@
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="PowerAppps Review Tool" Height="800" Width="1200" Icon="palogo.ico"
+        Title="PowerAppps Review Tool" Height="950" Width="1800" Icon="palogo.ico"
         StateChanged="Window_StateChanged">
     <Window.DataContext>
         <local:ChangeFinderViewModel />
@@ -134,8 +134,8 @@
                                                             <Border BorderThickness="0,0,0,1" BorderBrush="{DynamicResource LineBrushColor}">
                                                                 <StackPanel Orientation="Horizontal" Height="Auto" Width="Auto">
                                                                     <TextBlock Text="{Binding PropertyName}" Width="120" TextWrapping="Wrap" />
-                                                                    <ListView ItemsSource="{Binding Properties}" Width="500" BorderThickness="0 0 0 0" IsEnabled="True" ItemContainerStyle="{DynamicResource ListViewItemStyle}" ItemsPanel="{DynamicResource ItemsPanelTemplate}" ItemTemplate="{DynamicResource DataTemplateDiff}" />
-                                                                    <TextBox materialDesign:HintAssist.Hint="Add comment here..." Width="300" Text="{Binding Comments, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" ></TextBox>
+                                                                    <ListView ItemsSource="{Binding Properties}" Width="1200" BorderThickness="0 0 0 0" IsEnabled="True" ItemContainerStyle="{DynamicResource ListViewItemStyle}" ItemsPanel="{DynamicResource ItemsPanelTemplate}" ItemTemplate="{DynamicResource DataTemplateDiff}" />
+                                                                    <TextBox materialDesign:HintAssist.Hint="Add comment here..." Width="150" Text="{Binding Comments, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" ></TextBox>
                                                                 </StackPanel>
                                                             </Border>
                                                         </DataTemplate>
