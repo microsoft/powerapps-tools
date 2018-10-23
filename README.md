@@ -1,22 +1,25 @@
-Tools
+# Tools
 The following tools are experimental. They are intended to fill certain gaps with the authoring experience of PowerApps studio. I expect the tools to become obselete once the product team integrate some of these features into the product.
 
-PowerApps Review Tool
+## PowerApps Review Tool
 This tool allow you to see all the changes that you made to your app taking the default properties of the control as baseline. This tool can be usefull for code reviews and get a quick view of where your formulas are throughout the screens and controls.
 ![PowerApps Review Tool](https://pahandsonlab.blob.core.windows.net/tools/AppChangeFinder.png)
+[Download](https://pahandsonlab.blob.core.windows.net/tools/PowerAppsReviewTool.zip).
 
-Theme Editor
+## Theme Editor
 Theme editor allow you to inject your own style into your app. You can update every style of every controls.
 ![Theme Editor](https://pahandsonlab.blob.core.windows.net/tools/ThemeEditor.png)
+[Download](https://pahandsonlab.blob.core.windows.net/tools/themeeditor.zip).
 
-App Merger
+## App Merger
 This tool takes two apps and creates a third merged app that includes all screens and from both apps. This tool can be useful for distrusted development or to re-use screens and UI elements across apps.
 ![App Merger](https://pahandsonlab.blob.core.windows.net/tools/App%20Merge.PNG)
+[Download](https://pahandsonlab.blob.core.windows.net/tools/appmerger.zip).
 
-Phone to Tablet Layout Converter
+## Phone to Tablet Layout Converter
 This simple tool converts your phone app to a tablet layout.
 ![Phone To Tablet](https://pahandsonlab.blob.core.windows.net/tools/PhoneToTablet.png)
-
+[Download](https://pahandsonlab.blob.core.windows.net/tools/phonetotabletconverter.zip).
 
 # Contributing
 
