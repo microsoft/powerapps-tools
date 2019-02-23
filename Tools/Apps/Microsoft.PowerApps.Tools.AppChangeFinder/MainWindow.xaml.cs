@@ -30,7 +30,7 @@ namespace Microsoft.PowerApps.Tools.AppChangeFinder
         {
             if (string.IsNullOrEmpty((this.DataContext as ChangeFinderViewModel).SearchTextBox))
             {
-                (this.DataContext as ChangeFinderViewModel).ScreenList = (this.DataContext as ChangeFinderViewModel).OrginalScreenList;
+              //  (this.DataContext as ChangeFinderViewModel).ScreenList = (this.DataContext as ChangeFinderViewModel).OrginalScreenList;
             }
         }
     }

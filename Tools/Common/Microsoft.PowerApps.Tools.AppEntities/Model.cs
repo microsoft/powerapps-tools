@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 
 namespace Microsoft.PowerApps.Tools.AppEntities
@@ -90,6 +91,47 @@ namespace Microsoft.PowerApps.Tools.AppEntities
         public Type Type { get; set; }
     }
 
+    public class Type
+    {
+        public string Name { get; set; }
+        public string Kind { get; set; }
+        public string EnumString { get; set; }
+        [JsonProperty(PropertyName = "Type")]
+        public Type1[] Type1 { get; set; }
+        public string[] ProjectionInfoDataSources { get; set; }
+    }
+
+    public class Type1
+    {
+        public string Name { get; set; }
+        public string Kind { get; set; }
+        public string EnumString { get; set; }
+        public Dataentity DataEntity { get; set; }
+        public object[] Type { get; set; }
+        public Optionset OptionSet { get; set; }
+        public Attachment Attachment { get; set; }
+    }
+
+    public class Dataentity
+    {
+        public string EntityInfoIdentity { get; set; }
+        public string EntityInfoName { get; set; }
+        public bool EntityInfoIsTable { get; set; }
+        public string EntityInfoParentDSName { get; set; }
+        public string EntityInfoRelatedEntityPath { get; set; }
+    }
+
+    public class Optionset
+    {
+        public bool OptionSetIsValue { get; set; }
+        public string OptionSetName { get; set; }
+    }
+
+    public class Attachment
+    {
+        public string Version { get; set; }
+        public Type1 Type { get; set; }
+    }
 
     public class Connecteddatasourceinfonamemapping
     {
