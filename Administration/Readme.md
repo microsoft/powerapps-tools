@@ -15,7 +15,7 @@ Four new files have been added which will enable you to collect data from the Of
   - CreateFlowAuditLogTable.sql:  Creates the FlowAuditLog table which stores audit log entries for Flow
   - CreatePowerAppAuditLogTable.sql:  Creates the PowerAppAuditLog table which stores audit log entries for PowerApps
   - O365-Audit-Logs.swagger.json:  This is the Swagger definition for a custom connector which reads audit log entries. After you import the custom connector you will be required to log into the audit log service with an account that has read permission.
-  - UpdateAuditLog_20190528.zip:  Once the SQL Tables and the O365 Audit Log Custom Connector have been created you can import this flow.  It's currently configured to run hourly and collect Flow Create/Edit log entries and PowerApps Create/Edit/Launch entries.  You can customize the recurrence and log entry types by modifying the flow. 
+  - UpdateAuditLog_20190528.zip:  Once the SQL Tables and the O365 Audit Log Custom Connector have been created you can import this flow.  It's currently configured to run hourly and collect Flow Create/Edit log entries and PowerApps Update/Publish/Launch entries.  You can customize the recurrence and log entry types by modifying the flow. 
 
 ************* END - Updated 5/28/2019 **************
 
