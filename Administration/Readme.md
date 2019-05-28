@@ -10,11 +10,13 @@ Database Notes:
   - All tables have a column called "LastRecorded" which keeps a record of the last time information was recorded about a specific artifact.  If the LastRecorded column value is different than the date/time when the flow ran then this means that the artifact was deleted sometime after it's LastRecorded value.
 
 ************* START - Updated 5/28/2019 **************
+
 Four new files have been added which will enable you to collect data from the Office 365 Security and Compliance Audit log related to PowerApps and Flows.  You will need global tenant admin permissions or an account with read access to the O365 Audit logs in order to use the O365 Audit Log custom connector.  You should deploy the files in the following order:
   - CreateFlowAuditLogTable.sql:  Creates the FlowAuditLog table which stores audit log entries for Flow
   - CreatePowerAppAuditLogTable.sql:  Creates the PowerAppAuditLog table which stores audit log entries for PowerApps
   - O365-Audit-Logs.swagger.json:  This is the Swagger definition for a custom connector which reads audit log entries. After you import the custom connector you will be required to log into the audit log service with an account that has read permission.
-  - UpdateAuditLog_20190528.zip:  Once the SQL Tables and the O365 Audit Log Custom Connector have been created you can import this flow.  It's currently configured to run hourly and collect Flow Create/Edit log entries and PowerApps Create/Edit/Launch entries.  You can customize the recurrence and log entry types by modifying the flow.  
+  - UpdateAuditLog_20190528.zip:  Once the SQL Tables and the O365 Audit Log Custom Connector have been created you can import this flow.  It's currently configured to run hourly and collect Flow Create/Edit log entries and PowerApps Create/Edit/Launch entries.  You can customize the recurrence and log entry types by modifying the flow. 
+
 ************* END - Updated 5/28/2019 **************
 
 
