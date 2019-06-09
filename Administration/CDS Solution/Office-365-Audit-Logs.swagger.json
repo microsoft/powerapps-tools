@@ -1,0 +1,138 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "O365Logs",
+    "description": "O365 Audit Logs"
+  },
+  "host": "outlook.office365.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/psws/service.svc/UnifiedAuditLog": {
+      "get": {
+        "summary": "GetActivitiesByOperation",
+        "description": "GetActivitiesByOperation",
+        "operationId": "GetActivitiesByOperation",
+        "parameters": [
+          {
+            "name": "StartDate",
+            "in": "query",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "EndDate",
+            "in": "query",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "Operations",
+            "default": "LaunchPowerApp",
+            "in": "query",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "type": "string",
+            "default": " application/json",
+            "description": "Accept"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "odata.metadata": {
+                  "type": "string",
+                  "description": "odata.metadata"
+                },
+                "value": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "Identity": {
+                        "type": "string",
+                        "description": "Identity"
+                      },
+                      "AuditData": {
+                        "type": "string",
+                        "description": "AuditData"
+                      },
+                      "IsValid": {
+                        "type": "boolean",
+                        "description": "IsValid"
+                      },
+                      "ObjectState": {
+                        "type": "string",
+                        "description": "ObjectState"
+                      },
+                      "Operations": {
+                        "type": "string",
+                        "description": "Operations"
+                      },
+                      "RecordType": {
+                        "type": "string",
+                        "description": "RecordType"
+                      },
+                      "ResultCount": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "ResultCount"
+                      },
+                      "ResultIndex": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "ResultIndex"
+                      },
+                      "UserIds": {
+                        "type": "string",
+                        "description": "UserIds"
+                      },
+                      "ObjectIds": {
+                        "type": "string",
+                        "description": "ObjectIds"
+                      },
+                      "IPAddresses": {
+                        "type": "string",
+                        "description": "IPAddresses"
+                      },
+                      "SiteIds": {
+                        "type": "string",
+                        "description": "SiteIds"
+                      }
+                    }
+                  },
+                  "description": "value"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {
+    "basic_auth": {
+      "type": "basic"
+    }
+  },
+  "security": [],
+  "tags": []
+}
