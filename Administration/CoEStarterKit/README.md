@@ -1,5 +1,5 @@
 # Center of Excellence Starter Kit
-Get started with building the tools you need to develop a Center of Excellence.
+Get started with developing your Center of Excellence for PowerApps and Flow.
 
 ### Updates
 Date | Notes
@@ -76,3 +76,6 @@ The custom connector swagger definition for getting audit logs programmatically.
 
 #### Documentation
 The most updated details on the solution will always be published in the documentation file.
+
+## Support
+Questions, comments, concerns, or interest in contributing? Please post your feedback in the [Administering PowerApps community forum](https://powerusers.microsoft.com/t5/Administering-PowerApps/bd-p/Admin_PowerApps). 
