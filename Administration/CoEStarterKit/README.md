@@ -71,8 +71,11 @@ The following components are seperate files that are located in the download pac
 #### Power BI Report
 Provides a wholistic view with visualizations and insights of data in the CDS entities: Environments, PowerApps Apps, Flows, Connectors, Connection References, Makers and Audit Logs.
  
-#### Office 365 Logs Swagger
+#### Office 365 Logs Custom Connector
 The custom connector swagger definition for getting audit logs programmatically.
+
+#### Flow: Sync Audit Logs
+This Flow comes as a package (.zip) and should be imported seperately from the solution.
 
 #### Documentation
 The most updated details on the solution will always be published in the documentation file.
