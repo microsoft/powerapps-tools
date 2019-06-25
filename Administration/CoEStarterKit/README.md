@@ -7,6 +7,7 @@ Date | Notes
 June 9 2019 | Initial release
 June 17 2019 | Updated documentation
 June 20 2019 | Fixed issues with connecting to CDS in Power BI dashboard
+June 24 2019 | Fixed issue with Flow reading null field value, updated PBI dashboard, removed Audit Log Sync template from solution (provided as package in download)
 
 ## Documentation
 View the [documentation](./Documentation.pdf) ([download](https://github.com/microsoft/powerapps-tools/raw/master/Administration/CoEStarterKit/Documentation.pdf))
