@@ -12,7 +12,7 @@ June 20 2019 | Fixed issues with connecting to CDS in Power BI dashboard
 View the [documentation](./Documentation.pdf) ([download](https://github.com/microsoft/powerapps-tools/raw/master/Administration/CoEStarterKit/Documentation.pdf))
 
 ## Download Pack
-Directly download the entire solution and all additional components from [aka.ms/CoEStarterKit](https://aka.ms/CoEStarterKit)
+Directly download the entire solution and all additional components from [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload)
 
 ## Components
 Here is a list of all the components in the starter kit:
