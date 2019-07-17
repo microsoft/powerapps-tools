@@ -618,7 +618,7 @@ namespace PowerApps_Theme_Editor.ViewModel
             if (this.isDefaultApp || _setting_apply_theme_styles) this.ApplyThemeToEntities(true);
 
             var destinationFolder = Path.Combine(Path.GetTempPath(), System.IO.Path.GetFileName(this.isDefaultApp ? (this.IsTabletMode ? MainViewModel.DefaultTabletApp : MainViewModel.DefaultPhoneApp) : this._appPath.Replace(".msapp", "")));
-            string themeFileName = Path.Combine(destinationFolder, Microsoft.PowerApps.Tools.Zipper.Utility.ThemeFile);
+            string themeFileName = Path.Combine(destinationFolder, "References", Microsoft.PowerApps.Tools.Zipper.Utility.ThemeFile);
             //creates a list of themes and adds current theme
             List<ThemeModel> ThemesInFile = new List<ThemeModel>();
             ThemesInFile.Add(ThemeModel_Without_Default());
