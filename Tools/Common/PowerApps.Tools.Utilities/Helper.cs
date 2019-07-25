@@ -1,4 +1,5 @@
 ﻿using Microsoft.PowerApps.Tools.Zipper;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using PowerApps.Tools.Utilities.Constants;
 using PowerApps.Tools.Utilities.Models;
@@ -23,13 +24,13 @@ namespace PowerApps.Tools.Utilities
             Utility.ExtactApp(path, tempPath);
 
             //Load exteracted data
-            var entity = GetEntity(Path.Combine(tempPath, AppFileName.Entities));
+            var entity = GetEntities(Path.Combine(tempPath, AppFileName.ControlsDirectoryName));
             var properties = GetProperty(Path.Combine(tempPath, AppFileName.Properties));
             var header = GetJObject(Path.Combine(tempPath, AppFileName.Header));
-            var macroTable = GetJObject(Path.Combine(tempPath, AppFileName.MacroTable));
-            var publishInfo = GetJObject(Path.Combine(tempPath, AppFileName.PublishInfo));
-            var themes = GetJObject(Path.Combine(tempPath, AppFileName.Themes));
-            var templates = GetTemplates(Path.Combine(tempPath, AppFileName.Entities));
+            var macroTable = GetJObject(Path.Combine(tempPath, AppFileName.ReferencesDirectoryName, AppFileName.MacroTable));
+            var publishInfo = GetJObject(Path.Combine(tempPath, AppFileName.ResourcesDirectoryName, AppFileName.PublishInfo));
+            var themes = GetJObject(Path.Combine(tempPath, AppFileName.ReferencesDirectoryName, AppFileName.Themes));
+            var templates = GetTemplates(Path.Combine(tempPath, AppFileName.ReferencesDirectoryName, AppFileName.Templates));
 
             return new AppData
             {
@@ -201,22 +202,29 @@ namespace PowerApps.Tools.Utilities
                 PropertyObject = propertyObject
             };
         }
-
-        private List<Entity> GetEntity(string path)
+        
+        private List<Entity> GetEntities(string path)
         {
-            var entityObject = GetJObject(path);
+            var controls = Directory.GetFiles(path);
+            var entities = new List<Entity>();
+            var jsonSerializerSettings = new JsonSerializerSettings()
+            {
+                Error = (se, ev) => {
+                    ev.ErrorContext.Handled = true;
+                }
+            };
 
-            return entityObject["Entities"]?
-                           .Select(s => new Entity
-                           {
-                               Name = (string)s["Name"],
-                               EntityObject = s,
-                               Type = (string)s["Type"],
-                               TemplateName = s["Template"] == null ? "" : (string)s["Template"]["Name"],
-                               Children = GetChildren(s)
-                           }).ToList();
+            foreach (var control in controls)
+            {
+                var controlData = File.ReadAllText(control);
+                var entityData = JsonConvert.DeserializeObject<EntityData>(controlData, jsonSerializerSettings);
+                var entity = entityData.TopParent;
+                entities.Add(entity);
+            }
+
+            return entities;
         }
-
+        
         private List<Template> GetTemplates(string path)
         {
             var entityObject = GetJObject(path);

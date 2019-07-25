@@ -10,9 +10,13 @@
         public const string MacroTable = "MacroTable.json";
         public const string PublishInfo = "PublishInfo.json";
         public const string Themes = "Themes.json";
+        public const string Templates = "Templates.json";
 
         #endregion App Data file names
 
         public const string AssetsDirectoryName = "Assets";
+        public const string ControlsDirectoryName = "Controls";
+        public const string ReferencesDirectoryName = "References";
+        public const string ResourcesDirectoryName = "Resources";
     }
 }

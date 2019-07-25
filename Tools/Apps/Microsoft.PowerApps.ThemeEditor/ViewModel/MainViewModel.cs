@@ -30,8 +30,8 @@ namespace PowerApps_Theme_Editor.ViewModel
         private ObservableCollection<FontFamily> _fonts = new ObservableCollection<FontFamily>();
         private ObservableCollection<PaletteViewModel> _palettes = new ObservableCollection<PaletteViewModel>();
 
-        private static string DefaultPhoneApp = "DefaultApps\\ThemePhoneApp.msapp";
-        private static string DefaultTabletApp = "DefaultApps\\ThemeTabletApp.msapp";
+        private static string DefaultPhoneApp = "DefaultApps\\DemoApp.msapp";
+        private static string DefaultTabletApp = "DefaultApps\\DemoApp.msapp";
         private static string DefaultThemeFile = "DefaultApps\\DefaultTheme.json";
         private static string ThemeFileSchema = "DefaultApps\\ThemeFileSchema.json";
         private string _appName = "";
@@ -556,7 +556,7 @@ namespace PowerApps_Theme_Editor.ViewModel
                 this.IsTabletMode = true;
             }
 
-            string themeFileName = System.IO.Path.Combine(destinationFolder, Microsoft.PowerApps.Tools.Zipper.Utility.ThemeFile);
+            string themeFileName = System.IO.Path.Combine(destinationFolder, "References", Microsoft.PowerApps.Tools.Zipper.Utility.ThemeFile);
             this.LoadTheme(themeFileName);
             this.RaisePropertyChanged("isDefaultApp");
             this.RaisePropertyChanged("AppName");
@@ -618,8 +618,8 @@ namespace PowerApps_Theme_Editor.ViewModel
             if (this.isDefaultApp || _setting_apply_theme_styles) this.ApplyThemeToEntities(true);
 
             var destinationFolder = Path.Combine(Path.GetTempPath(), System.IO.Path.GetFileName(this.isDefaultApp ? (this.IsTabletMode ? MainViewModel.DefaultTabletApp : MainViewModel.DefaultPhoneApp) : this._appPath.Replace(".msapp", "")));
-            string themeFileName = Path.Combine(destinationFolder, Microsoft.PowerApps.Tools.Zipper.Utility.ThemeFile);
-            // creates a list of themes and adds current theme
+            string themeFileName = Path.Combine(destinationFolder, "References", Microsoft.PowerApps.Tools.Zipper.Utility.ThemeFile);
+            //creates a list of themes and adds current theme
             List<ThemeModel> ThemesInFile = new List<ThemeModel>();
             ThemesInFile.Add(ThemeModel_Without_Default());
 
@@ -655,21 +655,24 @@ namespace PowerApps_Theme_Editor.ViewModel
         public void ApplyThemeToEntities(bool size)
         {
             var destinationFolder = Path.Combine(Path.GetTempPath(), System.IO.Path.GetFileName(this.isDefaultApp ? (this.IsTabletMode ? MainViewModel.DefaultTabletApp : MainViewModel.DefaultPhoneApp) : this._appPath.Replace(".msapp", "")));
-            string entitiesFileName = Path.Combine(destinationFolder, Microsoft.PowerApps.Tools.Zipper.Utility.EntitiesFile);
-            EntityData entityModel = JsonConvert.DeserializeObject<EntityData>(File.ReadAllText(entitiesFileName));
+            var controls = Directory.GetFiles(Path.Combine(destinationFolder, "Controls"));
 
-            var entities = entityModel.Entities.FindAll(e => e.Type == "ControlInfo");
-
-            foreach (var entity in entities)
+            foreach (var control in controls)
             {
-                ApplyStyleToEntityTree(entity, size);
+                var controlData = JsonConvert.DeserializeObject<EntityData>(File.ReadAllText(control));
+                var entity = controlData.TopParent;
+
+                if (entity != null)
+                    ApplyStyleToEntityTree(entity, size);
+
+                controlData.TopParent = entity;
+                
+                File.WriteAllText(control, JsonConvert.SerializeObject(controlData, Newtonsoft.Json.Formatting.None, new JsonSerializerSettings
+                {
+                    NullValueHandling = NullValueHandling.Ignore,
+                }));
             }
-            File.WriteAllText(entitiesFileName, JsonConvert.SerializeObject(entityModel, Newtonsoft.Json.Formatting.None, new JsonSerializerSettings
-            {
-                NullValueHandling = NullValueHandling.Ignore,
-                //DefaultValueHandling = DefaultValueHandling.Ignore
-            }));
-
+            
             this.rest_history();
         }
 
@@ -717,7 +720,8 @@ namespace PowerApps_Theme_Editor.ViewModel
                         var palette = Palettes.SingleOrDefault(e => e.name == property.value.Replace("%", "").Replace("Palette.", ""));
                         if (palette != null)
                             rule.InvariantScript = palette.value.Replace(".RESERVED", "").Replace("%", "");
-                        else rule.InvariantScript = property.value.Replace(".RESERVED", "").Replace("%", "");
+                        if (rule.InvariantScript.Contains(".RESERVED"))
+                            rule.InvariantScript = property.value.Replace(".RESERVED", "").Replace("%", "");
                     }
                 }
         }

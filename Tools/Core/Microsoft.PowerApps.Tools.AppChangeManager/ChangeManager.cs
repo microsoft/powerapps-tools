@@ -290,7 +290,8 @@ namespace Microsoft.PowerApps.Tools.AppChangeManager
             var tempPath = $"{Path.GetTempPath()}{ fileName}_{guid}";
 
             Utility.ExtactApp(filePath, tempPath);
-            var data = File.ReadAllText(Path.Combine(tempPath, Constants.AppFileName.Entities));
+
+            var controls = Directory.GetFiles(Path.Combine(tempPath, "Controls"));
 
             JsonSerializerSettings jsonSerializerSettings = new JsonSerializerSettings()
             {
@@ -299,9 +300,17 @@ namespace Microsoft.PowerApps.Tools.AppChangeManager
                 }
             };
 
-            var entityData = JsonConvert.DeserializeObject<EntityData>(data, jsonSerializerSettings);
+            var entities = new List<Entity>();
 
-            var screenList = entityData?.Entities
+            foreach (var control in controls)
+            {
+                var controlData = File.ReadAllText(control);
+                var entityData = JsonConvert.DeserializeObject<EntityData>(controlData, jsonSerializerSettings);
+                var entity = entityData.TopParent;
+                entities.Add(entity);
+            }
+
+            var screenList = entities?
                 .Where(e => controlTypes.Contains(e.Template?.Name))
                 .Select(r => r);
 
