@@ -9,7 +9,7 @@ This tool allow you to see all the changes that you made to your app taking the 
 ## Theme Editor
 Theme editor allow you to inject your own style into your app. You can update every style of every controls.
 ![Theme Editor](https://pahandsonlab.blob.core.windows.net/tools/ThemeEditor.png)
-[Download](https://pahandsonlab.blob.core.windows.net/tools/themeeditor.zip).
+[Download](https://github.com/microsoft/powerapps-tools/raw/master/Tools/Apps/Microsoft.PowerApps.ThemeEditor/PowerAppsReviewTool.zip).
 
 ## App Merger
 This tool takes two apps and creates a third merged app that includes all screens and from both apps. This tool can be useful for distrusted development or to re-use screens and UI elements across apps.
