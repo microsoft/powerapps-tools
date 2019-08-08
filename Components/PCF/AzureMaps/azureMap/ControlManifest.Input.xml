@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="azureMaps" constructor="azureMap" version="0.0.10" display-name-key="azure Map control " description-key="azure Map showing the dataset as pins" control-type="standard">
+    <!-- dataset node represents a set of entity records on CDS; allow more than one datasets -->
+    <data-set name="sampleDataSet" display-name-key="Dataset Fields">
+      <property-set name="name" display-name-key="Name" description-key="Enter Name" of-type="SingleLine.Text" usage="bound" required="true" />
+      <property-set name="description" display-name-key="Description" description-key="Enter Description" of-type="SingleLine.Text" usage="bound" required="true" />
+      <property-set name="Longitude" display-name-key="Longitude" description-key="Longitude" of-type="FP" usage="bound" required="true" />
+      <property-set name="Latitude" display-name-key="Latitude" description-key="Latitude" of-type="FP" usage="bound" required="true" />
+    </data-set>
+    <property name="mapsubscriptionKey" display-name-key="Azure Maps Subscription Key" description-key="Azure Maps Subscription Key" of-type="SingleLine.Text" usage="input" required="true" />
+    <resources>
+      <css path="css/azureMap.css" order="1" />
+      <css path="css/app.css" order="2" />
+      <code path="index.ts" order="3"/>
+
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <resx path="strings/azureMap.1033.resx" version="1.0.0" />
+      -->
+    </resources>
+  </control>
+</manifest>

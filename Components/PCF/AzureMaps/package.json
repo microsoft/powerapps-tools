@@ -1,0 +1,21 @@
+{
+  "name": "pcf-project",
+  "version": "1.0.3",
+  "description": "Project containing your PowerApps Component Framework (PCF) control.",
+  "scripts": {
+    "build": "pcf-scripts build",
+    "clean": "pcf-scripts clean",
+    "rebuild": "pcf-scripts rebuild",
+    "start": "pcf-scripts start"
+  },
+  "dependencies": {
+    "@types/node": "^10.12.18",
+    "@types/powerapps-component-framework": "1.1.0",
+    "azure-maps-control": "^2.0.2",
+    "@types/adal-angular": "1.0.1"
+  },
+  "devDependencies": {
+    "pcf-scripts": "~0",
+    "pcf-start": "~0"
+  }
+}

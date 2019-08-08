@@ -1,0 +1,7 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "comment-format": false,
+    "max-line-length": false,
+  }
+}
