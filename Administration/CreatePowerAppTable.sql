@@ -17,7 +17,7 @@ CREATE TABLE [dbo].[PowerApp](
 	[description] [nvarchar](max) NULL,
 	[sharedUsersCount] [int] NULL,
 	[sharedGroupsCount] [int] NULL,
-	[appOpenURI] [nvarchar](80) NULL,
+	[appOpenURI] [nvarchar](120) NULL,
 	[isFeaturedApp] [bit] NULL,
 	[bypassConsent] [bit] NULL,
 	[isSharePointForm] [bit] NULL,
