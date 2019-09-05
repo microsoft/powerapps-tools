@@ -1,9 +1,9 @@
-.azureMaps\.azureMap .customInfobox {
+.azureMapsFieldControl.azureMapsFieldControl .customInfobox {
     max-width: 200px;
     padding: 10px;
     font-size: 12px;
 }
-.azureMaps\.azureMap .customInfobox .name {
+.azureMapsFieldControl.azureMapsFieldControl .customInfobox .name {
         font-size: 14px;
         font-weight: bold;
         margin-bottom: 5px;

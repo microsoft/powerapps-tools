@@ -1,0 +1,17 @@
+{
+    "extends": "./node_modules/pcf-scripts/tsconfig_base.json",
+    "compilerOptions": {
+        "noImplicitThis": false,
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "plugins": [
+            {
+                "name": "typescript-tslint-plugin",
+                "ignoreDefinitionFiles": true,
+                "configFile": "tslint.json",
+                "suppressWhileTypeErrorsPresent": false
+            }
+        ]
+    }
+}

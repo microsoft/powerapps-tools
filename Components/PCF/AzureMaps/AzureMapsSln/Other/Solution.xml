@@ -2,32 +2,32 @@
 <ImportExportXml version="9.1.0.643" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <!-- Unique Name of Cds Solution-->
-    <UniqueName>sln</UniqueName>
+    <UniqueName>AzureMapsSln</UniqueName>
     <LocalizedNames>
       <!-- Localized Solution Name in language code -->
-      <LocalizedName description="sln" languagecode="1033" />
+      <LocalizedName description="AzureMapsSln" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.10</Version>
-    <!-- Solution Package Type: Managed(1)/Unmanaged(1)/Both (2)-->
+    <Version>1.0</Version>
+    <!-- Solution Package Type: Unmanaged(0)/Managed(1)/Both(2)-->
     <Managed>2</Managed>
     <Publisher>
       <!-- Unique Publisher Name of Cds Solution -->
-      <UniqueName>DemoPublisher</UniqueName>
+      <UniqueName>bmannarino</UniqueName>
       <LocalizedNames>
         <!-- Localized Cds Publisher Name in language code-->
-        <LocalizedName description="DemoPublisher" languagecode="1033" />
+        <LocalizedName description="bmannarino" languagecode="1033" />
       </LocalizedNames>
       <Descriptions>
         <!-- Description of Cds Publisher in language code -->
-        <Description description="DemoPublisher" languagecode="1033" />
+        <Description description="bmannarino" languagecode="1033" />
       </Descriptions>
       <EMailAddress xsi:nil="true"></EMailAddress>
       <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
       <!-- Customization Prefix for the Cds Publisher-->
-      <CustomizationPrefix>demoPub</CustomizationPrefix>
+      <CustomizationPrefix>dev</CustomizationPrefix>
       <!-- Derived Option Value Prefix for the Customization Prefix of Cds Publisher -->
-      <CustomizationOptionValuePrefix>11280</CustomizationOptionValuePrefix>
+      <CustomizationOptionValuePrefix>29305</CustomizationOptionValuePrefix>
       <Addresses>
         <!-- Address of the Publisher-->
         <Address>

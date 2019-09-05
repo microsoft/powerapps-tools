@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="azureMapsDataSetControl" constructor="azureMapsDataSetControl" version="0.0.10" display-name-key="AzureMapsDataSetControl" description-key="Azure Maps custom control showing the dataset as pins" control-type="standard">
+    <!-- dataset node represents a set of entity records on CDS; allow more than one datasets -->
+    <data-set name="sampleDataSet" display-name-key="Dataset Fields">
+      <property-set name="controlValue" display-name-key="controlValue" description-key="controlValue" of-type="SingleLine.Text" usage="bound" required="true" />
+      <property-set name="sourceFieldName" display-name-key="Source Field Name" description-key="Specifies the Name field source" of-type="SingleLine.Text" usage="bound" required="true" />
+      <property-set name="sourceFieldDescription" display-name-key="Source Field Description" description-key="Specifies the Description field source" of-type="SingleLine.Text" usage="bound" required="true" />
+      <property-set name="sourceFieldStreet1" display-name-key="Source Field Street 1" description-key="Specifies the Street1 field source" of-type="SingleLine.Text" usage="bound" required="true" />
+      <property-set name="sourceFieldStreet2" display-name-key="Source Field Street 2" description-key="Specifies the Street2 field source" of-type="SingleLine.Text" usage="bound" required="true" />
+      <property-set name="sourceFieldCity" display-name-key="Source Field City" description-key="Specifies the City field source" of-type="SingleLine.Text" usage="bound" required="true" />
+      <property-set name="sourceFieldState" display-name-key="Source Field State" description-key="Specifies the State field source" of-type="SingleLine.Text" usage="bound" required="true" />
+      <property-set name="sourceFieldZip" display-name-key="Source Field Zip/Postal Code" description-key="Specifies the Zip field source" of-type="SingleLine.Text" usage="bound" required="true" />
+      <property-set name="sourceFieldCountry" display-name-key="Source Field Country" description-key="Specifies the Country field source" of-type="SingleLine.Text" usage="bound" required="true" />
+    </data-set>
+    <property name="mapSubscriptionKey" display-name-key="Azure Maps Subscription Key" description-key="Azure Maps Subscription Key" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="theme" display-name-key="Map Theme" description-key="Specifies the theme of the map (values that can be used: road, satellite, satellite_road_labels, grayscale_dark, grayscale_light, night, road_shaded_relief)" of-type="SingleLine.Text" usage="input" default-value="road" required="true" />
+    <property name="zoomLevel" display-name-key="Zoom Level" description-key="Specifies the default zoom level (enter a value in the range 0 - 22" of-type="SingleLine.Text" usage="input" default-value="10" required="false" />
+    <resources>
+      <css path="css/azureMap.css" order="1" />
+      <css path="css/app.css" order="2" />
+      <code path="index.ts" order="3"/>
+    </resources>
+  </control>
+</manifest>
