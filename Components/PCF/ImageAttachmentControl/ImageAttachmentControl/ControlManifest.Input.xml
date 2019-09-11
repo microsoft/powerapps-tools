@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="Microsoft" constructor="ImageAttachmentControl" version="0.0.1" display-name-key="ImageAttachmentControl_Display_Key" description-key="ImageAttachmentControl_Desc_Key" control-type="standard">
+  <control namespace="Microsoft" constructor="ImageAttachmentControl" version="0.0.1" display-name-key="ImageAttachmentControl" description-key="Custom control for uploading an image to a field" control-type="standard">
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
-    <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="Image" display-name-key="Image" description-key="Image" of-type="Multiple" usage="bound" required="true" />
     <!-- 
       Property node's of-type attribute can be of-type-group attribute. 
       Example:
