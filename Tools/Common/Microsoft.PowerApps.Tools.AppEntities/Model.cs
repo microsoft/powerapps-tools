@@ -8,6 +8,7 @@ namespace Microsoft.PowerApps.Tools.AppEntities
     public class EntityData
     {
         public List<Entity> Entities { get; set; }
+        public Entity TopParent { get; set; }
         public List<UserTemplate> UsedTemplates { get; set; }
     }
 
@@ -45,9 +46,6 @@ namespace Microsoft.PowerApps.Tools.AppEntities
         public string ServiceKind { get; set; }
         public Wadlmetadata WadlMetadata { get; set; }
         public string ApiId { get; set; }
-        //public string Schema { get; set; }
-        public bool IsSampleData { get; set; }
-        public bool IsWritable { get; set; }
         public string FileName { get; set; }
         public string Path { get; set; }
         public string Content { get; set; }

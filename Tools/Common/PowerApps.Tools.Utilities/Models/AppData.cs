@@ -19,7 +19,7 @@ namespace PowerApps.Tools.Utilities.Models
             get
             {
                 return Entities?
-                    .Where(r => r.TemplateName == "screen")
+                    .Where(r => r.Template.Name == "screen")
                     .Select(s => s.Name).ToList();
             }
         }

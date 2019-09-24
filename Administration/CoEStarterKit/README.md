@@ -4,11 +4,15 @@ Get started with developing your Center of Excellence for PowerApps and Flow.
 ### Updates
 Date | Notes
 ---|---
-June 9 2019 | Initial release
-June 17 2019 | Updated documentation
-June 20 2019 | Fixed issues with connecting to CDS in Power BI dashboard
-June 24 2019 | Fixed issue with Flow reading null field value, updated PBI dashboard, removed Audit Log Sync template from solution (provided as package in download)
-July 17 2019 | Fixed issues with validation errors in Flow sync template (including modifications to PowerApps App / iconuri field and Flow / displayname field was not long enough). Addded DLP Editor direct download.
+2019.06.09 | Initial release
+2019.06.17 | Updated documentation
+2019.06.20 | Fixed issues with connecting to CDS in Power BI dashboard
+2019.06.24 | Fixed issue with Flow reading null field value, updated PBI dashboard, removed Audit Log Sync template from solution (provided as package in download)
+2019.07.17 | Fixed issues with validation errors in Flow sync template (including modifications to PowerApps App / iconuri field and Flow / displayname field was not long enough). Addded DLP Editor direct download.
+2019.08.26 | Added Solution that does not contain canvas (no canvas apps), provided all canvas app import packages individually. Also added a new canvas app to replace PowerApps app owners.
+
+## Known Issues
+- There is currently an issue with importing Solutions that contain canvas apps. Please use the solution marked (no canvas apps) for now and import the individual canvas apps.
 
 ## Documentation
 View the [documentation](./Documentation.pdf) ([download](https://github.com/microsoft/powerapps-tools/raw/master/Administration/CoEStarterKit/Documentation.pdf))

@@ -230,6 +230,9 @@
     <None Include="DefaultApps\DefaultTheme.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="DefaultApps\DemoApp.msapp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="DefaultApps\ThemePhoneApp.msapp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
