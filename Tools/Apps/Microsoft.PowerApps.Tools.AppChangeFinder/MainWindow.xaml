@@ -11,7 +11,7 @@
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="PowerAppps Review Tool" Height="950" Width="1800" Icon="palogo.ico"
+        Title="PowerApps Review Tool" Height="950" Width="1800" Icon="palogo.ico"
         StateChanged="Window_StateChanged" >
     <Window.DataContext>
         <local:ChangeFinderViewModel />
