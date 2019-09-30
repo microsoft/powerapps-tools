@@ -2,10 +2,10 @@ div#myMap div.atlas-map-canvas-container {
   position: relative;
 }
 
-.azureMaps\.azureMap canvas.atlas-map-canvas {
+.azureMapsDataSetControl.azureMapsDataSetControl canvas.atlas-map-canvas {
   position: relative !important;
 }
-.azureMaps\.azureMap .pin {
+.azureMapsDataSetControl.azureMapsDataSetControl .pin {
   width: 30px;
   height: 30px;
   border-radius: 50% 50% 50% 0;
@@ -17,12 +17,12 @@ div#myMap div.atlas-map-canvas-container {
   margin: -20px 0 0 -20px;
 }
 
-.azureMaps\.azureMap .bounce {
+.azureMapsDataSetControl.azureMapsDataSetControl .bounce {
   animation-name: bounce;
   animation-fill-mode: both;
   animation-duration: 1s;
 }
-.azureMaps\.azureMap .pulse {
+.azureMapsDataSetControl.azureMapsDataSetControl .pulse {
   background: #d6d4d4;
   border-radius: 50%;
   height: 14px;
@@ -34,7 +34,7 @@ div#myMap div.atlas-map-canvas-container {
   transform: rotateX(55deg);
   z-index: -2;
 }
-.azureMaps\.azureMap .pulse:after {
+.azureMapsDataSetControl.azureMapsDataSetControl .pulse:after {
       content: "";
       border-radius: 50%;
       height: 40px;
