@@ -10,7 +10,7 @@ This tool allow you to see all the changes that you made to your app taking the 
 Theme editor allow you to inject your own style into your app. You can update every style of every controls.
 ![Theme Editor](https://pahandsonlab.blob.core.windows.net/tools/ThemeEditor.png)
 
-[Download](https://github.com/microsoft/powerapps-tools/raw/master/Tools/Apps/Microsoft.PowerApps.Tools.AppChangeFinder/PowerAppsReviewTool.zip).
+[Download](https://github.com/microsoft/powerapps-tools/raw/master/Tools/Apps/Microsoft.PowerApps.ThemeEditor/ThemeEditor.zip).
 =======
 
 ## App Merger
