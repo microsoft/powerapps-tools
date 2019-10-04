@@ -102,8 +102,6 @@ export class azureMapsFieldControl implements ComponentFramework.StandardControl
 	}
 
 	private getMap(context: ComponentFramework.Context<IInputs>) {
-		// todo remove before finished
-		context.parameters.mapsubscriptionKey.raw = "EctcAWDgV39VOlLZ_ld4Qemn0l2DrUpeLWATlZuaEu4";
 		this.map = new azureMapsControl.Map('myMap', {
 			center: [-122.12, 47, 67],
 			style: context.parameters.theme ? context.parameters.theme.raw : this.defaultTheme,

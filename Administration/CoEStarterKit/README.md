@@ -10,9 +10,10 @@ Date | Notes
 2019.06.24 | Fixed issue with Flow reading null field value, updated PBI dashboard, removed Audit Log Sync template from solution (provided as package in download)
 2019.07.17 | Fixed issues with validation errors in Flow sync template (including modifications to PowerApps App / iconuri field and Flow / displayname field was not long enough). Addded DLP Editor direct download.
 2019.08.26 | Added Solution that does not contain canvas (no canvas apps), provided all canvas app import packages individually. Also added a new canvas app to replace PowerApps app owners.
+2019.09.30 | Major updates to Sync template: <br> - Split Sync Template Flow into 5 Flows, making it easier to read and modify: <br> 1. Admin &#124; Sync Template v2 - runs on a schedule and updates environments <br> 2. Admin &#124; Sync Template v2 (Apps) - runs when an environment is created/modified and gets App information, also updates record if Apps are deleted <br> 3. Admin &#124; Sync Template v2 (Flows) - runs when an environment is created/modified and gets Flow information, also updates record if Flows are deleted <br> 4. Admin &#124; Sync Template v2 (Connectors) - runs when an environment is created/modified and gets Connector information <br> 5. Admin &#124; Sync Template v2 (Custom Connector) - runs when an environment is created/modified and gets Custom Connector information <br> - Sync template errors: All Flows implement a Try/Catch/Error logic, and if they fail will send an email to the owner with a link to the workflow run instance. For that, when configuring the Flow owners will need to specify a Flow environment URL. We could look at making this a setting in the CoE kit when they're setting it up so they only have to specify it once. <br> Added 'deleted date' to the entity schema <br> - Power BI: Fixed issues with displaying Flow cities <br> - Model driven app (Power Platform Admin View): Removed 'New' button from all grids to prevent creation of data that's not synced with the Power Platform server
 
 ## Known Issues
-- There is currently an issue with importing Solutions that contain canvas apps. Please use the solution marked (no canvas apps) for now and import the individual canvas apps.
+Currently no known issues.
 
 ## Documentation
 View the [documentation](./Documentation.pdf) ([download](https://github.com/microsoft/powerapps-tools/raw/master/Administration/CoEStarterKit/Documentation.pdf))
@@ -38,8 +39,18 @@ CoE Settings | Settings configurations live in a record here. Contains details f
 
 #### Flows
 List of Flows that come with the solution.
-- ##### Admin | Sync Template
-    "Uber" sync Flow that syncs resource data from the admin connectors to the CDS resource entities.
+- ##### Admin | Sync Template (v1)
+    "Uber" sync Flow that syncs resource data from the admin connectors to the CDS resource entities. 
+- ##### Admin | Sync Template (v2)
+    Runs on a schedule and updates environments
+- ##### Admin | Sync Template v2 (Apps)
+    Runs when an environment is created/modified and gets App information, also updates record if Apps are deleted
+- ##### Admin | Sync Template v2 (Flows)
+    Runs when an environment is created/modified and gets Flow information, also updates record if Flows are deleted
+- ##### Admin | Sync Template v2 (Connectors)
+    Runs when an environment is created/modified and gets Connector information
+- ##### Admin | Sync Template v2 (Custom Connector)
+    Runs when an environment is created/modified and gets Custom Connector information
 - ##### Admin | Sync Audit Logs
     Uses the Office 365 Audit logs custom connector to write audit log data into the CDS Audit Log entity. This will generate a view of usage for PowerApps.
 - ##### Admin | Welcome Email
@@ -57,6 +68,8 @@ List of Flows that come with the solution.
     Canvas app that gives access to the entire organization to make apps more discoverable. Admins audit and validate certain apps which are graduated to the app catalog if the app is meant to be shared broadly.
 - ##### DLP Editor
     Canvas app that reads and updates DLP policies while showing a list of apps that are affected by the policy configurations.
+- ##### PowerApps Admin - Set Owner
+    Standalone app that updates the canvas app owner and can also assign additional permissions to apps.
  
 #### Model Driven App
 Power Platform Admin View. A model driven app that provides an interface used to navigate the items in the CDS custom entities. It provides access to views and forms for the custom entities in the solution.
