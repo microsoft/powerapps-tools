@@ -82,11 +82,6 @@ namespace Microsoft.PowerApps.Tools.AppChangeFinder
             }
         }
 
-        //public ObservableCollection<Controls> ControlList
-        //{
-        //    get { return screenList.Controls }
-        //}
-
         /// <summary>
         /// Private variable of PathTxtBox
         /// </summary>
@@ -137,7 +132,14 @@ namespace Microsoft.PowerApps.Tools.AppChangeFinder
             }
         }
 
+        /// <summary>
+        /// Private variable of HideDiff
+        /// </summary>
         private bool _hideDiff;
+
+        /// <summary>
+        /// Gets or Sets HideDiff, deciding whether to hide/show the diff in property values
+        /// </summary>
         public bool HideDiff
         {
             get { return _hideDiff; }
@@ -148,14 +150,83 @@ namespace Microsoft.PowerApps.Tools.AppChangeFinder
             }
         }
 
-        private bool _searchEvents;
-        public bool SearchEvents
+
+        /// <summary>
+        /// Private variable of SelectedControls
+        /// </summary>
+        private ObservableCollection<Controls> selectedControls = new ObservableCollection<Controls>();
+
+        /// <summary>
+        /// Gets or Sets SelectedControls, a collection of child controls - has a screen entity as a parent
+        /// </summary>
+        public ObservableCollection<Controls> SelectedControls
         {
-            get { return _searchEvents; }
+            get { return selectedControls; }
             set
             {
-                _searchEvents = value;
-                OnPropertyChanged("SearchEvents");
+                selectedControls = value;
+                OnPropertyChanged("SelectedControls");
+            }
+        }
+
+        /// <summary>
+        /// Private variable of SelectedProperties
+        /// </summary>
+        private ObservableCollection<Property> selectedProperties = new ObservableCollection<Property>();
+
+        /// <summary>
+        /// Gets or Sets SelectedProperties, a collection of child properties - has a control entity as a parent
+        /// </summary>
+        public ObservableCollection<Property> SelectedProperties
+        {
+            get { return selectedProperties; }
+            set
+            {
+                selectedProperties = value;
+                OnPropertyChanged("SelectedProperties");
+            }
+        }
+
+        /// <summary>
+        /// Gets or Sets SearchFilter, the active selected filter to search under
+        /// </summary>
+        public SearchFilters SearchFilter { get; set; }
+
+        /// <summary>
+        /// Private varibale of SelectedScreen
+        /// </summary>
+        private DataModel selectedScreen = new DataModel();
+
+        /// <summary>
+        /// Gets or Sets SelectedScreen, set when the user clicks on a screen entity
+        /// </summary>
+        public DataModel SelectedScreen
+        {
+            get { return selectedScreen; }
+            set
+            {
+                selectedScreen = value;
+                OnSelectedScreen(value);
+                OnPropertyChanged("SelectedScreen");
+            }
+        }
+
+        /// <summary>
+        /// Private variable of SelectedControl
+        /// </summary>
+        private Controls selectedControl = new Controls();
+
+        /// <summary>
+        /// Gets or Sets SelectedControl, set when the user clicks on a control entity
+        /// </summary>
+        public Controls SelectedControl
+        {
+            get { return selectedControl; }
+            set
+            {
+                selectedControl = value;
+                OnSelectedControl(value);
+                OnPropertyChanged("SelectedControl");
             }
         }
         #endregion Properties
@@ -225,40 +296,14 @@ namespace Microsoft.PowerApps.Tools.AppChangeFinder
         {
             get { return exportToJSONBtnClick; }
             set { exportToJSONBtnClick = value; }
-        }
-
-        private DataModel selectedScreen = new DataModel();
-
-        public DataModel SelectedScreen
-        {
-            get { return selectedScreen; }
-            set
-            {
-                selectedScreen = value;
-                OnSelectedScreen(value);
-                OnPropertyChanged("SelectedScreen");
-            }
-        }
+        }        
 
         private void OnSelectedScreen(DataModel screen)
         {
             if (screen == null)
                 return;
             SelectedControls = new ObservableCollection<Controls>(screen.Controls);
-        }
-
-        private Controls selectedControl = new Controls();
-
-        public Controls SelectedControl
-        {
-            get { return selectedControl; }
-            set
-            {
-                selectedControl = value;
-                OnSelectedControl(value);
-                OnPropertyChanged("SelectedControl");
-            }
-        }
+        }        
 
         private void OnSelectedControl(Controls control)
         {
@@ -267,55 +312,6 @@ namespace Microsoft.PowerApps.Tools.AppChangeFinder
 
             SelectedProperties = new ObservableCollection<Property>(control.Properties);
         }
-
-        private ObservableCollection<Controls> selectedControls = new ObservableCollection<Controls>();
-
-        public ObservableCollection<Controls> SelectedControls
-        {
-            get { return selectedControls; }
-            set
-            {
-                selectedControls = value;
-                OnPropertyChanged("SelectedControls");
-            }
-        }
-
-        private Property selectedProperty = new Property();
-
-        public Property SelectedProperty
-        {
-            get { return selectedProperty; }
-            set
-            {
-                selectedProperty = value;
-                OnSelectedProperty(value);
-                OnPropertyChanged("SelectedProperty");
-            }
-        }
-
-        private void OnSelectedProperty(Property property)
-        {
-            if (property == null)
-                return;
-        }
-
-        private ObservableCollection<Property> selectedProperties = new ObservableCollection<Property>();
-
-        public ObservableCollection<Property> SelectedProperties
-        {
-            get { return selectedProperties; }
-            set
-            {
-                selectedProperties = value;
-                OnPropertyChanged("SelectedProperties");
-            }
-        }
-
-
-        public SearchFilters SearchFilter { get; set; }
-
-
-
         #endregion
 
         #region Property Changed
@@ -453,130 +449,7 @@ namespace Microsoft.PowerApps.Tools.AppChangeFinder
                 {
                     this.IsLoading = true;
                     var searchedScreenList = new List<DataModel>();
-
-                    foreach (DataModel dm in OriginalScreenList)
-                    {
-                        var foundScreen = new DataModel
-                        {
-                            ScreenName = dm.ScreenName,
-                            Controls = new List<Controls>()
-                        };
-
-                        foreach (Controls control in dm.Controls)
-                        {
-                            var foundControl = new Controls
-                            {
-                                ControlName = control.ControlName,
-                                ControlIcon = control.ControlIcon
-                                
-                            };
-
-                            foreach (Property prop in control.Properties)
-                            {
-                                var foundProp = new Property
-                                {
-                                    Properties = prop.Properties,
-                                    PropertyName = prop.PropertyName
-                                };
-
-                                foreach (PropertyDetails propDetails in prop.Properties)
-                                {
-                                    var foundPropDetails = new PropertyDetails
-                                    {
-                                        Name = propDetails.Name,
-                                        Value = propDetails.Value,
-                                        IsBaseLine = propDetails.IsBaseLine
-                                    };
-
-                                    if ((!string.IsNullOrEmpty(propDetails.Name) && propDetails.Name.IndexOf(searchTxt, StringComparison.OrdinalIgnoreCase) >= 0)
-                                        || !string.IsNullOrEmpty(propDetails.Value) && propDetails.Value.IndexOf(searchTxt, StringComparison.OrdinalIgnoreCase) >= 0
-                                        && (AllowSearch("propertydetails") || AllowSearch("events", prop.PropertyName)))
-                                    {
-
-                                        if (searchedScreenList.Contains(foundScreen))
-                                        {
-                                            if (searchedScreenList.Any(scn => scn.Controls.Contains(foundControl)))
-                                            {
-                                                if (searchedScreenList.Any(scn => scn.Controls.Any(ctrl => ctrl.Properties.Contains(foundProp))))
-                                                {
-                                                    searchedScreenList.Find(scn => scn.ScreenName == foundScreen.ScreenName)
-                                                        .Controls.Find(ctrl => ctrl.ControlName == foundControl.ControlName)
-                                                        .Properties.Find(prp => prp.PropertyName == foundProp.PropertyName)
-                                                        .Properties.Add(foundPropDetails);
-                                                }
-                                                else
-                                                {
-                                                    foundProp.Properties = new List<PropertyDetails> { foundPropDetails };
-                                                    searchedScreenList.Find(scn => scn.ScreenName == foundScreen.ScreenName)
-                                                        .Controls.Find(ctrl => ctrl.ControlName == foundControl.ControlName)
-                                                        .Properties.Add(foundProp);
-                                                }
-                                            }
-                                            else
-                                            {
-                                                foundProp.Properties = new List<PropertyDetails> { foundPropDetails };
-                                                foundControl.Properties = new List<Property> { foundProp };
-                                                searchedScreenList.Find(scn => scn.ScreenName == foundScreen.ScreenName)
-                                                    .Controls.Add(foundControl);
-                                            }
-                                        }
-                                        else
-                                        {
-                                            foundProp.Properties = new List<PropertyDetails> { foundPropDetails };
-                                            foundControl.Properties = new List<Property> { foundProp };
-                                            foundScreen.Controls = new List<Controls> { foundControl };
-                                            searchedScreenList.Add(foundScreen);
-                                        }
-                                    }
-                                }
-
-                                if (!string.IsNullOrEmpty(prop.PropertyName) && prop.PropertyName.IndexOf(searchTxt, StringComparison.OrdinalIgnoreCase) >= 0 && AllowSearch("property"))
-                                {
-                                    if (searchedScreenList.Contains(foundScreen))
-                                    {
-                                        if (searchedScreenList.Any(scn => scn.Controls.Contains(foundControl)))
-                                        {
-                                            searchedScreenList.Find(scn => scn.ScreenName == foundScreen.ScreenName)
-                                                .Controls.Find(ctrl => ctrl.ControlName == foundControl.ControlName)
-                                                .Properties.Add(foundProp);
-                                        }
-                                        else
-                                        {
-                                            foundControl.Properties = new List<Property> { foundProp };
-                                            searchedScreenList.Find(scn => scn.ScreenName == foundScreen.ScreenName)
-                                                .Controls.Add(foundControl);
-                                        }
-                                    }
-                                    else
-                                    {
-                                        foundControl.Properties = new List<Property> { foundProp };
-                                        foundScreen.Controls = new List<Controls> { foundControl };
-                                        searchedScreenList.Add(foundScreen);
-                                    }
-                                }
-                            }
-
-                            if (control.ControlName.IndexOf(searchTxt, StringComparison.OrdinalIgnoreCase) >= 0 && AllowSearch("control"))
-                            {
-                                // foundScreen.Controls = new List<Controls> { foundControl };
-                                if (searchedScreenList.Contains(foundScreen))
-                                {
-                                    searchedScreenList.Find(scn => scn.ScreenName == foundScreen.ScreenName).Controls.Add(foundControl);
-                                }
-                                else
-                                {
-                                    foundScreen.Controls.Add(foundControl);
-                                    searchedScreenList.Add(foundScreen);
-                                }
-                            }
-                        }
-
-                        if (dm.ScreenName.IndexOf(searchTxt, StringComparison.OrdinalIgnoreCase) >= 0 && AllowSearch("screen"))
-                        {
-                            searchedScreenList.Add(foundScreen);
-                            break;
-                        }
-                    }
+                    searchedScreenList = SearchHelper.HierarchySearch(OriginalScreenList, SearchFilter, searchTxt);                    
 
                     System.Windows.Application.Current.Dispatcher.Invoke(() =>
                     {
@@ -594,32 +467,6 @@ namespace Microsoft.PowerApps.Tools.AppChangeFinder
 
             this.IsLoading = false;
         }
-
-        private bool AllowSearch(string type, string propertyName = null)
-        {
-            var events = new List<string>
-            {
-                "OnChange",
-                "OnSelect"
-            };
-
-            switch (type)
-            {
-                case "screen":
-                    return SearchFilter == SearchFilters.All;
-                case "control":
-                    return SearchFilter == SearchFilters.All || SearchFilter == SearchFilters.Controls;
-                case "property":
-                    return SearchFilter == SearchFilters.All || SearchFilter == SearchFilters.Properties;
-                case "propertydetails":
-                    return SearchFilter == SearchFilters.All;
-                case "events":
-                    return SearchFilter == SearchFilters.All || (SearchFilter == SearchFilters.Events && events.Contains(propertyName));
-                default:
-                    return false;
-            }
-        }
-
 
         /// <summary>
         /// Clears out the search text and resets screens list
@@ -646,25 +493,6 @@ namespace Microsoft.PowerApps.Tools.AppChangeFinder
             SelectedControl = null;
             SelectedProperties = null;
             SelectedControls = null;
-        }
-
-        private TEntity Search<TEntity, TProperty>(TEntity item, string term, Func<TEntity, TProperty> matchExpression)
-        {
-            if (EqualityComparer<TProperty>.Default.Equals(matchExpression(item).Equals(term)))
-                return item;
-            return item;
-        }
-
-
-        private void FilterSearch()
-        {
-            var searchedScreenList = new ObservableCollection<DataModel>();
-            System.Windows.Application.Current.Dispatcher.Invoke(() =>
-            {
-                ////Set property or change UI compomponents.
-                this.IsLoading = false;
-                ScreenList = searchedScreenList;
-            });
         }
 
         /// <summary>

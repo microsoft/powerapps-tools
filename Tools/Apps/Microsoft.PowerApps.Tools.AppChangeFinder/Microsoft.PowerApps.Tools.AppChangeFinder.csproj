@@ -91,6 +91,7 @@
     <Compile Include="ChangeFinderViewModel.cs" />
     <Compile Include="Common\EnumBooleanConverter.cs" />
     <Compile Include="Common\RelayCommand.cs" />
+    <Compile Include="Common\SearchHelper.cs" />
     <Compile Include="DataModel.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
