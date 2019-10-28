@@ -89,6 +89,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ChangeFinderViewModel.cs" />
+    <Compile Include="Common\EnumBooleanConverter.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="DataModel.cs" />
     <Compile Include="MainWindow.xaml.cs">
@@ -135,11 +136,53 @@
     <Resource Include="palogo.ico" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\Microsoft.PowerApps.Tools.AppEntities\Microsoft.PowerApps.Tools.AppEntities.csproj">
+      <Project>{7E9A1E0C-E645-409A-88B0-C0756641C511}</Project>
+      <Name>Microsoft.PowerApps.Tools.AppEntities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Core\Microsoft.PowerApps.Tools.AppChangeManager\Microsoft.PowerApps.Tools.AppChangeManager.csproj">
       <Project>{a93476a3-9dbd-4bd9-b119-23279c95d6ad}</Project>
       <Name>Microsoft.PowerApps.Tools.AppChangeManager</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Assets\icons\dataGrid.png" />
+    <Resource Include="Assets\icons\formViewer.png" />
+    <Resource Include="Assets\icons\htmlViewer.png" />
+    <Resource Include="Assets\icons\inkControl.png" />
+    <Resource Include="Assets\icons\text.png" />
+    <Resource Include="Assets\icons\toggleSwitch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\icons\addpicture.png" />
+    <Resource Include="Assets\icons\barcodescanner.png" />
+    <Resource Include="Assets\icons\businesscardreader.png" />
+    <Resource Include="Assets\icons\button.png" />
+    <Resource Include="Assets\icons\camera.png" />
+    <Resource Include="Assets\icons\chart.png" />
+    <Resource Include="Assets\icons\checkbox.png" />
+    <Resource Include="Assets\icons\combobox.png" />
+    <Resource Include="Assets\icons\datepicker.png" />
+    <Resource Include="Assets\icons\dropdown.png" />
+    <Resource Include="Assets\icons\export.png" />
+    <Resource Include="Assets\icons\gallery.png" />
+    <Resource Include="Assets\icons\icon.png" />
+    <Resource Include="Assets\icons\image.png" />
+    <Resource Include="Assets\icons\label.png" />
+    <Resource Include="Assets\icons\listbox.png" />
+    <Resource Include="Assets\icons\microphone.png" />
+    <Resource Include="Assets\icons\powerbi.png" />
+    <Resource Include="Assets\icons\radio.png" />
+    <Resource Include="Assets\icons\rating.png" />
+    <Resource Include="Assets\icons\richtexteditor.png" />
+    <Resource Include="Assets\icons\richtexteditorinput.png" />
+    <Resource Include="Assets\icons\screen.png" />
+    <Resource Include="Assets\icons\slider.png" />
+    <Resource Include="Assets\icons\timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\icons\audioPlayback.png" />
+    <Resource Include="Assets\icons\videoPlayback.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
