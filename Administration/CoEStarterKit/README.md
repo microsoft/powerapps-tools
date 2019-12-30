@@ -1,3 +1,11 @@
+# Disclaimer
+The CoE Starter Kit is **not supported by the the Power Platform product team** (which is true for all tools available in this GitHub repo). We are a small team in engineering who built this unsupported 'community' sample solution for anyone to use and modify as their own, made available to customers on an 'as-is' basis via an [MIT License](https://github.com/microsoft/powerapps-tools/blob/master/LICENSE). It's possible you might run into some issues, such as installation problems, authorization issues, or bugs in the apps and flows within the solution.
+
+Please, **Do Not raise support tickets for issues related to this toolkit in the Power Platform Admin Center** or any official product portal. Instead, kindly:
+1. Make sure you have read through the entire documentation
+2. If the issue is not addressed in the documentation, raise a new issue in the [issues tab](https://github.com/microsoft/powerapps-tools/issues) of this repo. Someone on our team will respond to your issue there. (Support tickets raised through the product will be redirected to the issues tab here).
+
+
 # Center of Excellence Starter Kit
 Get started with developing your Center of Excellence for PowerApps and Flow.
 
