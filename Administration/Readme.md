@@ -1,4 +1,4 @@
-# Power Apps and Power Automate Administration and Governance
+# Power Apps and Power Automate Administration and Governance - Tools and Labs
 Get started with your administration and governance strategy for Power Apps and Power Automate
 
 This repository consists of three resources:
