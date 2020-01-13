@@ -6,3 +6,4 @@ This is a beginner level lab for you to get hands on experience with the Microso
 Date | Notes
 ---|---
 2020.01.08 | Initial upload to Github
+
