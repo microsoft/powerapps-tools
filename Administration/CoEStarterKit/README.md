@@ -6,13 +6,7 @@ The Center of Excellence (CoE) Starter Kit is a set of templates that are design
 
 Date | Notes
 ---|---
-2020.01.13 | 1. **NEW** Solution has been split into Core Components, Compliance Components and Nurture Components to make it easier to get started with the installation and deployment
-2. **UPDATE** Improved error handling in the Sync Flows, providing a few and daily report of failed Syncs
-3. **UPDATE** Improved reliability of Archive and Clean Up App Flows
-4. **UPDATE** PowerApps App entity through Sync Flow (Apps) now stores SharePoint Form URL for SharePoint embedded list forms & App Type reflects SharePoint Form App
-5. **UPDATE** PowerApps Connector entity through Sync Flow (Connectors) now stores Connector Tier (Standard/Premium) and Publisher (Microsoft etc)
-6. **UPDATE** Canvas Apps have been updated to use the Common Data SErvice (Current Environment) connector to improve performance
-7. **NEW** Solutions now use Environment Variables, to avoid you having to go into individual Flows and update variables 
+2020.01.13 | 1. **NEW** Solution has been split into Core Components, Compliance Components and Nurture Components to make it easier to get started with the installation and deployment 2. **UPDATE** Improved error handling in the Sync Flows, providing a few and daily report of failed Syncs 3. **UPDATE** Improved reliability of Archive and Clean Up App Flows 4. **UPDATE** PowerApps App entity through Sync Flow (Apps) now stores SharePoint Form URL for SharePoint embedded list forms & App Type reflects SharePoint Form App 5. **UPDATE** PowerApps Connector entity through Sync Flow (Connectors) now stores Connector Tier (Standard/Premium) and Publisher (Microsoft etc) 6. **UPDATE** Canvas Apps have been updated to use the Common Data SErvice (Current Environment) connector to improve performance 7. **NEW** Solutions now use Environment Variables, to avoid you having to go into individual Flows and update variables 
 
 ## Known Issues and Limitations
 1. The CoE Starter Kit is currently not available in GCC environments, as the Flow Management connector is not available in this environment yet
