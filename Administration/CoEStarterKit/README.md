@@ -1,5 +1,30 @@
 # Center of Excellence Starter Kit
-The Center of Excellence (CoE) Starter Kit is a set of templates that are designed to help develop a strategy for adopting, maintaining and supporting the Power Platform, with a focus on Power Apps and Power Automate. The kit provides automation and tooling to help teams build monitoring and automation necessary to support a CoE.  The foundation of the kit is a Common Data Service (CDS) data model and workflows to collect resource information across the environments in the tenant (Sync flows).  The kit includes multiple Power Apps and Power BI analytics reports to view and interact with the data collected.  The kit also provides several assets that provide templates and suggested patterns and practices for implementing CoE efforts. The assets part of the CoE Starter Kit should be seen as a template from which you inherit your individual solution or can serve as inspiration for implementing your own apps and flows.
+The Center of Excellence (CoE) Starter Kit is a set of templates that are designed to help develop a strategy for adopting, maintaining and supporting the Power Platform, with a focus on Power Apps and Power Automate. The kit includes multiple Power Apps and Power BI analytics reports to view and interact with the data collected.  The kit also provides several assets that provide templates and suggested patterns and practices for implementing CoE efforts. The assets part of the CoE Starter Kit should be seen as a template from which you inherit your individual solution or can serve as inspiration for implementing your own apps and flows.
+
+The CoE Starter Kit consists of three solutions;
+
+### Center of Excellence – Core Components 
+These components provide the core to get started with setting up a CoE – they sync all your resources into entities and build admin apps on top of that to help you get more visibility of what apps, flows and makers are in your environment. Additionally, apps like the DLP Editor and Set New App Owner help with daily admin tasks.
+The Core Components solution only contains assets relevant to admins. No assets need to be shared with other makers or end users.
+**Requirements:**  Users(s) will require a Per User license, as well as Global or Power Platform Service Admin permissions
+
+### Center of Excellence – Compliance Components
+Once you are familiar with your environments and resources, you will start thinking about audit and compliance processes for your apps. You will also want to gather additional information about your apps from your makers, and to audit specific connectors or app usage - apps like the Developer Compliance Center and flows to identify connector usage part of this solution will help with that.
+The Audit Components solution contains assets relevant to admins and existing makers. 
+The Audit Components provides a layer on top of the Core Components, it is required to install the Core Components prior to using the Audit Components. 
+**License Requirements:**  Makers participating in the audit and compliance workflows will need a Per App or Per User License.
+
+### Center of Excellence – Nurture Components
+An essential part of establishing a CoE is nurturing your makers and internal community. You will want to share best practices and templates and onboard new makers – the assets part of this solution, like the Welcome Email and Template Catalog can help develop a strategy for this motion.
+The Nurture Components solution contains assets relevant to everyone in the organisation. 
+The Nurture Components provides a layer on top of the Core Components, it is required to install the Core Components prior to using the Nurture Components.
+**License Requirements:**  Anyone in CoE community will need a Per App or Per User License.
+
+We recommend getting started and familiar with the **Center of Excellence – Core Components** before adding the Audit and Nurture components or building your own assets on top of the Core Components entities.
+1.	If you are new to the CoE Starter Kit, start by installing the CoE Starter Kit – Core Components by following the Setup Instructions
+2.	If you have previously installed the CoE Starter Kit MANAGED solution and have already started collecting metadata for your apps through the Developer Compliance Center, export the data from the PowerApps App entity, uninstall the CoE Starter Kit solution, install the CoE Starter Kit – Core Components solution and re-import the PowerApps App entity data. Please view the [documentation](https://github.com/microsoft/powerapps-tools/blob/master/Administration/CoEStarterKit/CoE%20Starter%20Kit%20-%20Documentation%20and%20Setup%20Instructions.pdf) for detailed instructions on how to do this.
+3.	If you have previously installed the CoE Starter Kit UNMANAGED solution, uninstall the solution before installing the CoE Starter Kit – Core Components solution.
+
 
 ### Latest Update
 Date | Notes
