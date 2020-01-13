@@ -7,7 +7,7 @@ Here is a list of all the components in the starter kit:
 These items are installed in the CDS solution 'Center Of Excellence'. You must install the solution to access these components.
 #### Common Data Service Entities
 Solution | Entity | Description 
--|-
+-|-|-
 Core Components | Environments | Represents the Environment object, which contains PowerApps, Flows and Connectors. 
 Core Components | PowerApps Apps | Represents a PowerApps App.
 Core Components | Flows | Represents a Flow.
@@ -47,9 +47,9 @@ List of Flows that come within each solution.
     - The app has business justification details provided but has not been published in 60 days or is missing a description.
     - The app has business justification details provided and has indicated high business impact, and has not submitted a mitigation plan to the attachments field.
 - ###### Admin | App Archive and Clean Up - Start Approval
-    Checks for apps that have not been modified in the last six months (configurable) and asks the app owner (via Flow Approvals) if the app can be archived.  This Flow starts the approval and writes the Approval Task to the ‘Archive Approval’ CDS Entity. 
+    Checks for apps that have not been modified in the last six months (configurable) and asks the app owner (via Flow Approvals) if the app can be archived.  This Flow starts the approval and writes the Approval Task to the â€˜Archive Approvalâ€™ CDS Entity. 
 - ###### Admin | App Archive and Clean Up - Check Approval
-    Monitors Approval Responses of the App Archive and Clean Up – Start Approval Flow and, if approved, archives the app file to SharePoint. 
+    Monitors Approval Responses of the App Archive and Clean Up â€“ Start Approval Flow and, if approved, archives the app file to SharePoint. 
     Pre-Requisite: Create a SharePoint document library to store the archived apps and configure this in Flow 
     Update: By default, this Flow will archive the application but not remove it or its permission from the environment. Update this Flow based on your requirements, to delete the app from the environment, or remove app permissions.   
 - ###### Admin | Find and disable flows that leverage certain connectors
