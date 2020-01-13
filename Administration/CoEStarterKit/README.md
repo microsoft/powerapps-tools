@@ -1,106 +1,38 @@
 # Center of Excellence Starter Kit
-Get started with developing your Center of Excellence for PowerApps and Flow.
+The Center of Excellence (CoE) Starter Kit is a set of templates that are designed to help develop a strategy for adopting, maintaining and supporting the Power Platform, with a focus on Power Apps and Power Automate. The kit provides automation and tooling to help teams build monitoring and automation necessary to support a CoE.  The foundation of the kit is a Common Data Service (CDS) data model and workflows to collect resource information across the environments in the tenant (Sync flows).  The kit includes multiple Power Apps and Power BI analytics reports to view and interact with the data collected.  The kit also provides several assets that provide templates and suggested patterns and practices for implementing CoE efforts. The assets part of the CoE Starter Kit should be seen as a template from which you inherit your individual solution or can serve as inspiration for implementing your own apps and flows.
 
-### Updates
+### Latest Update
 Date | Notes
 ---|---
-2019.06.09 | Initial release
-2019.06.17 | Updated documentation
-2019.06.20 | Fixed issues with connecting to CDS in Power BI dashboard
-2019.06.24 | Fixed issue with Flow reading null field value, updated PBI dashboard, removed Audit Log Sync template from solution (provided as package in download)
-2019.07.17 | Fixed issues with validation errors in Flow sync template (including modifications to PowerApps App / iconuri field and Flow / displayname field was not long enough). Addded DLP Editor direct download.
-2019.08.26 | Added Solution that does not contain canvas (no canvas apps), provided all canvas app import packages individually. Also added a new canvas app to replace PowerApps app owners.
-2019.09.30 | Major updates to Sync template: <br> - Split Sync Template Flow into 5 Flows, making it easier to read and modify: <br> 1. Admin &#124; Sync Template v2 - runs on a schedule and updates environments <br> 2. Admin &#124; Sync Template v2 (Apps) - runs when an environment is created/modified and gets App information, also updates record if Apps are deleted <br> 3. Admin &#124; Sync Template v2 (Flows) - runs when an environment is created/modified and gets Flow information, also updates record if Flows are deleted <br> 4. Admin &#124; Sync Template v2 (Connectors) - runs when an environment is created/modified and gets Connector information <br> 5. Admin &#124; Sync Template v2 (Custom Connector) - runs when an environment is created/modified and gets Custom Connector information <br> - Sync template errors: All Flows implement a Try/Catch/Error logic, and if they fail will send an email to the owner with a link to the workflow run instance. For that, when configuring the Flow owners will need to specify a Flow environment URL. We could look at making this a setting in the CoE kit when they're setting it up so they only have to specify it once. <br> Added 'deleted date' to the entity schema <br> - Power BI: Fixed issues with displaying Flow cities <br> - Model driven app (Power Platform Admin View): Removed 'New' button from all grids to prevent creation of data that's not synced with the Power Platform server
-2019.10.10 | 1. **NEW** Training In A Day Management and Registration Canvas Apps - Use these to create and manage registration and logistics of trainings, hackathons and other learning events. <br>2. **NEW** DLP Customizer - Add Custom connectors or HTTP connectors to a DLP policy with this canvas app.<br> 3. Updates Sync Template V2 (optimized CDS requests, accomodate writing to new field in Maker table ('office location')
-2019.11.14 | 1. **NEW** Template Catalog Canvas app - Connect to a data source that allows users to download templates to get started with app development. <br> 2. **New** Archive and Clean Up Apps Flow - Crawls the tenant to check which apps have not been modififed over specified period of time, and sends an approval to owner asking to archive the .msapp file and delete the actual app. This is intended to clean up old test apps or apps that are no longer used. <br>3. **New** Find and disable flows that leverage certain connectors - Specified connectors will be blocked in Flow with this reactive Flow. <br> 4. **NEW** Notify app creators of an un-authorized connector and give access to the administrators - This flow flags the applications that use specified connectors and automatically gives admins access
+2020.01.13 | 
+1. **NEW** Solution has been split into Core Components, Compliance Components and Nurture Components to make it easier to get started with the installation and deployment
+2. **UPDATE** Improved error handling in the Sync Flows, providing a few and daily report of failed Syncs
+3. **UPDATE** Improved reliability of Archive and Clean Up App Flows
+4. **UPDATE** PowerApps App entity through Sync Flow (Apps) now stores SharePoint Form URL for SharePoint embedded list forms & App Type reflects SharePoint Form App
+5. **UPDATE** PowerApps Connector entity through Sync Flow (Connectors) now stores Connector Tier (Standard/Premium) and Publisher (Microsoft etc)
+6. **UPDATE** Canvas Apps have been updated to use the Common Data SErvice (Current Environment) connector to improve performance
+7. **NEW** Solutions now use Environment Variables, to avoid you having to go into individual Flows and update variables 
 
-## Known Issues
-Currently no known issues.
+## Known Issues and Limitations
+1. The CoE Starter Kit is currently not available in GCC environments, as the Flow Management connector is not available in this environment yet
+2. Set New App Owner: the management connector action does not support setting new owners for SharePoint apps.
+3. DLP Editor: Only returns the first 2000 environments and can not write back environment-type policies.
+4. Admin Sync Template v2 Flows: The CDS connector might experience some throttling limits if the tenant has a lot of resources. If you see 429 errors in the Flow run history occurring in the later runs, you can configure a Retry Policy. 
 
 ## Documentation
-View the [documentation](./Documentation.pdf) ([download](https://github.com/microsoft/powerapps-tools/raw/master/Administration/CoEStarterKit/Documentation.pdf))
+View the [documentation](./CoE Starter Kit - Documentation and Setup Instructions.pdf) ([download](https://github.com/microsoft/powerapps-tools/raw/master/Administration/CoEStarterKit/CoE Starter Kit - Documentation and Setup Instructions.pdf))
 
 ## Download Pack
 Directly download the entire solution and all additional components from [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload)
 
 ## Components
-Here is a list of all the components in the starter kit:
-### Solution-aware components
-These items are installed in the CDS solution 'Center Of Excellence'. You must install the solution to access these components.
-#### Common Data Service Entities
-Entity | Description 
--|-
-Environments | Represents the Environment object, which contains PowerApps, Flows and Connectors. 
-PowerApps Apps | Represents a PowerApps App.
-Flows | Represents a Flow.
-Connectors | Represents a standard or custom connector.
-Connection References | Represents a connection used in a PowerApp or Flow.
-Makers | Represents a user who has created a PowerApp, Flow, Custom Connector or Environment.
-Audit Logs | Represents session details for PowerApps. 
-CoE Settings | Settings configurations live in a record here. Contains details for configuring the branding and support aspect of the solution.
+Find a list of all components in the documentation file and a list in the Individual Components folder.
 
-#### Flows
-List of Flows that come with the solution.
-- ##### Admin | Sync Template (v1)
-    "Uber" sync Flow that syncs resource data from the admin connectors to the CDS resource entities. 
-- ##### Admin | Sync Template (v2)
-    Runs on a schedule and updates environments
-- ##### Admin | Sync Template v2 (Apps)
-    Runs when an environment is created/modified and gets App information, also updates record if Apps are deleted
-- ##### Admin | Sync Template v2 (Flows)
-    Runs when an environment is created/modified and gets Flow information, also updates record if Flows are deleted
-- ##### Admin | Sync Template v2 (Connectors)
-    Runs when an environment is created/modified and gets Connector information
-- ##### Admin | Sync Template v2 (Custom Connector)
-    Runs when an environment is created/modified and gets Custom Connector information
-- ##### Admin | Sync Audit Logs
-    Uses the Office 365 Audit logs custom connector to write audit log data into the CDS Audit Log entity. This will generate a view of usage for PowerApps.
-- ##### Admin | Welcome Email
-    Sends an email to a user who creates a PowerApp, Flow, Custom Connector or Environment 
-- ##### Admin | Compliance detail request
-    Sends an email to users who have PowerApps apps in the tenant who are not compliant with specific thresholds:
-    - The app is shared with > 20 Users or at least 1 group and the business justification details have not been provided.
-    - The app has business justification details provided but has not been published in 60 days or is missing a description.
-    - The app has business justification details provided and has indicated high business impact, and has not submitted a mitigation plan to the attachments field.
-    
-#### Canvas Apps
-- ##### Developer Compliance Center
-    This app is used in the PowerApps App Auditing Process, defined later in this document, as a tool for users to submit information to the center of excellence admins as business justification to stay in compliance. They can also use the app to update the description and re-publish, which are other ways to stay in compliance. 
-- ##### App Catalog
-    Canvas app that gives access to the entire organization to make apps more discoverable. Admins audit and validate certain apps which are graduated to the app catalog if the app is meant to be shared broadly.
-- ##### DLP Editor
-    Canvas app that reads and updates DLP policies while showing a list of apps that are affected by the policy configurations.
-- ##### PowerApps Admin - Set Owner
-    Standalone app that updates the canvas app owner and can also assign additional permissions to apps.
- 
-#### Model Driven App
-Power Platform Admin View. A model driven app that provides an interface used to navigate the items in the CDS custom entities. It provides access to views and forms for the custom entities in the solution.
-Business Process Flows
-
-#### PowerApps App Approval BPF (Business Process Flow)
-This process helps the admin audit the PowerApps App audit process by providing a visual placeholder for the stage in the process they are currently on.
-
-#### Security Roles
-Role | Description
--|-
-Power Platform Admin SR | Gives full access to create, read, write and delete operations on the custom entities.
-Power Platform Maker SR | Gives read and write access to the resource custom entities.
-Power Platform User SR | Gives read only access to the resources in the custom entities.
-
-### Non-Solution aware components
-The following components are seperate files that are located in the download pack, but are not installed when the CDS solution is installed.
-
-#### Power BI Report
-Provides a wholistic view with visualizations and insights of data in the CDS entities: Environments, PowerApps Apps, Flows, Connectors, Connection References, Makers and Audit Logs.
- 
-#### Office 365 Logs Custom Connector
-The custom connector swagger definition for getting audit logs programmatically.
-
-#### Flow: Sync Audit Logs
-This Flow comes as a package (.zip) and should be imported seperately from the solution.
-
-#### Documentation
-The most updated details on the solution will always be published in the documentation file.
+## Disclaimer
+The Center of Excellence (CoE) Starter Kit is not supported by the Power Platform product team (which is true for all tools available in this GitHub repo). We are a small team in Engineering who built this unsupported community sample solution for anyone to use and modify as their own, made available to customers on an as-is basis via an [MIT license](https://github.com/microsoft/powerapps-tools/blob/master/LICENSE). It’s possible you might run into some issues, such as installation problems, authorization issues, or bugs in the apps and flows within the solution. 
 
 ## Support
-Questions, comments, concerns, or interest in contributing? Please post your feedback in the [Administering PowerApps community forum](https://powerusers.microsoft.com/t5/Administering-PowerApps/bd-p/Admin_PowerApps). 
+Please, do not raise support tickets for issues related to this toolkit in the Power Platform Admin Center or any official product portal. 
+Instead, kindly. 
+1. Make sure you have read through the entire documentation 
+2. If the issue is not addressed in the documentation, raise a new issue in the [issues tab](https://github.com/microsoft/powerapps-tools/issues) of this repo. Someone from the team will respond to your issue there.  
