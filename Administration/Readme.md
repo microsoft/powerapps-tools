@@ -9,4 +9,5 @@ This repository consists of three resources:
 ### Updates
 Date | Notes
 ---|---
+2020.01.13 | New version of CoE Starter Kit
 2020.01.07 | Updated folder structure to AdminInADay, CoEStarterKit, EnvironmentInventory
