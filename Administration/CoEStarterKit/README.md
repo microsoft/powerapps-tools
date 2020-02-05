@@ -38,6 +38,8 @@ Date | Notes
 2. Set New App Owner: the management connector action does not support setting new owners for SharePoint apps.
 3. DLP Editor: Only returns the first 2000 environments and can not write back environment-type policies.
 4. Admin Sync Template v2 Flows: The CDS connector might experience some throttling limits if the tenant has a lot of resources. If you see 429 errors in the Flow run history occurring in the later runs, you can configure a Retry Policy. 
+## 5. Users in some environments might get an "Invalid Argument" error on trying to import the solution. This is a known issue, and we are working on providing a fix for this soon. ##
+
 
 ## Documentation
 View the [documentation](https://github.com/microsoft/powerapps-tools/blob/master/Administration/CoEStarterKit/CoE%20Starter%20Kit%20-%20Documentation%20and%20Setup%20Instructions.pdf)
