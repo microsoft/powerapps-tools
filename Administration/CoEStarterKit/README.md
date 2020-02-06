@@ -1,6 +1,10 @@
 # Center of Excellence Starter Kit
 The Center of Excellence (CoE) Starter Kit is a set of templates that are designed to help develop a strategy for adopting, maintaining and supporting the Power Platform, with a focus on Power Apps and Power Automate. The kit includes multiple Power Apps and Power BI analytics reports to view and interact with the data collected.  The kit also provides several assets that provide templates and suggested patterns and practices for implementing CoE efforts. The assets part of the CoE Starter Kit should be seen as a template from which you inherit your individual solution or can serve as inspiration for implementing your own apps and flows.
 
+```diff
+- Some users have reported getting an [Invalid argument error](https://github.com/microsoft/powerapps-tools/issues/62) on importing the solution. This is due to a breaking change on the CDS side. A permanent fix is being worked on, in the meantime if you are getting this error please use the solution file in the **TEMP FIX for Invalid Argument Error** file instaed
+```
+
 The CoE Starter Kit consists of three solutions;
 
 ### Center of Excellence – Core Components 
@@ -29,6 +33,7 @@ We recommend getting started and familiar with the **Center of Excellence – Co
 ### Latest Update
 Date | Notes
 ---|---
+2020.02.06 | Added temporary solution file for environments that experience the Invalid Argument error on solution import.
 2020.01.13 | 1. **NEW** Solution has been split into Core Components, Compliance Components and Nurture Components to make it easier to get started with the installation and deployment<br> 2. **UPDATE** Improved error handling in the Sync Flows, providing a few and daily report of failed Syncs <br>3. **UPDATE** Improved reliability of Archive and Clean Up App Flows <br>4. **UPDATE** PowerApps App entity through Sync Flow (Apps) now stores SharePoint Form URL for SharePoint embedded list forms & App Type reflects SharePoint Form App <br>5. **UPDATE** PowerApps Connector entity through Sync Flow (Connectors) now stores Connector Tier (Standard/Premium) and Publisher (Microsoft etc) <br>6. **UPDATE** Canvas Apps have been updated to use the Common Data SErvice (Current Environment) connector to improve performance <br>7. **NEW** Solutions now use Environment Variables, to avoid you having to go into individual Flows and update variables 
 
 (view previous updates in the [PreviousSolutionVersions](https://github.com/microsoft/powerapps-tools/tree/master/Administration/CoEStarterKit/PreviousSolutionVersions) folder
