@@ -45,7 +45,6 @@ Date | Notes
 3. DLP Editor: Only returns the first 2000 environments and can not write back environment-type policies.
 4. Admin Sync Template v2 Flows: The CDS connector might experience some throttling limits if the tenant has a lot of resources. If you see 429 errors in the Flow run history occurring in the later runs, you can configure a Retry Policy. 
 5. Sync Flows (Model Driven App): We are looking at resolving some permission errors users experience with syncing model-driven apps.
-
 **6. Users in some environments might get an "Invalid Argument" error on trying to import the solution. This is a known issue, and we are working on providing a fix for this soon.**
 
 
