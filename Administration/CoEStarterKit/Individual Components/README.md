@@ -52,9 +52,9 @@ List of Flows that come within each solution.
     Monitors Approval Responses of the App Archive and Clean Up – Start Approval Flow and, if approved, archives the app file to SharePoint. 
     Pre-Requisite: Create a SharePoint document library to store the archived apps and configure this in Flow 
     Update: By default, this Flow will archive the application but not remove it or its permission from the environment. Update this Flow based on your requirements, to delete the app from the environment, or remove app permissions.   
-- ###### Admin | Find and disable flows that leverage certain connectors
+- ###### SETUP REQUIRED | Admin | Find and disable flows that leverage certain connectors
     Checks if any Flows are using specific connectors, notifies the Flow maker and disables the Flow. The admin will receive a report.   
-- ###### Admin | Find and add admins as owners for apps that leverage certain connectors 
+- ###### SETUP REQUIRED | Admin | Find and add admins as owners for apps that leverage certain connectors 
     Checks for apps that leverage certain connectors; notifies the app maker and shares the app with the admin security group. 
 
 ##### Nurture Components
