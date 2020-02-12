@@ -33,6 +33,7 @@ We recommend getting started and familiar with the **Center of Excellence – Co
 ### Latest Update
 Date | Notes
 ---|---
+2020.02.12 | New Power BI Dashboard
 2020.02.11 | Bug fixes to Sync Template (Model Driven App), Training in a day Flows (updated to use CDS Current Environment), introducing new Setup Instructions documentation 
 2020.02.06 | Added temporary solution file for environments that experience the Invalid Argument error on solution import.
 2020.01.13 | 1. **NEW** Solution has been split into Core Components, Compliance Components and Nurture Components to make it easier to get started with the installation and deployment<br> 2. **UPDATE** Improved error handling in the Sync Flows, providing a few and daily report of failed Syncs <br>3. **UPDATE** Improved reliability of Archive and Clean Up App Flows <br>4. **UPDATE** PowerApps App entity through Sync Flow (Apps) now stores SharePoint Form URL for SharePoint embedded list forms & App Type reflects SharePoint Form App <br>5. **UPDATE** PowerApps Connector entity through Sync Flow (Connectors) now stores Connector Tier (Standard/Premium) and Publisher (Microsoft etc) <br>6. **UPDATE** Canvas Apps have been updated to use the Common Data SErvice (Current Environment) connector to improve performance <br>7. **NEW** Solutions now use Environment Variables, to avoid you having to go into individual Flows and update variables 
