@@ -1,4 +1,3 @@
 # CoE Starter Kit - Invalid Argument Fix
 
-Some users may get an **Invalid Argument** on trying to import the solution. This is due to a breaking change on the CDS side for pre-existing solutions on an older version that use Environment Variables. A fix is being rolled out and should be in all tenants in the next two weeks. 
-In the meantime, if you are experiencing this issue, please import the solution file in this folder to your environment.
+If your environment has been upgraded to [2020 Release Wave 1](https://docs.microsoft.com/en-us/power-platform-release-plan/2020wave1/), you will receive an Invalid Argument error importing the regular solution. You will have to use the solution files in this folder in your environment instead.
