@@ -14,7 +14,8 @@ In the walk through provided in the [documentation](https://aka.ms/crisis-commun
 
 Please read the full documentation [https://aka.ms/crisis-communication-app-docs](https://aka.ms/crisis-communication-app-docs).
 
-[Download the assets](https://github.com/microsoft/powerapps-tools/raw/master/Apps/CrisisCommunication/CrisisCommunicationPackage.zip).
+## Download pack
+Directly [download all assets](https://github.com/microsoft/powerapps-tools/raw/master/Apps/CrisisCommunication/CrisisCommunicationPackage.zip).
 
 ## Latest Update
 Date | Notes
