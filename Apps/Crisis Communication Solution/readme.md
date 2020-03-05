@@ -14,6 +14,8 @@ In the walk through provided in the [documentation](https://example.com), you wi
 
 Please read the full documentation [here](https://example.com).
 
+[Download the assets](https://github.com/microsoft/powerapps-tools/raw/master/Apps/Crisis%20Communication%20Solution/CrisisCommunicationPackage.zip).
+
 ## Latest Update
 Date | Notes
 -|-
