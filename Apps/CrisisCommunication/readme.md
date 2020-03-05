@@ -4,6 +4,8 @@ end users with information about a crisis. Quickly get updates on
 internal company news, get answers to frequently asked questions, and get access
 to important information like links and emergency contacts. This app requires a
 small amount of setup to make it your own.
+
+Read the blog announcement [here](https://powerapps.microsoft.com/en-us/blog/crisis-communication-a-power-platform-template/).
  
 In the walk through provided in the [documentation](https://aka.ms/crisis-communication-app-docs), you will learn how to:
 - Create a location for your data
