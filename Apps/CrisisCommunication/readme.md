@@ -20,3 +20,6 @@ Please read the full documentation [https://aka.ms/crisis-communication-app-docs
 Date | Notes
 -|-
 2020.04.03 | Initial solution launch: <br>1. "CrisisCommunication.zip" - Canvas App for end users<br>2. "CrisisCommunicationAdmin.zip" - Canvas App for administrating the content <br>3. "DeploySPLists.zip" - Flow to initialize SharePoint Online Lists for managing content <br>4. "CrisisCommunicationNewsNotification.zip" - Flow to send out notifications when company news updates are published <br>5. "Presence status report.pbix" - Power BI Dashboard to monitor absences and other data
+
+## Support
+Please [report bugs here](https://github.com/microsoft/powerapps-tools/issues/new?assignees=denisem-msft&labels=crisiscommapp&template=-crisis-communication-app--bug-report.md&title=%5BBUG%5D%3A+issue+title).
