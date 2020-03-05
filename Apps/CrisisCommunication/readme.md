@@ -14,7 +14,7 @@ In the walk through provided in the [documentation](https://aka.ms/crisis-commun
 - Import flows to send notifications to users
 - Create a centrally managed Teams team to aggregate data and to effectively respond to issues
 
-Please read the full documentation [https://aka.ms/crisis-communication-app-docs](https://aka.ms/crisis-communication-app-docs).
+Please read the full documentation for installation instructions and more details [https://aka.ms/crisis-communication-app-docs](https://aka.ms/crisis-communication-app-docs).
 
 ## Download pack
 Directly [download all assets](https://github.com/microsoft/powerapps-tools/raw/master/Apps/CrisisCommunication/CrisisCommunicationPackage.zip).
