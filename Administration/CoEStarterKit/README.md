@@ -1,7 +1,7 @@
 # Center of Excellence Starter Kit
 The Center of Excellence (CoE) Starter Kit is a set of templates that are designed to help develop a strategy for adopting, maintaining and supporting the Power Platform, with a focus on Power Apps and Power Automate. The kit includes multiple Power Apps and Power BI analytics reports to view and interact with the data collected.  The kit also provides several assets that provide templates and suggested patterns and practices for implementing CoE efforts. The assets part of the CoE Starter Kit should be seen as a template from which you inherit your individual solution or can serve as inspiration for implementing your own apps and flows.
 
-***If your enviornment has been updated with the [2020 Release Wave 1](https://docs.microsoft.com/en-us/power-platform-release-plan/2020wave1/), you will need to use the solutions in the [TEMP FIX for Invalid Argument Error](https://github.com/microsoft/powerapps-tools/tree/master/Administration/CoEStarterKit/TEMP%20FIX%20for%20Invalid%20Argument%20Error) folder instaed***
+***If you are receiving an Invalid Argument error trying to import the solutions, please use the solutions in the [TEMP FIX for Invalid Argument Error](https://github.com/microsoft/powerapps-tools/tree/master/Administration/CoEStarterKit/TEMP%20FIX%20for%20Invalid%20Argument%20Error) folder instaed***
 
 The CoE Starter Kit consists of three solutions;
 
