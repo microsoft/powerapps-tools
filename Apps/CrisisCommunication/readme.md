@@ -22,6 +22,7 @@ Directly [download all assets](https://github.com/microsoft/powerapps-tools/raw/
 ## Latest Update
 Date | Notes
 -|-
+2020.04.05 | Updates: <br>- Bugfix: Resolved issue in which conditions for updating an existing date and creating new status updates were reversed. Please update your app to the latest version to resolve this issue. <br>- Bugfix: Corrected the conditions enabling and disabling features in the app <br>- Revised accessible labels and tab index <br>- Added support for Japanese <br>- Added feature to Update Status <br>- Removed unused controls
 2020.04.03 | Initial solution launch: <br>1. "CrisisCommunication.zip" - Canvas App for end users<br>2. "CrisisCommunicationAdmin.zip" - Canvas App for administrating the content <br>3. "DeploySPLists.zip" - Flow to initialize SharePoint Online Lists for managing content <br>4. "CrisisCommunicationNewsNotification.zip" - Flow to send out notifications when company news updates are published <br>5. "Presence status report.pbix" - Power BI Dashboard to monitor absences and other data
 
 ## Support
