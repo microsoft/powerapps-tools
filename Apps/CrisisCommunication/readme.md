@@ -22,6 +22,7 @@ Directly [download all assets](https://github.com/microsoft/powerapps-tools/raw/
 ## Latest Update
 Date | Notes
 -|-
+2020.03.10 | Updates: <br>- Updated experiences for galleries in Crisis Communication app. <br>- Made preferred notification a required field in Admin app. <br>- Included email receipts for sharing status and making requests.
 2020.03.09 | V2 release: <br>Crisis Communication app <br>- Updated design of Crisis Communication app. <br>- Changed calendar component to allow selection of multiple non-consecutive dates. <br>Crisis Communication Admin app <br>- Removed unused fields in the forms
 2020.03.06 | Updates: <br>- Added support for GCC (Please see separate files for importing, marked GCC) <br> - Added usability improvements
 2020.03.05 | Updates: <br>- Bugfix: Resolved issue in which conditions for updating an existing date and creating new status updates were reversed. Please update your app to the latest version to resolve this issue. <br>- Bugfix: Corrected the conditions enabling and disabling features in the app <br>- Revised accessible labels and tab index <br>- Added support for Japanese <br>- Added feature to Update Status <br>- Removed unused controls
