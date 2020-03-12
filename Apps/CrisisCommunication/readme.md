@@ -22,6 +22,7 @@ Directly [download all assets](https://github.com/microsoft/powerapps-tools/raw/
 ## Latest Update
 Date | Notes
 -|-
+2020.03.12 | Updates: <br>- Improved FAQ component: can support categories and order of items if columns are added to the list <br>- Fixed issue with setting up auto replies <br>- Performance improvements, removed unused controls <br>- Included table of translations <br>- Added support for Hebrew and Arabic
 2020.03.11 | Updates: <br>- Included fix for Issue #95 in which the home menu was not responding well to wide screen resolutions <br>- Included fix related to Issue #97 in which sending of an email to the selected people would fail if it included those selected in the contacts screen <br>- Improved usability and accessibility
 2020.03.10 | Updates: <br>- Updated experiences for galleries in Crisis Communication app. <br>- Made preferred notification a required field in Admin app. <br>- Included email receipts for sharing status and making requests.
 2020.03.09 | V2 release: <br>Crisis Communication app <br>- Updated design of Crisis Communication app. <br>- Changed calendar component to allow selection of multiple non-consecutive dates. <br>Crisis Communication Admin app <br>- Removed unused fields in the forms
