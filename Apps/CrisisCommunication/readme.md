@@ -22,6 +22,7 @@ Directly [download all assets](https://github.com/microsoft/powerapps-tools/raw/
 ## Latest Update
 Date | Notes
 -|-
+2020.03.16 | Updates: <br>- Bugfix: fixed a bug affecting setting up auto-replies. <br>- Implemented a way to configure more work status options more easily. <br>- Gallery navigation for Tips, News, and RSS have been changed to scroll bars due to a bug. 
 2020.03.12 | Updates: <br>- Improved FAQ component: can support categories and order of items if columns are added to the list <br>- Fixed issue with setting up auto replies <br>- Performance improvements, removed unused controls <br>- Included table of translations <br>- Added support for Hebrew and Arabic
 2020.03.11 | Updates: <br>- Included fix for Issue #95 in which the home menu was not responding well to wide screen resolutions <br>- Included fix related to Issue #97 in which sending of an email to the selected people would fail if it included those selected in the contacts screen <br>- Improved usability and accessibility
 2020.03.10 | Updates: <br>- Updated experiences for galleries in Crisis Communication app. <br>- Made preferred notification a required field in Admin app. <br>- Included email receipts for sharing status and making requests.
