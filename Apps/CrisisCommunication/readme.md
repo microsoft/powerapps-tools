@@ -16,12 +16,12 @@ In the walk through provided in the [documentation](https://aka.ms/crisis-commun
 
 Please read the full documentation for installation instructions and more details [https://aka.ms/crisis-communication-app-docs](https://aka.ms/crisis-communication-app-docs).
 
-|Component|	Filename|	GCC version|	Description
-|-|-|-|-|
-SharePoint list creation flow|	DeploySPLists.zip|	DeploySPLists.zip|	Creates the lists necessary to hold the data in the app.
-End-user app and send a request flow|	CrisisCommunication.zip|	CrisisCommunicationGCC.zip|	Displays content to the end-user and submits requests to the central crisis management team.
-Admin application|	CrisisCommunicationAdmin.zip|	CrisisCommunicationAdmin.zip|	Allows the crisis management team to update the content in the end-user app
-News push notification flow|	CrisisCommunicationNewsNotification.zip	|CrisisCommunicationNewsNotificationGCC.zip|	Sends a push notification to end-users whenever there is a new internal company update
+|Component|	Filename |	Description
+|-|-|-|
+SharePoint list creation flow|	DeploySPLists.zip <br>GCC: DeploySPLists.zip|	Creates the lists necessary to hold the data in the app.
+End-user app and send a request flow|	CrisisCommunication.zip <br>GCC:	CrisisCommunicationGCC.zip|	Displays content to the end-user and submits requests to the central crisis management team.
+Admin application|	CrisisCommunicationAdmin.zip <br>GCC: CrisisCommunicationAdmin.zip|	Allows the crisis management team to update the content in the end-user app
+News push notification flow|	CrisisCommunicationNewsNotification.zip <br>GCC: CrisisCommunicationNewsNotificationGCC.zip|	Sends a push notification to end-users whenever there is a new internal company update
 
 ## Download pack
 Directly [download all assets](https://github.com/microsoft/powerapps-tools/raw/master/Apps/CrisisCommunication/CrisisCommunicationPackage.zip).
