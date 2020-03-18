@@ -31,6 +31,7 @@ We recommend getting started and familiar with the **Center of Excellence – Co
 ### Latest Update
 Date | Notes
 ---|---
+2020.03.18 | Added Solution (Custom Connector and Power Automate flows) to configure the sync of Audit Logs if MFA is enabled or basic authentication is not desired.
 2020.02.12 | New Power BI Dashboard
 2020.02.11 | Bug fixes to Sync Template (Model Driven App), Training in a day Flows (updated to use CDS Current Environment), introducing new Setup Instructions documentation 
 2020.02.06 | Added temporary solution file for environments that experience the Invalid Argument error on solution import.
