@@ -1,7 +1,14 @@
 # Center of Excellence Starter Kit
 The Center of Excellence (CoE) Starter Kit is a set of templates that are designed to help develop a strategy for adopting, maintaining and supporting the Power Platform, with a focus on Power Apps and Power Automate. The kit includes multiple Power Apps and Power BI analytics reports to view and interact with the data collected.  The kit also provides several assets that provide templates and suggested patterns and practices for implementing CoE efforts. The assets part of the CoE Starter Kit should be seen as a template from which you inherit your individual solution or can serve as inspiration for implementing your own apps and flows.
 
-***If you are receiving an Invalid Argument error trying to import the solutions, please use the solutions in the [TEMP FIX for Invalid Argument Error](https://github.com/microsoft/powerapps-tools/tree/master/Administration/CoEStarterKit/TEMP%20FIX%20for%20Invalid%20Argument%20Error) folder instaed***
+### Latest Update
+Date | Notes
+---|---
+2020.03.18 | Added Solution (Custom Connector and Power Automate flows) to configure the sync of Audit Logs if MFA is enabled or basic authentication is not desired.
+2020.02.12 | New Power BI Dashboard
+2020.02.11 | Bug fixes to Sync Template (Model Driven App), Training in a day Flows (updated to use CDS Current Environment), introducing new Setup Instructions documentation 
+2020.02.06 | Added temporary solution file for environments that experience the Invalid Argument error on solution import.
+2020.01.13 | 1. **NEW** Solution has been split into Core Components, Compliance Components and Nurture Components to make it easier to get started with the installation and deployment<br> 2. **UPDATE** Improved error handling in the Sync Flows, providing a few and daily report of failed Syncs <br>3. **UPDATE** Improved reliability of Archive and Clean Up App Flows <br>4. **UPDATE** PowerApps App entity through Sync Flow (Apps) now stores SharePoint Form URL for SharePoint embedded list forms & App Type reflects SharePoint Form App <br>5. **UPDATE** PowerApps Connector entity through Sync Flow (Connectors) now stores Connector Tier (Standard/Premium) and Publisher (Microsoft etc) <br>6. **UPDATE** Canvas Apps have been updated to use the Common Data SErvice (Current Environment) connector to improve performance <br>7. **NEW** Solutions now use Environment Variables, to avoid you having to go into individual Flows and update variables 
 
 The CoE Starter Kit consists of three solutions;
 
@@ -26,16 +33,6 @@ We recommend getting started and familiar with the **Center of Excellence – Co
 1.	If you are new to the CoE Starter Kit, start by installing the CoE Starter Kit – Core Components by following the Setup Instructions
 2.	If you have previously installed the CoE Starter Kit MANAGED solution and have already started collecting metadata for your apps through the Developer Compliance Center, export the data from the PowerApps App entity, uninstall the CoE Starter Kit solution, install the CoE Starter Kit – Core Components solution and re-import the PowerApps App entity data. Please view the [documentation](https://github.com/microsoft/powerapps-tools/blob/master/Administration/CoEStarterKit/CoE%20Starter%20Kit%20-%20Documentation%20and%20Setup%20Instructions.pdf) for detailed instructions on how to do this.
 3.	If you have previously installed the CoE Starter Kit UNMANAGED solution, uninstall the solution before installing the CoE Starter Kit – Core Components solution.
-
-
-### Latest Update
-Date | Notes
----|---
-2020.03.18 | Added Solution (Custom Connector and Power Automate flows) to configure the sync of Audit Logs if MFA is enabled or basic authentication is not desired.
-2020.02.12 | New Power BI Dashboard
-2020.02.11 | Bug fixes to Sync Template (Model Driven App), Training in a day Flows (updated to use CDS Current Environment), introducing new Setup Instructions documentation 
-2020.02.06 | Added temporary solution file for environments that experience the Invalid Argument error on solution import.
-2020.01.13 | 1. **NEW** Solution has been split into Core Components, Compliance Components and Nurture Components to make it easier to get started with the installation and deployment<br> 2. **UPDATE** Improved error handling in the Sync Flows, providing a few and daily report of failed Syncs <br>3. **UPDATE** Improved reliability of Archive and Clean Up App Flows <br>4. **UPDATE** PowerApps App entity through Sync Flow (Apps) now stores SharePoint Form URL for SharePoint embedded list forms & App Type reflects SharePoint Form App <br>5. **UPDATE** PowerApps Connector entity through Sync Flow (Connectors) now stores Connector Tier (Standard/Premium) and Publisher (Microsoft etc) <br>6. **UPDATE** Canvas Apps have been updated to use the Common Data SErvice (Current Environment) connector to improve performance <br>7. **NEW** Solutions now use Environment Variables, to avoid you having to go into individual Flows and update variables 
 
 (view previous updates in the [PreviousSolutionVersions](https://github.com/microsoft/powerapps-tools/tree/master/Administration/CoEStarterKit/PreviousSolutionVersions) folder
 
