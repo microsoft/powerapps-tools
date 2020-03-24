@@ -16,6 +16,7 @@ In the walk through provided in the [documentation](https://aka.ms/crisis-commun
 
 Please read the full documentation for installation instructions and more details [https://aka.ms/crisis-communication-app-docs](https://aka.ms/crisis-communication-app-docs).
 
+## Package contents
 |Component|	Filename |	Description
 |-|-|-|
 SharePoint list creation flow|	DeploySPLists.zip <br>GCC: DeploySPLists.zip|	Creates the lists necessary to hold the data in the app.
@@ -25,6 +26,45 @@ News push notification flow|	CrisisCommunicationNewsNotification.zip <br>GCC: Cr
 
 ## Download pack
 Directly [download all assets](https://github.com/microsoft/powerapps-tools/raw/master/Apps/CrisisCommunication/CrisisCommunicationPackage.zip).
+
+## How to update
+If you have already completed the steps in the [documentation](https://aka.ms/crisis-communication-app-docs) for Crisis Communication, it is not necessary to redo every step again. Follow these steps to import the individual app or flow which you would like to update.
+
+Start by downloading the new CrisisCommunicationPackage.zip file from this github repository. See the Latest Update section for a table of the latest versions.
+
+To update an app:
+1. Extract an app you would like to update. For example, if you want to update the Crisis Communication app, extract CrisisCommunication.zip. See the table for Package contents for more details.
+2. Go to [make.powerapps.com](https://make.powerapps.com)
+3. Sign in.
+4. From the left pane, click Apps.
+5. From the top menu, click Import. 
+6. Browse for the zip file you extracted. The page will change to the import experience. 
+7. Instead of creating a new app as done in the original setup instructions, click "Create new" to reveal more options. 
+8. A pane appears on the right. Below Setup, change the drop down menu to "Update."
+9. A list of apps in the environment appears in the right pane. Select the app which you would like to overwrite. Note that it is possible to revert an app to a previous version as desired.
+10. Select a connection for each connection required.
+11. Click import and wait for the import to complete.
+12. When the import is complete, open the app in the Power Apps studio.
+13. From the ribbon, click View > Data sources. In the left pane for Data sources, remove the existing connections to SharePoint. 
+14. In the same left pane for Data sources, type 'SharePoint' into the search bar at the top. 
+15. Select SharePoint and your connection. A pane will appear on the right to browse for the exact site and lists.
+16. In the right pane, select the SharePoint site where your lists for Crisis Communication are located. If the site does not appear in this list, type its URL in the field at the top of the pane.
+17. Click Connect.
+18. Save and publish the app: File > Save. Publish.
+
+To update a flow:
+1. Extract the flow you would like to update. Note that if you have already deployed the SharePoint lists using the DeploySPLists flow, it is not necessary nor possible to create them again in the same site as they already exist.
+2. Go to [flow.microsoft.com](https://flow.microsoft.com/)
+3. Sign in.
+4. From the left pane, click 'My flows.'
+5. From the top menu, click Import.
+6. Browse for the zip file you extracted. The page will change to the import experience. 
+7. Instead of creating a new flow as done in the original setup instructions, click "Create new" to reveal more options. 
+8. A pane appears on the right. Below Setup, change the drop down menu to "Update."
+9. A list of flows in the environment appears in the right pane. Select the app which you would like to overwrite. 
+10. Select a connection for each connection required.
+11. Click import and wait for the import to complete.
+12. Flows that are imported for the first time may be disabled. It may be necessary to edit the flow and in its details page, click Turn on from the top menu.
 
 ## Latest Update
 Date | Notes
