@@ -1,0 +1,470 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "CDS API",
+    "description": "CDS APIs"
+  },
+  "host": "contosodev.crm.dynamics.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/en-US/widgets/manage/environments/72e87f56-e215-43d4-8883-5cf7ff5550f5/": {},
+    "/": {},
+    "/api/data/v9.0/": {},
+    "/api/data/v9.0/cat_gtmentries": {},
+    "/v1.0/me": {},
+    "/contosodev.crm.dynamics.com/api/data/v9.0/workflows": {},
+    "/api/data/v9.0/workflows": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "@odata.context": {
+                  "type": "string",
+                  "description": "@odata.context"
+                },
+                "value": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "@odata.etag": {
+                        "type": "string",
+                        "description": "@odata.etag"
+                      },
+                      "uniquename": {
+                        "type": "string",
+                        "description": "uniquename"
+                      },
+                      "uidata": {
+                        "type": "string",
+                        "description": "uidata"
+                      }
+                    }
+                  },
+                  "description": "value"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Retrieve the name of your business process flow entity",
+        "description": "Retrieve the name of your business process flow entity",
+        "operationId": "GetBPFName",
+        "parameters": [
+          {
+            "name": "$filter",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "default": "uniquename,uidata"
+          }
+        ]
+      }
+    },
+    "/api/data/v9.1/RetrieveActivePath(ProcessInstanceId={ProcessInstanceId}))": {},
+    "/api/data/v9.1/RetrieveActivePath(ProcessInstanceId={ProcessInstanceId})": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "@odata.context": {
+                  "type": "string",
+                  "description": "@odata.context"
+                },
+                "value": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "@odata.etag": {
+                        "type": "string",
+                        "description": "@odata.etag"
+                      },
+                      "_ownerid_value": {
+                        "type": "string",
+                        "description": "_ownerid_value"
+                      },
+                      "_processid_value": {
+                        "type": "string",
+                        "description": "_processid_value"
+                      },
+                      "owningbusinessunit": {
+                        "type": "string",
+                        "description": "owningbusinessunit"
+                      },
+                      "stagename": {
+                        "type": "string",
+                        "description": "stagename"
+                      },
+                      "primaryentitytypecode": {
+                        "type": "string",
+                        "description": "primaryentitytypecode"
+                      },
+                      "clientdata": {
+                        "type": "string",
+                        "description": "clientdata"
+                      },
+                      "processstageid": {
+                        "type": "string",
+                        "description": "processstageid"
+                      },
+                      "stagecategory": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "stagecategory"
+                      }
+                    }
+                  },
+                  "description": "value"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Retrieves a collection of stages currently in the active path for a business process flow instance.",
+        "description": "Retrieves a collection of stages currently in the active path for a business process flow instance.",
+        "operationId": "GetBPFActivePath",
+        "parameters": [
+          {
+            "name": "ProcessInstanceId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/api/data/v9.0/new_orbit_initiative_approval_process": {},
+    "/api/data/v9.0/ORBIT_Initiative_Approval_Process": {},
+    "/api/data/v9.0/{entityName}": {},
+    "/api/data/v9.0/annotations(ec43573d-170b-ea11-a811-000d3a337c9e)": {},
+    "/{URL}": {},
+    "/api/data/v9.0/annotations({DocumentID})": {},
+    "/api/data/v9.0/annotations{ID}": {},
+    "/api/data/v9.0/{stringInput}": {},
+    "/api/data/v9.0/annotations({stringID})": {},
+    "/api/data/v9.0/systemusers({userid})/Microsoft.Dynamics.CRM.AddUserToRecordTeam": {},
+    "/api/data/v9.0/systemusers(\"userID)/Microsoft.Dynamics.CRM.AddUserToRecordTeam": {},
+    "/api/data/v9.0/systemusers(1db92e65-e77b-e911-a833-000d3a375590)/Microsoft.Dynamics.CRM.AddUserToRecordTeam": {},
+    "/api/data/v9.0/systemusers({userID})/Microsoft.Dynamics.CRM.RemoveUserFromRecordTeam": {},
+    "/api/data/v9.0/cat_projectteamroleses": {},
+    "/api/data/v9.0/{entityname}": {},
+    "/contosodev.crm.dynamics.com/api/data/v9.0/EntityDefinitions(LogicalName='{entityname}')/Attributes": {},
+    "/contosodev.crm.dynamics.com/api/data/v9.0/EntityDefinitions(LogicalName='cat_gtmentry')": {},
+    "/api/data/v9.0/EntityDefinitions(LogicalName='{entityname}')/Attributes": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "@odata.context": {
+                  "type": "string",
+                  "description": "@odata.context"
+                },
+                "value": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "LogicalName": {
+                        "type": "string",
+                        "description": "LogicalName"
+                      },
+                      "MetadataId": {
+                        "type": "string",
+                        "description": "MetadataId"
+                      },
+                      "@odata.type": {
+                        "type": "string",
+                        "description": "@odata.type"
+                      }
+                    }
+                  },
+                  "description": "value"
+                }
+              }
+            }
+          }
+        },
+        "summary": "GetEntityFields",
+        "description": "GetEntityFields",
+        "operationId": "GetEntityFields",
+        "parameters": [
+          {
+            "name": "entityname",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "default": "LogicalName"
+          }
+        ]
+      }
+    },
+    "/api/data/v9.0/{entityname}({uniqueId})": {},
+    "/api/data/v9.0/setactivepath": {},
+    "/contosodev.crm.dynamics.com/api/data/v9.0/EntityDefinitions(LogicalName='{entityname}')/Attributes/Microsoft.Dynamics.CRM.PicklistAttributeMetadata": {},
+    "/contosodev.crm.dynamics.com/api/data/v9.0/EntityDefinitions(LogicalName='{entityname}')/Attributes(LogicalName='{attributename}')/Microsoft.Dynamics.CRM.PicklistAttributeMetadata": {},
+    "/contosodev.crm.dynamics.com/api/data/v9.0/EntityDefinitions(LogicalName='{entityname}')/Attributes/{type}": {},
+    "/api/data/v9.0/{entityname}({ProcessInstanceId})": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "@odata.context": {
+                  "type": "string",
+                  "description": "@odata.context"
+                },
+                "@odata.etag": {
+                  "type": "string",
+                  "description": "@odata.etag"
+                },
+                "statecode": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "statecode"
+                },
+                "traversedpath": {
+                  "type": "string",
+                  "description": "traversedpath"
+                },
+                "createdon": {
+                  "type": "string",
+                  "description": "createdon"
+                },
+                "completedon": {
+                  "type": "string",
+                  "description": "completedon"
+                },
+                "_ownerid_value": {
+                  "type": "string",
+                  "description": "_ownerid_value"
+                },
+                "modifiedon": {
+                  "type": "string",
+                  "description": "modifiedon"
+                },
+                "versionnumber": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "versionnumber"
+                },
+                "businessprocessflowinstanceid": {
+                  "type": "string",
+                  "description": "businessprocessflowinstanceid"
+                },
+                "bpf_duration": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "bpf_duration"
+                },
+                "_activestageid_value": {
+                  "type": "string",
+                  "description": "_activestageid_value"
+                },
+                "_modifiedby_value": {
+                  "type": "string",
+                  "description": "_modifiedby_value"
+                },
+                "statuscode": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "statuscode"
+                },
+                "_owningbusinessunit_value": {
+                  "type": "string",
+                  "description": "_owningbusinessunit_value"
+                },
+                "bpf_name": {
+                  "type": "string",
+                  "description": "bpf_name"
+                },
+                "activestagestartedon": {
+                  "type": "string",
+                  "description": "activestagestartedon"
+                },
+                "_createdby_value": {
+                  "type": "string",
+                  "description": "_createdby_value"
+                },
+                "timezoneruleversionnumber": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "timezoneruleversionnumber"
+                },
+                "_processid_value": {
+                  "type": "string",
+                  "description": "_processid_value"
+                },
+                "_owninguser_value": {
+                  "type": "string",
+                  "description": "_owninguser_value"
+                },
+                "overriddencreatedon": {
+                  "type": "string",
+                  "description": "overriddencreatedon"
+                },
+                "_owningteam_value": {
+                  "type": "string",
+                  "description": "_owningteam_value"
+                },
+                "bpf_contexturl": {
+                  "type": "string",
+                  "description": "bpf_contexturl"
+                },
+                "_createdonbehalfby_value": {
+                  "type": "string",
+                  "description": "_createdonbehalfby_value"
+                },
+                "_modifiedonbehalfby_value": {
+                  "type": "string",
+                  "description": "_modifiedonbehalfby_value"
+                },
+                "importsequencenumber": {
+                  "type": "string",
+                  "description": "importsequencenumber"
+                },
+                "utcconversiontimezonecode": {
+                  "type": "string",
+                  "description": "utcconversiontimezonecode"
+                }
+              }
+            }
+          }
+        },
+        "summary": "GetBPFInstance",
+        "description": "GetBPFInstance",
+        "operationId": "GetBPFInstance",
+        "parameters": [
+          {
+            "name": "entityname",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ProcessInstanceId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      },
+      "patch": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "SetBPFStatus",
+        "description": "SetBPFStatus",
+        "operationId": "SetBPFStatus",
+        "parameters": [
+          {
+            "name": "entityname",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ProcessInstanceId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "traversedpath": {
+                  "type": "string",
+                  "description": "traversedpath"
+                },
+                "activestageid@odata.bind": {
+                  "type": "string",
+                  "description": "activestageid@odata.bind"
+                },
+                "statecode": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "statecode"
+                },
+                "statuscode": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "statuscode"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/api/data/v9.0/{entityname}(ProcessInstanceId)": {}
+  },
+  "definitions": {},
+  "parameters": {
+    "0": {
+      "name": "userid",
+      "in": "path",
+      "required": true,
+      "type": "string"
+    }
+  },
+  "responses": {},
+  "securityDefinitions": {
+    "oauth2_auth": {
+      "type": "oauth2",
+      "flow": "accessCode",
+      "authorizationUrl": "https://login.windows.net/common/oauth2/authorize",
+      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/token?resource=https://contosodev.crm.dynamics.com",
+      "scopes": {}
+    }
+  },
+  "security": [
+    {
+      "oauth2_auth": []
+    }
+  ],
+  "tags": []
+}
