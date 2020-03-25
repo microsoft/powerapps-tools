@@ -32,6 +32,8 @@ If you have already completed the steps in the [documentation](https://aka.ms/cr
 
 Start by downloading the new CrisisCommunicationPackage.zip file from this github repository. See the Latest Update section for a table of the latest versions.
 
+Important: updating an app will replace any customizations you have made to the template. Please document any revisions to menus and formulas separately before proceeding. You can also save the original app to your computer as an .msapp file and open it in another browser tab to copy content over to the new version. Note that you can always revert to a previous version by accessing the version history of an app.
+
 To update an app:
 1. Extract an app you would like to update. For example, if you want to update the Crisis Communication app, extract CrisisCommunication.zip. See the table for Package contents for more details.
 2. Go to [make.powerapps.com](https://make.powerapps.com)
