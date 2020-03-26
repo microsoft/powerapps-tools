@@ -15,7 +15,7 @@ Please do not open a support ticket if you encounter any bugs with the solution 
 
 ## Feedback
 
-For feedback related to the Emergency Response Solution, visit [here](https://aka.ms/emergency-response-issues).
+For feedback related to the Emergency Response Solution, visit [here](https://aka.ms/emergency-response-feedback).
 
 ## Latest updates
 
