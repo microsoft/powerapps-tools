@@ -2,7 +2,7 @@
 The following tools are experimental. They are intended to fill certain gaps with the authoring experience of PowerApps studio. I expect the tools to become obselete once the product team integrate some of these features into the product.
 
 ## PowerApps Review Tool
-This tool allow you to see all the changes that you made to your app taking the default properties of the control as baseline. This tool can be usefull for code reviews and get a quick view of where your formulas are throughout the screens and controls.
+This tool allow you to see all the changes that you made to your app taking the default properties of the control as baseline. This tool can be useful for code reviews and get a quick view of where your formulas are throughout the screens and controls.
 ![PowerApps Review Tool](https://pahandsonlab.blob.core.windows.net/tools/AppChangeFinder.png)
 [Download](https://pahandsonlab.blob.core.windows.net/tools/AppChangeFinder.zip).
 
