@@ -3,7 +3,7 @@
 The Emergency Response solution provides a set of capabilities for healthcare organizations to collect data for situational awareness of available beds and supplies, COVID-19 related patients, staffing, and pending discharges. The solution also provides dashboards that provide insights to medical
 organizations and hospitals to make informed decisions quickly resulting in efficient deployment and usage of resources.
 
-Read the blog announcement [here](https://aka.ms/EmergencyResponseApp)
+Read the blog announcement [here](https://aka.ms/EmergencyResponseApp).
 
 Read the [documentation](https://aka.ms/emergency-response-docs) that includes:
 - Deployment/configuration guide for hospital IT admin
@@ -21,7 +21,8 @@ For feedback related to the Emergency Response Solution, visit [here](https://ak
 
 |Date   | Notes  |
 |---|--|
-March 26, 2020|Initial release|
+|April 5, 2020|- Enhanced Power BI reporting capabilities including drill-downs, charting, surge bed tracking, etc.<br/>- Improved mobile app experience including UI enhancements for accessibility, confirmation screen for submission, and ability to track another on select apps<br/>- Updated schema to add COVID location flag and surge Bed tracking by location<br/>- Bug fixes related to install issues in certain regions, importing sample data, Common Data Service dashboar
+|March 26, 2020|Initial release|
 
 ### Disclaimer
 
