@@ -62,4 +62,4 @@ The Center of Excellence (CoE) Starter Kit is not supported by the Power Platfor
 Please, do not raise support tickets for issues related to this toolkit in the Power Platform Admin Center or any official product portal. 
 Instead, kindly. 
 1. Make sure you have read through the entire documentation 
-2. If the issue is not addressed in the documentation, please [report bugs here](https://github.com/microsoft/powerapps-tools/issues/new?assignees=manuelap-msft&labels=coestarterkit&template=-coe-starter-kit-app--bug-report.md&title=%5BBUG%5D%3A+issue+title).
+2. If the issue is not addressed in the documentation, please [report bugs here](https://github.com/microsoft/powerapps-tools/issues/new?assignees=Jenefer-PA&labels=coestarterkit&template=-coe-starter-kit-app--bug-report.md&title=%5BBUG%5D%3A+issue+title).
