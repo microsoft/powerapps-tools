@@ -21,6 +21,7 @@ For feedback related to the Emergency Response Solution, visit [here](https://ak
 
 |Date   | Notes  |
 |---|--|
+|April 6, 2020|- Fix issue on save on record in canvas app.|
 |April 5, 2020|- Enhanced Power BI reporting capabilities including drill-downs, charting, surge bed tracking, etc.<br/>- Improved mobile app experience including UI enhancements for accessibility, confirmation screen for submission, and ability to track another on select apps.<br/>- Updated schema to add COVID location flag and surge Bed tracking by location.<br/>- Bug fixes related to install issues in certain regions, importing sample data, Common Data Service dashboard.
 |March 26, 2020|Initial release|
 
