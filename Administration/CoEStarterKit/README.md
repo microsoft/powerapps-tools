@@ -1,9 +1,13 @@
 # Center of Excellence Starter Kit
 The Center of Excellence (CoE) Starter Kit is a set of templates that are designed to help develop a strategy for adopting, maintaining and supporting the Power Platform, with a focus on Power Apps and Power Automate. The kit includes multiple Power Apps and Power BI analytics reports to view and interact with the data collected.  The kit also provides several assets that provide templates and suggested patterns and practices for implementing CoE efforts. The assets part of the CoE Starter Kit should be seen as a template from which you inherit your individual solution or can serve as inspiration for implementing your own apps and flows.
 
+## Setup Instructions and Documentation
+Please find all information on how to install and use the kit on https://docs.microsoft.com/power-platform/guidance/coe/starter-kit
+
 ### Latest Update
 Date | Notes
 ---|---
+2020.04.09 | Documentation and Setup instructions have moved to https://docs.microsoft.com/power-platform/guidance/coe/starter-kit. New advanced Power BI Dashboard (Dashboard-PowerPlatformAdminDashboard_2020-04-09) is available as a preview to what we are planning.
 2020.03.18 | Added Solution (Custom Connector and Power Automate flows) to configure the sync of Audit Logs if MFA is enabled or basic authentication is not desired.
 2020.02.12 | New Power BI Dashboard
 2020.02.11 | Bug fixes to Sync Template (Model Driven App), Training in a day Flows (updated to use CDS Current Environment), introducing new Setup Instructions documentation 
@@ -17,7 +21,7 @@ These components provide the core to get started with setting up a CoE – they 
 The Core Components solution only contains assets relevant to admins. No assets need to be shared with other makers or end users.
 **Requirements:**  Users(s) will require a Per User license, as well as Global or Power Platform Service Admin permissions
 
-### Center of Excellence – Compliance Components
+### Center of Excellence – Governance Components
 Once you are familiar with your environments and resources, you will start thinking about audit and compliance processes for your apps. You will also want to gather additional information about your apps from your makers, and to audit specific connectors or app usage - apps like the Developer Compliance Center and flows to identify connector usage part of this solution will help with that.
 The Audit Components solution contains assets relevant to admins and existing makers. 
 The Audit Components provides a layer on top of the Core Components, it is required to install the Core Components prior to using the Audit Components. 
@@ -30,36 +34,17 @@ The Nurture Components provides a layer on top of the Core Components, it is req
 **License Requirements:**  Anyone in CoE community will need a Per App or Per User License.
 
 We recommend getting started and familiar with the **Center of Excellence – Core Components** before adding the Audit and Nurture components or building your own assets on top of the Core Components entities.
-1.	If you are new to the CoE Starter Kit, start by installing the CoE Starter Kit – Core Components by following the Setup Instructions
-2.	If you have previously installed the CoE Starter Kit MANAGED solution and have already started collecting metadata for your apps through the Developer Compliance Center, export the data from the PowerApps App entity, uninstall the CoE Starter Kit solution, install the CoE Starter Kit – Core Components solution and re-import the PowerApps App entity data. Please view the [documentation](https://github.com/microsoft/powerapps-tools/blob/master/Administration/CoEStarterKit/CoE%20Starter%20Kit%20-%20Documentation%20and%20Setup%20Instructions.pdf) for detailed instructions on how to do this.
-3.	If you have previously installed the CoE Starter Kit UNMANAGED solution, uninstall the solution before installing the CoE Starter Kit – Core Components solution.
-
-(view previous updates in the [PreviousSolutionVersions](https://github.com/microsoft/powerapps-tools/tree/master/Administration/CoEStarterKit/PreviousSolutionVersions) folder
 
 ## Known Issues and Limitations
-1. The CoE Starter Kit is currently not available in GCC environments, as the Flow Management connector is not available in this environment yet
-2. Set New App Owner: the management connector action does not support setting new owners for SharePoint apps.
-3. DLP Editor: Only returns the first 2000 environments and can not write back environment-type policies.
-4. Admin Sync Template v2 Flows: The CDS connector might experience some throttling limits if the tenant has a lot of resources. If you see 429 errors in the Flow run history occurring in the later runs, you can configure a Retry Policy. 
-5. Sync Flows (Model Driven App): We are looking at resolving some permission errors users experience with syncing model-driven apps.
-
-**6. Users in some environments might get an "Invalid Argument" error on trying to import the solution. This is a known issue, and we are working on providing a fix for this soon.**
-
-
-## Documentation
-View the [documentation](https://github.com/microsoft/powerapps-tools/blob/master/Administration/CoEStarterKit/CoE%20Starter%20Kit%20-%20Documentation%20and%20Setup%20Instructions.pdf)
+Notes on some limitations: https://docs.microsoft.com/en-us/power-platform/guidance/coe/limitations
 
 ## Download Pack
 Directly download the entire solution and all additional components from [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload)
 
-## Components
-Find a list of all components in the documentation file and a list in the Individual Components folder.
-
 ## Disclaimer
-The Center of Excellence (CoE) Starter Kit is not supported by the Power Platform product team (which is true for all tools available in this GitHub repo). We are a small team in Engineering who built this unsupported community sample solution for anyone to use and modify as their own, made available to customers on an as-is basis via an [MIT license](https://github.com/microsoft/powerapps-tools/blob/master/LICENSE). It’s possible you might run into some issues, such as installation problems, authorization issues, or bugs in the apps and flows within the solution. 
+Although the underlying features and components used to build the Center of Excellence (CoE) Starter Kit (such as Common Data Service, admin APIs, and connectors) are fully supported, the kit itself represents sample implementations of these features. Our customers and community can use and customize these features to implement admin and governance capabilities in their organizations.
 
-## Support
-Please, do not raise support tickets for issues related to this toolkit in the Power Platform Admin Center or any official product portal. 
-Instead, kindly. 
-1. Make sure you have read through the entire documentation 
-2. If the issue is not addressed in the documentation, please [report bugs here](https://github.com/microsoft/powerapps-tools/issues/new?assignees=JeneferM-MSFT&labels=coestarterkit&template=-coe-starter-kit-app--bug-report.md&title=%5BBUG%5D%3A+issue+title).
+If you face issues with:
+
+- **Using the kit**: Report your issue here: [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues). (Microsoft Support won't help you with issues related to this kit, but they will help with related, underlying platform and feature issues.)
+- The **core features in Power Platform**: Use your standard channel to contact Support.
