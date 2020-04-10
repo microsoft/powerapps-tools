@@ -1,0 +1,407 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Flow",
+    "description": "List Approvals Sent, Received - Approve & Reject Approvals"
+  },
+  "host": "us.api.flow.microsoft.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/pplatform.onmicrosoft.com/oauth2/token": {},
+    "/providers/Microsoft.ProcessSimple/environments/72e87f56-e215-43d4-8883-5cf7ff5550f5/approvalViews": {},
+    "/providers/Microsoft.ProcessSimple/environments/72e87f56-e215-43d4-8883-5cf7ff5550f5/approvals/0b659654-429f-4ea4-89bd-91674d374059/approvalResponses": {},
+    "/providers/Microsoft.ProcessSimple/environments/{environment_name}/approvals/{approval_name}/approvalResponses": {
+      "post": {
+        "summary": "Approve / Reject Approval",
+        "description": "Approve / Reject Approval",
+        "operationId": "SetApprovalResponse",
+        "parameters": [
+          {
+            "name": "environment_name",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "default": "72e87f56-e215-43d4-8883-5cf7ff5550f5"
+          },
+          {
+            "name": "approval_name",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "default": "2016-11-01"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "properties": {
+                  "type": "object",
+                  "properties": {
+                    "response": {
+                      "type": "string",
+                      "description": "response"
+                    }
+                  },
+                  "description": "properties"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "name"
+                },
+                "id": {
+                  "type": "string",
+                  "description": "id"
+                },
+                "type": {
+                  "type": "string",
+                  "description": "type"
+                },
+                "properties": {
+                  "type": "object",
+                  "properties": {
+                    "stage": {
+                      "type": "string",
+                      "description": "stage"
+                    },
+                    "status": {
+                      "type": "string",
+                      "description": "status"
+                    },
+                    "creationDate": {
+                      "type": "string",
+                      "description": "creationDate"
+                    },
+                    "owner": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "description": "id"
+                        },
+                        "type": {
+                          "type": "string",
+                          "description": "type"
+                        },
+                        "tenantId": {
+                          "type": "string",
+                          "description": "tenantId"
+                        }
+                      },
+                      "description": "owner"
+                    },
+                    "response": {
+                      "type": "string",
+                      "description": "response"
+                    }
+                  },
+                  "description": "properties"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/providers/Microsoft.ProcessSimple/environments/{environment}/approvalViews": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "name"
+                      },
+                      "id": {
+                        "type": "string",
+                        "description": "id"
+                      },
+                      "type": {
+                        "type": "string",
+                        "description": "type"
+                      },
+                      "properties": {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "description": "type"
+                          },
+                          "isActive": {
+                            "type": "boolean",
+                            "description": "isActive"
+                          },
+                          "userRoles": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            },
+                            "description": "userRoles"
+                          },
+                          "owner": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "description": "id"
+                              },
+                              "type": {
+                                "type": "string",
+                                "description": "type"
+                              },
+                              "tenantId": {
+                                "type": "string",
+                                "description": "tenantId"
+                              }
+                            },
+                            "description": "owner"
+                          },
+                          "creator": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "description": "id"
+                              },
+                              "type": {
+                                "type": "string",
+                                "description": "type"
+                              },
+                              "tenantId": {
+                                "type": "string",
+                                "description": "tenantId"
+                              }
+                            },
+                            "description": "creator"
+                          },
+                          "title": {
+                            "type": "string",
+                            "description": "title"
+                          },
+                          "result": {
+                            "type": "string",
+                            "description": "result"
+                          },
+                          "allowCancel": {
+                            "type": "boolean",
+                            "description": "allowCancel"
+                          },
+                          "creationDate": {
+                            "type": "string",
+                            "description": "creationDate"
+                          },
+                          "dueDate": {
+                            "type": "string",
+                            "description": "dueDate"
+                          },
+                          "expirationDate": {
+                            "type": "string",
+                            "description": "expirationDate"
+                          },
+                          "userRequest": {
+                            "type": "object",
+                            "properties": {
+                              "stage": {
+                                "type": "string",
+                                "description": "stage"
+                              },
+                              "creationDate": {
+                                "type": "string",
+                                "description": "creationDate"
+                              },
+                              "dueDate": {
+                                "type": "string",
+                                "description": "dueDate"
+                              },
+                              "expirationDate": {
+                                "type": "string",
+                                "description": "expirationDate"
+                              },
+                              "assignedTo": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string",
+                                    "description": "id"
+                                  },
+                                  "type": {
+                                    "type": "string",
+                                    "description": "type"
+                                  },
+                                  "tenantId": {
+                                    "type": "string",
+                                    "description": "tenantId"
+                                  }
+                                },
+                                "description": "assignedTo"
+                              },
+                              "allowReassignment": {
+                                "type": "boolean",
+                                "description": "allowReassignment"
+                              },
+                              "isReassigned": {
+                                "type": "boolean",
+                                "description": "isReassigned"
+                              },
+                              "responseOptions": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                },
+                                "description": "responseOptions"
+                              }
+                            },
+                            "description": "userRequest"
+                          },
+                          "completionDate": {
+                            "type": "string",
+                            "description": "completionDate"
+                          },
+                          "approvers": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            },
+                            "description": "approvers"
+                          },
+                          "principals": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string",
+                                  "description": "id"
+                                },
+                                "displayName": {
+                                  "type": "string",
+                                  "description": "displayName"
+                                },
+                                "email": {
+                                  "type": "string",
+                                  "description": "email"
+                                },
+                                "type": {
+                                  "type": "string",
+                                  "description": "type"
+                                },
+                                "tenantId": {
+                                  "type": "string",
+                                  "description": "tenantId"
+                                },
+                                "userPrincipalName": {
+                                  "type": "string",
+                                  "description": "userPrincipalName"
+                                },
+                                "thumbnailPhoto": {
+                                  "type": "string",
+                                  "description": "thumbnailPhoto"
+                                }
+                              }
+                            },
+                            "description": "principals"
+                          }
+                        },
+                        "description": "properties"
+                      }
+                    }
+                  },
+                  "description": "value"
+                },
+                "nextLink": {
+                  "type": "string",
+                  "description": "nextLink"
+                }
+              }
+            }
+          }
+        },
+        "summary": "List Approval",
+        "description": "ListApproval",
+        "operationId": "GetApprovals",
+        "parameters": [
+          {
+            "name": "environment",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "default": "72e87f56-e215-43d4-8883-5cf7ff5550f5"
+          },
+          {
+            "name": "$top",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "default": 50
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "default": "properties/userRole eq 'Owner' and properties/isActive eq 'true'"
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "default": "2016-11-01"
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {
+    "undefined": {
+      "type": "oauth2",
+      "flow": "accessCode",
+      "authorizationUrl": "https://login.windows.net/common/oauth2/authorize",
+      "tokenUrl": "https://login.windows.net/common/oauth2/authorize",
+      "scopes": {}
+    }
+  },
+  "security": [
+    {
+      "undefined": []
+    }
+  ],
+  "tags": []
+}
