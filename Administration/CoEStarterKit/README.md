@@ -7,7 +7,7 @@ Please find all information on how to install and use the kit on https://docs.mi
 ### Latest Update
 Date | Notes
 ---|---
-2020.04.17 | New advanced Power BI Dashboard (Dashboard-PowerPlatformAdminDashboard_2020-04-17_advanced) is available. Included flows that will create SharePoint lists and document libraries.
+2020.04.17 | New advanced Power BI Dashboard (Dashboard-PowerPlatformAdminDashboard_2020-04-17_advanced) is available. Included flows that will create SharePoint lists and document libraries. Updated solutions with bug fixes.
 2020.04.09 | Documentation and Setup instructions have moved to https://docs.microsoft.com/power-platform/guidance/coe/starter-kit. 
 2020.03.18 | Added Solution (Custom Connector and Power Automate flows) to configure the sync of Audit Logs if MFA is enabled or basic authentication is not desired.
 2020.02.12 | New Power BI Dashboard
