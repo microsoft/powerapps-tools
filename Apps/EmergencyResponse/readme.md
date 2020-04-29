@@ -21,6 +21,7 @@ For feedback related to the Emergency Response Solution, visit [here](https://ak
 
 |Date   | Notes  |
 |---|--|
+|April 29, 2020|-	Improved localization for existing languages and added support for 4 new languages (Korean, Polish, Portuguese-Portugal, Turkish)<br/>-	Enhanced sample data including localized versions now available in all 11 languages streamlining/cleaning up sample data<br/>- Ability for Power BI to properly report data regardless of it’s tracked at the location or facility level within apps<br/>-	Simplified customer deployment through use of App Source to deploy solution<br/>- Several UX/icon tweaks, added fields based on WA DOH requirements, and bug fixes|
 |April 16, 2020|- Fixed bug impacting admin app and site map in non-english based environments
 |April 15, 2020|- Localized versions of Power Apps and Power BI (for French, German, Italian, Japanese, Portuguese Brazil, Spanish).<br/>- Ability to configure level at which items are tracked within each app (Location or Facility level).  Note:  Power BI report will not automatically adjust or fully work without modification if tracking is changed from the defaults.  This will be addressed in a future release.<br/>- Numerous additional data collection fields, a new bed capacity app, split of staff and equipment to separate apps, and some contextual updates to provide better definitions of fields to users.|
 |April 7, 2020|- Fixed bug impacting saving records to proper locations in staffing + equipment.|
