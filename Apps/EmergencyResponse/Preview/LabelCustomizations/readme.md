@@ -1,11 +1,11 @@
-# Extend Hospital Emergency Response mobile app labels (Preview)
+# Extend Hospital Emergency Response mobile app labels (Experimental)
 
 [This topic is pre-release documentation and is subject to change.]
 
 You can extend Hospital Emergency Response mobile app labels with custom text. To do this, you have to import the **Canvas Apps Strings** solution. The solution adds model-driven app named **Canvas App Label Management** that you can use to customize the Hospital Emergency Response mobile app labels. Add new languages supported by the solution and text for corresponding mobile app labels using the model-driven app.
 
 > [!IMPORTANT]
-> This feature is in preview. For more information about preview features, see [Understand experimental and preview features in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-experimental-preview).
+> This feature is experimental. For more information about experimental features, see [Understand experimental and preview features in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-experimental-preview).
 
 ## Prerequisites
 
@@ -111,4 +111,4 @@ You can restore canvas apps to previous version that didn't use Canvas App Strin
 
 - Some TextIDs (labels) can be found in the **OnVisible** property of a screen as a part of a collection.
 - HomeScreen, SplashScreen, FeedbackScreen, MeScreen, Buttons and the timestamp for last submitted data share the same TextIDs across apps. Other screens use separate values for TextIDs, even if the Default Text is same across apps; for example *Location*.
-- Canvas App Strings solution supports the following languages: de, es, fr, it, ja, ko, pl, pt-BR, pt-PT, tr.
+- Canvas App Strings solution supports the following languages: German, Spanish, French, Italian, Japanese,  Korean, Polish, Portuguese (Portugal), Portuguese (Brazil), and Turkish.
