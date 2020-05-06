@@ -1,5 +1,5 @@
 # Release Planner Solution
-Earlier, we published a [blog](https://powerapps.microsoft.com/en-us/blog/how-power-platform-helps-us-manage-and-publish-product-release-plans/) that is explaining how Microsoft business applications team is publishing the release plans using a Power Platform. Based on the customers request, we have templatized the release planner app  so that, you can use this app to publish a release notes/plan for your internal application release.
+Earlier, we published a [blog](https://powerapps.microsoft.com/en-us/blog/how-power-platform-helps-us-manage-and-publish-product-release-plans/) that is explaining how Microsoft business applications team is publishing the release plans using a Power Platform. Based on various customers request, we have templatized the release planner app  so that, you can use this app to publish a release notes/plan for your internal application release.
 
 ## Package contents
 |Component|	Filename |	Description
@@ -84,9 +84,9 @@ the following apps
 
     ![Import soltuion - Public all customization](media/import-publishall.png)
 
-## Post-deployment steps
+### Post-deployment steps
 
-### Configure “Generate Release Plans Word Document” flow
+#### Configure “Generate Release Plans Word Document” flow
 
 This flow should be configured if you are looking to generate the Word Document
 from the release planner app that contains all the features for a particular
@@ -187,7 +187,7 @@ release wave and particular application.
 
     ![Find Flow URL](media/find-flow-url.jpg)
 
-### Configure “Daily Email Alerts” flow
+#### Configure “Daily Email Alerts” flow
 
 1.  On the environment where you have imported the solution go to “Solutions”
     using the Modern UI:  
