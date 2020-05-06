@@ -1,5 +1,5 @@
 # Release Planner Solution
-Earlier, we published a [blog](https://powerapps.microsoft.com/en-us/blog/how-power-platform-helps-us-manage-and-publish-product-release-plans/) that is explaining how Microsoft business applications team is publishing the release plans using a Power Platform. Based on various customers request, we have templatized the release planner app  so that, you can use this app to publish a release notes/plan for your internal application release.
+Earlier, we published a [blog](https://powerapps.microsoft.com/en-us/blog/how-power-platform-helps-us-manage-and-publish-product-release-plans/) that is explaining how Microsoft business applications team is publishing the release plans using a Power Platform. Based on various customers' requests, we have templatized the release planner app that can be used for your organizational application rollouts.
 
 ## Package contents
 |Component|	Filename |	Description
@@ -16,9 +16,7 @@ The following apps must be available :
 
 - Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Marketing, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation.
 
-- A service account is recommended that will have admin access in Dynamics 365 and SharePoint.
-
-- The same service account can be used in Power Automate files to connect to SharePoint or send an email using Outlook connector ( should have an outlook for office license) for the notification feature to work.
+- A service account that has admin access in Dynamics 365 and SharePoint applications.
 
 ## Audience
 
@@ -32,7 +30,7 @@ the following apps
 
 -   Power Automate
 
--   SharePoint Contributor privilege to create create/read documents.
+-   SharePoint Contributor privilege to create/read documents.
 
 ## Download pack
 Directly [download all assets](https://github.com/microsoft/powerapps-tools/raw/master/Apps/ReleasePlannerApp.zip).
@@ -43,8 +41,8 @@ Follow the [deployment instructions](deployment.md) to install the solution and 
 ## Entities
 
 
-The following are the list of entities available in the solution. The detail
-documentation for each entity attributes is available as a [Guided
+The following are the list of entities available in the solution. The detailed
+documentation for each entity's attributes is available as a [Guided
 help](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/create-custom-help-pages)
 within the solution. Follow the instructions in the link to enable guided help
 in your environment to see the detail documentation
@@ -66,7 +64,7 @@ The solution contains 5 flows.
 
 This flow sends email alerts to the Reviewer to review the release plans that
 are created/updated by the author. The release plans that are set as “Reviewed?”
-to No will be included for review. This includes the following:
+to No will be included for review. The flow includes the following checks:
 
 ![Recurrence Flow](media/flow-recurrence.png)
 
@@ -93,12 +91,12 @@ to No will be included for review. This includes the following:
 ### Generate Release Plans Word Document
 
 This flow is useful to generate a Word document that includes all the release
-plans for a specific wave and for a specific product. This will help someone to
+plans for a specific wave and a specific product. The Word document will help the leadership team to
 review all the plans offline.
 
-This flow is triggered from “Generate Document” menu on the Release Wave entity
+The "Generate Document" menu triggers this flow on the Release Wave entity
 form. The flow produces a .doc file with information about the selected
-applications and saves the file to a SharePoint Folder. Once the file has been
+applications and saves the file to a SharePoint folder. Once the file has been
 saved, the flow sends an email with a link to the file.
 
 ![Trigger Doc Generation Flow](media/triggerdocgenerate.jpg)
@@ -107,12 +105,12 @@ saved, the flow sends an email with a link to the file.
 
 1.  Open the update form for the Release Wave you are interested in.
 
-2.  Select “Generate Document” tab.
+2.  Select the “Generate Document” tab.
 
-3.  In “Release Plan Applications” sub grid select the applications, details of
-    which must be included into the .doc file.
+3.  In “Release Plan Applications” sub-grid select the applications, details of
+    which must be included in the .doc file.
 
-4.  Select “Generate Document”, and then select one of the two options:
+4.  Select “Generate Document” and then select one of the two options:
 
     - “All Features”: the generated .doc file will include details about all
         features associated with the selected applications. If no application is
@@ -123,20 +121,20 @@ saved, the flow sends an email with a link to the file.
         details only about features which have “Include in Release Plan” field
         set to “Yes”.
 
-Once the .doc file has been generated and saved to a SharePoint folder you will
+Once the .doc file has been generated and saved to a SharePoint folder, you will
 receive an email with a link to the file.
 
-### Get filter criteria to fetch specific Release Plan records
+### Get filter criteria to fetch specific Release Plan records.
 
-This flow is called by “Generate Release Plans Word document” flow to retrieve
+This flow is called by the “Generate Release Plans Word document” flow to retrieve
 criteria, with which Release Plans will be filtered.
 
-“Get filter criteria to fetch specific Release Plan records” flow allows to
+“Get filter criteria to fetch specific Release Plan records” flow allows you to
 apply custom filter criteria when needed.
 
 ### Set App Overview name when released app updated
 
-Updates Application Overview name if Application name gets changed. Sets the
+Updates Application Overview name if the application name gets changed. Sets the
 overview name in the format "Overview of \<app name\>". Triggers when
 Application field of Application Overview entity is created, updated, or
 deleted.
@@ -145,8 +143,8 @@ deleted.
 
 ### Set overview name when app name changed
 
-Updates Application Overview name if another Application is selected for the
-overview. Triggers when Application record is created, updated, or deleted.
+Updates Application Overview name if another application is selected for the
+overview. Triggers when the application record is created, updated or deleted.
 
 ![Set overview name](media/setoverviewname.png)
 
@@ -172,7 +170,7 @@ Plan form to match the expected behavior:
 
 -   Dates must be not less than today with Planned status
 
--   Dates must be not greater than today with Shipped status
+-   Dates must be not greater than today with the Shipped status
 
 -   N/A status locks GA – Release date field
 
@@ -182,7 +180,7 @@ Plan form to match the expected behavior:
 -   Public preview date must be less than GA date
 
 These rules are processed by msft_releaseplan.js script. The script is available
-under Web Resources tab in Solution window. All triggered functions are
+under the "Web Resources" tab in the solution window. All triggered functions are
 associated with corresponding events which can be changed in form editor
 (Solution \> Entities \> Release Plan \> Forms \> Reviewer/Contributor form \>
 Form Properties):
@@ -191,12 +189,12 @@ Form Properties):
 
 ## Custom Control
 
-A custom control created to get the image data from local devices.
+The image upload control will help the user to upload the image from the local device to the app. The image is stored in the "release planner attachment" entity's note entity.
 
-Apart from default PCF files it contains “index.ts” for processing the data and
+Apart from default PCF files, it contains “index.ts” for processing the data and
 UploadImageTool.css for component styling. ControlManifest.Input.xml contains
-PCF name, version and other info plus all parameters visible after selecting it
-in the form editor. These can be used to adjust the size of control components.
+PCF name, version, and other info plus all parameters visible after selecting it
+in the form editor. These can be used to adjust the size of the control components.
 
 ![Set Custom Control](media/setcustomcontrol.png)
 
@@ -204,11 +202,11 @@ The form containing custom control:
 
 ![Image Upload Custom Control](media/imagecustomcontrol.png)
 
-Each Release Plan may contain multiple attachments which contain the data about
-the image uploaded via Image Upload tool (filename, description etc.). In turn
-each Release Plan Attachment is related to one of Annotations (Notes) entities
+Each Release Plan may contain multiple attachments that contain the data about
+the image uploaded via the Image Upload tool (filename, description, etc.). In turn,
+each Release Plan Attachment is related to one of the Annotations (Notes) entities
 provided out of the box, where the image in base64 format is stored. All
-uploaded files can be also found by navigating to Related \> Release Plan
+uploaded files can also be found by navigating to Related \> Release Plan
 Attachments on Release Plan form.
 
 ## Security Roles
@@ -219,8 +217,8 @@ The following security roles are available in the solution:
 | **Role Name**                  |   **Role Description**          |
 |-------------------------------------|-------------------------------|
 | Release Plan – Admin       | This is the administrative role. Users with this role have access to all forms and can make any changes.                                                                                                                                                                  |
-| Release Plan – Contributor | This role is designed for content authors. Users with this role have access to **Contributor** forms of Release Plan, Application Area and Application Overview entities. On Contributor forms of these entities **“Reviewed?” field is always read-only**.               |
-| Release Plan – Reviewer    | This role is designed for content reviewers. Users with this role have access to **Reviewer** forms of Release Plan, Application Area and Application Overview entities. On Reviewer forms of these entities the **“Include in Release Plan” field is always read-only**. |
+| Release Plan – Contributor | This role is designed for content authors. Users with this role have access to **Contributor** forms of Release Plan, Application Area, and Application Overview entities. On Contributor forms of these entities, **“Reviewed?” field is always read-only**.               |
+| Release Plan – Reviewer    | This role is designed for content reviewers. Users with this role have access to **Reviewer** forms of Release Plan, Application Area, and Application Overview entities. On Reviewer forms of these entities, the **“Include in Release Plan” field is always read-only**. |
 
 ## Release Plan Audit Plug-in
   
@@ -234,14 +232,14 @@ their corresponding conditions:
 
 | **Operation type**                  | **Conditions**                                                                                                                                                                                                                                                                                                                                                        | **Release Plan History “Action” field value** |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| A new Release Plan is created       | The creation date is equal to or later than the “Release Plan Cut-off Date” of the Release Wave, to which the new Release Plan belongs.                                                                                                                                                                                                                               | “Created”                                     |
-| An existing Release Plan is updated | \- “Include in Release Plan” value has been changed - The date of change is equal to or later than “Release Plan Cut-off Date” of the Release Wave, to which the Release Plan belongs.                                                                                                                                                                                | “Added” or “Removed”                          |
+| A new Release Plan is created.       | The creation date is equal to or later than the “Release Plan Cut-off Date” of the Release Wave, to which the new Release Plan belongs.                                                                                                                                                                                                                               | “Created”                                     |
+| An existing Release Plan is updated | \- “Include in Release Plan” value has been changed - The date of change is equal to or later than the “Release Plan Cut-off Date” of the Release Wave, to which the Release Plan belongs.                                                                                                                                                                                | “Added” or “Removed”                          |
 |   An existing Release Plan is updated                                  | \- “Public Preview – Release Date” **and/or** “GA – Release Date” value has been changed **-** The new date(s) is (are) between “Release Start Date” and “Release End Date” of the Release Wave, to which the Release Plan belongs - The date of change is equal to or later than “Release Plan Cut-off Date” of the Release Wave, to which the Release Plan belongs. | “Updated”                                     |
 
 ### Steps to access Release Plan History records
 
 1.  Open Update form for the Release Plan you are interested in.
 
-2.  Select “Related” tab and then “Release Plan History”.
+2.  Select the “Related” tab and then “Release Plan History”.
 
 ![Access Release History](media/accessreleasehistory.jpg)
