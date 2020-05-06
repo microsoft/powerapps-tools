@@ -24,11 +24,12 @@ Follow the steps given in this document to install the Release Planner App in yo
 
     ![Classic UI - Import solution](media/classicui-import.png)
 
-      
+  
    #### Modern UI  
-    
+   
+   ![Modern UI](media/import.png)
 
-    ![Modern UI - Import solution](media/modernui-import.png)
+
 
 3.  Select the solution package ZIP file you have downloaded on step 1 and click
     “Next”:  
