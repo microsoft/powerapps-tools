@@ -12,7 +12,10 @@ Please do not open a support ticket if you encounter any bugs with the solution 
 
 |Date   | Notes  |
 |---|--|
-|April 22, 2020|Initial release|
+|May 06, 2020|Ability for users to request access to the solution via the portal |
+|May 06, 2020|Admins can see all active users for their Parent Organization |
+|May 06, 2020|Addition of  Pediatric Beds To Bed Capacity Questionnaire |
+
 
 ### Disclaimer
 
