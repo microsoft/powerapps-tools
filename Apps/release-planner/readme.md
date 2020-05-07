@@ -4,11 +4,13 @@ Earlier, we published a [blog](https://powerapps.microsoft.com/en-us/blog/how-po
 ## Package contents
 |Component|	Filename |	Description
 |-|-|-|
+CSS | UploadImageTool.css | CSS file for the Upload Image Tool.|
+Plugin Project|	ReleasePlannerPlugins.zip |	Visual Studio [Project files](#release-plan-audit-plug-in) to create Release plan History records.|
 Solutions/Managed|	ReleasePlanner_1_0_0_0_managed.zip|	 A managed solution file that contains all release plan components such as client extensions, [custom control](#custom-control), [entity](#entities), [flows](#flows) help page, option set, [process](#business-rules), [security role](#security-roles), and  web resource ([JS files](#form-validators), entity icons).
 Solutions/Un Managed |	ReleasePlanner_1_0_0_0.zip|	 An Unmanaged solution file that contains all release plan components such as client extensions, [custom control](#custom-control), [entity](#entities), [flows](#flows) help page, option set, [process](#business-rules), [security role](#security-roles), and  web resource ([JS files](#form-validators), entity icons).
-Plugin Project|	ReleasePlannerPlugins.zip |	Visual Studio [Project files](#release-plan-audit-plug-in) to create Release plan History records.
-Template |	HTML.htm|	Template file used for creating release plan Word document.
-CSS | UploadImageTool.css | CSS file for the Upload Image Tool.
+Template |	HTML.htm|	Template file used for creating release plan Word document.|
+|Index | index.ts | Used in the Custom Image upload control solution.|
+
 
 ## Prerequisites
  
@@ -243,3 +245,6 @@ their corresponding conditions:
 2.  Select the “Related” tab and then “Release Plan History”.
 
 ![Access Release History](media/accessreleasehistory.jpg)
+
+### Disclaimer
+*This app is a sample and may be used with Microsoft Power Apps for dissemination of reference information only.*
