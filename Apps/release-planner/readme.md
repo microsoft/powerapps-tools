@@ -49,12 +49,12 @@ help](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/creat
 within the solution. Follow the instructions in the link to enable guided help
 in your environment to see the detail documentation
 
-![List of Entities](media/entitylist.png)
+![List of Entities](./media/entitylist.png)
 
 ### Entity Relationship diagram
 
 
-![Entity Relationship Diagram](media/entityrelationship.png)
+![Entity Relationship Diagram](./media/entityrelationship.png)
 
 ## Flows
 
@@ -68,27 +68,27 @@ This flow sends email alerts to the Reviewer to review the release plans that
 are created/updated by the author. The release plans that are set as “Reviewed?”
 to No will be included for review. The flow includes the following checks:
 
-![Recurrence Flow](media/flow-recurrence.png)
+![Recurrence Flow](./media/flow-recurrence.png)
 
 1.  Pending Application Overview reviews (Reviewed ? is No)
 
-    ![Pending Application Overview](media/pendingapplicationoverview.png)
+    ![Pending Application Overview](./media/pendingapplicationoverview.png)
 
 2.  Pending Application Area reviews (Reviewed? is No)
 
-    ![Pending Application Area Review](media/pendingappareareview.png)
+    ![Pending Application Area Review](./media/pendingappareareview.png)
 
 3.  Pending Release plan reviews (Reviewed? is No)
 
-    ![Pending Release Plan Review](media/pendingreleaseplanreview.png)
+    ![Pending Release Plan Review](./media/pendingreleaseplanreview.png)
 
 4.  Images that are added in the last 24 hours
 
-    ![Images added in the last 24 hours](media/imagesadded.png)
+    ![Images added in the last 24 hours](./media/imagesadded.png)
 
 5.  Release Plans that are in shipped status with no documentation link
 
-    ![Release Plans with no document link](media/nodoclink.png)
+    ![Release Plans with no document link](./media/nodoclink.png)
 
 ### Generate Release Plans Word Document
 
@@ -101,7 +101,7 @@ form. The flow produces a .doc file with information about the selected
 applications and saves the file to a SharePoint folder. Once the file has been
 saved, the flow sends an email with a link to the file.
 
-![Trigger Doc Generation Flow](media/triggerdocgenerate.jpg)
+![Trigger Doc Generation Flow](./media/triggerdocgenerate.jpg)
 
 #### Steps to generate a .doc file
 
@@ -141,14 +141,14 @@ overview name in the format "Overview of \<app name\>". Triggers when
 Application field of Application Overview entity is created, updated, or
 deleted.
 
-![Call the Flow the change the Overview Name](media/triggeroverview.png)
+![Call the Flow the change the Overview Name](./media/triggeroverview.png)
 
 ### Set overview name when app name changed
 
 Updates Application Overview name if another application is selected for the
 overview. Triggers when the application record is created, updated or deleted.
 
-![Set overview name](media/setoverviewname.png)
+![Set overview name](./media/setoverviewname.png)
 
 ## Business Rules
  
@@ -157,13 +157,13 @@ overview. Triggers when the application record is created, updated or deleted.
 If Public Preview Release Status is N/A, the Public Preview Date field must be
 locked.
 
-![Lock Public Preview Date](media/lockpublicpreview.png)
+![Lock Public Preview Date](./media/lockpublicpreview.png)
 
 ### Lock/Unlock the GA Date
 
 If GA Release Status is N/A, the GA Date field must be locked.
 
-![Lock GA Date](media/lockgadate.png)
+![Lock GA Date](./media/lockgadate.png)
 
 ## Form Validators
 
@@ -187,7 +187,7 @@ associated with corresponding events which can be changed in form editor
 (Solution \> Entities \> Release Plan \> Forms \> Reviewer/Contributor form \>
 Form Properties):
 
-![Form Validation script](media/formvalidation.png)
+![Form Validation script](./media/formvalidation.png)
 
 ## Custom Control
 
@@ -198,11 +198,11 @@ UploadImageTool.css for component styling. ControlManifest.Input.xml contains
 PCF name, version, and other info plus all parameters visible after selecting it
 in the form editor. These can be used to adjust the size of the control components.
 
-![Set Custom Control](media/setcustomcontrol.png)
+![Set Custom Control](./media/setcustomcontrol.png)
 
 The form containing custom control:
 
-![Image Upload Custom Control](media/imagecustomcontrol.png)
+![Image Upload Custom Control](./media/imagecustomcontrol.png)
 
 Each Release Plan may contain multiple attachments that contain the data about
 the image uploaded via the Image Upload tool (filename, description, etc.). In turn,
@@ -244,7 +244,7 @@ their corresponding conditions:
 
 2.  Select the “Related” tab and then “Release Plan History”.
 
-![Access Release History](media/accessreleasehistory.jpg)
+![Access Release History](./media/accessreleasehistory.jpg)
 
 ### Disclaimer
 *This app is a sample and may be used with Microsoft Power Apps for dissemination of reference information only.*
