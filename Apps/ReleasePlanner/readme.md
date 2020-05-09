@@ -35,7 +35,7 @@ the following apps
 -   SharePoint Contributor privilege to create/read documents.
 
 ## Download pack
-Directly [download all assets](https://github.com/microsoft/powerapps-tools/raw/master/Apps/ReleasePlanner.zip).
+Directly [download all assets](https://github.com/microsoft/powerapps-tools/raw/master/Apps/ReleasePlanner/ReleasePlanner.zip).
 
 ## Deployment
 Follow the [deployment instructions](deployment.md) to install the solution and configure the Flows.
