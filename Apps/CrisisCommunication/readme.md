@@ -17,12 +17,12 @@ In the walk through provided in the [documentation](https://aka.ms/crisis-commun
 Please read the full documentation for installation instructions and more details [https://aka.ms/crisis-communication-app-docs](https://aka.ms/crisis-communication-app-docs).
 
 ## Package contents
-|Component|	Filename |	Description
-|-|-|-|
-SharePoint list creation flow|	DeploySPLists.zip <br>GCC: DeploySPLists.zip|	Creates the lists necessary to hold the data in the app.
-End-user app and send a request flow|	CrisisCommunication.zip <br>GCC:	CrisisCommunicationGCC.zip|	Displays content to the end-user and submits requests to the central crisis management team.
-Admin application|	CrisisCommunicationAdmin.zip <br>GCC: CrisisCommunicationAdmin.zip|	Allows the crisis management team to update the content in the end-user app
-News push notification flow|	CrisisCommunicationNewsNotification.zip <br>GCC: CrisisCommunicationNewsNotificationGCC.zip|	Sends a push notification to end-users whenever there is a new internal company update
+| Component | Filename | Description |
+|--|--|--|
+| SharePoint list creation flow | DeploySPLists.zip <br>GCC: DeploySPLists.zip<br>No Outlook: DeploySPLists.NoOutlook.zip | Creates the lists necessary to hold the data in the app. |
+| End-user app and send a request flow | CrisisCommunication.zip <br>GCC:	CrisisCommunicationGCC.zip <br>No Outlook:	CrisisCommunicationNoOutlook.zip & CrisisCommunication.Request.NoOutlook | Displays content to the end-user and submits requests to the central crisis management team. |
+| Admin application | CrisisCommunicationAdmin.zip <br>GCC: CrisisCommunicationAdmin.zip <br>No Outlook: CrisisCommunicationAdmin.zip | Allows the crisis management team to update the content in the end-user app |
+| News push notification flow | CrisisCommunicationNewsNotification.zip <br>GCC: CrisisCommunicationNewsNotificationGCC.zip <br>No Outlook: CrisisCommunicationNewsNotification.NoOutlook.zip | Sends a push notification to end-users whenever there is a new internal company update |
 
 ## Download pack
 Directly [download all assets](https://github.com/microsoft/powerapps-tools/raw/master/Apps/CrisisCommunication/CrisisCommunicationPackage.zip).
@@ -71,6 +71,8 @@ To update a flow:
 ## Latest Update
 Date | Notes
 -|-
+2020.05.06 | Updated News Notification Flow to use the Office 365 Groups connector (instead of the Azure AD connector) to avoid admin consent requirement for developers to instantiate the connection.
+2020.05.05 | Uploaded No Outlook version, which removes the dependency from the Outlook connector in all apps and flows. Special setup instructions are available in the download package.
 2020.03.25 | [V2.20200325](https://github.com/microsoft/powerapps-tools/commit/fb7171ea2ba8bf0a0d029583942f6737b3e77039)<br>News Notification flows (regular & GCC)<br>- Updated default pagination limit of the Azure AD action to 5,000 to accomodate configurations for users with base licenses. This can be reconfigured to 100,000, see the documentation on how to update this.
 2020.03.23 | [V2.20200323](https://github.com/microsoft/powerapps-tools/commit/3b3cb2fdee7f8971dfa9d941f3b721d6e0baf4b5) <br>Crisis Communication App <br>- FAQ now sorts by Rank. <br>- Corrected text for Links. <br>- Fixed issue with navigating to the news screen when accessing the app by deep-linking. <br>- Implemented first round of easier styling. <br><br>Crisis Communication Admin App<br>- Fixed issue in which the selected item would not appear in some forms. <br>- Changed navigation behavior to occur OnSuccess of submitting a form. <br><br>Crisis Communication Request flow <br>- Fixed issue with quotation marks in adaptive cards. <br><br>News Notification flow <br>- Improved Azure AD connector to be able to page through members of a security group (up to Power Automate limit of 100,000) <br>- Filtered out non-users in security group. <br><br>DeploySPLists flow <br>- Columns are no longer hidden when flow is run. <br>- Fixed an issue affecting running the flow trigger.
 2020.03.16 | Updates: <br>- Bugfix: fixed a bug affecting setting up auto-replies. <br>- Implemented a way to configure more work status options more easily. <br>- Gallery navigation for Tips, News, and RSS have been changed to scroll bars due to a bug. 
