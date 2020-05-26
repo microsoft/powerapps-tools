@@ -53,7 +53,7 @@ update the record:
 
 2.  Select Administration -\> App Config in the left pane
 
-![](media/de2e153525ab0de649d52c5fe0f3f3b8.png)
+![](media/1e43d1122073ad5486fd535d51132b8f.png)
 
 1.  Click on the app name record
 
