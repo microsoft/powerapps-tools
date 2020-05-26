@@ -1,44 +1,30 @@
 # Mobile App
 
-In this unprecedented time, universities are struggling to understand the impact
-of COVID-19, especially research centers. Research grants are one of the most
-substantial sources of incoming revenue for universities. By reporting the
-monetary implications, universities can assess and pursue their eligibility for
-relief funding. The financial impact of COVID-19 on the research grants and budgets of these schools is in the millions.
-
-<!-- Instead of a generic statement, this should be the purpose of using Mobile App-->
+In this unprecedented time, universities are struggling to understand the impact of COVID-19, especially research centers. Research grants are one of the most substantial sources of incoming revenue for universities. By reporting the monetary implications, universities can assess and pursue their eligibility for relief funding. The financial impact of COVID-19 on the research grants and budgets of these schools is in the millions.
 
 ## Prerequisites 
 
-To get started, you need to download the Power Apps Mobile app
-on your device using the device's app store.
+To get started, you need to download the Power Apps Mobile app on your device using the device's app store.
 
--   Download the [Power Apps
-    Mobile](https://powerapps.microsoft.com/downloads)
+-  Download the [Power Apps Mobile](https://powerapps.microsoft.com/downloads)
 
-    -   For **Apple** devices such as iPhone and iPad, use [App
-        store](https://aka.ms/powerappsios).
+    - For **Apple** devices such as iPhone and iPad, use [App store](https://aka.ms/powerappsios).
 
-    -   For **Android** devices, use [Google
-        Play](https://aka.ms/powerappsandroid).
+    - For **Android** devices, use [Google Play](https://aka.ms/powerappsandroid).
 
--   Ensure your organization has deployed and configured the **Financial Impact
+-   Ensure your organization has deployed and configured the **Crisis Financial Impact
     Tracker** app, as explained in [Deploy](Deployment.md) and [configure](AdminConfiguration.md) the app.
 
-After you install the Power Apps Mobile, open the app from your device and sign
-in with your company's Azure Active Directory account. You can view all apps
-shared with you by your organization once you sign in. More information:
-[Power Apps mobile device sign in](https://docs.microsoft.com/powerapps/user/run-app-client#open-power-apps-and-sign-in).
+After you install the Power Apps Mobile, open the app from your device and sign in with your company's Azure Active Directory account. You can view all apps shared with you by your organization once you sign in. More information: [Power Apps mobile device sign in](https://docs.microsoft.com/powerapps/user/run-app-client#open-power-apps-and-sign-in).
 
-## Financial Impact Tracker Mobile App
+## Crisis Financial Impact Tracker App
 
-Financial Impact tracker app allows users to review the sponsored programs they
-are working on and report loss of effort because of the pandemic or a crisis. 
+Crisis Financial Impact Tracker app allows users to review the sponsored programs they are working on and report loss of effort because of the pandemic or a crisis. 
 
-Open the Financial impact tracker app from Power Apps Mobile, review the welcome message and select **Let's get Started** to start using the app.
+Open the Crisis Financial impact tracker app from Power Apps Mobile, review the welcome message and select **Let's get Started** to start using the app.
 
 > [!div class="mx-imgBorder"]
-> ![](media/0ff31c8fd4a9444785116473974bec21.png)
+> ![Welcome Message](media/welcome-cfit-app-message.png)
 
 > [!NOTE]
 > When you launch the app first time, it will display the welcome message configured in the admin app of the solution. As a user, you can choose to select
@@ -46,7 +32,7 @@ Open the Financial impact tracker app from Power Apps Mobile, review the welcome
 
 ## App Components 
 
-The Financial impact tracker app consists of following key components:
+The Crisis Financial impact tracker app consists of following key components:
 
 - [Grant](#grants): List of the grant the user is associated with as a Co-Principal Investigator. Users will be able to review the summary of the grants and sponsored programs.
 
@@ -56,35 +42,28 @@ The Financial impact tracker app consists of following key components:
 
 ### Sponsored Programs
 
-Sponsored Program allows users to review the list of sponsored programs
-associated with the user as a Co-Principal Investigator. You will be able to
+Sponsored Program allows users to review the list of sponsored programs associated with the user as a Co-Principal Investigator. You will be able to
 **search** by entering the text in the search text.
 
 > [!div class="mx-imgBorder"]
-> ![](media/9d9e73fac84925ba4a1101be86dd3cb7.png)
+> ![Sponsored Programs](media/list-of-sponsored-programs-records.png)
 
-Select the **arrow icon** to view the details of the sponsored program.
+Select the **>** to view the details of the sponsored program.
 
-You can select the **Grants** to view [Grant details](#grant-details) and select  **Employee** to see [employee details](#employee-detail). You can also select the **Information Icon** to view the [frequently asked questions](#frequently-asked-questions).
+You can select the **Grants** to view [Grant details](#grant-details) and similarly  **Employees** to see [employee details](#employee-detail). You can also select the **Information Icon** on the top-right corner to view the [frequently asked questions](#frequently-asked-questions).
 
 ### Sponsored Program details
 
-Sponsored Program Detail form will allow you to review the summary of the
-sponsored program and report the effort loss for each employee.
+Sponsored Program form allows you to review the summary of the sponsored program and report the effort loss for each employee.
 
 > [!div class="mx-imgBorder"]
-> ![](media/ef195100eef43c286def6da8b1705d71.png)
+> ![Sponsored Program details ](media/sponsored-programs-record-with-details.png)
 
-Select the **Pay Period**, enter the **loss percentage**, and select
-**Loss Reason**. Select the **employee(s)** you are reporting the effort
-loss. Select **Submit** to report the effort loss.
+Enter the **Pay Period**, **loss percentage**, and, **Loss Reason**. Select the **employee(s)** you are reporting the effort loss and select **Submit** to report the effort loss.
 
-Select **<** from top-left if you want to go back to the sponsored
-program list without submitting any change . **Submit** button submits the
-values you entered.
+Select **<** icon from top-left if you want to go back to the sponsored program list without submitting any change . **Submit** button submits the values you entered.
 
-You can select **Grants** to view [Grant details](#grant-details) and select **Employee** to see [employee details](#employee-detail). You can also select **Information Icon** to view the [frequently asked questions].(#frequently-asked-questions)
-
+You can select **Grants** tab to view [Grant details](#grant-details) and similarly **Employees** tab to see [employee details](#employee-detail). You can also select the **Information Icon** on the top-right corner to view the [frequently asked questions](#frequently-asked-questions)
 
 **Field and description**
 
@@ -103,29 +82,25 @@ You can select **Grants** to view [Grant details](#grant-details) and select **E
 
 ### Grants
 
-Grants allows users to review the list of **Grants** associated with
-the user as a Co-Principal Investigator.
+Grants allows users to review the list of **Grants** associated with the user as a Co-Principal Investigator.
 
 > [!div class="mx-imgBorder"]
-> ![](media/e37159098e17e441f7b76ecb17f375a1.png)
+> ![List of grants](media/list-of-grants-records.png)
 
 Select **>** next to the grant record to view the details of the sponsored program.
 
-You can select **Sponsored Programs** to view [Sponsored Program details](#sponsored-program-details) and select **Employee** to see [employee details](#employee-detail). You can select **Information Icon** to view [frequently asked questions](#frequently-asked-questions).
+You can select **Sponsored Programs** tab to view [Sponsored Program details](#sponsored-program-details) and similarly **Employees** to see [employee details](#employee-detail). You can select **Information Icon** on the top-right corner to view [frequently asked questions](#frequently-asked-questions).
 
 ### Grant Details
 
-Grants Detail form allows you to review the summary of the **grants**
-and **sponsored program** associated with the selected grant.
+Grants detail form allows you to review the summary of the **Grants** and **Sponsored Programs** associated with the selected grant.
 
 > [!div class="mx-imgBorder"]
-> ![](media/6ef929d90f87d33ee31432151332dada.png)
+> ![Grant details](media/grant-records-with-details.png)
 
-Select **<** from top-left if you want to go back to the **Grant** list page.
+Select **<** from top-left if you want to go back to the **Grants** list page.
 
-You can select **Sponsored Programs** to view [Sponsored Program details](#sponsored-program-details) and select to see [employee details](#employee-detail). You can also select **Information Icon**
-**Employee** to view [frequently asked questions](#frequently-asked-questions).
-
+You can select **Sponsored Programs** tab to view [Sponsored Program details](#sponsored-program-details) and similarly **Employees** to see [employee details](#employee-detail). You can select **Information Icon** on the top-right corner to view [frequently asked questions](#frequently-asked-questions).
 
 **Field and description**
 
@@ -148,23 +123,22 @@ You can select **Sponsored Programs** to view [Sponsored Program details](#spons
 
 ### Employee
 
-Employee allows users to review the list of Employees associated
-with the sponsored programs list.
+Employee allows users to review the list of Employees associated with the sponsored programs list.
 
-![](media/72e25a09b0aac5f1cf33bf0458d5380e.png)
+![List of Employees](media/list-of-employee-records.png)
 
-![](media/2dff8bb5d76a5418bd1dc8fe2715c8d6.png)
-
-Select **>** next to the employee record to view the details of the employee. You can select **Sponsored Programs** to view [Sponsored Program details](#sponsored-program-details) and select **Grant** to see [Grant details](#grant-details). You can also select **Information Icon** to view [frequently asked questions](#frequently-asked-questions).
+Select **>** next to the employee record to view the details of the employee. You can select **Sponsored Programs** tab to view [Sponsored Program details](#sponsored-program-details) and similarly **Grants** to see [Grant details](#grant-details). You can also select **Information Icon** tab on the top-right corner to view [frequently asked questions](#frequently-asked-questions).
 
 ### Employee detail
 
-Employee detail form allows you to review the summary of the Employee and Effort impact associated with the employee.
+Employee detail form allows you to review the summary of the employee and effort impact associated with the employee.
 
-Select the **<** from top-left if you want to go back to the employee list
-page.
+![Employee details](media/employee-record-with-details.png)
 
-You can select **Sponsored Programs** to view [Sponsored Program details](#sponsored-program-details) and select **Grant** to see [Grant details](#grant-details). You can also select **Information Icon** to view [frequently asked questions](#frequently-asked-questions).
+
+Select the **<** from top-left if you want to go back to the employee list page.
+
+You can select **Sponsored Programs** tab to view [Sponsored Program details](#sponsored-program-details) and similarly **Grants** to see [Grant details](#grant-details). You can also select **Information Icon** tab on the top-right corner to view [frequently asked questions](#frequently-asked-questions).
 
 
 **Field and description**
@@ -189,5 +163,5 @@ You can select **Sponsored Programs** to view [Sponsored Program details](#spons
 
 You can review frequently asked questions by selecting the icon from any screen. These frequently asked questions are configured in the Financial Impact Tracker admin app based on your organization rules and guidelines. If you need additional information, you will need to reach out to your system administrator. Select **<** from top-left if you want to go back to the previous page.
 
-![](media/bca1b7a69d6af7534ba088e05e2f87db.png)
+![Frequently Asked Question details](media/frequently-asked-questions-record-with-details.png)
 

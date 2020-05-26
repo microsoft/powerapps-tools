@@ -9,12 +9,10 @@ Estimated time to complete these steps: **35–40 minutes.**
 
 ## Step 1: Configure and manage setup data for your organization
 
-Use the admin app to create and manage master data for your organization. This
-data is required for the **Crisis Financial Impact Tracker** app to work.
+Use the admin app to create and manage master data for your organization. This data is required for the **Crisis Financial Impact Tracker** app to work.
 
 > [!IMPORTANT]
-> Ensure that your IT admin has deployed the solution into your organization and
-has granted appropriate permissions for business admins to use the admin app.
+> Ensure that your IT admin has deployed the solution into your organization and has granted appropriate permissions for business admins to use the admin app.
 More information: [Deploy the Crisis Financial Impact Tracker app](deployment.md).
 
 You must add master data in to these entities in the following sequence:
@@ -33,10 +31,10 @@ You must add master data in to these entities in the following sequence:
 
 7. [Pay Period](#pay-periods)
 
-The master data is managed from the Administration area in the left navigation pane in the admin app:
+The master data is managed from the **Administration** area in the left navigation pane in the admin app:
 
 > [!div class="mx-imgBorder"]
-> ![](media/6c86a764b030105ab19b98ab032c2bcc.png)
+> ![Administration area](media/administration-area.png)
 
 ### App Configs
 
@@ -48,11 +46,11 @@ update the App Configs entity record:
 1. Select **Administration** > **App Configs** in the left navigation pane.
 
    > [!div class="mx-imgBorder"]
-   > ![](media/de2e153525ab0de649d52c5fe0f3f3b8.png)
+   > ![Select App Configs](media/select-app-config-record.png)
 
 1. Select the record.
     > [!div class="mx-imgBorder"]
-    > ![](media/3fb4b421412480fa28fddb65e1497cf2.png)
+    > ![Select record](media/cfit-app-config-record.png)
 
 1. Enter or update the fields with appropriate values:
 
@@ -64,20 +62,19 @@ update the App Configs entity record:
     | Welcome Message | Enter the HTML based welcome message that you want to display on the app.|
     | Owner| The owner field automatically default to your user. |
 
-1. Double-click on the CF image on the form header to update with the new one.
+1. Double-click on the image on the form to update with the new one.
     
     > [!div class="mx-imgBorder"]
-    > ![](media/4c6298f3e4631ad4360265ea5451e269.png)
+    > ![Change record image](media/change-record-image.png)
 
 1. Select the **Upload Image** to select a new image for your app.
     
     > [!div class="mx-imgBorder"]
-    > ![](media/200dcdefdbe97d88d0edc5920f38cd88.png)
+    > ![Upload image](media/upload-image-for-the-record.png)
 
 ### Frequently asked questions 
 
-The Frequently Asked Questions entity lets you manage and maintain frequently
-asked questions which is useful for the app users to create records. To create a new frequently asked questions record:
+The Frequently Asked Questions entity lets you manage and maintain frequently asked questions which helps the app users to create records. To create a new frequently asked questions record:
 
 1. Sign in to the admin app (model-driven app) using the URL provided by your IT admin.
 
@@ -86,7 +83,7 @@ asked questions which is useful for the app users to create records. To create a
 1. Enter the following field value to create a new record:
 
    > [!div class="mx-imgBorder"]
-   > ![](media/0fe9ce34ccaad53deafe8488647d0933.png)
+   > ![Frequently Asked Questions details](media/enter-frequently-asked-questions-details.png)
 
    | Field    | Description |
    |----------|----------------|
@@ -112,7 +109,7 @@ be participated in this program. To create the record:
 1. Enter the following field values to create a new record:
 
    > [!div class="mx-imgBorder"]
-   > ![](media/496ce6855606a487921a463753d6371d.png)
+   > ![Campuses details](media/enter-campus-record-details.png)
 
    | Field  | Description |
    |---------|-----|
@@ -139,7 +136,7 @@ the record:
 1. Enter the following field values to create a new record:
 
     > [!div class="mx-imgBorder"]
-    > ![](media/30cd012adbd8cb254bcbc39032d9d3b5.png)
+    > ![College details](media/enter-college-record-details.png)
 
     | Field  | Description  |
     |------------|-------------|
@@ -167,7 +164,7 @@ record:
 1. Enter the following field values to create a new record:
 
    > [!div class="mx-imgBorder"]
-   > ![](media/d8db23a0673edad8f5fc16e7e9f65280.png)
+   > ![Department details](media/enter-department-record-details.png)
 
     | Field  | Description   |
     |-------------|---------|
@@ -194,7 +191,7 @@ with the effort impact. To create the record:
 1. Enter the following field values to create a new record:
 
    > [!div class="mx-imgBorder"]
-   > ![](media/8874adb02091fe93e1adfa0f4b313e91.png)
+   > ![Loss Reason details](media/enter-loss-reason-record-details.png)
 
    | Field   | Description |
    |-----------|--------------|
@@ -210,7 +207,6 @@ To edit the record, select the record, update the values as required, and select
 
 ### Pay Periods
 
-
 The Pay Period entity lets you manage and maintain the reporting
 period associated with the effort impact. To create the record:
 
@@ -220,7 +216,7 @@ period associated with the effort impact. To create the record:
 1. Enter the following field values to create a new record:
 
    > [!div class="mx-imgBorder"]
-   > ![](media/4b3f3c245e2c7a4a074ec63a3ec74bf8.png)
+   > ![pay Period details](media/enter-pay-period-record-details.png)
 
     | Field | Description |
     |-----------|--------------|
@@ -236,8 +232,7 @@ To edit the record, select the record, update the values as required, and select
 
 ## Step 2: Configure and manage master data for your organization
 
-Use the admin app to create and manage master data for your organization. This
-data is required for the **Crisis Financial Impact Tracker** app to work.
+Use the admin app to create and manage master data for your organization. This data is required for the **Crisis Financial Impact Tracker** app to work.
 
 You must add master data in these entities in the following sequence:
 
@@ -251,11 +246,10 @@ You must add master data in these entities in the following sequence:
 
 5. [Employee Compensation](#employee-compensation)
 
-The master data is managed from the **Financial Impact Tracker** area in the left
-navigation pane in the admin app:
+The master data is managed from the **Crisis Financial Impact Tracker** area in the left navigation pane in the admin app:
 
 > [!div class="mx-imgBorder"]
-> ![](media/b293b84b34dd564873f0e238f46a555a.png)
+> ![CFIT Employee compensation](media/cfit-employee-compensation.png)
 
 ### Employees
 
@@ -272,7 +266,7 @@ To create the record:
 1. Enter the following field values to create a new record:
 
    > [!div class="mx-imgBorder"]
-   > ![](media/89fd4457eb72613d7e45232fe67193d5.png)
+   > ![Employee details](media/enter-employee-record-details.png)
 
    | Field  | Description |
    |--------|-----------|
@@ -310,7 +304,7 @@ To create the record:
 1. Enter the following field values to create a new record:
 
    > [!div class="mx-imgBorder"]
-   > ![](media/c975750be5c495c715e4956fb8c2f4a9.png)
+   > ![Sponsors details](media/enter-sponsors-record-details.png)
 
     | Field   | Description |
     |---------|------------|
@@ -339,7 +333,7 @@ To create the record:
 1. Enter the following values to create a new record:
 
    > [!div class="mx-imgBorder"]
-   > ![](media/86a9ccd08375cfc7f2202bd28d4358b3.png)
+   > ![Grant details](media/enter-grant-record-details.png)
 
     | Field  | Description |
     |---------|--------------|
@@ -366,12 +360,12 @@ To create the record:
 
 1. Sign in to the admin app (model-driven app) using the URL provided by your IT admin.
 
-1. Select **Crisis Financial Impact Tracker ** > **Sponsored Program** in the left navigation pane and select **New**.
+1. Select **Crisis Financial Impact Tracker** > **Sponsored Program** in the left navigation pane and select **New**.
 
 1. Enter the following values to create a new record:
 
     > [!div class="mx-imgBorder"]
-    > ![](media/c795bd686afb982450a65ba28b1db646.png)
+    > ![Sponsored Programs](media/enter-sponsored-program-record-details.png)
 
     | Field  | Description  |
     |-------------|--------------|
@@ -404,12 +398,12 @@ To create the record:
 
 1. Sign in to the admin app (model-driven app) using the URL provided by your IT admin.
 
-1. Select **Crisis Financial Impact Tracker Loss** > **Employee Compensation** in the left navigation pane and select **New**.
+1. Select **Crisis Financial Impact Tracker** > **Employee Compensation** in the left navigation pane and select **New**.
 
 1. Enter the following values to create a new record:
 
    > [!div class="mx-imgBorder"]
-   > ![](media/d6fb49cd06b1370c5c2518b410df4f48.png)
+   > ![Employee Compensation](media/enter-employee-compensation-record-details.png)
 
    | Field     | Description  |
    |-------------|----------------------|
