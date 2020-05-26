@@ -34,9 +34,6 @@ Start using the app through your browser. Follow the YouTube video to understand
 
 Looking to use the app in Mobile? - Follow the instructions [here](MobileApp.md).
 
-## Support
-
-Please do not open a support ticket if you encounter any bugs with the solution itself, unless it is related to an underlying platform issue unrelated to the template's implementation. If there are issues related to the solution implementation itself, please report bugs here.
 
 ## Disclaimer
 
