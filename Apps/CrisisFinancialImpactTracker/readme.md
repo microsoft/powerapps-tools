@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 # Crisis Financial Impact Tracker (CFIT) Solution
 
 
@@ -41,3 +42,5 @@ Check with Anson for the Support options
 
 ## Disclaimer
 *This app is a sample and may be used with Microsoft Power Apps for dissemination of reference information only.*
+=======
+>>>>>>> 32f8615ca9c00c5db0199e5f9812e007783b10ad
