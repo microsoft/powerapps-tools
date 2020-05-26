@@ -7,13 +7,14 @@ In this unprecedented time, universities are struggling to understand the impact
 
 |Component|	Filename |	Description
 |-------|-------|------|
-AppIcons | Crisis Financial Impact Tracker.png	| Sample app icon.|
-Data|Import Templates  | Individual entity template for data load files in .xlsx (Excel) format. The files are arranged in the order they should be imported.|
-Package |Crisis Financial Impact Tracker app package related files.|Complete list of files required to deploy the Crisis Financial Impact Tracker app.|
+| AppIcons | Crisis Financial Impact Tracker.png	| Sample app icon.|
+| Data|Import Templates  | Individual entity template for data load files in .xlsx (Excel) format. The files are arranged in the order they should be imported.|
+| Data|Sample Data  | Individual entity sample data in .xlsx (Excel) format. The files are arranged in the order they should be imported.|
+| Package |Crisis Financial Impact Tracker app package related files.|Complete list of files required to deploy the Crisis Financial Impact Tracker app.|
 
 ## Download and Deploy
 
-Download the solution from [here]().
+Download the solution from [here](https://github.com/microsoft/powerapps-tools/blob/master/Apps/CrisisFinancialImpactTracker/CrisisFinancialImpactTracker.zip).
 
 Follow the [deployment instructions](Deployment.md) to install the solution and configure Power Apps and Power BI. Also follow the YouTube video to deploy the solution.
 
