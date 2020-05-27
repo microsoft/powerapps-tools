@@ -34,7 +34,7 @@ You must add master data in to these entities in the following sequence:
 The master data is managed from the **Administration** area in the left navigation pane in the admin app:
 
 > [!div class="mx-imgBorder"]
-> ![Administration area](media/administration-area.png)
+> ![Administration area](./media/administration-area.png)
 
 ### App Configs
 
@@ -46,11 +46,11 @@ update the App Configs entity record:
 1. Select **Administration** > **App Configs** in the left navigation pane.
 
    > [!div class="mx-imgBorder"]
-   > ![Select App Configs](media/select-app-config-record.png)
+   > ![Select App Configs](./media/select-app-config-record.png)
 
 1. Select the record.
     > [!div class="mx-imgBorder"]
-    > ![Select record](media/cfit-app-config-record.png)
+    > ![Select record](./media/cfit-app-config-record.png)
 
 1. Enter or update the fields with appropriate values:
 
@@ -65,12 +65,12 @@ update the App Configs entity record:
 1. Double-click on the image on the form to update with the new one.
     
     > [!div class="mx-imgBorder"]
-    > ![Change record image](media/change-record-image.png)
+    > ![Change record image](./media/change-record-image.png)
 
 1. Select the **Upload Image** to select a new image for your app.
     
     > [!div class="mx-imgBorder"]
-    > ![Upload image](media/upload-image-for-the-record.png)
+    > ![Upload image](./media/upload-image-for-the-record.png)
 
 ### Frequently asked questions 
 
@@ -83,7 +83,7 @@ The Frequently Asked Questions entity lets you manage and maintain frequently as
 1. Enter the following field value to create a new record:
 
    > [!div class="mx-imgBorder"]
-   > ![Frequently Asked Questions details](media/enter-frequently-asked-questions-details.png)
+   > ![Frequently Asked Questions details](./media/enter-frequently-asked-questions-details.png)
 
    | Field    | Description |
    |----------|----------------|
@@ -109,7 +109,7 @@ be participated in this program. To create the record:
 1. Enter the following field values to create a new record:
 
    > [!div class="mx-imgBorder"]
-   > ![Campuses details](media/enter-campus-record-details.png)
+   > ![Campuses details](./media/enter-campus-record-details.png)
 
    | Field  | Description |
    |---------|-----|
@@ -136,7 +136,7 @@ the record:
 1. Enter the following field values to create a new record:
 
     > [!div class="mx-imgBorder"]
-    > ![College details](media/enter-college-record-details.png)
+    > ![College details](./media/enter-college-record-details.png)
 
     | Field  | Description  |
     |------------|-------------|
@@ -164,7 +164,7 @@ record:
 1. Enter the following field values to create a new record:
 
    > [!div class="mx-imgBorder"]
-   > ![Department details](media/enter-department-record-details.png)
+   > ![Department details](./media/enter-department-record-details.png)
 
     | Field  | Description   |
     |-------------|---------|
@@ -191,7 +191,7 @@ with the effort impact. To create the record:
 1. Enter the following field values to create a new record:
 
    > [!div class="mx-imgBorder"]
-   > ![Loss Reason details](media/enter-loss-reason-record-details.png)
+   > ![Loss Reason details](./media/enter-loss-reason-record-details.png)
 
    | Field   | Description |
    |-----------|--------------|
@@ -216,7 +216,7 @@ period associated with the effort impact. To create the record:
 1. Enter the following field values to create a new record:
 
    > [!div class="mx-imgBorder"]
-   > ![pay Period details](media/enter-pay-period-record-details.png)
+   > ![pay Period details](./media/enter-pay-period-record-details.png)
 
     | Field | Description |
     |-----------|--------------|
@@ -249,7 +249,7 @@ You must add master data in these entities in the following sequence:
 The master data is managed from the **Crisis Financial Impact Tracker** area in the left navigation pane in the admin app:
 
 > [!div class="mx-imgBorder"]
-> ![CFIT Employee compensation](media/cfit-employee-compensation.png)
+> ![CFIT Employee compensation](./media/cfit-employee-compensation.png)
 
 ### Employees
 
@@ -266,7 +266,7 @@ To create the record:
 1. Enter the following field values to create a new record:
 
    > [!div class="mx-imgBorder"]
-   > ![Employee details](media/enter-employee-record-details.png)
+   > ![Employee details](./media/enter-employee-record-details.png)
 
    | Field  | Description |
    |--------|-----------|
@@ -304,7 +304,7 @@ To create the record:
 1. Enter the following field values to create a new record:
 
    > [!div class="mx-imgBorder"]
-   > ![Sponsors details](media/enter-sponsors-record-details.png)
+   > ![Sponsors details](./media/enter-sponsors-record-details.png)
 
     | Field   | Description |
     |---------|------------|
@@ -333,7 +333,7 @@ To create the record:
 1. Enter the following values to create a new record:
 
    > [!div class="mx-imgBorder"]
-   > ![Grant details](media/enter-grant-record-details.png)
+   > ![Grant details](./media/enter-grant-record-details.png)
 
     | Field  | Description |
     |---------|--------------|
@@ -365,7 +365,7 @@ To create the record:
 1. Enter the following values to create a new record:
 
     > [!div class="mx-imgBorder"]
-    > ![Sponsored Programs](media/enter-sponsored-program-record-details.png)
+    > ![Sponsored Programs](./media/enter-sponsored-program-record-details.png)
 
     | Field  | Description  |
     |-------------|--------------|
@@ -403,7 +403,7 @@ To create the record:
 1. Enter the following values to create a new record:
 
    > [!div class="mx-imgBorder"]
-   > ![Employee Compensation](media/enter-employee-compensation-record-details.png)
+   > ![Employee Compensation](./media/enter-employee-compensation-record-details.png)
 
    | Field     | Description  |
    |-------------|----------------------|

@@ -24,7 +24,7 @@ Crisis Financial Impact Tracker app allows users to review the sponsored program
 Open the Crisis Financial impact tracker app from Power Apps Mobile, review the welcome message and select **Let's get Started** to start using the app.
 
 > [!div class="mx-imgBorder"]
-> ![Welcome Message](media/welcome-cfit-app-message.png)
+> ![Welcome Message](./media/welcome-cfit-app-message.png)
 
 > [!NOTE]
 > When you launch the app first time, it will display the welcome message configured in the admin app of the solution. As a user, you can choose to select
@@ -46,7 +46,7 @@ Sponsored Program allows users to review the list of sponsored programs associat
 **search** by entering the text in the search text.
 
 > [!div class="mx-imgBorder"]
-> ![Sponsored Programs](media/list-of-sponsored-programs-records.png)
+> ![Sponsored Programs](./media/list-of-sponsored-programs-records.png)
 
 Select the **>** to view the details of the sponsored program.
 
@@ -57,7 +57,7 @@ You can select the **Grants** to view [Grant details](#grant-details) and simila
 Sponsored Program form allows you to review the summary of the sponsored program and report the effort loss for each employee.
 
 > [!div class="mx-imgBorder"]
-> ![Sponsored Program details ](media/sponsored-programs-record-with-details.png)
+> ![Sponsored Program details ](./media/sponsored-programs-record-with-details.png)
 
 Enter the **Pay Period**, **loss percentage**, and, **Loss Reason**. Select the **employee(s)** you are reporting the effort loss and select **Submit** to report the effort loss.
 
@@ -85,7 +85,7 @@ You can select **Grants** tab to view [Grant details](#grant-details) and simila
 Grants allows users to review the list of **Grants** associated with the user as a Co-Principal Investigator.
 
 > [!div class="mx-imgBorder"]
-> ![List of grants](media/list-of-grants-records.png)
+> ![List of grants](./media/list-of-grants-records.png)
 
 Select **>** next to the grant record to view the details of the sponsored program.
 
@@ -96,7 +96,7 @@ You can select **Sponsored Programs** tab to view [Sponsored Program details](#s
 Grants detail form allows you to review the summary of the **Grants** and **Sponsored Programs** associated with the selected grant.
 
 > [!div class="mx-imgBorder"]
-> ![Grant details](media/grant-records-with-details.png)
+> ![Grant details](./media/grant-records-with-details.png)
 
 Select **<** from top-left if you want to go back to the **Grants** list page.
 
@@ -125,7 +125,7 @@ You can select **Sponsored Programs** tab to view [Sponsored Program details](#s
 
 Employee allows users to review the list of Employees associated with the sponsored programs list.
 
-![List of Employees](media/list-of-employee-records.png)
+![List of Employees](./media/list-of-employee-records.png)
 
 Select **>** next to the employee record to view the details of the employee. You can select **Sponsored Programs** tab to view [Sponsored Program details](#sponsored-program-details) and similarly **Grants** to see [Grant details](#grant-details). You can also select **Information Icon** tab on the top-right corner to view [frequently asked questions](#frequently-asked-questions).
 
@@ -133,7 +133,7 @@ Select **>** next to the employee record to view the details of the employee. Yo
 
 Employee detail form allows you to review the summary of the employee and effort impact associated with the employee.
 
-![Employee details](media/employee-record-with-details.png)
+![Employee details](./media/employee-record-with-details.png)
 
 
 Select the **<** from top-left if you want to go back to the employee list page.
@@ -163,5 +163,5 @@ You can select **Sponsored Programs** tab to view [Sponsored Program details](#s
 
 You can review frequently asked questions by selecting the icon from any screen. These frequently asked questions are configured in the Financial Impact Tracker admin app based on your organization rules and guidelines. If you need additional information, you will need to reach out to your system administrator. Select **<** from top-left if you want to go back to the previous page.
 
-![Frequently Asked Question details](media/frequently-asked-questions-record-with-details.png)
+![Frequently Asked Question details](./media/frequently-asked-questions-record-with-details.png)
 
