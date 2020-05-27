@@ -43,14 +43,14 @@ Follow the steps below to install the Crisis Financial Impact Tracker app along 
 
 1. You’ll be prompted to connect to your environment. Select **Office 365** as the **Deployment Type**, select **Show Advanced**, and then type your credentials to connect to your environment.
 
-   > [!div class="mx-imgBorder"]
+   
    > ![package deployer](./media/package-deployer-connection-details-pane.png)
 
 1. Select **Login** to continue.
 
 1. If you have access to more than one Common Data Service environment, the next screen will prompt you to select the environment where you want to install the package. Select an environment and select **Login**.
 
-    > [!div class="mx-imgBorder"]
+    
     > ![List of organizations](./media/list-of-organizations-available.png)
 
 1. On the next screen, select **Next.**
@@ -59,15 +59,15 @@ Follow the steps below to install the Crisis Financial Impact Tracker app along 
 
 1. The next screen validates if the package can be installed on your environment. Select **Next** to continue with the installation.
 
-   > [!div class="mx-imgBorder"]
+   
    > ![Reading configuration](./media/reading-installer-configuration.png)
 
 1. The next screen displays the installation status of the package. After the installation is complete, select **Next**.
 
-   > [!div class="mx-imgBorder"]
+   
    > ![Execute actions](./media/execute-install-actions.png)
 
-   > [!div class="mx-imgBorder"]
+   
    > ![Importing files](./media/importing-files.png)
 
    > [!NOTE]
@@ -77,7 +77,7 @@ Follow the steps below to install the Crisis Financial Impact Tracker app along 
 
 1. After the app is installed, navigate to [Power Apps](https://make.powerapps.com/), and select your environment from the top-right corner. You will see new apps under **Apps**:
 
-   > [!div class="mx-imgBorder"]
+   
    > ![Select app](./media/select-app-from-list-of-apps.png)
 
 The installation also adds the configuration data for the Crisis Financial Impact Tracker app.
@@ -92,12 +92,12 @@ the **Administration** area for these.
 
 1. Open the admin App, and in the left navigation pane of the admin app, select **Administration** from the area picker, and then select **App Configs**. This shows all the records that you imported from the **AppConfig.xlsx** file.
 
-   > [!div class="mx-imgBorder"]
+   
    > ![App Config record](./media/select-app-config-record.png)
 
 1. Select the record.
 
-    > [!div class="mx-imgBorder"]
+    
     > ![Select record](./media/cfit-app-config-record.png)
 
 1. On the app details page:
@@ -124,13 +124,13 @@ to easily share apps with groups of users.
 
 1. Select the app and select **Share**.
 
-   > [!div class="mx-imgBorder"]
+   
    > ![Share App](./media/share-app.png)
 
 1. Specify the Azure AD group or users that you want to share this app with. As the app connects to Common Data Service data, you will also need to provide permissions to the entities. The sharing panel prompts you to manage
 security for the entities. Assign the **Crisis Financial Impact Tracker User** and **Common Data Service User** security roles to the entities used by this app and select **Share**.
 
-   > [!div class="mx-imgBorder"]
+   
    > ![Assign roles](./media/assign-roles.png)
 
 ## Step 6: Share the model-driven app with admins in your organization

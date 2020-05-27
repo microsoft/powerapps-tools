@@ -23,7 +23,7 @@ Crisis Financial Impact Tracker app allows users to review the sponsored program
 
 Open the Crisis Financial impact tracker app from Power Apps Mobile, review the welcome message and select **Let's get Started** to start using the app.
 
-> [!div class="mx-imgBorder"]
+
 > ![Welcome Message](./media/welcome-cfit-app-message.png)
 
 > [!NOTE]
@@ -45,7 +45,7 @@ The Crisis Financial impact tracker app consists of following key components:
 Sponsored Program allows users to review the list of sponsored programs associated with the user as a Co-Principal Investigator. You will be able to
 **search** by entering the text in the search text.
 
-> [!div class="mx-imgBorder"]
+
 > ![Sponsored Programs](./media/list-of-sponsored-programs-records.png)
 
 Select the **>** to view the details of the sponsored program.
@@ -56,7 +56,7 @@ You can select the **Grants** to view [Grant details](#grant-details) and simila
 
 Sponsored Program form allows you to review the summary of the sponsored program and report the effort loss for each employee.
 
-> [!div class="mx-imgBorder"]
+
 > ![Sponsored Program details ](./media/sponsored-programs-record-with-details.png)
 
 Enter the **Pay Period**, **loss percentage**, and, **Loss Reason**. Select the **employee(s)** you are reporting the effort loss and select **Submit** to report the effort loss.
@@ -84,7 +84,7 @@ You can select **Grants** tab to view [Grant details](#grant-details) and simila
 
 Grants allows users to review the list of **Grants** associated with the user as a Co-Principal Investigator.
 
-> [!div class="mx-imgBorder"]
+
 > ![List of grants](./media/list-of-grants-records.png)
 
 Select **>** next to the grant record to view the details of the sponsored program.
@@ -95,7 +95,7 @@ You can select **Sponsored Programs** tab to view [Sponsored Program details](#s
 
 Grants detail form allows you to review the summary of the **Grants** and **Sponsored Programs** associated with the selected grant.
 
-> [!div class="mx-imgBorder"]
+
 > ![Grant details](./media/grant-records-with-details.png)
 
 Select **<** from top-left if you want to go back to the **Grants** list page.
