@@ -11,6 +11,7 @@ In this unprecedented time, universities are struggling to understand the impact
 | Data|Import Templates  | Individual entity template for data load files in .xlsx (Excel) format. The files are arranged in the order they should be imported.|
 | Data|Sample Data  | Individual entity sample data in .xlsx (Excel) format. The files are arranged in the order they should be imported.|
 | Package |Crisis Financial Impact Tracker app package related files.|Complete list of files required to deploy the Crisis Financial Impact Tracker app.|
+| Power BI Template | PBITemplate.pbix | A sample Power BI Template to connect to the app's CDS instance.
 
 ## Download and Deploy
 
@@ -33,6 +34,14 @@ Start using the app through your browser. Follow the YouTube video to understand
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4xfQs]
 
 Looking to use the app in Mobile? - Follow the instructions [here](MobileApp.md).
+
+We also have provided a [Power BI template](PowerBITemplate.md) that is preconfigured with the existing app. 
+
+## Latest Update
+Date | Notes
+-|-
+Jun 2, 2020 | Added with the Power BI sample template.
+May 27, 2020 | Initial version.
 
 
 ## Disclaimer
