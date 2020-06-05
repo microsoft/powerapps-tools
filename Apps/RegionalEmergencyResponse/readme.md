@@ -12,10 +12,11 @@ Please do not open a support ticket if you encounter any bugs with the solution 
 
 |Date   | Notes  |
 |---|--|
-|May 06, 2020|Ability for users to request access to the solution via the portal |
-|May 06, 2020|Admins can see all active users for their Parent Organization |
-|May 06, 2020|Addition of  Pediatric Beds To Bed Capacity Questionnaire |
-
+|June 05, 2020|All Portal Questionnaires updated to align with CDC questions |
+|June 05, 2020|Data Validation measures to improve data quality |
+|June 05, 2020|Automated generation of CDC data feed into Excel |
+|June 05, 2020|New Regional Report Viewer role |
+|June 05, 2020|Updated Power BI reports |
 
 ### Disclaimer
 
