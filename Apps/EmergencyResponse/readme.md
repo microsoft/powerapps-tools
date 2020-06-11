@@ -21,6 +21,7 @@ For feedback related to the Emergency Response Solution, visit [here](https://ak
 
 |Date   | Notes  |
 |---|--|
+|June 10, 2020|-	Added new Canvas apps for CDC requirements<br />- Integration with the regional solution<br />- Added enhancement for generating CDC-compatible data feeds.
 |May 13, 2020|-	Launch Power BI from the apps list and view in mobile<br />- Extend mobile apps labels<br />- Customize apps with color configuration in the app config entity
 |April 29, 2020|-	Improved localization for existing languages and added support for 4 new languages (Korean, Polish, Portuguese-Portugal, Turkish)<br/>-	Enhanced sample data including localized versions now available in all 11 languages streamlining/cleaning up sample data<br/>- Ability for Power BI to properly report data regardless of it’s tracked at the location or facility level within apps<br/>-	Simplified customer deployment through use of App Source to deploy solution<br/>- Several UX/icon tweaks, added fields based on WA DOH requirements, and bug fixes|
 |April 16, 2020|- Fixed bug impacting admin app and site map in non-english based environments
