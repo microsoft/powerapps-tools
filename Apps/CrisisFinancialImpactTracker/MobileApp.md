@@ -12,16 +12,16 @@ To get started, you need to download the Power Apps Mobile app on your device us
 
     - For **Android** devices, use [Google Play](https://aka.ms/powerappsandroid).
 
--   Ensure your organization has deployed and configured the **Crisis Financial Impact
+-   Ensure your organization has deployed and configured the **Higher Education Crisis Financial Impact
     Tracker** app, as explained in [Deploy](Deployment.md) and [configure](AdminConfiguration.md) the app.
 
 After you install the Power Apps Mobile, open the app from your device and sign in with your company's Azure Active Directory account. You can view all apps shared with you by your organization once you sign in. More information: [Power Apps mobile device sign in](https://docs.microsoft.com/powerapps/user/run-app-client#open-power-apps-and-sign-in).
 
-## Crisis Financial Impact Tracker App
+## Higher Education Crisis Financial Impact Tracker App
 
-Crisis Financial Impact Tracker app allows users to review the sponsored programs they are working on and report loss of effort because of the pandemic or a crisis. 
+Higher Education Crisis Financial Impact Tracker app allows users to review the sponsored programs they are working on and report loss of effort because of the pandemic or a crisis. 
 
-Open the Crisis Financial impact tracker app from Power Apps Mobile, review the welcome message and select **Let's get Started** to start using the app.
+Open the Higher Education Crisis Financial impact tracker app from Power Apps Mobile, review the welcome message and select **Let's get Started** to start using the app.
 
 
 > ![Welcome Message](./media/welcome-cfit-app-message.png)
@@ -32,7 +32,7 @@ Open the Crisis Financial impact tracker app from Power Apps Mobile, review the 
 
 ## App Components 
 
-The Crisis Financial impact tracker app consists of following key components:
+The Higher Education Crisis Financial impact tracker app consists of following key components:
 
 - [Grant](#grants): List of the grant the user is associated with as a Co-Principal Investigator. Users will be able to review the summary of the grants and sponsored programs.
 
