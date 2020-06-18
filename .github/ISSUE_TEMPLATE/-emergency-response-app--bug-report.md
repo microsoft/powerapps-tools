@@ -4,6 +4,7 @@ about: Create a report to help us improve the Emergency Response App
 title: "[BUG]: issue title"
 labels: emergencyrespapp
 assignees: narpad
+
 ---
 
 **Describe the bug**
