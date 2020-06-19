@@ -12,6 +12,8 @@ your environment and covers:
 -   Deploying the App to Teams
 -   Configuring the PowerBI Dashboard
 
+## Download solution
+Directly [download all assets](https://github.com/microsoft/powerapps-tools/raw/master/Apps/BuildingAccess/BuildingAccessApp.zip) needed for deploying this solution
 
 ## Prerequisites
 
@@ -36,9 +38,6 @@ your environment and covers:
 | PowerBI Dashboard | Building Access Insights.zip | Dashboard provides insights around building occupancy, trending metrics and contact tracing |
 | Label & messages translations | colTranslations.xlsx | Excel file containing machine translations for 44 languages for all the labels and messages used in the app. |
 
-
-## Download solution
-Directly [download all assets](./BuildingAccessApp.zip) needed for deploying this solution
 
 Create a home for your data
 ===========================
