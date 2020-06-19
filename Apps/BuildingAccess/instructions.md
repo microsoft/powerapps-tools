@@ -38,7 +38,7 @@ your environment and covers:
 
 
 ## Download solution
-Directly [download all assets](https://github.com/microsoft/powerapps-tools/raw/master/Apps/BuildingAccess/BuildingAccessApp.zip) needed for deploying this solution
+Directly [download all assets](./BuildingAccessApp.zip) needed for deploying this solution
 
 Create a home for your data
 ===========================

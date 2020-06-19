@@ -52,7 +52,7 @@ Here are a few key features:
 
 -   Facilities teams can use the Power BI dashboard to check current and projected occupancy levels and use the contact tracing report to identify people that were present at the same time and in the same building as another individual
 
->Please check the [detailed deployment instructions](https://github.com/microsoft/powerapps-tools/raw/master/Apps/BuildingAccess/instructions.md) that walk through the steps for deploying the app in your environment. The instructions cover:
+>Please check the [detailed deployment instructions](./instructions.md) that walk through the steps for deploying the app in your environment. The instructions cover:
 
 -   Creating a location for your data
 -   Running a Power Automate to create the SharePoint lists
