@@ -1,6 +1,6 @@
 # Building Access App Deployment Instructions
 
->The documentation below walks through the steps for deploying the app in
+The documentation below walks through the steps for deploying the app in
 your environment and covers:
 
 -   Creating a location for your data
@@ -13,8 +13,7 @@ your environment and covers:
 -   Configuring the PowerBI Dashboard
 
 
-Prerequisites
-=============
+## Prerequisites
 
 1.  Sign up for Power Apps.
 
@@ -39,7 +38,7 @@ Prerequisites
 
 
 ## Download solution
-Directly [download all assets](https://github.com/microsoft/powerapps-tools/raw/master/Apps/BuildingAccess/BuildingAccessApp.zip).
+Directly [download all assets](https://github.com/microsoft/powerapps-tools/raw/master/Apps/BuildingAccess/BuildingAccessApp.zip) needed for deploying this solution
 
 Create a home for your data
 ===========================
@@ -60,8 +59,8 @@ generated](.//media/image3.png)
 
 3.  Select **Team site.**
 
-> ![A screenshot of a cell phone Description automatically
-> generated](.//media/image4.png)
+![A screenshot of a cell phone Description automatically
+generated](.//media/image4.png)
 
 4.  Enter name and description for your site.
 
@@ -106,8 +105,8 @@ creates the required lists, fields and sets columns as indexed.
 
 7.  Select **New connection** on the command bar.
 
-> ![A screenshot of a social media post Description automatically
-> generated](.//media/image8.png)
+![A screenshot of a social media post Description automatically
+generated](.//media/image8.png)
 
 8.  Search for the SharePoint connector.
 
