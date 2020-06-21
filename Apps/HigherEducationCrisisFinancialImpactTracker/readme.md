@@ -13,29 +13,12 @@ In this unprecedented time, universities are struggling to understand the impact
 | Package |Crisis Financial Impact Tracker app package related files.|Complete list of files required to deploy the Crisis Financial Impact Tracker app.|
 | Power BI Template | PBITemplate.pbix | A sample Power BI Template to connect to the app's CDS instance.
 
-## Download and Deploy
+## Download pack
 
-Download the solution from [here](https://github.com/microsoft/powerapps-tools/blob/master/Apps/CrisisFinancialImpactTracker/CrisisFinancialImpactTracker.zip).
+Download the solution from [here](https://github.com/microsoft/powerapps-tools/blob/master/Apps/HigherEducationCrisisFinancialImpactTracker/Higher Education Crisis Financial Impact Tracker.zip).
 
-Follow the [deployment instructions](Deployment.md) to install the solution and configure Power Apps and Power BI. Also follow the YouTube video to deploy the solution.
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4xkRM]
-
-## Configure
-
-Follow the [admin configuration instructions](AdminConfiguration.md) to configure the master data. Also follow the YouTube video to configure the master data.
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4xijh]
-
-## Use
-
-Start using the app through your browser. Follow the YouTube video to understand the app functionality and usage.
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4xfQs]
-
-Looking to use the app in Mobile? - Follow the instructions [here](MobileApp.md).
-
-We also have provided a [Power BI template](PowerBITemplate.md) that is preconfigured with the existing app. 
+## Install, Configure & Use
+Follow the steps in the [documentation](https://aka.ms/hecfit) to install and configure the Power Apps & Power BI. 
 
 ## Latest Update
 Date | Notes
@@ -46,4 +29,4 @@ May 27, 2020 | Initial version.
 
 ## Disclaimer
 
-*This app is a sample and may be used with Microsoft Power Apps for dissemination of reference information only.*
+*This app is a sample and may be used with Microsoft Power Apps and Teams for dissemination of reference information only. This app is not intended or made available for use as a medical device, clinical support, diagnostic tool, or other technology intended to be used in the diagnosis, cure, mitigation, treatment, or prevention of disease or other conditions, and no license or right is granted by Microsoft to use this app for such purposes. This app is not designed or intended to be a substitute for professional medical advice, diagnosis, treatment, or judgement and should not be used as such. Customer bears the sole risk and responsibility for any use of this app. Microsoft does not warrant that the app or any materials provided in connection therewith will be sufficient for any medical purposes or meet the health or medical requirements of any person.*
