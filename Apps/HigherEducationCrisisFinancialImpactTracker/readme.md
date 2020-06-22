@@ -1,5 +1,5 @@
 
-# Crisis Financial Impact Tracker (CFIT) Solution
+# Higher Education Crisis Financial Impact Tracker (HECFIT) Solution
 
 In this unprecedented time, universities are struggling to understand the impact of COVID-19, especially research centers. Research grants are one of the most substantial sources of incoming revenue for universities. By reporting the monetary implications, universities can assess and pursue their eligibility for relief funding. The financial impact of COVID-19 on the research grants and budgets of these schools is in the millions.
 
