@@ -15,7 +15,7 @@ In this unprecedented time, universities are struggling to understand the impact
 
 ## Download pack
 
-Download the solution from [here](https://github.com/microsoft/powerapps-tools/blob/master/Apps/HigherEducationCrisisFinancialImpactTracker/Higher Education Crisis Financial Impact Tracker.zip).
+Download the solution from [here](https://github.com/microsoft/powerapps-tools/blob/master/Apps/HigherEducationCrisisFinancialImpactTracker/HECFIT.zip).
 
 ## Install, Configure & Use
 Follow the steps in the [documentation](https://aka.ms/hecfit) to install and configure the Power Apps & Power BI. 
