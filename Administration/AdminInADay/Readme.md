@@ -7,4 +7,5 @@ You've built several apps that save your organization time and money -- now, how
 ### Updates
 Date | Notes
 ---|--
+2020.07.07 | Updates to slide decks and lab material to reflect new features, such as new UI in PPAC and Power Platform Build Tools GA version.  
 2020.01.07 | Updates to Slide Decks (to reflect new features) and Folder Structure - find Hands on Labs in LabMaterials, Slide Decks in PPTs and Tenant Setup Scripts in Tenant Setup and Trainer Guides
