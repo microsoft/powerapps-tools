@@ -7,6 +7,7 @@ Please find all information on how to install and use the kit on https://docs.mi
 ### Latest Update
 Date | Notes
 ---|---
+2020.07.14 | Core Components: Bug fixed on Sync Template v2 (Power Apps User Shared With) flow, and increased exponential retry policy on Sync Template v2 (PVA) flow.
 2020.07.07 | Core Components: now include Power Virtual Agents, Canvas App Shared With Users/Groups inventory, new Set App and Flow Permissions apps. Governance components: new Flow archival components. Audit Log solution update to improve performance reliability. If you are using a previous version of the Audit Log solution we highly recommend you upgrade as soon as possible.
 2020.05.13 | Core Components: Performance Improvements and improved handling of Legacy environments in Sync Flows. Audit Logs: Bug fixes and now record Deleted App and Deleted Flow audit log events.
 2020.05.04 | Core Components: Improvements on handling orphaned resources, Skipping Developer Environments for Model Driven Apps, storing App Plan Classification information in Power Apps App entity, Governance Components: Fixed scope of Archive Approval (was Business Unit, is Organization), new Power BI Dashboard that shows App Plan Classification
