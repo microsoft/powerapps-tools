@@ -7,6 +7,7 @@ Please find all information on how to install and use the kit on https://docs.mi
 ### Latest Update
 Date | Notes
 ---|---
+2020.07.16 | Theming Components: Launched new theming components to create, manage and share canvas app themes.
 2020.07.14 | Core Components: Bug fixed on Sync Template v2 (Power Apps User Shared With) flow, and increased exponential retry policy on Sync Template v2 (PVA) flow.
 2020.07.07 | Core Components: now include Power Virtual Agents, Canvas App Shared With Users/Groups inventory, new Set App and Flow Permissions apps. Governance components: new Flow archival components. Audit Log solution update to improve performance reliability. If you are using a previous version of the Audit Log solution we highly recommend you upgrade as soon as possible.
 2020.05.13 | Core Components: Performance Improvements and improved handling of Legacy environments in Sync Flows. Audit Logs: Bug fixes and now record Deleted App and Deleted Flow audit log events.
@@ -38,6 +39,11 @@ The Nurture Components solution contains assets relevant to everyone in the orga
 The Nurture Components provides a layer on top of the Core Components, it is required to install the Core Components prior to using the Nurture Components.
 **License Requirements:**  Anyone in CoE community will need a Per App or Per User License.
 
+### Center of Excellence – Theming Components
+
+A frequent ask when creating canvas apps apps is theming and specifically the ability to create apps that match the organization brand.  The assets in this solution will help you create, manage and share themes.
+The Theming Components solution contains assets that are relevant to makers and designers. 
+
 We recommend getting started and familiar with the **Center of Excellence – Core Components** before adding the Audit and Nurture components or building your own assets on top of the Core Components entities.
 
 ## Known Issues and Limitations
@@ -53,3 +59,13 @@ If you face issues with:
 
 - **Using the kit**: Report your issue here: [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues). (Microsoft Support won't help you with issues related to this kit, but they will help with related, underlying platform and feature issues.)
 - The **core features in Power Platform**: Use your standard channel to contact Support.
+
+## Credits
+
+The CoE Starter Kit wouldn't exist and continue to evolve without the wonderful contributions from our Power Platform community. Many customers and champions are influencing the continued journey, and we would like to especially give a shout out to [Rebekka Aalbers](https://twitter.com/RebekkaAalbers), [Paul Culmsee](https://twitter.com/paulculmsee), [Alan Chai](https://twitter.com/alanchai), [Daniel Laskewitz](https://twitter.com/laskewitz).
+
+The theming components are inspired by or are using elements from:
+- Sancho Harker https://github.com/iAmManCat
+- Richard Wilson https://pcf.gallery/pcf-color-picker/
+- Eickhel Mendoza https://pcf.gallery/powerfont/ 
+
