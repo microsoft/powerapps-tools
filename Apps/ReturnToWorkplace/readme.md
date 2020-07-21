@@ -8,6 +8,8 @@ Read the complete documentation here: <https://aka.ms/rtw-docs>
 
 Please use the standard support channel to open a support ticket if you encounter any issues and bugs with the solution.
 
+For feedback about the Return to the Workplace solution, visit <https://aka.ms/rtw-community>
+
 ## Latest updates
 
 |Date   | Notes  |
