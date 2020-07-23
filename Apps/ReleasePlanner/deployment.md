@@ -84,6 +84,9 @@ release wave and particular application.
 6.  Expand “When an HTTP request is received” step and copy its URL to the
     clipboard:  
     
+ > [!NOTE]
+ > The Flow should be turned on for the URL to be generated.
+    
 
     ![Copy HTTP URL Request](./media/getflowhttp.png)
 
