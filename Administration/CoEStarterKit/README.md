@@ -7,6 +7,7 @@ Please find all information on how to install and use the kit on https://docs.mi
 ### Latest Update
 Date | Notes
 ---|---
+2020.07.24 | Core Components: Fix to a bug in Admin | Sync Template v2 (Power Apps User Shared With), which caused fetching user permissions in Default environment to fail. Fix to a bug in Admin | Sync Template v2 (Model Driven Apps), which caused environments with crm urls not ending in .crm to fail to sync. Example impact are environments like those with .crm4 in the url. Fix to a bug in Admin | Sync Template v2 (PVA), which caused a failure when syncing a PVA Component’s flow, when that flow has not yet been added to the Flow entity.
 2020.07.16 | Theming Components: Launched new theming components to create, manage and share canvas app themes.
 2020.07.14 | Core Components: Bug fixed on Sync Template v2 (Power Apps User Shared With) flow, and increased exponential retry policy on Sync Template v2 (PVA) flow.
 2020.07.07 | Core Components: now include Power Virtual Agents, Canvas App Shared With Users/Groups inventory, new Set App and Flow Permissions apps. Governance components: new Flow archival components. Audit Log solution update to improve performance reliability. If you are using a previous version of the Audit Log solution we highly recommend you upgrade as soon as possible.
