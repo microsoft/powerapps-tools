@@ -84,8 +84,10 @@ release wave and particular application.
 6.  Expand “When an HTTP request is received” step and copy its URL to the
     clipboard:  
     
-
     ![Copy HTTP URL Request](./media/getflowhttp.png)
+    
+     > [!NOTE]
+     > The Flow should be turned on for the URL to get generated.
 
 7.  Go back to the list of flows and select “Generate Release Plans Word
     document”:  
