@@ -14,6 +14,7 @@ For feedback about the Return to the Workplace solution, visit <https://aka.ms/r
 
 |Date   | Notes  |
 |---|--|
+|August 26, 2020|Release version 1.1. |
 |July 21, 2020|First public release. |
 
 ### Disclaimer
