@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>admin_setflowpermissions_ce2bb</Name>
+  <AppVersion>2020-07-07T15:12:19Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.20053.26.0</CreatedByClientVersion>
+  <MinClientVersion>3.20053.26.0</MinClientVersion>
+  <Tags>{"minimumRequiredApiVersion":"2.2.0","primaryDeviceWidth":"1920","primaryDeviceHeight":"1080","sienaVersion":"41cad10f-0592-4315-9168-20ee42749188","deviceCapabilities":"","supportsPortrait":"false","supportsLandscape":"true","primaryFormFactor":"Tablet","publisherVersion":"3.20053.26","hasComponent":"false","hasNonOOBComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>rgba(81, 92, 107, 1)</BackgroundColor>
+  <DisplayName>Set Flow Permissions</DisplayName>
+  <Description>As a Global Admin, Environment Admin or Business Application Admin this app can be used to re-assign app owner roles or add new users to an app.</Description>
+  <CommitMessage>Add warning about solution flows and permissions</CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences xsi:nil="true"></AuthorizationReferences>
+  <ConnectionReferences>{"d245f5da-a9ca-4ff0-860e-ec4b89192c92":{"id":"/providers/microsoft.powerapps/apis/shared_powerplatformforadmins","displayName":"Power Platform for Admins","iconUri":"https://connectoricons-prod.azureedge.net/powerplatformforadmins/icon_1.0.1350.2003.png","dataSources":["PowerplatformforAdmins"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"fb01b0e4-4761-4a3c-8d61-a80af86f777a":{"id":"/providers/microsoft.powerapps/apis/shared_office365users","displayName":"Office 365 Users","iconUri":"https://connectoricons-prod.azureedge.net/office365users/icon_1.0.1357.2029.png","dataSources":["Office365Users"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"65cd14aa-88aa-4b2b-93cc-9b78ecbbdd18":{"id":"/providers/microsoft.powerapps/apis/shared_office365","displayName":"Office 365 Outlook","iconUri":"https://connectoricons-prod.azureedge.net/office365/icon_1.0.1363.2042.png","dataSources":["Office365"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"f1891446-67c1-47da-9f46-87a320a86718":{"id":"/providers/microsoft.powerapps/apis/shared_microsoftflowforadmins","displayName":"Power Automate for Admins","iconUri":"https://connectoricons-prod.azureedge.net/microsoftflowforadmins/icon_1.0.1350.2003.png","dataSources":["PowerAutomateforAdmins"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"}}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds"},"dataSources":{"Environments":{"entitySetName":"admin_environments","logicalName":"admin_environment"},"Makers":{"entitySetName":"admin_makers","logicalName":"admin_maker"},"Users":{"entitySetName":"systemusers","logicalName":"systemuser"},"Flows":{"entitySetName":"admin_flows","logicalName":"admin_flow"},"COE Settings":{"entitySetName":"admin_coesettingses","logicalName":"admin_coesettings"}}}}</DatabaseReferences>
+  <CanConsumeAppPass>0</CanConsumeAppPass>
+  <CanvasAppType>0</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"admin_environment","componenttype":1},{"logicalname":"admin_maker","componenttype":1},{"logicalname":"systemuser","componenttype":1},{"logicalname":"admin_flow","componenttype":1},{"logicalname":"admin_coesettings","componenttype":1}]}</CdsDependencies>
+  <BackgroundImageUri>/CanvasApps/admin_setflowpermissions_ce2bb_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/admin_setflowpermissions_ce2bb_DocumentUri.msapp</DocumentUri>
+</CanvasApp>

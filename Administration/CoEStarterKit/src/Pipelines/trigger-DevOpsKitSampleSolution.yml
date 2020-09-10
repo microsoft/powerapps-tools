@@ -1,0 +1,53 @@
+trigger:
+  branches:
+    include:
+    - DevOpsKitSampleSolution-1.0
+  paths:
+    include:
+    - DevOpsKitSampleSolution/*
+    exclude:
+    - DevOpsKitSampleSolution/README.md
+    
+name: 1.0.$(Date:yyyyMMdd)$(Rev:.r)
+
+# TEMPORARY - Currently some third party tasks and some PowerShell scripts which require supplying username/password instead of 
+# an Azure DevOps service connection. Using variable groups to store those values for reuse across pipelines.  The variables are:
+# - TempUsername
+# - TempPassword
+# - TestServiceConnection
+# - ProdServiceConnection
+# The goal is to eliminate the need for any third party tasks and remove or replace PowerShell scripts with Microsoft authored 
+# tasks.  This starter kit will serve as a way to help drive and prioritize those tasks.
+#
+# NOTE: If you want to use different values for these variables, you can remove the variable group and attach them directly to this pipeline.
+variables:
+- group: global-variable-group
+- name: SolutionName
+  value: 'DevOpsKitSampleSolution'
+- name: TestEnvironmentVariables
+  value: | 
+    [
+      ["cat_EnvironmentVariableOne","ADO-TEST"],
+      ["cat_EnvironmentVariableTwo","100"],
+      ["cat_EnvironmentVariableThree","{'name':'ado-test'}"]
+    ]
+- name: ProdEnvironmentVariables
+  value: | 
+    [
+      ["cat_EnvironmentVariableOne","ADO-PROD"],
+      ["cat_EnvironmentVariableTwo","1000"],
+      ["cat_EnvironmentVariableThree","{'name':'ado-prod'}"]
+    ]
+- name: TestConnectionReferences
+  value: | 
+    [
+      ['cat_CDS_Current','80b0e9a24b3e4db5b482b76d10d9e750']
+    ]
+- name: ProdConnectionReferences
+  value: | 
+    [
+      ['cat_CDS_Current','f85b4bd071ee4a9ea5106d7c92d3d02b']
+    ]
+
+stages:
+- template: Templates\build-deploy-Solution.yml

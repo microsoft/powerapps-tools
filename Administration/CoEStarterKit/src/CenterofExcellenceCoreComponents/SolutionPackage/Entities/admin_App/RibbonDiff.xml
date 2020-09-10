@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <HideCustomAction HideActionId="admin.Mscrm.Form.admin_app.Activate.Hide" Location="Mscrm.Form.admin_app.Activate" />
+    <HideCustomAction HideActionId="admin.Mscrm.Form.admin_app.Deactivate.Hide" Location="Mscrm.Form.admin_app.Deactivate" />
+    <HideCustomAction HideActionId="admin.Mscrm.Form.admin_app.NewRecord.Hide" Location="Mscrm.Form.admin_app.NewRecord" />
+    <HideCustomAction HideActionId="admin.Mscrm.Form.admin_app.NewRecordForBPFEntity.Hide" Location="Mscrm.Form.admin_app.NewRecordForBPFEntity" />
+    <HideCustomAction HideActionId="admin.Mscrm.Form.admin_app.SaveAndNew.Hide" Location="Mscrm.Form.admin_app.SaveAndNew" />
+    <HideCustomAction HideActionId="admin.Mscrm.HomepageGrid.admin_app.Activate.Hide" Location="Mscrm.HomepageGrid.admin_app.Activate" />
+    <HideCustomAction HideActionId="admin.Mscrm.HomepageGrid.admin_app.Deactivate.Hide" Location="Mscrm.HomepageGrid.admin_app.Deactivate" />
+    <HideCustomAction HideActionId="admin.Mscrm.HomepageGrid.admin_app.Edit.Hide" Location="Mscrm.HomepageGrid.admin_app.Edit" />
+    <HideCustomAction HideActionId="admin.Mscrm.HomepageGrid.admin_app.NewRecord.Hide" Location="Mscrm.HomepageGrid.admin_app.NewRecord" />
+    <HideCustomAction HideActionId="admin.Mscrm.HomepageGrid.admin_app.NewRecordForBPFEntity.Hide" Location="Mscrm.HomepageGrid.admin_app.NewRecordForBPFEntity" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_app.Activate.Hide" Location="Mscrm.SubGrid.admin_app.Activate" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_app.AddExistingAssoc.Hide" Location="Mscrm.SubGrid.admin_app.AddExistingAssoc" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_app.AddExistingStandard.Hide" Location="Mscrm.SubGrid.admin_app.AddExistingStandard" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_app.AddNewStandard.Hide" Location="Mscrm.SubGrid.admin_app.AddNewStandard" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_app.Deactivate.Hide" Location="Mscrm.SubGrid.admin_app.Deactivate" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_app.Edit.Hide" Location="Mscrm.SubGrid.admin_app.Edit" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_app.NewRecord.Hide" Location="Mscrm.SubGrid.admin_app.NewRecord" />
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions />
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels />
+</RibbonDiffXml>

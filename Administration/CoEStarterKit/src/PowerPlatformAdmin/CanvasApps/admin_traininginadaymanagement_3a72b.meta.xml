@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>admin_traininginadaymanagement_3a72b</Name>
+  <AppVersion>2019-10-07T18:33:27Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.19093.16.0</CreatedByClientVersion>
+  <MinClientVersion>3.19093.16.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"1920","primaryDeviceHeight":"1080","sienaVersion":"9e40c854-65ed-45d3-ad13-17ebb3ef8867","deviceCapabilities":"","supportsPortrait":"false","supportsLandscape":"true","primaryFormFactor":"Tablet","publisherVersion":"3.19093.16","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasNonOOBComponent":"false"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>rgba(0, 176, 240, 1)</BackgroundColor>
+  <DisplayName>Training In A Day Management</DisplayName>
+  <Description>Create new Power Platform training events, and manage attendees</Description>
+  <CommitMessage xsi:nil="true"></CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences xsi:nil="true"></AuthorizationReferences>
+  <ConnectionReferences>{"2e44dbcf-945e-4d29-ad79-74cd5fab8789":{"id":"/providers/microsoft.powerapps/apis/shared_office365","displayName":"Office 365 Outlook","iconUri":"https://connectoricons-prod.azureedge.net/office365/icon_1.0.1268.1727.png","dataSources":["Office365"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"2e077578-1e56-433c-a9c9-3f50c91d7415":{"id":"/providers/microsoft.powerapps/apis/shared_office365users","displayName":"Office 365 Users","iconUri":"https://connectoricons-prod.azureedge.net/office365users/icon_1.0.1258.1715.png","dataSources":["Office365Users"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"}}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds"},"dataSources":{"COE Settings":{"entitySetName":"admin_coesettingses","logicalName":"admin_coesettings"},"InADayEvents":{"entitySetName":"admin_inadayevents","logicalName":"admin_inadayevent"},"InADayAttendees":{"entitySetName":"admin_inadayattendeeses","logicalName":"admin_inadayattendees"}}}}</DatabaseReferences>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"admin_coesettings","componenttype":1},{"logicalname":"admin_inadayevent","componenttype":1},{"logicalname":"admin_inadayattendees","componenttype":1}]}</CdsDependencies>
+  <BackgroundImageUri>/CanvasApps/admin_traininginadaymanagement_3a72b_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/admin_traininginadaymanagement_3a72b_DocumentUri.msapp</DocumentUri>
+</CanvasApp>

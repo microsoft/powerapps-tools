@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{e97c9a87-7493-477a-84ce-d20073f97185}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{1ddd3517-cc81-4e78-970a-c3cfb337fbe3}" name="StageStep3" locklevel="0" expanded="true" visible="false" labelid="{2d575731-fa37-4328-a507-20605c50e3f5}">
+          <labels>
+            <label description="Validate Maker Business Requirements" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{1ddd3517-cc81-4e78-970a-c3cfb337fbe3}" name="StageStep3_section1" labelid="{b4b5e790-fee8-48d4-897d-2222b302b770}">
+                  <labels>
+                    <label description="Validate Maker Business Requirements" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1ca367d7-6187-4f20-8025-71f7f2f63b69}" showlabel="true" visible="true" labelid="{13e368c0-3c12-477f-b55f-1b626c8dcfa7}">
+                        <labels>
+                          <label description="Check if Maker Provided Business Requirements" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_app_new_bpf_ffa183a676d64ec9aee6a558129651a2:admin_makersubmittedrequirements" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="admin_makersubmittedrequirements" relationship="bpf_admin_app_new_bpf_ffa183a676d64ec9aee6a558129651a2" isrequired="true" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{175b8451-834e-4e7a-9ce2-9ca15b746f07}" showlabel="true" visible="true" labelid="{8c9f936a-835f-42ee-b4b5-9d4f858cdaab}">
+                        <labels>
+                          <label description="Confirm Business Impact" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_app_new_bpf_ffa183a676d64ec9aee6a558129651a2:admin_requirement_4" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="admin_requirement_4" relationship="bpf_admin_app_new_bpf_ffa183a676d64ec9aee6a558129651a2" isrequired="true" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{57b9497f-22b3-460a-a553-1afe8eef74c2}" name="StageStep9" locklevel="0" expanded="true" visible="false" labelid="{71e69e27-d49b-459a-87ae-4e584779714b}">
+          <labels>
+            <label description="Mitigation Plan" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{57b9497f-22b3-460a-a553-1afe8eef74c2}" name="StageStep9_section1" labelid="{cf0b30a7-8aee-4993-9cda-89e7fa1bec64}">
+                  <labels>
+                    <label description="Mitigation Plan" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9a213b3d-1e4a-4391-b6a0-2529b46693a1}" showlabel="true" visible="true" labelid="{4179456c-3ebf-41dc-a50b-57d783202c6f}">
+                        <labels>
+                          <label description="Mitigation Plan Provided" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_app_new_bpf_ffa183a676d64ec9aee6a558129651a2:admin_requirement_5" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="admin_requirement_5" relationship="bpf_admin_app_new_bpf_ffa183a676d64ec9aee6a558129651a2" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{2d506cc4-3f62-4c34-8711-538712579f33}" name="StageStep13" locklevel="0" expanded="true" visible="false" labelid="{43f2d282-4b9d-4f10-ac23-b8ddfdf34137}">
+          <labels>
+            <label description="Assess Risk" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{2d506cc4-3f62-4c34-8711-538712579f33}" name="StageStep13_section1" labelid="{de5c9b2f-0264-4472-820b-2231e13fbd51}">
+                  <labels>
+                    <label description="Assess Risk" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ef9aff29-a591-497e-a786-01fda9645623}" showlabel="true" visible="true" labelid="{af81766a-b146-4358-ac79-530a584b9d4e}">
+                        <labels>
+                          <label description="Asses Risk" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_app_new_bpf_ffa183a676d64ec9aee6a558129651a2:admin_riskassessment" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="admin_riskassessment" relationship="bpf_admin_app_new_bpf_ffa183a676d64ec9aee6a558129651a2" isrequired="true" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{c9f9f2b1-b172-449f-b7b1-fdad1e9f1e75}" name="StageStep17" locklevel="0" expanded="true" visible="false" labelid="{248aef4a-d276-474e-99ec-a93c153728d2}">
+          <labels>
+            <label description="Highlight App In Catalog" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{c9f9f2b1-b172-449f-b7b1-fdad1e9f1e75}" name="StageStep17_section1" labelid="{aca47412-2888-4acb-ac80-94da80cbb681}">
+                  <labels>
+                    <label description="Highlight App In Catalog" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{229e4cac-2053-4cf2-b206-c1a070d8413b}" showlabel="true" visible="true" labelid="{03f9b614-33d1-464b-b77f-8722c369ca7b}">
+                        <labels>
+                          <label description="App Category" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_app_new_bpf_ffa183a676d64ec9aee6a558129651a2:admin_category" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="admin_category" relationship="bpf_admin_app_new_bpf_ffa183a676d64ec9aee6a558129651a2" isrequired="true" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e599b549-9e1d-4d26-af3f-6b84e85e0843}" showlabel="true" visible="true" labelid="{fa221760-1bf8-4b8a-9d09-64db36d3faec}">
+                        <labels>
+                          <label description="In App Catalog" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_app_new_bpf_ffa183a676d64ec9aee6a558129651a2:admin_inappcatalog" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="admin_inappcatalog" relationship="bpf_admin_app_new_bpf_ffa183a676d64ec9aee6a558129651a2" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6b41dcd7-73c1-4e0f-9a62-96d230f558d5}" showlabel="true" visible="true" labelid="{deb869ec-1b17-4f7c-b52b-76cf39aa62e3}">
+                        <labels>
+                          <label description="Featured In App Catalog" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_app_new_bpf_ffa183a676d64ec9aee6a558129651a2:admin_inappcatalogfeatured" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="admin_inappcatalogfeatured" relationship="bpf_admin_app_new_bpf_ffa183a676d64ec9aee6a558129651a2" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

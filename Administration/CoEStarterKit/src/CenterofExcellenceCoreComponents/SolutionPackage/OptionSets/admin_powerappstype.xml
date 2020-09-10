@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="admin_powerappstype" localizedName="PowerApps Type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.22</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="PowerApps Type" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="597910000">
+      <labels>
+        <label description="Canvas" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="597910001">
+      <labels>
+        <label description="Model Driven" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="597910002">
+      <labels>
+        <label description="SharePointFormApp" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>

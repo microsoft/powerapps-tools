@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{b5c69e62-c1d1-ea11-a812-000d3a31cb42}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="admin_name" select="1" icon="1" preview="1">
+        <row name="result" id="admin_pvaid">
+          <cell name="admin_name" width="200" />
+          <cell name="admin_makerrequirementbusinessimpact" width="100" />
+          <cell name="admin_pvacreatedon" width="100" />
+          <cell name="admin_pvastate" width="100" />
+          <cell name="admin_pvaowner" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="admin_pva">
+          <attribute name="admin_name" />
+          <attribute name="admin_pvaid" />
+          <filter type="and">
+            <condition attribute="admin_adminrequirementriskassessment" operator="null" />
+            <condition attribute="admin_makerrequirementbusinessimpact" operator="not-null" />
+            <condition attribute="admin_makerrequirementbusinessjustification" operator="not-null" />
+          </filter>
+          <attribute name="admin_makerrequirementbusinessimpact" />
+          <attribute name="admin_pvacreatedon" />
+          <attribute name="admin_pvastate" />
+          <attribute name="admin_pvaowner" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.55</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Admin Review" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

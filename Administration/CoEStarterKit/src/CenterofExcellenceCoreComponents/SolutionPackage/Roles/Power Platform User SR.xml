@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Role id="{0173e729-2b89-e911-a856-000d3a372932}" name="Power Platform User SR" isinherited="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsCustomizable>1</IsCustomizable>
+  <RolePrivileges>
+    <RolePrivilege name="prvCreateadmin_InADayAttendees" level="Basic" />
+    <RolePrivilege name="prvCreateSharePointData" level="Global" />
+    <RolePrivilege name="prvDeleteadmin_InADayAttendees" level="Basic" />
+    <RolePrivilege name="prvReadadmin_App" level="Global" />
+    <RolePrivilege name="prvReadadmin_COESettings" level="Global" />
+    <RolePrivilege name="prvReadadmin_Connector" level="Global" />
+    <RolePrivilege name="prvReadadmin_Environment" level="Global" />
+    <RolePrivilege name="prvReadadmin_Flow" level="Global" />
+    <RolePrivilege name="prvReadadmin_InADayAttendees" level="Basic" />
+    <RolePrivilege name="prvReadadmin_InADayEvent" level="Global" />
+    <RolePrivilege name="prvReadPluginAssembly" level="Global" />
+    <RolePrivilege name="prvReadPluginType" level="Global" />
+    <RolePrivilege name="prvReadSdkMessage" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStep" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStepImage" level="Global" />
+    <RolePrivilege name="prvReadSharePointData" level="Global" />
+    <RolePrivilege name="prvReadSharePointDocument" level="Global" />
+    <RolePrivilege name="prvWriteadmin_InADayAttendees" level="Basic" />
+    <RolePrivilege name="prvWriteSharePointData" level="Global" />
+  </RolePrivileges>
+</Role>

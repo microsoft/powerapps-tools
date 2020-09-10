@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{7cfb5d28-62cd-46d6-b8b4-0524e1b38452}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="admin_name" select="1" icon="1" preview="1">
+        <row name="result" id="admin_syncflowerrorsid">
+          <cell name="admin_name" width="300" />
+          <cell name="createdon" width="125" />
+          <cell name="admin_environmentname" width="100" />
+          <cell name="admin_flowinstanceurl" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="admin_syncflowerrors">
+          <attribute name="admin_syncflowerrorsid" />
+          <attribute name="admin_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="createdon" descending="true" />
+          <attribute name="admin_environmentname" />
+          <attribute name="admin_flowinstanceurl" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Sync Flow Errors" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>admin_PowerPlatformAdminView</UniqueName>
+  <IntroducedVersion>1.0.0.22</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="62" schemaName="admin_PowerPlatformAdminView" />
+    <AppModuleComponent type="29" id="{4d44fbe6-6ed0-463a-a73f-7175bce5185d}" />
+    <AppModuleComponent type="29" id="{8b849d98-38fe-4896-8dd6-e77119bce352}" />
+    <AppModuleComponent type="29" id="{fa72a048-f3b9-4f25-b97b-fca9c4b8f793}" />
+    <AppModuleComponent type="29" id="{ffa183a6-76d6-4ec9-aee6-a558129651a2}" />
+    <AppModuleComponent type="60" id="{cf839870-ff70-e911-a833-000d3a375590}" />
+    <AppModuleComponent type="1" schemaName="admin_auditlog" />
+    <AppModuleComponent type="1" schemaName="admin_pva" />
+    <AppModuleComponent type="1" schemaName="new_chatbotapprovalbpf" />
+    <AppModuleComponent type="1" schemaName="admin_coesettings" />
+    <AppModuleComponent type="60" id="{88f3be29-2d60-4849-bf10-ee441ed7a3b4}" />
+    <AppModuleComponent type="26" id="{1bb21c04-87a5-49fc-a48d-5f268c409333}" />
+    <AppModuleComponent type="1" schemaName="admin_connectionreference" />
+    <AppModuleComponent type="60" id="{fcd2fe45-2777-406c-8394-d44f74237f86}" />
+    <AppModuleComponent type="26" id="{0efcdf8f-7a1c-414e-aeb0-3c5590da39bb}" />
+    <AppModuleComponent type="1" schemaName="admin_environment" />
+    <AppModuleComponent type="60" id="{898bd883-98f4-4ee4-8221-29b1c39912ed}" />
+    <AppModuleComponent type="26" id="{5a4ff862-63ee-4b61-bf91-e15901265488}" />
+    <AppModuleComponent type="26" id="{16c8f393-8e98-4318-a2d3-0fec847c0c7b}" />
+    <AppModuleComponent type="59" id="{cd098782-fa70-e911-a833-000d3a375590}" />
+    <AppModuleComponent type="1" schemaName="expiredprocess" />
+    <AppModuleComponent type="1" schemaName="admin_flow" />
+    <AppModuleComponent type="60" id="{1e9a3577-99f5-477a-82fd-736255a3ff9d}" />
+    <AppModuleComponent type="26" id="{1471c348-7b87-e911-a856-000d3a372932}" />
+    <AppModuleComponent type="26" id="{3b6d0cb9-b36d-4ac9-a5c4-3ff2fdd92c89}" />
+    <AppModuleComponent type="26" id="{59e986b5-c270-e911-a833-000d3a375590}" />
+    <AppModuleComponent type="1" schemaName="new_flowapprovalbpf" />
+    <AppModuleComponent type="1" schemaName="knowledgearticle" />
+    <AppModuleComponent type="1" schemaName="admin_maker" />
+    <AppModuleComponent type="60" id="{71bedd9f-c63c-4c83-9b38-48a77e6b9b79}" />
+    <AppModuleComponent type="26" id="{42965611-2005-4167-b766-eb540f0a2dde}" />
+    <AppModuleComponent type="26" id="{32cb5052-a761-447d-b592-5641a097a171}" />
+    <AppModuleComponent type="1" schemaName="newprocess" />
+    <AppModuleComponent type="1" schemaName="admin_powerplatformuser" />
+    <AppModuleComponent type="1" schemaName="admin_app" />
+    <AppModuleComponent type="60" id="{6dad0a69-1879-4f73-94ad-3b40ff425429}" />
+    <AppModuleComponent type="26" id="{3f837274-b889-e911-a854-000d3a372186}" />
+    <AppModuleComponent type="26" id="{c454b997-4940-436b-b2db-31f344ddc4bf}" />
+    <AppModuleComponent type="26" id="{f134eec1-bea4-e911-a84f-000d3a3627b3}" />
+    <AppModuleComponent type="26" id="{2a4179fe-9581-e911-a837-000d3a11e787}" />
+    <AppModuleComponent type="1" schemaName="new_bpf_ffa183a676d64ec9aee6a558129651a2" />
+    <AppModuleComponent type="60" id="{e97c9a87-7493-477a-84ce-d20073f97185}" />
+    <AppModuleComponent type="26" id="{4a5af3ae-1b2c-4c66-a404-f77b3cfb33e9}" />
+    <AppModuleComponent type="1" schemaName="admin_connector" />
+    <AppModuleComponent type="26" id="{b245d5d0-d025-41a9-9b66-30dd3bce898d}" />
+    <AppModuleComponent type="26" id="{9c6f1dfe-a389-e911-a856-000d3a372932}" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{0173e729-2b89-e911-a856-000d3a372932}" />
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{3e6126b5-2589-e911-a856-000d3a372932}" />
+    <Role id="{1d04a95b-cc80-e911-a82e-000d3a11eb35}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="Power Platform Admin View" languagecode="1033" />
+  </LocalizedNames>
+</AppModule>

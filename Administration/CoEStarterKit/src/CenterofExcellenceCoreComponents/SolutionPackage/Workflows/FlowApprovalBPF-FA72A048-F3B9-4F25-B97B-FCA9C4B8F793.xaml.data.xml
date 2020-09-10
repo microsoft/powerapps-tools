@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{fa72a048-f3b9-4f25-b97b-fca9c4b8f793}" Name="Flow Approval BPF" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/FlowApprovalBPF-FA72A048-F3B9-4F25-B97B-FCA9C4B8F793.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <processorder>100</processorder>
+  <RunAs>1</RunAs>
+  <UniqueName>new_flowapprovalbpf</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <PrimaryEntity>admin_Flow</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Flow Approval BPF" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{af112cfd-6cc9-493f-8172-ad20d81c2321}">
+      <label languagecode="1033" description="Validate Maker Business Requirements" />
+    </steplabels>
+    <steplabels id="{06690606-3ca0-40d2-ad6c-8fbfdab8414e}">
+      <label languagecode="1033" description="Check if Maker Provided Business Requirements" />
+    </steplabels>
+    <steplabels id="{2e20e2d2-1a8c-452c-915b-6f0abafba16e}">
+      <label languagecode="1033" description="Confirm Business Impact" />
+    </steplabels>
+    <steplabels id="{e2c0663a-52ca-48e1-b92f-a5c565b296f5}">
+      <label languagecode="1033" description="Mitigation Plan" />
+    </steplabels>
+    <steplabels id="{90427121-9cb0-4f2b-91f8-670e758dda5c}">
+      <label languagecode="1033" description="Mitigation Plan Provided" />
+    </steplabels>
+    <steplabels id="{de271eca-e514-40f2-a07e-56cefb64bebb}">
+      <label languagecode="1033" description="Assess Risk" />
+    </steplabels>
+    <steplabels id="{158bf444-eb5c-4df4-9d48-290487c77ec8}">
+      <label languagecode="1033" description="Asses Risk" />
+    </steplabels>
+    <steplabels id="{865a7c5f-4fab-4864-89d2-5d4decc1f54e}">
+      <label languagecode="1033" description="Complete Admin Review" />
+    </steplabels>
+    <steplabels id="{5903e35c-51f5-4495-bee0-2472f4479b49}">
+      <label languagecode="1033" description="Admin Requirement - Reviewed Flow" />
+    </steplabels>
+  </labels>
+</Workflow>

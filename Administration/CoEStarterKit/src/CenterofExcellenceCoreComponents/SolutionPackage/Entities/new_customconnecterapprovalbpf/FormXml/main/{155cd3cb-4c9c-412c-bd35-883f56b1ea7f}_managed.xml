@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{155cd3cb-4c9c-412c-bd35-883f56b1ea7f}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{ceeded1a-038e-4e92-9983-ae1fa14bbeba}" name="StageStep3" locklevel="0" expanded="true" visible="false" labelid="{5ef2eab9-5ece-437a-a1d9-4fc0b95887bf}">
+          <labels>
+            <label description="Validate Maker Business Requirements" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{3d98ff31-1a31-4d76-2581-109fd6630c60}" name="StageStep3_section1" labelid="{acba670d-0b0a-4319-a4af-5f8322656a7b}">
+                  <labels>
+                    <label description="Validate Maker Business Requirements" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{57ed3a80-fd72-4407-ba79-d61c7c862f99}" showlabel="true" visible="true" labelid="{47957ff3-c053-4752-8ddc-fde8edcc7754}">
+                        <labels>
+                          <label description="Check if Maker Provided Business Requirements" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_connector_new_customconnecterapprovalbpf:admin_makerrequirementbusinessjustification" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="admin_makerrequirementbusinessjustification" relationship="bpf_admin_connector_new_customconnecterapprovalbpf" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c14e464a-03f4-4b2d-8687-8dc3bbb93a83}" showlabel="true" visible="true" labelid="{d0d90fee-3a4f-48d4-a5de-58d5f98c61be}">
+                        <labels>
+                          <label description="Check if Maker Provided Conditions of Use" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_connector_new_customconnecterapprovalbpf:admin_makerrequirementconditionsofuse" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="admin_makerrequirementconditionsofuse" relationship="bpf_admin_connector_new_customconnecterapprovalbpf" isrequired="true" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{b3819b06-7c9c-4007-955f-26807ec8c0a6}" name="StageStep9" locklevel="0" expanded="true" visible="false" labelid="{0d7177cc-efb3-420a-8450-be0d918ee3bd}">
+          <labels>
+            <label description="Assess Risk" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{526c1ced-7a80-cbb3-5101-0714281e780f}" name="StageStep9_section1" labelid="{676f2028-d621-4b23-a3f2-addef8c74b7b}">
+                  <labels>
+                    <label description="Assess Risk" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{561812ee-2ca9-4c6d-9b2f-7ee1a2f1a7d2}" showlabel="true" visible="true" labelid="{c28857f6-9077-4551-841a-26a6dd5f8c60}">
+                        <labels>
+                          <label description="Assess Risk" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_connector_new_customconnecterapprovalbpf:admin_adminrequirementriskassessment" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="admin_adminrequirementriskassessment" relationship="bpf_admin_connector_new_customconnecterapprovalbpf" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{7f1ad345-36f3-41b4-80a1-e4c9501d958d}" name="StageStep13" locklevel="0" expanded="true" visible="false" labelid="{84e0b1e2-fe35-42ce-9b92-bfb1d2bb07c7}">
+          <labels>
+            <label description="Complete Admin Review" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{af0ba59a-6047-4e1a-0063-6b7a5dcdbc29}" name="StageStep13_section1" labelid="{ae57da23-4085-4194-bb14-8dec149589cb}">
+                  <labels>
+                    <label description="Complete Admin Review" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{503299f8-cd46-4de3-a39b-05ed0ddb609b}" showlabel="true" visible="true" labelid="{06957ef5-0d8e-4841-995c-95e1ed17e362}">
+                        <labels>
+                          <label description="Admin Approval" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_connector_new_customconnecterapprovalbpf:admin_adminrequirementreviewedconnector" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="admin_adminrequirementreviewedconnector" relationship="bpf_admin_connector_new_customconnecterapprovalbpf" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

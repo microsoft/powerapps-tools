@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{5f0365ae-7aac-4b80-b4f9-45db27897cfa}</formid>
+    <IntroducedVersion>1.46</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{548500ef-4935-4a3d-b426-215e5542b622}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{24201061-5c9d-4b8b-b379-be9135759d93}" columns="11" name="General">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7a052f70-39e9-4890-bc7a-3635193cdffb}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Type" languagecode="1033" />
+                        </labels>
+                        <control id="admin_type" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="admin_type" disabled="false" />
+                      </cell>
+                      <cell showlabel="true" locklevel="0" id="{e93cbbf8-f817-4740-89ab-0e20f8a53974}" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="App Access" languagecode="1033" />
+                        </labels>
+                        <control id="ResourceView" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <TargetEntityType>admin_powerplatformuserrole</TargetEntityType>
+                            <ViewId>{8D54EE43-A8AC-EA11-A812-000D3A31CB42}</ViewId>
+                            <ViewIds>{252402B7-BD6F-415C-8613-958FDD8B8DE0},{81E1F65B-22AC-EA11-A812-000D3A31CF04},{8D54EE43-A8AC-EA11-A812-000D3A31CB42}</ViewIds>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <RelationshipName>admin_PowerPlatformUser_User</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dcef406b-f2f8-42e2-8fb9-0872e6ebde70}">
+                        <labels>
+                          <label description="Display Name" languagecode="1033" />
+                        </labels>
+                        <control id="admin_displayname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="admin_displayname" />
+                      </cell>
+                      <cell showlabel="true" locklevel="0" id="{66fba1ac-6c44-46f7-9c92-6f677710cf42}" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Flow Access" languagecode="1033" />
+                        </labels>
+                        <control id="Flow Access" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <TargetEntityType>admin_powerplatformuserrole</TargetEntityType>
+                            <ViewId>{06903F90-A8AC-EA11-A812-000D3A31CF04}</ViewId>
+                            <ViewIds>{252402B7-BD6F-415C-8613-958FDD8B8DE0},{06903F90-A8AC-EA11-A812-000D3A31CF04}</ViewIds>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <RelationshipName>admin_PowerPlatformUser_User</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6e2b2617-00e9-4a7b-ae82-8823b252551e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="User" languagecode="1033" />
+                        </labels>
+                        <control id="admin_user" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="admin_user" disabled="false" />
+                      </cell>
+                      <cell showlabel="true" locklevel="0" id="{2b427e6c-0425-4503-9f31-54e79666793d}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a2e7e197-d9fc-475a-8da5-179054c5a57a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="User Principal Name" languagecode="1033" />
+                        </labels>
+                        <control id="admin_userprincipalname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="admin_userprincipalname" disabled="false" />
+                      </cell>
+                      <cell showlabel="true" locklevel="0" id="{31037df5-8b1f-43ec-a590-472d20fc783d}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5e7fc188-9e8d-4cb1-a0f9-939ae3af4ef5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Department" languagecode="1033" />
+                        </labels>
+                        <control id="admin_department" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="admin_department" disabled="false" />
+                      </cell>
+                      <cell showlabel="true" locklevel="0" id="{fb7d3c8f-8ff7-4cf4-9dfe-b092207038bc}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{36b9fe1d-35f7-4065-a5f6-adcc8fe729c5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Group Size" languagecode="1033" />
+                        </labels>
+                        <control id="admin_groupsize" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="admin_groupsize" disabled="false" />
+                      </cell>
+                      <cell showlabel="true" locklevel="0" id="{cac00ed1-ec55-4605-8aec-14bc23760022}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5b10b033-8b68-43cc-af18-b6062b949638}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                      <cell showlabel="true" locklevel="0" id="{5397e32c-c08e-4b7a-95c4-1b844fd6e95a}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{c178ffc1-7d5d-4032-b41c-82b10de7c450}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{b67f0d75-ea39-4ef6-877c-1639b3033552}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{21bfa37f-a3b2-46e0-be6b-81b9dc3a2e22}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c2debf9f-6fe1-42a8-bf06-12d3eb20f9f0}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{c42849c1-d598-468c-b29c-239aacc6e703}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{43e88913-9fb1-4340-950a-77a33dd81bd4}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{67fcd4cf-6041-4222-8096-1cbda6646333}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{64456378-36c2-4fd3-b134-1a7b096bf529}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true" />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

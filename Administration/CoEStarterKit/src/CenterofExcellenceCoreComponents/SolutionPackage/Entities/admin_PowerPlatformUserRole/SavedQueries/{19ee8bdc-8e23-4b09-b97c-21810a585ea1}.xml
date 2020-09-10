@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{19ee8bdc-8e23-4b09-b97c-21810a585ea1}</savedqueryid>
+    <layoutxml>
+      <grid name="admin_powerplatformuserroles" jump="admin_name" select="1" icon="1" preview="1">
+        <row name="admin_powerplatformuserrole" id="admin_powerplatformuserroleid">
+          <cell name="admin_powerplatformuser" width="100" />
+          <cell name="admin_rolename" width="100" />
+          <cell name="a_c38a295b908e4e7887c1e73cb3ba6b32.admin_type" width="100" />
+          <cell name="a_c38a295b908e4e7887c1e73cb3ba6b32.admin_groupsize" width="100" />
+          <cell name="admin_resourcetype" width="100" />
+          <cell name="admin_app" width="100" />
+          <cell name="admin_flow" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="admin_powerplatformuserrole">
+          <attribute name="admin_powerplatformuserroleid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="admin_rolename" />
+          <attribute name="admin_powerplatformuser" />
+          <link-entity alias="a_c38a295b908e4e7887c1e73cb3ba6b32" name="admin_powerplatformuser" to="admin_powerplatformuser" from="admin_powerplatformuserid" link-type="outer" visible="false">
+            <attribute name="admin_type" />
+            <attribute name="admin_groupsize" />
+          </link-entity>
+          <attribute name="admin_resourcetype" />
+          <attribute name="admin_app" />
+          <attribute name="admin_flow" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.46</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Power Platform User Role Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

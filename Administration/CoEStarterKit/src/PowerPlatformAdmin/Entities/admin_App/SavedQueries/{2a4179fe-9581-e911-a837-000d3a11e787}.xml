@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{2a4179fe-9581-e911-a837-000d3a11e787}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="admin_displayname" select="1" icon="1" preview="1">
+        <row name="result" id="admin_appid">
+          <cell name="admin_displayname" width="258" />
+          <cell name="admin_appenvironment" width="176" />
+          <cell name="admin_appowner" width="150" />
+          <cell name="admin_appcreatedon" width="129" />
+          <cell name="admin_appmodifiedon" width="135" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="admin_app">
+          <attribute name="admin_displayname" />
+          <attribute name="admin_appenvironment" />
+          <attribute name="admin_appowner" />
+          <filter type="and">
+            <condition attribute="admin_powerappstype" operator="eq" value="597910001" />
+          </filter>
+          <attribute name="admin_appid" />
+          <attribute name="admin_appcreatedon" />
+          <attribute name="admin_appmodifiedon" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Model Driven Apps" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

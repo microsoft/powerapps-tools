@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>admin_dlpeditor_a721d</Name>
+  <AppVersion>2020-02-05T13:51:51Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.20013.29.0</CreatedByClientVersion>
+  <MinClientVersion>3.20013.29.0</MinClientVersion>
+  <Tags>{"minimumRequiredApiVersion":"2.2.0","primaryDeviceWidth":"1366","primaryDeviceHeight":"768","sienaVersion":"14d49729-5921-4abe-9e8b-5f6c4fe3fb2e","deviceCapabilities":"","supportsPortrait":"false","supportsLandscape":"true","primaryFormFactor":"Tablet","publisherVersion":"3.20013.29","hasComponent":"false","hasNonOOBComponent":"false","hasUnlockedComponent":"false"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>rgba(81, 92, 107, 1)</BackgroundColor>
+  <DisplayName>DLP Editor</DisplayName>
+  <Description>Use this app to make changes to the DLP policies in various environments, to see what impact it will have, and mitigate the risk of breaking a Flow / App through DLP changes by contacting makers. </Description>
+  <CommitMessage xsi:nil="true"></CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences xsi:nil="true"></AuthorizationReferences>
+  <ConnectionReferences>{"c5143658-22ae-400a-9865-74754100b210":{"id":"/providers/microsoft.powerapps/apis/shared_flowmanagement","displayName":"Flow management","iconUri":"https://psux.azureedge.net/Content/Images/Connectors/FlowManagement.png","dataSources":["Flow"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"eaba5645-96d2-4e84-8023-568d70a849be":{"id":"/providers/microsoft.powerapps/apis/shared_powerappsforadmins","displayName":"PowerApps for Admins","iconUri":"https://connectoricons-prod.azureedge.net/powerappsforadmins/icon_1.0.1257.1710.png","dataSources":["PowerAppsforAdmins"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"a2301948-7a26-44e5-80b4-c02d933d9cf9":{"id":"/providers/microsoft.powerapps/apis/shared_office365users","displayName":"Office 365 Users","iconUri":"https://connectoricons-prod.azureedge.net/office365users/icon_1.0.1298.1845.png","dataSources":["Office365Users"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"f872ef15-f525-4f0a-9b9a-0ef7fbef7e8d":{"id":"/providers/microsoft.powerapps/apis/shared_powerappsforappmakers","displayName":"PowerApps for App Makers","iconUri":"https://connectoricons-prod.azureedge.net/powerappsforappmakers/icon_1.0.1257.1710.png","dataSources":["PowerAppsforAppMakers"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"8a4696b7-dd58-49c8-846b-6f5085b37ac7":{"id":"/providers/microsoft.powerapps/apis/shared_powerplatformforadmins","displayName":"PowerPlatform for Admins","iconUri":"https://connectoricons-prod.azureedge.net/powerplatformforadmins/icon_1.0.1284.1763.png","dataSources":["PowerplatformforAdmins"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"}}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds"},"dataSources":{"COE Settings":{"entitySetName":"admin_coesettingses","logicalName":"admin_coesettings"}}}}</DatabaseReferences>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"admin_coesettings","componenttype":1}]}</CdsDependencies>
+  <BackgroundImageUri>/CanvasApps/admin_dlpeditor_a721d_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/admin_dlpeditor_a721d_DocumentUri.msapp</DocumentUri>
+</CanvasApp>

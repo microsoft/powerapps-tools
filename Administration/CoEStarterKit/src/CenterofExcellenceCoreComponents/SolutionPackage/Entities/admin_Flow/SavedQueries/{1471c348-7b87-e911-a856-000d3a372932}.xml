@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{1471c348-7b87-e911-a856-000d3a372932}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="admin_displayname" select="1" icon="1" preview="1">
+        <row name="result" id="admin_flowid">
+          <cell name="admin_displayname" width="150" />
+          <cell name="admin_flowenvironment" width="150" />
+          <cell name="admin_flowmakerdisplayname" width="150" />
+          <cell name="admin_flowcreatedon" width="125" />
+          <cell name="admin_flowmodifiedon" width="133" />
+          <cell name="admin_flowstate" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="admin_flow">
+          <attribute name="admin_displayname" />
+          <attribute name="admin_flowenvironment" />
+          <attribute name="admin_flowmakerdisplayname" />
+          <filter type="and">
+            <condition attribute="admin_flowcreator" operator="null" />
+          </filter>
+          <attribute name="admin_flowid" />
+          <attribute name="admin_flowmodifiedon" />
+          <attribute name="admin_flowcreatedon" />
+          <order attribute="admin_flowcreatedon" descending="true" />
+          <attribute name="admin_flowstate" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Abandoned Flows" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{0ffc7638-f8dc-4ade-8cc8-d087b08f228a}</savedqueryid>
+    <layoutxml>
+      <grid name="admin_powerplatformusers" jump="admin_displayname" select="1" icon="1" preview="1">
+        <row name="admin_powerplatformuser" id="admin_powerplatformuserid">
+          <cell name="admin_displayname" width="300" />
+          <cell name="createdon" width="125" />
+          <cell name="admin_userprincipalname" width="100" />
+          <cell name="admin_user" width="100" />
+          <cell name="admin_department" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="admin_powerplatformuser">
+          <attribute name="admin_powerplatformuserid" />
+          <attribute name="admin_displayname" />
+          <attribute name="createdon" />
+          <order attribute="admin_displayname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="admin_userprincipalname" />
+          <attribute name="admin_user" />
+          <attribute name="admin_department" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.46</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Power Platform User Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

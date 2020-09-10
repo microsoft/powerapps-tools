@@ -1,0 +1,41 @@
+trigger:
+  branches:
+    include:
+    - SourceControlHelperConnectors-1.0
+  paths:
+    include:
+    - SourceControlHelperConnectors/*
+    exclude:
+    - SourceControlHelperConnectors/README.md
+
+name: 1.0.$(Date:yyyyMMdd)$(Rev:.r)
+
+# TEMPORARY - Currently some third party tasks and some PowerShell scripts which require supplying username/password instead of 
+# an Azure DevOps service connection. Using variable groups to store those values for reuse across pipelines.  The variables are:
+# - TempUsername
+# - TempPassword
+# - TestServiceConnection
+# - ProdServiceConnection
+# The goal is to eliminate the need for any third party tasks and remove or replace PowerShell scripts with Microsoft authored 
+# tasks.  This starter kit will serve as a way to help drive and prioritize those tasks.
+#
+# NOTE: If you want to use different values for these variables, you can remove the variable group and attach them directly to this pipeline.
+variables:
+- group: global-variable-group
+- name: SolutionName
+  value: 'SourceControlHelperConnectors'
+- name: TestEnvironmentVariables
+  value: | 
+    []
+- name: ProdEnvironmentVariables
+  value: | 
+    []
+- name: TestConnectionReferences
+  value: | 
+    []
+- name: ProdConnectionReferences
+  value: | 
+    []
+
+stages:
+- template: Templates\build-deploy-Solution.yml

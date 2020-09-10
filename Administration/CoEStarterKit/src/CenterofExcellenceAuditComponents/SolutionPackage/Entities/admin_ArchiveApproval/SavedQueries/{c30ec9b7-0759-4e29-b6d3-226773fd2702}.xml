@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{c30ec9b7-0759-4e29-b6d3-226773fd2702}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="admin_name" select="1" icon="1" preview="1">
+        <row name="result" id="admin_archiveapprovalid">
+          <cell name="admin_appdisplayname" width="100" />
+          <cell name="admin_appname" width="100" />
+          <cell name="admin_appenvironmentname" width="100" />
+          <cell name="admin_appowneremail" width="100" />
+          <cell name="admin_appownername" width="100" />
+          <cell name="admin_approvalresponse" width="100" />
+          <cell name="admin_approvalcomment" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="admin_archiveapproval">
+          <attribute name="admin_archiveapprovalid" />
+          <attribute name="createdon" />
+          <attribute name="admin_appdisplayname" />
+          <attribute name="admin_appenvironmentname" />
+          <attribute name="admin_appname" />
+          <attribute name="admin_appowneremail" />
+          <attribute name="admin_appownername" />
+          <attribute name="admin_approvalcomment" />
+          <attribute name="admin_approvalresponse" />
+          <order attribute="createdon" descending="true" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Archive Approvals" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

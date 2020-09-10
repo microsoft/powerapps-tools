@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{f12456e0-69f3-4929-a868-ab020dd2a8e8}</formid>
+    <IntroducedVersion>0.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{9d860c47-923b-4549-9cb5-11670ffbbaca}" IsUserDefined="1" name="{9d860c47-923b-4549-9cb5-11670ffbbaca}" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{1bb299fe-e1b1-4520-8327-306d379d7261}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{18611f02-adc5-46f9-9603-1ab4a87d2741}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Connector Display Name" languagecode="1033" />
+                        </labels>
+                        <control id="admin_displayname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="admin_displayname" uniqueid="{a3e89220-e3bc-6039-ed04-012a1478ce5d}" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a2238963-81b3-0ada-600c-7d980e649767}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Environment" languagecode="1033" />
+                        </labels>
+                        <control id="admin_environmentcustomconnector" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="admin_environmentcustomconnector" disabled="true" uniqueid="{2d41e0cb-dd7c-a9ed-8350-3e5a9a51e174}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{16C8F393-8E98-4318-A2D3-0FEC847C0C7B}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bdd29518-72c6-0697-9d2d-9a515542a0cc}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="admin_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="admin_name" disabled="true" uniqueid="{32471d88-4c5b-5771-40b6-ec2da94ebda6}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d7394510-7cba-1e73-994b-45041aae98b1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Created" languagecode="1033" />
+                        </labels>
+                        <control id="admin_connectorcreateddatetime" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="admin_connectorcreateddatetime" disabled="true" uniqueid="{b2ee47a9-694e-2bd8-6b60-c7925c44aebc}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{01ad5d77-bd62-132d-73e6-dc67e2c218a1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Modified" languagecode="1033" />
+                        </labels>
+                        <control id="admin_connectormodified" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="admin_connectormodified" disabled="true" uniqueid="{a07ea4d5-c9b7-776b-4ab4-e7dd217106a2}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e04e169c-447d-07a5-200d-2961d955dee4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Is Custom Api" languagecode="1033" />
+                        </labels>
+                        <control id="admin_iscustomapi" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="admin_iscustomapi" disabled="true" uniqueid="{35ba9e5d-b324-b11a-a3c6-9705d48221e0}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ab5029ca-1d86-c537-895e-9c0885deeb1a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Custom Connector Host" languagecode="1033" />
+                        </labels>
+                        <control id="admin_customconnectorhost" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="admin_customconnectorhost" disabled="true" uniqueid="{729ba04c-4d75-3a7a-4a43-40838522101a}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ccf7f07b-7359-408c-8c62-da27919de545}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="{9d860c47-923b-4549-9cb5-11670ffbbaca}_section_2" showlabel="true" showbar="true" locklevel="0" id="{3e5890cc-e4a4-a5a4-c931-95549e299a63}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Apps" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{34b74b3e-3879-1431-e24d-5dd1c19a8ec7}" showlabel="false" colspan="1" auto="false" rowspan="6">
+                        <labels>
+                          <label description="Connection References (Connector)" languagecode="1033" />
+                        </labels>
+                        <control id="Apps" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{E85399E2-A289-E911-A856-000D3A372932}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>admin_rel_ConnectorConnectionReferences</RelationshipName>
+                            <TargetEntityType>admin_connectionreference</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{0EFCDF8F-7A1C-414E-AEB0-3C5590DA39BB},{E85399E2-A289-E911-A856-000D3A372932}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="{9d860c47-923b-4549-9cb5-11670ffbbaca}_section_3" showlabel="true" showbar="true" locklevel="0" id="{d46447c5-846b-16a5-b1d0-756ea6bb6b85}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Flows" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ed77d36a-0332-2e9e-b346-68e0b53b6108}" showlabel="false" colspan="1" auto="false" rowspan="6">
+                        <labels>
+                          <label description="Connection References (Connector)" languagecode="1033" />
+                        </labels>
+                        <control id="Flows" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{BAC63B0F-A389-E911-A856-000D3A372932}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>admin_rel_ConnectorConnectionReferences</RelationshipName>
+                            <TargetEntityType>admin_connectionreference</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{0EFCDF8F-7A1C-414E-AEB0-3C5590DA39BB},{BAC63B0F-A389-E911-A856-000D3A372932}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="9a2d4fba-df29-4c01-bc02-f99486185ac6" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Audit" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_2_section_1" id="4063a196-b4a2-4c8c-b4e7-213bb8418743" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Maker Requirements" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{82e94f1f-3253-4983-8b07-e744d2ef3198}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Maker Requirement - Business Justification" languagecode="1033" />
+                        </labels>
+                        <control id="admin_makerrequirementbusinessjustification" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="admin_makerrequirementbusinessjustification" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4ec6be4b-69f7-4972-b783-8d00a320043a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Maker Requirement - Conditions of Use" languagecode="1033" />
+                        </labels>
+                        <control id="admin_makerrequirementconditionsofuse" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="admin_makerrequirementconditionsofuse" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4fa54ea9-d69b-4089-b2e4-e0a3da24b1e7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Maker Requirement - Access Management" languagecode="1033" />
+                        </labels>
+                        <control id="admin_makerrequirementaccessmanagement" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="admin_makerrequirementaccessmanagement" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{915414d6-c46e-401f-baa3-9bcd8abd7a96}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Maker Requirement - Dependencies" languagecode="1033" />
+                        </labels>
+                        <control id="admin_makerrequirementdependencies" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="admin_makerrequirementdependencies" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_2_section_2" id="d6644649-543f-4eae-8138-f43a4a252d77" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Admin Review" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c55b33d2-a66f-404d-9434-da9dadff4632}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Admin Requirement - Reviewed Connector" languagecode="1033" />
+                        </labels>
+                        <control id="admin_adminrequirementreviewedconnector" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="admin_adminrequirementreviewedconnector" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3f69601d-902f-4863-8698-4f7064753bc1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Admin Requirement - Risk Assessment" languagecode="1033" />
+                        </labels>
+                        <control id="admin_adminrequirementriskassessment" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="admin_adminrequirementriskassessment" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{e8908602-2bb0-42e7-9bf5-cb76cde956b9}" columns="111">
+        <rows>
+          <row>
+            <cell id="{1b66b42b-26a3-4901-b89f-22759fcfec98}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{23024981-a6b3-4fc2-8209-4516dfa6f70e}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b3dde790-3885-221b-30e0-09d3b70db4ba}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Maker" languagecode="1033" />
+              </labels>
+              <control id="header_admin_maker" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="admin_maker" disabled="true" uniqueid="{31aca65a-e413-cab0-7854-a2782a5609c1}">
+                <parameters>
+                  <AutoResolve>true</AutoResolve>
+                  <DisableMru>false</DisableMru>
+                  <DisableQuickFind>false</DisableQuickFind>
+                  <DisableViewPicker>false</DisableViewPicker>
+                  <DefaultViewId>{32CB5052-A761-447D-B592-5641A097A171}</DefaultViewId>
+                  <AllowFilterOff>false</AllowFilterOff>
+                </parameters>
+              </control>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar />
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <footer id="{bb718f04-279c-4d21-b7f5-71f9258a9c15}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{5fadbdac-b336-446f-b724-8cdff769e9ec}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{9d0356ab-1ab2-49fc-97fc-81f96331fbdb}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{25f1df8c-6af7-4824-b7dc-f4eb04383577}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

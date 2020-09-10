@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{8b849d98-38fe-4896-8dd6-e77119bce352}" Name="Custom Connecter Approval BPF" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/CustomConnecterApprovalBPF-8B849D98-38FE-4896-8DD6-E77119BCE352.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <processorder>100</processorder>
+  <RunAs>1</RunAs>
+  <UniqueName>new_customconnecterapprovalbpf</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <PrimaryEntity>admin_Connector</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Custom Connecter Approval BPF" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{ceeded1a-038e-4e92-9983-ae1fa14bbeba}">
+      <label languagecode="1033" description="Validate Maker Business Requirements" />
+    </steplabels>
+    <steplabels id="{57ed3a80-fd72-4407-ba79-d61c7c862f99}">
+      <label languagecode="1033" description="Check if Maker Provided Business Requirements" />
+    </steplabels>
+    <steplabels id="{c14e464a-03f4-4b2d-8687-8dc3bbb93a83}">
+      <label languagecode="1033" description="Check if Maker Provided Conditions of Use" />
+    </steplabels>
+    <steplabels id="{b3819b06-7c9c-4007-955f-26807ec8c0a6}">
+      <label languagecode="1033" description="Assess Risk" />
+    </steplabels>
+    <steplabels id="{561812ee-2ca9-4c6d-9b2f-7ee1a2f1a7d2}">
+      <label languagecode="1033" description="Assess Risk" />
+    </steplabels>
+    <steplabels id="{7f1ad345-36f3-41b4-80a1-e4c9501d958d}">
+      <label languagecode="1033" description="Complete Admin Review" />
+    </steplabels>
+    <steplabels id="{503299f8-cd46-4de3-a39b-05ed0ddb609b}">
+      <label languagecode="1033" description="Admin Approval" />
+    </steplabels>
+  </labels>
+</Workflow>

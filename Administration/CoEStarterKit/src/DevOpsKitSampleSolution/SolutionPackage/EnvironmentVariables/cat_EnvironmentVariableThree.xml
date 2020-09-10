@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definition IntroducedVersion="1.0.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SchemaName>cat_EnvironmentVariableThree</SchemaName>
+  <IsRequired>0</IsRequired>
+  <Type>100000003</Type>
+  <DefaultValue></DefaultValue>
+  <DisplayName>
+    <LocalizedNames>
+      <LocalizedName description="Environment Variable Three" languagecode="1033" />
+    </LocalizedNames>
+  </DisplayName>
+</Definition>

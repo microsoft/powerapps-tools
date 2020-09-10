@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{16c8f393-8e98-4318-a2d3-0fec847c0c7b}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="admin_displayname" select="1" icon="1" preview="0">
+        <row name="admin_environment" id="admin_environmentid">
+          <cell name="admin_displayname" width="300" />
+          <cell name="admin_numberofapps" width="150" />
+          <cell name="admin_numberofflows" width="150" />
+          <cell name="admin_environmentcreatedon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="admin_environment">
+          <attribute name="admin_environmentid" />
+          <attribute name="admin_displayname" />
+          <attribute name="admin_numberofapps" />
+          <attribute name="admin_numberofflows" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="admin_environmentcreatedon" />
+          <order attribute="admin_environmentcreatedon" descending="true" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Environment Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

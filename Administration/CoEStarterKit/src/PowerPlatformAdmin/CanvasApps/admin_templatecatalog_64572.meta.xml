@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>admin_templatecatalog_64572</Name>
+  <AppVersion>2020-02-13T18:54:57Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.20014.23.0</CreatedByClientVersion>
+  <MinClientVersion>3.20014.23.0</MinClientVersion>
+  <Tags>{"minimumRequiredApiVersion":"2.2.0","primaryDeviceWidth":"1366","primaryDeviceHeight":"768","sienaVersion":"f0c5543e-9532-4645-8a03-144fbb29ae11","deviceCapabilities":"","supportsPortrait":"false","supportsLandscape":"true","primaryFormFactor":"Tablet","publisherVersion":"3.20014.23","hasComponent":"false","hasNonOOBComponent":"false","hasUnlockedComponent":"false"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>rgba(72, 104, 96, 1)</BackgroundColor>
+  <DisplayName>Template Catalog</DisplayName>
+  <Description xsi:nil="true"></Description>
+  <CommitMessage xsi:nil="true"></CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences xsi:nil="true"></AuthorizationReferences>
+  <ConnectionReferences>{"187ab86d-494e-4e59-bbde-64530c6d6328":{"id":"/providers/microsoft.powerapps/apis/shared_powerappsforappmakers","displayName":"PowerApps for App Makers","iconUri":"https://connectoricons-prod.azureedge.net/powerappsforappmakers/icon_1.0.1257.1710.png","dataSources":["PowerAppsforAppMakers"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"9abb700a-9815-47c1-ad37-4c8146e7ed16":{"id":"/providers/microsoft.powerapps/apis/shared_office365users","displayName":"Office 365 Users","iconUri":"https://connectoricons-prod.azureedge.net/office365users/icon_1.0.1298.1845.png","dataSources":["Office365Users"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"88eac709-265f-4309-9e7b-160acdf574e7":{"id":"/providers/microsoft.powerapps/apis/shared_office365","displayName":"Office 365 Outlook","iconUri":"https://connectoricons-prod.azureedge.net/office365/icon_1.0.1304.1878.png","dataSources":["Office365"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"aa85d8bc-653d-44fd-8133-dfc35e7815e9":{"id":"/providers/microsoft.powerapps/apis/shared_sharepointonline","displayName":"SharePoint","iconUri":"https://connectoricons-prod.azureedge.net/sharepointonline/icon_1.0.1299.1858.png","dataSources":["AppTemplates"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{"https://pplatform.sharepoint.com/sites/SiteForPowerAppsArchive":{"dataSources":{"AppTemplates":{"tableName":"c00b155f-b3de-4289-aef1-cab084c32a35"}}}},"apiTier":"Standard"}}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds"},"dataSources":{"COE Settings":{"entitySetName":"admin_coesettingses","logicalName":"admin_coesettings"}}}}</DatabaseReferences>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"admin_coesettings","componenttype":1}]}</CdsDependencies>
+  <BackgroundImageUri>/CanvasApps/admin_templatecatalog_64572_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/admin_templatecatalog_64572_DocumentUri.msapp</DocumentUri>
+</CanvasApp>

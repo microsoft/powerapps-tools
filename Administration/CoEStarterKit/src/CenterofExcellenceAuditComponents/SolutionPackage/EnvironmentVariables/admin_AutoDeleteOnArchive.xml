@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definition IntroducedVersion="1.0.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SchemaName>admin_AutoDeleteOnArchive</SchemaName>
+  <IsRequired>0</IsRequired>
+  <Type>100000000</Type>
+  <DefaultValue>No</DefaultValue>
+  <DisplayName>
+    <LocalizedNames>
+      <LocalizedName description="Auto Delete On Archive" languagecode="1033" />
+    </LocalizedNames>
+  </DisplayName>
+  <Description>
+    <LocalizedNames>
+      <LocalizedName description="values must be: Yes or No" languagecode="1033" />
+    </LocalizedNames>
+  </Description>
+</Definition>

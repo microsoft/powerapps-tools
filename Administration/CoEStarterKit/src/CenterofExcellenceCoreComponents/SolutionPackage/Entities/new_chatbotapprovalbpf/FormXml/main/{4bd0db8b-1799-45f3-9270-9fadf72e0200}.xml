@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{4bd0db8b-1799-45f3-9270-9fadf72e0200}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{7e98b09b-a9ed-4539-be60-939f360d1614}" name="StageStep3" locklevel="0" expanded="true" visible="false" labelid="{fcc26707-3079-4b99-9c85-98980ffbd2e9}">
+          <labels>
+            <label description="Validate Maker Business Requirements" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{6db53a97-153a-273a-6550-4bde25372d52}" name="StageStep3_section1" labelid="{db79a5a9-bb4c-4505-9caf-dd60874433d1}">
+                  <labels>
+                    <label description="Validate Maker Business Requirements" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a3b3aeec-70f2-4055-a16b-330f36f80b7d}" showlabel="true" visible="true" labelid="{ea68f040-d1d6-4bbc-94c1-b53318f0c8cb}">
+                        <labels>
+                          <label description="Check if Maker Provided Business Requirements" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_pva_new_chatbotapprovalbpf:admin_makersubmittedrequirements" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="admin_makersubmittedrequirements" relationship="bpf_admin_pva_new_chatbotapprovalbpf" isrequired="true" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ebdadf46-caa8-4d6a-8a49-2a466532196a}" showlabel="true" visible="true" labelid="{861720dd-ff84-44e7-a113-457bf00ce699}">
+                        <labels>
+                          <label description="Confirm Business Impact" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_pva_new_chatbotapprovalbpf:admin_makerrequirementbusinessimpact" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="admin_makerrequirementbusinessimpact" relationship="bpf_admin_pva_new_chatbotapprovalbpf" isrequired="true" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{d762cdf4-8320-484c-92a6-6d62ebf83665}" name="StageStep9" locklevel="0" expanded="true" visible="false" labelid="{b7554658-7b3f-4e8e-b5ec-baab8dcda8f7}">
+          <labels>
+            <label description="Mitigation Plan" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{fc447cf8-a8ba-3457-bc4e-e125d36f1f4b}" name="StageStep9_section1" labelid="{f0cec9aa-634e-4e84-80bb-de698284232c}">
+                  <labels>
+                    <label description="Mitigation Plan" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{f15d8ac3-b658-459a-9412-fa5952c74cf5}" showlabel="true" visible="true" labelid="{d2b4d8b2-13a3-4429-95d3-26c4746c1408}">
+                        <labels>
+                          <label description="Mitigation Plan Provided" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_pva_new_chatbotapprovalbpf:admin_mitigationplanprovided" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="admin_mitigationplanprovided" relationship="bpf_admin_pva_new_chatbotapprovalbpf" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{eddcd6c6-5349-4960-9f52-678f7d49c993}" name="StageStep13" locklevel="0" expanded="true" visible="false" labelid="{2ff61de9-f41d-4802-b59b-0fb26861dd3b}">
+          <labels>
+            <label description="Assess Risk" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{c8a61087-e938-a212-1d1c-754702802c26}" name="StageStep13_section1" labelid="{cea10d9e-2e18-43b7-8b8c-054590916440}">
+                  <labels>
+                    <label description="Assess Risk" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ac5152b7-0292-417f-b2c9-49cd8a8b6d61}" showlabel="true" visible="true" labelid="{c6d9989c-0f62-4ad5-9424-08dc2f2e333f}">
+                        <labels>
+                          <label description="Asses Risk" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_pva_new_chatbotapprovalbpf:admin_adminrequirementriskassessment" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="admin_adminrequirementriskassessment" relationship="bpf_admin_pva_new_chatbotapprovalbpf" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{467cd6b8-7bd8-4894-abae-aefaf55faa2e}" name="StageStep17" locklevel="0" expanded="true" visible="false" labelid="{a8b9c597-9ebd-4766-8937-2a50e53d62ce}">
+          <labels>
+            <label description="Complete Admin Review" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{23fab2c5-59e1-ebf1-e609-581a674dbc8b}" name="StageStep17_section1" labelid="{8f6c6ff1-d054-42a4-b08e-722c0f74d33b}">
+                  <labels>
+                    <label description="Complete Admin Review" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{730da448-f17f-411c-84d6-cb9af305345a}" showlabel="true" visible="true" labelid="{9b52ec6c-5869-4276-8871-2795a0a79359}">
+                        <labels>
+                          <label description="Reviewed Bot" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_pva_new_chatbotapprovalbpf:admin_adminrequirementreviewedbot" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="admin_adminrequirementreviewedbot" relationship="bpf_admin_pva_new_chatbotapprovalbpf" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

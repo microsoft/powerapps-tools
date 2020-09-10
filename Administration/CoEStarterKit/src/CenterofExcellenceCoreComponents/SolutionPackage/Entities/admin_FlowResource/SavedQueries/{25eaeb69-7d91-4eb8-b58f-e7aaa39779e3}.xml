@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{25eaeb69-7d91-4eb8-b58f-e7aaa39779e3}</savedqueryid>
+    <layoutxml>
+      <grid name="admin_flowresources" jump="admin_resource" select="1" icon="1" preview="1">
+        <row name="admin_flowresource" id="admin_flowresourceid">
+          <cell name="admin_resource" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="admin_flowresource">
+          <attribute name="admin_flowresourceid" />
+          <attribute name="admin_resource" />
+          <attribute name="createdon" />
+          <order attribute="admin_resource" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.47</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Flow Resource Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

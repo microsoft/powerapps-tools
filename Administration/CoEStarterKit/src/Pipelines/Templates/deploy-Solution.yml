@@ -1,0 +1,93 @@
+# This is a deployment template referenced from build-deploy-Solution.yml
+
+# build-deploy-Solution.yml calls this template twice, passing different connection information for test vs prod
+parameters:
+- name: serviceConnection
+  type: string
+  default: ''
+- name: environmentVariables
+  type: string
+  default: '[]'
+- name: connectionReferences
+  type: string
+  default: '[]'
+
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.tool-installer.PowerPlatformToolInstaller@0
+  displayName: 'Install Power Platform Build Tools'
+
+# TEMPORARY: using Power DevOps Tools to supplement official Power Platform Build Tools until they have tasks which enable the same scenarios.
+# https://marketplace.visualstudio.com/items?itemName=WaelHamze.xrm-ci-framework-build-tasks
+- task: WaelHamze.xrm-ci-framework-build-tasks.MSCRMToolInstaller.MSCRMToolInstaller@12
+  displayName: 'Power DevOps Tool Installer'
+
+# Get the solution package from artifact uploaded by the build pipeline
+- task: DownloadPipelineArtifact@2
+  displayName: 'Download Build Pipeline Artifact'
+
+# If the TriggerSolutionUpgrade variable is false, then import the solution as an Update
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.import-solution.PowerPlatformImportSolution@0
+  displayName: 'Import Solution as Update'
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: '${{parameters.serviceConnection}}'
+    SolutionInputFile: '$(Pipeline.Workspace)/drop/$(SolutionName)_$(Build.BuildNumber)_managed.zip'
+    PublishWorkflows: true
+  condition: and(succeeded(), eq(variables['TriggerSolutionUpgrade'], 'false'))
+
+# If the TriggerSolutionUpgrade variable is true, then import the solution as an Upgrade, staging it as a holding solution, so we can apply a solution Upgrade.
+# Doing this will ensure that items removed from the solution in development are also removed from the solution in the target environment after the Upgrade is applied.
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.import-solution.PowerPlatformImportSolution@0
+  displayName: 'Import Solution as Upgrade'
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: '${{parameters.serviceConnection}}'
+    SolutionInputFile: '$(Pipeline.Workspace)/drop/$(SolutionName)_$(Build.BuildNumber)_managed.zip'
+    HoldingSolution: true
+  condition: and(succeeded(), eq(variables['TriggerSolutionUpgrade'], 'true'))
+
+# NOTE: Sometimes you need to perform intermediary steps between staging the upgrade and applying it.  
+# An example would be moving data from one entity to another before deleting the entity.
+# You would add steps to your pipeline here to accomplish this. 
+
+# If the TriggerSolutionUpgrade variable is true,then apply the solution Upgrade.
+- task: WaelHamze.xrm-ci-framework-build-tasks.MSCRMApplySolution.MSCRMApplySolution@12
+  displayName: 'Apply Solution Upgrade'
+  inputs:
+    crmConnectionString: '$(CdsBaseConnectionString)${{parameters.serviceConnection}}'
+    solutionName: '$(SolutionName)'
+    useAsyncMode: true
+  condition: and(succeeded(), eq(variables['TriggerSolutionUpgrade'], 'true'))
+
+# Publish customizations for good measure
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.publish-customizations.PowerPlatformPublishCustomizations@0
+  displayName: 'Power Platform Publish Customizations '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: '${{parameters.serviceConnection}}'
+
+# Replace with official task when available
+- task: WaelHamze.xrm-ci-framework-build-tasks.MSCRMUpdateEnvironmentVariables.MSCRMUpdateEnvironmentVariables@12
+  displayName: 'Update Environment Variables'
+  inputs:
+    crmConnectionString: '$(CdsBaseConnectionString)${{parameters.serviceConnection}}'
+    environmentVariablesJson: '${{parameters.environmentVariables}}'
+
+# TEMPORARY WORKAROUND: Using a third party PowerShell library to update connection references.  Replace with official task when available.
+- powershell: |
+    Install-Module Microsoft.Xrm.Data.PowerShell -Force
+    $password = ConvertTo-SecureString "$(TempPassword)" -AsPlainText -Force
+    $credential = New-Object System.Management.Automation.PSCredential ("$(TempUsername)", $password)
+    $conn = Connect-CrmOnline -Credential $credential -ServerUrl "${{parameters.serviceConnection}}"
+    $config= ConvertFrom-Json "${{parameters.connectionReferences}}"
+    foreach ($c in $config) {
+      $connRefs = Get-CrmRecords -conn $conn -EntityLogicalName connectionreference -FilterAttribute "connectionreferencelogicalname" -FilterOperator "eq" -FilterValue $c[0]
+      $connRef = $connRefs.CrmRecords[0]
+      Set-CrmRecord -conn $conn -EntityLogicalName connectionreference -Id $connRef.connectionreferenceid -Fields @{"connectionid" = $c[1] }
+    }
+  displayName: 'Update Connection References'
+
+# TEMPORARY WORKAROUND: Currently Canvas Apps cannot be owned by an app user, so we have to set an interactive user owner.  Currently taking a brute force approach and setting the owner of all canvas apps in the environment.
+- template: update-canvas-app-ownership.yml
+  parameters:
+    serviceConnection: '${{parameters.serviceConnection}}'

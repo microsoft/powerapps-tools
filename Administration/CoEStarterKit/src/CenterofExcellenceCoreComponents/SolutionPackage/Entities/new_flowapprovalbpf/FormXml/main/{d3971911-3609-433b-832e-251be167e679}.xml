@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{d3971911-3609-433b-832e-251be167e679}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{af112cfd-6cc9-493f-8172-ad20d81c2321}" name="StageStep3" locklevel="0" expanded="true" visible="false" labelid="{18f119d4-013a-4d67-baf2-249b893efece}">
+          <labels>
+            <label description="Validate Maker Business Requirements" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{09c2611c-f259-20f3-2c9c-3bd179a250f3}" name="StageStep3_section1" labelid="{2ae0916c-d78c-445b-a4f7-74cfaa9918ee}">
+                  <labels>
+                    <label description="Validate Maker Business Requirements" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{06690606-3ca0-40d2-ad6c-8fbfdab8414e}" showlabel="true" visible="true" labelid="{60fd2bb6-f014-4c17-80e8-08f37e885e11}">
+                        <labels>
+                          <label description="Check if Maker Provided Business Requirements" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_flow_new_flowapprovalbpf:admin_makersubmittedrequirements" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="admin_makersubmittedrequirements" relationship="bpf_admin_flow_new_flowapprovalbpf" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2e20e2d2-1a8c-452c-915b-6f0abafba16e}" showlabel="true" visible="true" labelid="{7d1e5035-20a4-4d79-bb09-9aeff21e44f8}">
+                        <labels>
+                          <label description="Confirm Business Impact" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_flow_new_flowapprovalbpf:admin_requirement_2" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="admin_requirement_2" relationship="bpf_admin_flow_new_flowapprovalbpf" isrequired="true" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{e2c0663a-52ca-48e1-b92f-a5c565b296f5}" name="StageStep9" locklevel="0" expanded="true" visible="false" labelid="{7945ae9d-1a27-4afc-bf54-14b7fb64bb5e}">
+          <labels>
+            <label description="Mitigation Plan" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{065b6d5f-27d5-b680-cf3a-b7de83f6bee8}" name="StageStep9_section1" labelid="{2a77a8db-ac7a-4fa0-9a31-ec7d9fb5455f}">
+                  <labels>
+                    <label description="Mitigation Plan" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{90427121-9cb0-4f2b-91f8-670e758dda5c}" showlabel="true" visible="true" labelid="{2a26bd1b-876e-4d4c-8704-50b7e9a1a65b}">
+                        <labels>
+                          <label description="Mitigation Plan Provided" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_flow_new_flowapprovalbpf:admin_mitigationplanprovided" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="admin_mitigationplanprovided" relationship="bpf_admin_flow_new_flowapprovalbpf" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{de271eca-e514-40f2-a07e-56cefb64bebb}" name="StageStep13" locklevel="0" expanded="true" visible="false" labelid="{9b2af7db-9a10-4189-9fd3-1bda625f1236}">
+          <labels>
+            <label description="Assess Risk" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{b35736d1-feaf-a8db-6363-790fcbdec2d8}" name="StageStep13_section1" labelid="{382415b1-68f2-480f-9510-567cd5553884}">
+                  <labels>
+                    <label description="Assess Risk" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{158bf444-eb5c-4df4-9d48-290487c77ec8}" showlabel="true" visible="true" labelid="{a909125d-79f1-404d-9961-aa4b64a5fd30}">
+                        <labels>
+                          <label description="Asses Risk" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_flow_new_flowapprovalbpf:admin_adminrequirementriskassessment" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="admin_adminrequirementriskassessment" relationship="bpf_admin_flow_new_flowapprovalbpf" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{865a7c5f-4fab-4864-89d2-5d4decc1f54e}" name="StageStep17" locklevel="0" expanded="true" visible="false" labelid="{799e5aa3-f1fd-440f-871e-054a2f5aeb89}">
+          <labels>
+            <label description="Complete Admin Review" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{24d99f27-604a-2078-1af7-dd8cfa16b778}" name="StageStep17_section1" labelid="{8475a634-720b-4cf5-834a-80844fc64705}">
+                  <labels>
+                    <label description="Complete Admin Review" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{5903e35c-51f5-4495-bee0-2472f4479b49}" showlabel="true" visible="true" labelid="{8118fae7-1220-463a-ad4f-76224efeedb3}">
+                        <labels>
+                          <label description="Admin Requirement - Reviewed Flow" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_admin_flow_new_flowapprovalbpf:admin_adminrequirementreviewedflow" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="admin_adminrequirementreviewedflow" relationship="bpf_admin_flow_new_flowapprovalbpf" isrequired="true" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

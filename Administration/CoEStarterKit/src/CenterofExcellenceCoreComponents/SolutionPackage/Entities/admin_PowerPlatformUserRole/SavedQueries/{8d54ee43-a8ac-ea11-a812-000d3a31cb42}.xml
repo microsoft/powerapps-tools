@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{8d54ee43-a8ac-ea11-a812-000d3a31cb42}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="admin_name" select="1" icon="1" preview="1">
+        <row name="result" id="admin_powerplatformuserroleid">
+          <cell name="admin_app" width="100" />
+          <cell name="admin_rolename" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="admin_powerplatformuserrole">
+          <attribute name="admin_powerplatformuserroleid" />
+          <filter type="and">
+            <condition attribute="admin_resourcetype" operator="eq" value="App" />
+          </filter>
+          <attribute name="admin_rolename" />
+          <attribute name="admin_app" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.46</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="App Power Platform Role" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

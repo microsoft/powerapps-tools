@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{3f837274-b889-e911-a854-000d3a372186}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="admin_displayname" select="1" icon="1" preview="1">
+        <row name="result" id="admin_appid">
+          <cell name="admin_displayname" width="235" />
+          <cell name="admin_requirement_1" width="300" />
+          <cell name="admin_requirement_2" width="171" />
+          <cell name="admin_requirement_6" width="100" />
+          <cell name="admin_requirement_4" width="100" />
+          <cell name="admin_requirement_3" width="100" />
+          <cell name="admin_apppublished" width="100" />
+          <cell name="admin_applastlaunchedon" width="100" />
+          <cell name="admin_appowner" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="admin_app">
+          <attribute name="admin_displayname" />
+          <attribute name="admin_appid" />
+          <filter type="and">
+            <condition attribute="admin_riskassessment" operator="null" />
+            <condition attribute="admin_requirement_2" operator="not-null" />
+            <condition attribute="admin_requirement_4" operator="not-null" />
+            <condition attribute="admin_requirement_1" operator="not-null" />
+            <condition attribute="admin_requirement_6" operator="not-null" />
+            <condition attribute="admin_requirement_3" operator="not-null" />
+          </filter>
+          <attribute name="admin_requirement_6" />
+          <attribute name="admin_requirement_1" />
+          <attribute name="admin_requirement_4" />
+          <attribute name="admin_requirement_2" />
+          <attribute name="admin_requirement_3" />
+          <attribute name="admin_apppublished" />
+          <attribute name="admin_appowner" />
+          <attribute name="admin_applastlaunchedon" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Admin Review" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

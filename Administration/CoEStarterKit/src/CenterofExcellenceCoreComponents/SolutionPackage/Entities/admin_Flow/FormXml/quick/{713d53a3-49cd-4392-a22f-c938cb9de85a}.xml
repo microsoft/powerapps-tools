@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{713d53a3-49cd-4392-a22f-c938cb9de85a}</formid>
+    <IntroducedVersion>0.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{29091dec-999f-4e96-91fb-78df2e7eac54}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{2190ebd9-fdb7-4416-971d-de356e24ceba}">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{848160dc-170e-41fb-8b83-0bdec73ba249}">
+                        <labels>
+                          <label description="Display Name" languagecode="1033" />
+                        </labels>
+                        <control id="admin_displayname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="admin_displayname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3f3c7923-c250-491e-984e-960a56df9361}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Flow Environment" languagecode="1033" />
+                        </labels>
+                        <control id="admin_flowenvironment" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="admin_flowenvironment" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e36ee9e8-f1bb-464e-b024-608ea54711e6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Maker Requirement - Business Impact" languagecode="1033" />
+                        </labels>
+                        <control id="admin_requirement_2" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="admin_requirement_2" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{113f7dcd-db6c-454a-9e2b-e2cbd9b7742e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Maker Requirement - Business Justification" languagecode="1033" />
+                        </labels>
+                        <control id="admin_requirement_1" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="admin_requirement_1" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6f2ca34e-d112-425c-84ec-14d05c6a0dd3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Record Modified" languagecode="1033" />
+                        </labels>
+                        <control id="admin_recordmodified" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="admin_recordmodified" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a79b77c3-9314-470d-91e5-8ec459a3bb0b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="City" languagecode="1033" />
+                        </labels>
+                        <control id="admin_city" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="admin_city" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{918c0f3b-ef49-429a-972e-0aa01112477b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Country" languagecode="1033" />
+                        </labels>
+                        <control id="admin_country" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="admin_country" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e03bdf91-1cdd-420c-9e23-f8abfae861d2}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true" />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>
