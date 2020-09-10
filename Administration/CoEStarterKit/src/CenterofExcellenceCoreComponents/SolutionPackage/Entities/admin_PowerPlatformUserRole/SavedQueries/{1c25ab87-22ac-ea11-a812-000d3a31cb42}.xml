@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{1c25ab87-22ac-ea11-a812-000d3a31cb42}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="admin_name" select="1" icon="1" preview="1">
+        <row name="result" id="admin_powerplatformuserroleid">
+          <cell name="admin_powerplatformuser" width="100" />
+          <cell name="a_6940b818f7b743e697b0ee971f9b730d.admin_type" width="100" />
+          <cell name="a_6940b818f7b743e697b0ee971f9b730d.admin_groupsize" width="100" />
+          <cell name="admin_rolename" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="admin_powerplatformuserrole">
+          <attribute name="admin_powerplatformuserroleid" />
+          <attribute name="admin_powerplatformuser" />
+          <attribute name="admin_rolename" />
+          <filter type="and">
+            <condition attribute="admin_resourcetype" operator="eq" value="Flow" />
+          </filter>
+          <link-entity alias="a_6940b818f7b743e697b0ee971f9b730d" name="admin_powerplatformuser" to="admin_powerplatformuser" from="admin_powerplatformuserid" link-type="outer" visible="false">
+            <attribute name="admin_groupsize" />
+            <attribute name="admin_type" />
+          </link-entity>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.46</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Flow Power Platform Users" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

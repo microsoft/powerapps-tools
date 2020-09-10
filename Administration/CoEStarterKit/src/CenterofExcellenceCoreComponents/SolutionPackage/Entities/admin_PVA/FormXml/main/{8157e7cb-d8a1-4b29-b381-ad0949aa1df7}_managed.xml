@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{8157e7cb-d8a1-4b29-b381-ad0949aa1df7}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{0971903e-567a-4085-b5d7-f876bded9346}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{358c6cbd-00ed-44e3-a518-c06365c20077}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{fdbc0f0f-3917-4eba-9028-c8dabe1088b4}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="admin_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="admin_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6050920f-8528-4094-a886-9711195ad17e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="PVA Display Name" languagecode="1033" />
+                        </labels>
+                        <control id="admin_pvadisplayname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="admin_pvadisplayname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{094d2c05-8642-4d9e-b7e5-78c5e3d8a181}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="PVA Environment Display Name" languagecode="1033" />
+                        </labels>
+                        <control id="admin_pvaenvironmentdisplayname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="admin_pvaenvironmentdisplayname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b330af57-fc2d-48a5-96b1-f7ec8596c102}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="PVA State" languagecode="1033" />
+                        </labels>
+                        <control id="admin_pvastate" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="admin_pvastate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e33312f1-04ac-4cd3-89b1-df349aba589d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="PVA Last Launched On" languagecode="1033" />
+                        </labels>
+                        <control id="admin_pvalastlaunchedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="admin_pvalastlaunchedon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{39782ce3-e101-4bec-9193-82b1cc6def3c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="PVA Number Launches" languagecode="1033" />
+                        </labels>
+                        <control id="admin_pvanumberlaunches" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="admin_pvanumberlaunches" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0f1d53b6-5572-4acf-8ac4-a6cea3e1a1e6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="PVA is Orphaned" languagecode="1033" />
+                        </labels>
+                        <control id="admin_pvaisorphaned" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="admin_pvaisorphaned" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{98abc19d-5f14-484d-b217-fe7e3058bfdf}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="PVA Created On" languagecode="1033" />
+                        </labels>
+                        <control id="admin_pvacreatedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="admin_pvacreatedon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ab6cd430-ab96-49f7-93f0-12f271f9ed37}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="PVA Owner" languagecode="1033" />
+                        </labels>
+                        <control id="admin_pvaowner" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="admin_pvaowner" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dd6fce67-6a9a-4efe-ad9b-dec155e94961}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="_section_203" id="a93c4f32-07ec-4143-9384-dbbce0b01b27" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Components" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" locklevel="0" id="{459a7e4d-fa99-4369-bdb9-814c1e090471}" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="New SG control 1592577756678" languagecode="1033" />
+                        </labels>
+                        <control id="Subgrid_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <TargetEntityType>admin_pvacomponent</TargetEntityType>
+                            <ViewId>{10106AFA-9762-4F55-8652-CA340E2369B8}</ViewId>
+                            <ViewIds>{10106AFA-9762-4F55-8652-CA340E2369B8}</ViewIds>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <RelationshipName>admin_PVAComponent_PVA_admin_PVA</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="156a4220-e720-4f80-b327-0bf07cb6e451" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Audit" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_2_section_1" id="d40219a5-3ab4-4e9a-906a-f3e77c75543c" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Maker Requirements" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{164a2edd-a540-4c97-9341-9d217bf86832}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Chatbot Description" languagecode="1033" />
+                        </labels>
+                        <control id="admin_chatbotdescription" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="admin_chatbotdescription" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1223554e-c103-4733-ad29-515f74f45637}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Maker Requirement - Business Impact" languagecode="1033" />
+                        </labels>
+                        <control id="admin_makerrequirementbusinessimpact" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="admin_makerrequirementbusinessimpact" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9cc3ed77-2d4d-46c2-905c-a8fc7ea87d5b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Maker Requirement - Business Justification" languagecode="1033" />
+                        </labels>
+                        <control id="admin_makerrequirementbusinessjustification" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="admin_makerrequirementbusinessjustification" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{38a5903f-3cc7-45ce-b35e-af3caa40b4a9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Maker Requirement - Dependencies" languagecode="1033" />
+                        </labels>
+                        <control id="admin_makerrequirementdependencies" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="admin_makerrequirementdependencies" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{48d81cb8-a66f-4a51-a45a-828c100ad010}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Maker Requirement - Access Management" languagecode="1033" />
+                        </labels>
+                        <control id="admin_makerrequirementaccessmanagement" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="admin_makerrequirementaccessmanagement" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_2_section_2" id="36b15482-41ed-41c2-86ce-9a6e21902882" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Admin Review" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e3217c04-9320-474d-b471-7cc678c8ad62}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Admin Requirement - Reviewed Bot" languagecode="1033" />
+                        </labels>
+                        <control id="admin_adminrequirementreviewedbot" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="admin_adminrequirementreviewedbot" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f2905902-4c7e-466b-a98b-31b3dceb61f4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Admin Requirement - Risk Assessment" languagecode="1033" />
+                        </labels>
+                        <control id="admin_adminrequirementriskassessment" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="admin_adminrequirementriskassessment" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{493a30b4-8fcb-4604-a25b-87b3c100681b}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{0ba39f67-d86f-4d8d-bb8a-c48b68ee082e}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d621a180-219b-4136-ae8f-976a329c34e5}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{47ca43ee-e7cd-4bda-821e-0caaac3075ec}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{b2749185-10b3-4ca0-abc9-fa64abac2dfa}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{e8e28ac2-97de-4238-9b84-61a3e844a629}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{f896b2eb-5274-4ec4-8c45-5ddb1ef441cb}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b3974ecd-e7bd-4b43-ba78-a65f1d7a61cb}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true" />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

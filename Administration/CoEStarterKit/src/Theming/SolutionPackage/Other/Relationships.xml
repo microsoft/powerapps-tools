@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_cat_asset" />
+  <EntityRelationship Name="business_unit_cat_style" />
+  <EntityRelationship Name="business_unit_cat_theme" />
+  <EntityRelationship Name="cat_Theme_cat_Theme_cat_Asset" />
+  <EntityRelationship Name="cat_ThemeStyles" />
+  <EntityRelationship Name="FileAttachment_cat_Theme_cat_File" />
+  <EntityRelationship Name="FileAttachment_cat_Theme_cat_PhoneFile" />
+  <EntityRelationship Name="lk_cat_asset_createdby" />
+  <EntityRelationship Name="lk_cat_asset_modifiedby" />
+  <EntityRelationship Name="lk_cat_style_createdby" />
+  <EntityRelationship Name="lk_cat_style_modifiedby" />
+  <EntityRelationship Name="lk_cat_theme_createdby" />
+  <EntityRelationship Name="lk_cat_theme_modifiedby" />
+  <EntityRelationship Name="owner_cat_asset" />
+  <EntityRelationship Name="owner_cat_style" />
+  <EntityRelationship Name="owner_cat_theme" />
+  <EntityRelationship Name="team_cat_asset" />
+  <EntityRelationship Name="team_cat_style" />
+  <EntityRelationship Name="team_cat_theme" />
+  <EntityRelationship Name="user_cat_asset" />
+  <EntityRelationship Name="user_cat_style" />
+  <EntityRelationship Name="user_cat_theme" />
+</EntityRelationships>

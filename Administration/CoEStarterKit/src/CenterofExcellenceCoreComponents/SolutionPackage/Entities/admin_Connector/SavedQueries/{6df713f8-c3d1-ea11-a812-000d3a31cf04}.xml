@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{6df713f8-c3d1-ea11-a812-000d3a31cf04}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="admin_displayname" select="1" icon="1" preview="1">
+        <row name="result" id="admin_connectorid">
+          <cell name="admin_displayname" width="200" />
+          <cell name="admin_makerrequirementbusinessjustification" width="100" />
+          <cell name="admin_maker" width="100" />
+          <cell name="admin_customconnectorhost" width="100" />
+          <cell name="admin_connectorcreateddatetime" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="admin_connector">
+          <attribute name="admin_displayname" />
+          <attribute name="admin_connectorid" />
+          <filter type="and">
+            <condition attribute="admin_adminrequirementriskassessment" operator="null" />
+            <condition attribute="admin_makerrequirementbusinessjustification" operator="not-null" />
+            <condition attribute="admin_makerrequirementconditionsofuse" operator="not-null" />
+          </filter>
+          <attribute name="admin_makerrequirementbusinessjustification" />
+          <attribute name="admin_maker" />
+          <attribute name="admin_customconnectorhost" />
+          <attribute name="admin_connectorcreateddatetime" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.55</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Admin Review" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

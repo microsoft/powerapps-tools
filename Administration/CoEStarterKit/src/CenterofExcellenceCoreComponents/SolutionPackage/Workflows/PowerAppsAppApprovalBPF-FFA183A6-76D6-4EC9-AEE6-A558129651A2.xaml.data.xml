@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{ffa183a6-76d6-4ec9-aee6-a558129651a2}" Name="PowerApps App Approval BPF" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/PowerAppsAppApprovalBPF-FFA183A6-76D6-4EC9-AEE6-A558129651A2.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <processorder>0</processorder>
+  <processroleassignment>&lt;DisplayConditions&gt;&lt;Role Id="{627090ff-40a3-4053-8790-584edc5be201}" /&gt;&lt;Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" /&gt;&lt;/DisplayConditions&gt;</processroleassignment>
+  <RunAs>1</RunAs>
+  <UniqueName>new_bpf_ffa183a676d64ec9aee6a558129651a2</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <PrimaryEntity>admin_App</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="PowerApps App Approval BPF" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{1ddd3517-cc81-4e78-970a-c3cfb337fbe3}">
+      <label languagecode="1033" description="Validate Maker Business Requirements" />
+    </steplabels>
+    <steplabels id="{1ca367d7-6187-4f20-8025-71f7f2f63b69}">
+      <label languagecode="1033" description="Check if Maker Provided Business Requirements" />
+    </steplabels>
+    <steplabels id="{175b8451-834e-4e7a-9ce2-9ca15b746f07}">
+      <label languagecode="1033" description="Confirm Business Impact" />
+    </steplabels>
+    <steplabels id="{57b9497f-22b3-460a-a553-1afe8eef74c2}">
+      <label languagecode="1033" description="Mitigation Plan" />
+    </steplabels>
+    <steplabels id="{9a213b3d-1e4a-4391-b6a0-2529b46693a1}">
+      <label languagecode="1033" description="Mitigation Plan Provided" />
+    </steplabels>
+    <steplabels id="{2d506cc4-3f62-4c34-8711-538712579f33}">
+      <label languagecode="1033" description="Assess Risk" />
+    </steplabels>
+    <steplabels id="{ef9aff29-a591-497e-a786-01fda9645623}">
+      <label languagecode="1033" description="Asses Risk" />
+    </steplabels>
+    <steplabels id="{c9f9f2b1-b172-449f-b7b1-fdad1e9f1e75}">
+      <label languagecode="1033" description="Highlight App In Catalog" />
+    </steplabels>
+    <steplabels id="{229e4cac-2053-4cf2-b206-c1a070d8413b}">
+      <label languagecode="1033" description="App Category" />
+    </steplabels>
+    <steplabels id="{e599b549-9e1d-4d26-af3f-6b84e85e0843}">
+      <label languagecode="1033" description="In App Catalog" />
+    </steplabels>
+    <steplabels id="{6b41dcd7-73c1-4e0f-9a62-96d230f558d5}">
+      <label languagecode="1033" description="Featured In App Catalog" />
+    </steplabels>
+  </labels>
+</Workflow>

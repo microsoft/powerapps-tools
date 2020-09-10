@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<visualization xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedqueryvisualizationid>{CD098782-FA70-E911-A833-000D3A375590}</savedqueryvisualizationid>
+  <datadescription>
+    <datadefinition>
+      <fetchcollection>
+        <fetch aggregate="true" mapping="logical" count="10">
+          <entity name="admin_environment">
+            <order alias="_CRMAutoGen_aggregate_column_Num_0" descending="true" />
+            <attribute name="admin_displayname" alias="_CRMAutoGen_groupby_column_Num_0" groupby="true" />
+            <attribute name="admin_numberofapps" aggregate="sum" alias="_CRMAutoGen_aggregate_column_Num_0" />
+            <attribute name="admin_numberofflows" aggregate="sum" alias="_CRMAutoGen_aggregate_column_Num_13" />
+          </entity>
+        </fetch>
+      </fetchcollection>
+      <categorycollection>
+        <category alias="_CRMAutoGen_groupby_column_Num_0">
+          <measurecollection>
+            <measure alias="_CRMAutoGen_aggregate_column_Num_0" />
+          </measurecollection>
+          <measurecollection>
+            <measure alias="_CRMAutoGen_aggregate_column_Num_13" />
+          </measurecollection>
+        </category>
+      </categorycollection>
+    </datadefinition>
+  </datadescription>
+  <presentationdescription>
+    <Chart PaletteCustomColors="91,151,213; 237,125,49; 160,116,166; 255,192,0; 68,114,196; 112,173,71; 37,94,145; 158,72,14; 117,55,125; 153,115,0; 38,68,120; 67,104,43; 124,175,221; 241,151,90; 186,144,192; 255,205,51; 105,142,208; 140,193,104; 50,125,194; 210,96,18; 150,83,159; 204,154,0; 51,90,161; 90,138,57;" Palette="None">
+      <Series>
+        <Series CustomProperties="PointWidth=0.75, MaxPixelPointWidth=40" LabelForeColor="59, 59, 59" Font="{0}, 9.5px" IsValueShownAsLabel="True" ChartType="Column" />
+        <Series CustomProperties="PointWidth=0.75, MaxPixelPointWidth=40" LabelForeColor="59, 59, 59" Font="{0}, 9.5px" IsValueShownAsLabel="True" ChartType="Column" YAxisType="Secondary" />
+      </Series>
+      <ChartAreas>
+        <ChartArea BorderDashStyle="Solid" BorderColor="White">
+          <AxisY IntervalAutoMode="VariableCount" LineColor="165, 172, 181" TitleFont="{0}, 10.5px" TitleForeColor="59, 59, 59" LabelAutoFitMinFontSize="8">
+            <MajorGrid LineColor="239, 242, 246" />
+            <MajorTickMark LineColor="165, 172, 181" />
+            <LabelStyle Font="{0}, 10.5px" ForeColor="59, 59, 59" />
+          </AxisY>
+          <AxisX IntervalAutoMode="VariableCount" LineColor="165, 172, 181" TitleFont="{0}, 10.5px" TitleForeColor="59, 59, 59" LabelAutoFitMinFontSize="8">
+            <MajorTickMark LineColor="165, 172, 181" />
+            <MajorGrid LineColor="Transparent" />
+            <LabelStyle Font="{0}, 10.5px" ForeColor="59, 59, 59" />
+          </AxisX>
+          <AxisY2 IntervalAutoMode="VariableCount" LineColor="165, 172, 181" TitleFont="{0}, 10.5px" TitleForeColor="59, 59, 59" LabelAutoFitMinFontSize="8">
+            <MajorGrid LineColor="239, 242, 246" />
+            <MajorTickMark LineColor="165, 172, 181" />
+            <LabelStyle Font="{0}, 10.5px" ForeColor="59, 59, 59" />
+          </AxisY2>
+        </ChartArea>
+      </ChartAreas>
+      <Titles>
+        <Title Font="{0}, 13px" ForeColor="59, 59, 59" DockingOffset="-3" Alignment="TopLeft" />
+      </Titles>
+      <Legends>
+        <Legend Font="{0}, 11px" ForeColor="59, 59, 59" Alignment="Center" ShadowColor="0, 0, 0, 0" IsEquallySpacedItems="True" Docking="right" LegendStyle="Table" />
+      </Legends>
+    </Chart>
+  </presentationdescription>
+  <isdefault>0</isdefault>
+  <LocalizedNames>
+    <LocalizedName description="Environments" languagecode="1033" />
+  </LocalizedNames>
+  <IsCustomizable>1</IsCustomizable>
+  <IntroducedVersion>0.0.0.0</IntroducedVersion>
+  <CanBeDeleted>1</CanBeDeleted>
+</visualization>

@@ -1,0 +1,62 @@
+# This is a build template referenced from build-deploy-Solution.yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.tool-installer.PowerPlatformToolInstaller@0
+  displayName: 'Install Power Platform Build Tools'
+
+# Solution version in source control is not used.  Instead, create version at build time from the current build number.
+- task: knom.regexreplace-task.regex-replace.RegexReplace@3
+  displayName: 'Update Solution XML with Build Number'
+  inputs:
+    InputSearchPattern: |
+      $(SolutionName)\SolutionPackage\**\Solution.xml
+    FindRegex: '<Version>[\s\S]*?<\/Version>'
+    ReplaceRegex: '<Version>$(Build.BuildNumber)</Version>'
+
+# Before we committed changes, we formatted all json files for readability in source control.  This breaks solution package, so we need to flatten them before packing   
+- pwsh: |
+    #When we unpack the solution files, we format the json, but it causes solution import failures so we need to flatten the files
+    Get-ChildItem -Path $(SolutionName) -Recurse -Filter *.json |
+    ForEach-Object {(Get-Content $_.FullName) -join ' ' | Set-Content $_.FullName}
+  displayName: 'Flatten JSON files'
+  enabled: true
+
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.pack-solution.PowerPlatformPackSolution@0
+  displayName: 'Pack Solutions (Unmanaged and Managed)'
+  inputs:
+    SolutionSourceFolder: $(SolutionName)\SolutionPackage
+    SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_$(Build.BuildNumber).zip'
+    SolutionType: Both
+
+# TODO: Add test to validate packed solution will import (i.e. no bad commits due to merge issues or hacked files)
+
+# The export-solution-to-git pipeline stores the value of a variable named TriggerSolutionUpgrade in a json.  
+# We need to get that value to determine whether we need to perform a solution upgrade or update as part of the deployment process file.  
+# Download the correct artifact produced by pipeline by using the build tag for the $(SolutionName)
+- task: DownloadPipelineArtifact@2
+  displayName: 'Download Pipeline Artifact'
+  inputs:
+    buildType: specific
+    project: '$(System.TeamProjectId)' # template assumes that export-solution-to-git pipeline is in the same project
+    definition: '13' # TODO:  NEED TO FIGURE OUT HOW TO NOT HARDCODE PIPELINE $(Pipeline)
+    targetPath: '$(Pipeline.Workspace)'
+    tags: '$(SolutionName)'
+  continueOnError: true 
+
+# Task will read the json file from the Pipeline Artifact and populate the value of the variable named TriggerSolutionUpgrade, which will be used in other stages
+- task: nkdagility.variablehydration.variablerehydration-task.variablerehydration@0
+  displayName: 'Load Variables from drop'
+  inputs:
+    jsonfiles: '$(Pipeline.Workspace)/drop/meta-*.json'
+  continueOnError: true 
+
+# Set the value populated for TriggerSolutionUpgrade from the json file as an output variable for use in other stages 
+- script: |
+    echo ##vso[task.setvariable variable=TriggerSolutionUpgrade;isOutput=true]$(TriggerSolutionUpgrade)
+  name: setTriggerSolutionUpgradeVariable
+  continueOnError: true 
+
+- task: PublishPipelineArtifact@1
+  displayName: 'Publish Artifacts'
+  inputs:
+    targetPath: '$(Build.ArtifactStagingDirectory)'
+    artifact: drop

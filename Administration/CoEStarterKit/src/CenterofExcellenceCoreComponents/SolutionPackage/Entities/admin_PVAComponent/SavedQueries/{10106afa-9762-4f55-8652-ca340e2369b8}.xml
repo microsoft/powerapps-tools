@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{10106afa-9762-4f55-8652-ca340e2369b8}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="admin_name" select="1" icon="1" preview="1">
+        <row name="result" id="admin_pvacomponentid">
+          <cell name="admin_name" width="300" />
+          <cell name="admin_componentstate" width="100" />
+          <cell name="admin_componentusesflow" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="admin_pvacomponent">
+          <attribute name="admin_pvacomponentid" />
+          <attribute name="admin_name" />
+          <attribute name="createdon" />
+          <order attribute="admin_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="admin_componentstate" />
+          <attribute name="admin_componentusesflow" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active PVA Components" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

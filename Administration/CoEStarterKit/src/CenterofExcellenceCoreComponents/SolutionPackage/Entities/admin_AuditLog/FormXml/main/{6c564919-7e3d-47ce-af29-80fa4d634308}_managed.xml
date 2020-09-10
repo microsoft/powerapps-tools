@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{6c564919-7e3d-47ce-af29-80fa4d634308}</formid>
+    <IntroducedVersion>0.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{c6a8cf40-4094-4f17-977e-948ccf04b97e}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{949cc077-9307-449f-a023-d3222afc453b}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b6a0017a-6878-47b4-8096-ea9235c67d6b}">
+                        <labels>
+                          <label description="Title" languagecode="1033" />
+                        </labels>
+                        <control id="admin_title" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="admin_title" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{df86f16f-9141-411b-9c18-2e04009e21dd}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Operation" languagecode="1033" />
+                        </labels>
+                        <control id="admin_operation" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="admin_operation" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{260bf07e-241a-4a9d-a6d5-a0b70b12b4ca}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="App ID" languagecode="1033" />
+                        </labels>
+                        <control id="admin_appid" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="admin_appid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell showlabel="false" locklevel="0" id="{c44e0013-dcf4-47ad-80fb-e93ebd301b09}">
+                        <labels>
+                          <label description="New QV control 1594222132876" languagecode="1033" />
+                        </labels>
+                        <control id="QuickviewControl1594222132876" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="admin_powerappsapplogs" disabled="false">
+                          <parameters>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="admin_app"&gt;380081b1-ba37-47c6-a8c3-d0cb2a18f79d&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{29a28a28-2183-4e8c-a53f-de9a4253d996}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Creation Time" languagecode="1033" />
+                        </labels>
+                        <control id="admin_creationtime" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="admin_creationtime" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{16a538b4-405a-4038-b87c-bf4c0a670ad6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Workload" languagecode="1033" />
+                        </labels>
+                        <control id="admin_workload" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="admin_workload" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c9ed7019-9628-4d6a-9f98-210ca29ba3e0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="User UPN" languagecode="1033" />
+                        </labels>
+                        <control id="admin_userupn" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="admin_userupn" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3592fa35-b9ea-4d66-91be-88b92df7746e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="User Job Title" languagecode="1033" />
+                        </labels>
+                        <control id="admin_userjobtitle" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="admin_userjobtitle" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{42d7c60f-ffde-4d05-a6d2-a687eaa6b2da}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="User Department" languagecode="1033" />
+                        </labels>
+                        <control id="admin_userdepartment" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="admin_userdepartment" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b84c6c22-f4e7-4300-a40e-a74790601d88}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="User City" languagecode="1033" />
+                        </labels>
+                        <control id="admin_usercity" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="admin_usercity" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{039f3afa-7c11-4f68-9228-ad18596d618d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="User Country" languagecode="1033" />
+                        </labels>
+                        <control id="admin_usercountry" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="admin_usercountry" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{32ddba8d-a8bb-4b23-946f-ec7a37cf7e18}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{843c3d0a-790a-49bc-8935-6575006d5ec1}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{21871101-ad22-4324-ab6a-9176c1f76f39}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{49c94562-ee84-4080-a1f3-bd75bd6ba971}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{9ca433c6-b8f2-417f-94c1-2dd8129690fb}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{46214344-a799-40e1-baeb-6a9a31665eca}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{fc650cdb-0757-4c13-a8c3-e36ec7a03522}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{1519dc25-cc7a-49cf-9527-94889293b9cf}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{11c95a71-baee-48bf-b367-424cd08da16a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

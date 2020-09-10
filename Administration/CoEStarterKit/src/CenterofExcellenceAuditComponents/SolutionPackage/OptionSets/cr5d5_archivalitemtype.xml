@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="cr5d5_archivalitemtype" localizedName="Archival Item Type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Archival Item Type" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="129260000">
+      <labels>
+        <label description="Flow" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="129260001">
+      <labels>
+        <label description="Canvas" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>admin_powerappsadminsetowner_8b129</Name>
+  <AppVersion>2020-01-02T18:54:56Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.19115.0.0</CreatedByClientVersion>
+  <MinClientVersion>3.19115.0.0</MinClientVersion>
+  <Tags>{"minimumRequiredApiVersion":"2.2.0","primaryDeviceWidth":"1920","primaryDeviceHeight":"1080","sienaVersion":"20739234-fe77-4904-81f3-a4ffef12acf5","deviceCapabilities":"","supportsPortrait":"false","supportsLandscape":"true","primaryFormFactor":"Tablet","publisherVersion":"3.19115.0","hasComponent":"false","hasNonOOBComponent":"false","hasUnlockedComponent":"false"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>rgba(81, 92, 107, 1)</BackgroundColor>
+  <DisplayName>Set New App Owner</DisplayName>
+  <Description>As a Global Admin, Environment Admin or Business Application Admin this app can be used to re-assign app owner roles or add new users to an app.</Description>
+  <CommitMessage xsi:nil="true"></CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences xsi:nil="true"></AuthorizationReferences>
+  <ConnectionReferences>{"14cc587e-1771-4d8c-8316-a40787497f58":{"id":"/providers/microsoft.powerapps/apis/shared_powerappsforadmins","displayName":"PowerApps for Admins","iconUri":"https://connectoricons-prod.azureedge.net/powerappsforadmins/icon_1.0.1257.1710.png","dataSources":["PowerAppsforAdmins"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"d245f5da-a9ca-4ff0-860e-ec4b89192c92":{"id":"/providers/microsoft.powerapps/apis/shared_powerplatformforadmins","displayName":"PowerPlatform for Admins","iconUri":"https://connectoricons-prod.azureedge.net/powerplatformforadmins/icon_1.0.1284.1763.png","dataSources":["PowerplatformforAdmins"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"fb01b0e4-4761-4a3c-8d61-a80af86f777a":{"id":"/providers/microsoft.powerapps/apis/shared_office365users","displayName":"Office 365 Users","iconUri":"https://connectoricons-prod.azureedge.net/office365users/icon_1.0.1293.1804.png","dataSources":["Office365Users"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"65cd14aa-88aa-4b2b-93cc-9b78ecbbdd18":{"id":"/providers/microsoft.powerapps/apis/shared_office365","displayName":"Office 365 Outlook","iconUri":"https://connectoricons-prod.azureedge.net/office365/icon_1.0.1297.1825.png","dataSources":["Office365"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"}}</ConnectionReferences>
+  <DatabaseReferences>{}</DatabaseReferences>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[]}</CdsDependencies>
+  <BackgroundImageUri>/CanvasApps/admin_powerappsadminsetowner_8b129_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/admin_powerappsadminsetowner_8b129_DocumentUri.msapp</DocumentUri>
+</CanvasApp>

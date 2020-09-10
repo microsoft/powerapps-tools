@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definition IntroducedVersion="1.0.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SchemaName>admin_PowerPlatformMakeSecurityGroup</SchemaName>
+  <IsRequired>0</IsRequired>
+  <Type>100000000</Type>
+  <DefaultValue xsi:nil="true"></DefaultValue>
+  <DisplayName>
+    <LocalizedNames>
+      <LocalizedName description="Power Platform Make Office 365 Group" languagecode="1033" />
+    </LocalizedNames>
+  </DisplayName>
+  <Description>
+    <LocalizedNames>
+      <LocalizedName description="ID of Power Platform Make Security Group" languagecode="1033" />
+    </LocalizedNames>
+  </Description>
+</Definition>

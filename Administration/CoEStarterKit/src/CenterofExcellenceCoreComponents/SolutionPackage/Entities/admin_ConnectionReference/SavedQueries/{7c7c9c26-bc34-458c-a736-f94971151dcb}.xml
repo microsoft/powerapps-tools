@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{7c7c9c26-bc34-458c-a736-f94971151dcb}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="admin_displayname" select="1" icon="1" preview="1">
+        <row name="result" id="admin_connectionreferenceid">
+          <cell name="admin_displayname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="admin_connectionreference">
+          <attribute name="admin_connectionreferenceid" />
+          <attribute name="admin_displayname" />
+          <attribute name="createdon" />
+          <order attribute="admin_displayname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="admin_displayname" operator="like" value="{0}" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Connection References" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

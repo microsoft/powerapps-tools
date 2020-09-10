@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{4590dee1-c0d1-ea11-a812-000d3a31cf04}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="admin_displayname" select="1" icon="1" preview="1">
+        <row name="result" id="admin_flowid">
+          <cell name="admin_displayname" width="200" />
+          <cell name="admin_requirement_2" width="100" />
+          <cell name="admin_flowcreatedon" width="100" />
+          <cell name="admin_flowmakerdisplayname" width="100" />
+          <cell name="admin_flowenvironmentdisplayname" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="admin_flow">
+          <attribute name="admin_displayname" />
+          <attribute name="admin_flowid" />
+          <filter type="and">
+            <condition attribute="admin_adminrequirementriskassessment" operator="null" />
+            <condition attribute="admin_requirement_2" operator="not-null" />
+            <condition attribute="admin_makerrequirementdependencies" operator="not-null" />
+            <condition attribute="admin_requirement_1" operator="not-null" />
+          </filter>
+          <attribute name="admin_requirement_2" />
+          <attribute name="admin_flowcreatedon" />
+          <attribute name="admin_flowenvironmentdisplayname" />
+          <attribute name="admin_flowmakerdisplayname" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.55</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Admin Review" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

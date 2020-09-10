@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>admin_powerappcreatorportal_046cc</Name>
+  <AppVersion>2020-07-31T11:15:27Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.20053.26.0</CreatedByClientVersion>
+  <MinClientVersion>3.20053.26.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"1920","primaryDeviceHeight":"1080","sienaVersion":"24fe4812-c28c-4211-9cdf-bc4ca7548e0e","deviceCapabilities":"","supportsPortrait":"false","supportsLandscape":"true","primaryFormFactor":"Tablet","publisherVersion":"3.20053.26","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasNonOOBComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>rgba(76, 74, 72, 1)</BackgroundColor>
+  <DisplayName>Developer Compliance Center</DisplayName>
+  <Description>Portal for PowerApps creators to view their apps and submit more information to get better support from their Center of Excellence.</Description>
+  <CommitMessage xsi:nil="true"></CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences xsi:nil="true"></AuthorizationReferences>
+  <ConnectionReferences>{"271d7114-707c-4aad-be98-6a34fd0dd6ff":{"id":"/providers/microsoft.powerapps/apis/shared_powerappsforappmakers","displayName":"Power Apps for Makers","iconUri":"https://connectoricons-prod.azureedge.net/powerappsforappmakers/icon_1.0.1350.2003.png","dataSources":["PowerAppsforAppMakers"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"2e44dbcf-945e-4d29-ad79-74cd5fab8789":{"id":"/providers/microsoft.powerapps/apis/shared_office365","displayName":"Microsoft 365 Outlook","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1373/1.0.1373.2081/office365/icon.png","dataSources":["Office365"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"2e077578-1e56-433c-a9c9-3f50c91d7415":{"id":"/providers/microsoft.powerapps/apis/shared_office365users","displayName":"Microsoft 365 Users","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1373/1.0.1373.2081/office365users/icon.png","dataSources":["Office365Users"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"38597194-f863-443b-9dd3-8f897934c9ba":{"id":"/providers/microsoft.powerapps/apis/shared_flowmanagement","displayName":"Power Automate Management","iconUri":"https://connectoricons-prod.azureedge.net/flowmanagement/icon_1.0.1364.2052.png","dataSources":["PowerAutomateManagement"],"dependencies":[],"dependents":[],"parameterHints":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"}}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds"},"dataSources":{"COE Settings":{"entitySetName":"admin_coesettingses","logicalName":"admin_coesettings"},"Environments":{"entitySetName":"admin_environments","logicalName":"admin_environment"},"Makers":{"entitySetName":"admin_makers","logicalName":"admin_maker"},"PowerApps Apps":{"entitySetName":"admin_apps","logicalName":"admin_app"},"Users":{"entitySetName":"systemusers","logicalName":"systemuser"},"Flows":{"entitySetName":"admin_flows","logicalName":"admin_flow"},"PVAS":{"entitySetName":"admin_pvas","logicalName":"admin_pva"},"PowerApps Connectors":{"entitySetName":"admin_connectors","logicalName":"admin_connector"},"Archive Approvals":{"entitySetName":"admin_archiveapprovals","logicalName":"admin_archiveapproval"}}}}</DatabaseReferences>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"admin_coesettings","componenttype":1},{"logicalname":"admin_environment","componenttype":1},{"logicalname":"admin_maker","componenttype":1},{"logicalname":"admin_app","componenttype":1},{"logicalname":"systemuser","componenttype":1},{"logicalname":"admin_flow","componenttype":1},{"logicalname":"admin_pva","componenttype":1},{"logicalname":"admin_connector","componenttype":1},{"logicalname":"admin_archiveapproval","componenttype":1}]}</CdsDependencies>
+  <BackgroundImageUri>/CanvasApps/admin_powerappcreatorportal_046cc_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/admin_powerappcreatorportal_046cc_DocumentUri.msapp</DocumentUri>
+</CanvasApp>

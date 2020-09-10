@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{58e8f296-595f-4752-9d5d-469a7409d5d3}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="admin_actiontype" select="1" icon="1" preview="1">
+        <row name="result" id="admin_flowactiondetailid">
+          <cell name="admin_actiontype" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="admin_flowactiondetail">
+          <attribute name="admin_flowactiondetailid" />
+          <attribute name="admin_actiontype" />
+          <attribute name="createdon" />
+          <order attribute="admin_actiontype" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.24</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Flow Action Details" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

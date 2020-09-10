@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities />
+  <Roles />
+  <Workflows />
+  <FieldSecurityProfiles />
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <EnvironmentVariables>
+    <Definition IntroducedVersion="1.0.0.0">
+      <SchemaName>admin_CompanyLogo</SchemaName>
+      <IsRequired>0</IsRequired>
+      <Type>100000000</Type>
+      <DefaultValue>https://admininaday.blob.core.windows.net/coestarterkit/Microsoft-logo.png?st=2019-11-25T18%3A05%3A04Z&amp;se=2023-11-26T18%3A05%3A00Z&amp;sp=rl&amp;sv=2018-03-28&amp;sr=b&amp;sig=6Kcn%2FSbSVIODYWo8rERuQnhsOy0e7vGNQvYgM0SmQss%3D</DefaultValue>
+      <DisplayName>
+        <LocalizedNames>
+          <LocalizedName description="Company Logo" languagecode="1033" />
+        </LocalizedNames>
+      </DisplayName>
+      <Description>
+        <LocalizedNames>
+          <LocalizedName description="Company Logo URL (Defaults to Microsoft's logo)" languagecode="1033" />
+        </LocalizedNames>
+      </Description>
+    </Definition>
+    <Definition IntroducedVersion="1.0.0.0">
+      <SchemaName>admin_SyncTemplateConnection</SchemaName>
+      <IsRequired>0</IsRequired>
+      <Type>100000000</Type>
+      <DefaultValue>debrab@pplatform.onmicrosoft.com</DefaultValue>
+      <DisplayName>
+        <LocalizedNames>
+          <LocalizedName description="Sync Template Connection" languagecode="1033" />
+        </LocalizedNames>
+      </DisplayName>
+      <Description>
+        <LocalizedNames>
+          <LocalizedName description="Connection details" languagecode="1033" />
+        </LocalizedNames>
+      </Description>
+    </Definition>
+  </EnvironmentVariables>
+  <OrganizationSettings />
+  <optionsets />
+  <Dashboards />
+  <WebResources />
+  <CustomControls />
+  <AppModuleSiteMaps />
+  <AppModules />
+  <EntityDataProviders />
+  <CanvasApps />
+  <Languages>
+    <Language>1033</Language>
+  </Languages>
+</ImportExportXml>

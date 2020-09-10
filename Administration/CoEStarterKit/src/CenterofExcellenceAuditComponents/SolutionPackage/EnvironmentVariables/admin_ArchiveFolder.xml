@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definition IntroducedVersion="1.0.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SchemaName>admin_ArchiveFolder</SchemaName>
+  <IsRequired>0</IsRequired>
+  <Type>100000000</Type>
+  <DefaultValue>PowerAppsArchive</DefaultValue>
+  <DisplayName>
+    <LocalizedNames>
+      <LocalizedName description="Archive Folder" languagecode="1033" />
+    </LocalizedNames>
+  </DisplayName>
+  <Description>
+    <LocalizedNames>
+      <LocalizedName description="SharePoint Folder Name for archived apps" languagecode="1033" />
+    </LocalizedNames>
+  </Description>
+</Definition>

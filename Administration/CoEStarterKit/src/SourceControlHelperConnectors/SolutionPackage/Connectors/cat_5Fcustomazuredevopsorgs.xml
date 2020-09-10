@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Connector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <connectorid>b1a9526c-580c-42fc-928e-49aeb41ef61c</connectorid>
+  <description></description>
+  <displayname>CustomAzureDevOpsOrgs</displayname>
+  <iconbrandcolor>#007ee5</iconbrandcolor>
+  <name>cat_5Fcustomazuredevopsorgs</name>
+  <connectortype>1</connectortype>
+  <openapidefinition>/Connector/cat_5Fcustomazuredevopsorgs_openapidefinition.json</openapidefinition>
+  <connectionparameters>/Connector/cat_5Fcustomazuredevopsorgs_connectionparameters.json</connectionparameters>
+  <policytemplateinstances>/Connector/cat_5Fcustomazuredevopsorgs_policytemplateinstances.json</policytemplateinstances>
+  <iconblob>/Connector/cat_5Fcustomazuredevopsorgs_iconblob.Jpeg</iconblob>
+</Connector>

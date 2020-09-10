@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{97e278d8-666e-e911-a83d-000d3a375888}</WebResourceId>
+  <Name>admin_AdminIcon</Name>
+  <DisplayName>AdminIcon</DisplayName>
+  <WebResourceType>11</WebResourceType>
+  <IntroducedVersion>0.0.0.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/admin_AdminIcon97E278D8-666E-E911-A83D-000D3A375888</FileName>
+</WebResource>

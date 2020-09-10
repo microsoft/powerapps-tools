@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <HideCustomAction HideActionId="admin.Mscrm.Form.admin_connectionreference.Activate.Hide" Location="Mscrm.Form.admin_connectionreference.Activate" />
+    <HideCustomAction HideActionId="admin.Mscrm.Form.admin_connectionreference.Deactivate.Hide" Location="Mscrm.Form.admin_connectionreference.Deactivate" />
+    <HideCustomAction HideActionId="admin.Mscrm.Form.admin_connectionreference.NewRecord.Hide" Location="Mscrm.Form.admin_connectionreference.NewRecord" />
+    <HideCustomAction HideActionId="admin.Mscrm.Form.admin_connectionreference.NewRecordForBPFEntity.Hide" Location="Mscrm.Form.admin_connectionreference.NewRecordForBPFEntity" />
+    <HideCustomAction HideActionId="admin.Mscrm.Form.admin_connectionreference.SaveAndNew.Hide" Location="Mscrm.Form.admin_connectionreference.SaveAndNew" />
+    <HideCustomAction HideActionId="admin.Mscrm.HomepageGrid.admin_connectionreference.Activate.Hide" Location="Mscrm.HomepageGrid.admin_connectionreference.Activate" />
+    <HideCustomAction HideActionId="admin.Mscrm.HomepageGrid.admin_connectionreference.Deactivate.Hide" Location="Mscrm.HomepageGrid.admin_connectionreference.Deactivate" />
+    <HideCustomAction HideActionId="admin.Mscrm.HomepageGrid.admin_connectionreference.Edit.Hide" Location="Mscrm.HomepageGrid.admin_connectionreference.Edit" />
+    <HideCustomAction HideActionId="admin.Mscrm.HomepageGrid.admin_connectionreference.NewRecord.Hide" Location="Mscrm.HomepageGrid.admin_connectionreference.NewRecord" />
+    <HideCustomAction HideActionId="admin.Mscrm.HomepageGrid.admin_connectionreference.NewRecordForBPFEntity.Hide" Location="Mscrm.HomepageGrid.admin_connectionreference.NewRecordForBPFEntity" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_connectionreference.Activate.Hide" Location="Mscrm.SubGrid.admin_connectionreference.Activate" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_connectionreference.AddExistingAssoc.Hide" Location="Mscrm.SubGrid.admin_connectionreference.AddExistingAssoc" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_connectionreference.AddExistingStandard.Hide" Location="Mscrm.SubGrid.admin_connectionreference.AddExistingStandard" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_connectionreference.AddNewStandard.Hide" Location="Mscrm.SubGrid.admin_connectionreference.AddNewStandard" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_connectionreference.Deactivate.Hide" Location="Mscrm.SubGrid.admin_connectionreference.Deactivate" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_connectionreference.Edit.Hide" Location="Mscrm.SubGrid.admin_connectionreference.Edit" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_connectionreference.NewRecord.Hide" Location="Mscrm.SubGrid.admin_connectionreference.NewRecord" />
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions />
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels />
+</RibbonDiffXml>

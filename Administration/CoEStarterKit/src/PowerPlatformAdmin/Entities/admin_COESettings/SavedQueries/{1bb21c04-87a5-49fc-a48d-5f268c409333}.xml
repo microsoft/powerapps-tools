@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{1bb21c04-87a5-49fc-a48d-5f268c409333}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="admin_version" select="1" icon="1" preview="1">
+        <row name="result" id="admin_coesettingsid">
+          <cell name="admin_version" width="125" />
+          <cell name="createdon" width="125" />
+          <cell name="admin_brandprimarycolor" width="150" />
+          <cell name="admin_brandsecondarycolor" width="150" />
+          <cell name="admin_emailendusersupport" width="150" />
+          <cell name="admin_emailmakersupport" width="150" />
+          <cell name="admin_linktocommunitychannel" width="150" />
+          <cell name="admin_linktolearningresources" width="150" />
+          <cell name="admin_linktopolicydocumentation" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="admin_coesettings">
+          <attribute name="admin_coesettingsid" />
+          <attribute name="admin_version" />
+          <attribute name="createdon" />
+          <attribute name="admin_brandprimarycolor" />
+          <attribute name="admin_brandsecondarycolor" />
+          <attribute name="admin_emailendusersupport" />
+          <attribute name="admin_emailmakersupport" />
+          <attribute name="admin_linktocommunitychannel" />
+          <attribute name="admin_linktolearningresources" />
+          <attribute name="admin_linktopolicydocumentation" />
+          <order attribute="admin_version" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.29</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active COE Settings" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

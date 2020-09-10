@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{88f3be29-2d60-4849-bf10-ee441ed7a3b4}</formid>
+    <IntroducedVersion>1.0.0.29</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{1c1e02c3-24cb-42c9-80d0-fe2fcd288e5a}" IsUserDefined="1" name="{1c1e02c3-24cb-42c9-80d0-fe2fcd288e5a}" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{49c33374-cce8-4b17-9ae3-46dfafb2f0b8}" name="{49c33374-cce8-4b17-9ae3-46dfafb2f0b8}" columns="1" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0cd33260-da6b-404a-96b7-1b7b2f4c3f8c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Company Name" languagecode="1033" />
+                        </labels>
+                        <control id="admin_companyname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="admin_companyname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a9cb95d2-5d24-d99c-1a91-11a70a88605d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Brand Logo" languagecode="1033" />
+                        </labels>
+                        <control id="admin_logo" classid="{71716B6C-711E-476c-8AB8-5D11542BFB47}" datafieldname="admin_logo" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c0d359da-53d6-869d-25d7-3d390aea1a4b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Brand Primary Color" languagecode="1033" />
+                        </labels>
+                        <control id="admin_brandprimarycolor" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="admin_brandprimarycolor" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{be91614c-a12b-9023-da7c-5a47538aa77a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Brand Secondary Color" languagecode="1033" />
+                        </labels>
+                        <control id="admin_brandsecondarycolor" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="admin_brandsecondarycolor" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e7c86213-bd51-4ea4-d291-145a3bd3cce0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Email End User Support" languagecode="1033" />
+                        </labels>
+                        <control id="admin_emailendusersupport" classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" datafieldname="admin_emailendusersupport" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bae36caa-8756-428b-66ed-2b6d39aa7e0b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Email Maker Support" languagecode="1033" />
+                        </labels>
+                        <control id="admin_emailmakersupport" classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" datafieldname="admin_emailmakersupport" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1c5098c6-9c5e-43d9-a458-9fdcc66fbf4a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Tenant Type" languagecode="1033" />
+                        </labels>
+                        <control id="cr5d5_tenanttype" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr5d5_tenanttype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{db90cebb-0ecb-dc6e-3e5c-817e7783d81c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Link to Community Channel" languagecode="1033" />
+                        </labels>
+                        <control id="admin_linktocommunitychannel" classid="{71716B6C-711E-476c-8AB8-5D11542BFB47}" datafieldname="admin_linktocommunitychannel" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a6aa349e-5b5c-ab74-d4ce-ad903bb978e8}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Link to Learning Resources" languagecode="1033" />
+                        </labels>
+                        <control id="admin_linktolearningresources" classid="{71716B6C-711E-476c-8AB8-5D11542BFB47}" datafieldname="admin_linktolearningresources" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7eeb8ca8-837b-1a38-2170-42c34736953b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Link to Policy Documentation" languagecode="1033" />
+                        </labels>
+                        <control id="admin_linktopolicydocumentation" classid="{71716B6C-711E-476c-8AB8-5D11542BFB47}" datafieldname="admin_linktopolicydocumentation" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{776e32c6-1936-43e6-86b7-4b3d229937b7}">
+                        <labels>
+                          <label description="Version" languagecode="1033" />
+                        </labels>
+                        <control id="admin_version" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="admin_version" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9c7ba2f7-9797-4ee2-8730-ee3791fe613d}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="{1c1e02c3-24cb-42c9-80d0-fe2fcd288e5a}_section_2" showlabel="false" showbar="false" locklevel="0" id="{1c71bed9-bd4d-1a77-1034-359a74c3c7e3}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{863cc618-5448-d74c-87eb-d93184a33029}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar />
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <header id="{bb6c2a22-5e80-4205-b876-0ac435fb0271}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{7a46bada-3f46-422a-b31c-d33c525c5652}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{00b0da54-308c-459c-9d63-c76857fa47d7}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c82abb82-a44e-44c7-b0cd-a25c7eea2ee9}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{c1e15df7-b0b3-4233-b2b5-f4e177c8dc21}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{4fedb244-ce6f-4151-919f-b56b4655671e}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a0fc7172-184b-4a81-9792-f370c3aff734}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{30f85914-1baf-4c0b-b67f-c8ac9c901b54}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true" />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

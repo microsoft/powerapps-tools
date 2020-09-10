@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{4d44fbe6-6ed0-463a-a73f-7175bce5185d}" Name="Chatbot Approval BPF" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/ChatbotApprovalBPF-4D44FBE6-6ED0-463A-A73F-7175BCE5185D.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <processorder>100</processorder>
+  <RunAs>1</RunAs>
+  <UniqueName>new_chatbotapprovalbpf</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <PrimaryEntity>admin_PVA</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Chatbot Approval BPF" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{7e98b09b-a9ed-4539-be60-939f360d1614}">
+      <label languagecode="1033" description="Validate Maker Business Requirements" />
+    </steplabels>
+    <steplabels id="{a3b3aeec-70f2-4055-a16b-330f36f80b7d}">
+      <label languagecode="1033" description="Check if Maker Provided Business Requirements" />
+    </steplabels>
+    <steplabels id="{ebdadf46-caa8-4d6a-8a49-2a466532196a}">
+      <label languagecode="1033" description="Confirm Business Impact" />
+    </steplabels>
+    <steplabels id="{d762cdf4-8320-484c-92a6-6d62ebf83665}">
+      <label languagecode="1033" description="Mitigation Plan" />
+    </steplabels>
+    <steplabels id="{f15d8ac3-b658-459a-9412-fa5952c74cf5}">
+      <label languagecode="1033" description="Mitigation Plan Provided" />
+    </steplabels>
+    <steplabels id="{eddcd6c6-5349-4960-9f52-678f7d49c993}">
+      <label languagecode="1033" description="Assess Risk" />
+    </steplabels>
+    <steplabels id="{ac5152b7-0292-417f-b2c9-49cd8a8b6d61}">
+      <label languagecode="1033" description="Asses Risk" />
+    </steplabels>
+    <steplabels id="{467cd6b8-7bd8-4894-abae-aefaf55faa2e}">
+      <label languagecode="1033" description="Complete Admin Review" />
+    </steplabels>
+    <steplabels id="{730da448-f17f-411c-84d6-cb9af305345a}">
+      <label languagecode="1033" description="Reviewed Bot" />
+    </steplabels>
+  </labels>
+</Workflow>

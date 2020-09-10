@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="admin_approvalstatus" localizedName="Approval Status" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>0.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Approval Status" languagecode="1033" />
+  </displaynames>
+  <options>
+    <option value="597910002">
+      <labels>
+        <label description="Pending" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="597910003">
+      <labels>
+        <label description="Approved" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="597910004">
+      <labels>
+        <label description="Rejected" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="597910005">
+      <labels>
+        <label description="Timeout" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="597910001">
+      <labels>
+        <label description="Cancelled" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="597910006">
+      <labels>
+        <label description="Completed" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="597910007">
+      <labels>
+        <label description="Deleted" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>

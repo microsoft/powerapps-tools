@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <HideCustomAction HideActionId="admin.Mscrm.Form.admin_environment.Activate.Hide" Location="Mscrm.Form.admin_environment.Activate" />
+    <HideCustomAction HideActionId="admin.Mscrm.Form.admin_environment.Deactivate.Hide" Location="Mscrm.Form.admin_environment.Deactivate" />
+    <HideCustomAction HideActionId="admin.Mscrm.Form.admin_environment.NewRecord.Hide" Location="Mscrm.Form.admin_environment.NewRecord" />
+    <HideCustomAction HideActionId="admin.Mscrm.Form.admin_environment.NewRecordForBPFEntity.Hide" Location="Mscrm.Form.admin_environment.NewRecordForBPFEntity" />
+    <HideCustomAction HideActionId="admin.Mscrm.Form.admin_environment.SaveAndNew.Hide" Location="Mscrm.Form.admin_environment.SaveAndNew" />
+    <HideCustomAction HideActionId="admin.Mscrm.HomepageGrid.admin_environment.Activate.Hide" Location="Mscrm.HomepageGrid.admin_environment.Activate" />
+    <HideCustomAction HideActionId="admin.Mscrm.HomepageGrid.admin_environment.Deactivate.Hide" Location="Mscrm.HomepageGrid.admin_environment.Deactivate" />
+    <HideCustomAction HideActionId="admin.Mscrm.HomepageGrid.admin_environment.Edit.Hide" Location="Mscrm.HomepageGrid.admin_environment.Edit" />
+    <HideCustomAction HideActionId="admin.Mscrm.HomepageGrid.admin_environment.NewRecord.Hide" Location="Mscrm.HomepageGrid.admin_environment.NewRecord" />
+    <HideCustomAction HideActionId="admin.Mscrm.HomepageGrid.admin_environment.NewRecordForBPFEntity.Hide" Location="Mscrm.HomepageGrid.admin_environment.NewRecordForBPFEntity" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_environment.Activate.Hide" Location="Mscrm.SubGrid.admin_environment.Activate" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_environment.AddExistingAssoc.Hide" Location="Mscrm.SubGrid.admin_environment.AddExistingAssoc" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_environment.AddExistingStandard.Hide" Location="Mscrm.SubGrid.admin_environment.AddExistingStandard" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_environment.AddNewStandard.Hide" Location="Mscrm.SubGrid.admin_environment.AddNewStandard" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_environment.Deactivate.Hide" Location="Mscrm.SubGrid.admin_environment.Deactivate" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_environment.Edit.Hide" Location="Mscrm.SubGrid.admin_environment.Edit" />
+    <HideCustomAction HideActionId="admin.Mscrm.SubGrid.admin_environment.NewRecord.Hide" Location="Mscrm.SubGrid.admin_environment.NewRecord" />
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions />
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels />
+</RibbonDiffXml>

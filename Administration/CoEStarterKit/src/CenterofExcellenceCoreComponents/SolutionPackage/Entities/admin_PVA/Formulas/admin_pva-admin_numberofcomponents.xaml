@@ -1,0 +1,52 @@
+<Activity x:Class="XrmWorkflow00000000000000000000000000000000" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mcwc="clr-namespace:Microsoft.Crm.Workflow.ClientActivities;assembly=Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxs="clr-namespace:Microsoft.Xrm.Sdk;assembly=Microsoft.Xrm.Sdk, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxswa="clr-namespace:Microsoft.Xrm.Sdk.Workflow.Activities;assembly=Microsoft.Xrm.Sdk.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:s="clr-namespace:System;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:srs="clr-namespace:System.Runtime.Serialization;assembly=System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:this="clr-namespace:" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="InputEntities" Type="InArgument(scg:IDictionary(x:String, mxs:Entity))" />
+    <x:Property Name="CreatedEntities" Type="InArgument(scg:IDictionary(x:String, mxs:Entity))" />
+  </x:Members>
+  <this:XrmWorkflow00000000000000000000000000000000.InputEntities>
+    <InArgument x:TypeArguments="scg:IDictionary(x:String, mxs:Entity)" />
+  </this:XrmWorkflow00000000000000000000000000000000.InputEntities>
+  <this:XrmWorkflow00000000000000000000000000000000.CreatedEntities>
+    <InArgument x:TypeArguments="scg:IDictionary(x:String, mxs:Entity)" />
+  </this:XrmWorkflow00000000000000000000000000000000.CreatedEntities>
+  <mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
+  <mxswa:Workflow>
+    <Sequence DisplayName="RollupRuleStep1">
+      <Sequence DisplayName="Source">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:String" Default="[Nothing]" Name="HierarchicalRelationshipName" />
+        </Sequence.Variables>
+      </Sequence>
+      <Sequence DisplayName="Target">
+        <mcwc:SetAttributeValue DisplayName="admin_pvacomponent.admin_pvabot.admin_PVAComponent_PVA_admin_PVA" Entity="[CreatedEntities(&quot;relatedlinked_admin_PVAComponent_PVA_admin_PVA#admin_pvabot#admin_pvacomponent#Temp&quot;)]" EntityName="admin_pvacomponent" />
+      </Sequence>
+      <Sequence DisplayName="Aggregate">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:Object" Name="RollupRuleStep1_1" />
+          <Variable x:TypeArguments="x:Object" Name="RollupRuleStep1_2" />
+        </Sequence.Variables>
+        <mxswa:GetEntityProperty Attribute="admin_pvacomponentid" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="admin_pvacomponent" Value="[RollupRuleStep1_2]">
+          <mxswa:GetEntityProperty.TargetType>
+            <InArgument x:TypeArguments="s:Type">
+              <mxswa:ReferenceLiteral x:TypeArguments="s:Type">
+                <x:Null />
+              </mxswa:ReferenceLiteral>
+            </InArgument>
+          </mxswa:GetEntityProperty.TargetType>
+        </mxswa:GetEntityProperty>
+        <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+          <mxswa:ActivityReference.Arguments>
+            <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">Count</InArgument>
+            <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { RollupRuleStep1_2 }]</InArgument>
+            <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+              <mxswa:ReferenceLiteral x:TypeArguments="s:Type">
+                <x:Null />
+              </mxswa:ReferenceLiteral>
+            </InArgument>
+            <OutArgument x:TypeArguments="x:Object" x:Key="Result">[RollupRuleStep1_1]</OutArgument>
+          </mxswa:ActivityReference.Arguments>
+        </mxswa:ActivityReference>
+      </Sequence>
+    </Sequence>
+  </mxswa:Workflow>
+</Activity>

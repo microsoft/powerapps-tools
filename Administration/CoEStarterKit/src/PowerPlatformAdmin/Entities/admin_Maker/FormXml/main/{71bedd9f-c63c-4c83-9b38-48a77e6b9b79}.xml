@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{71bedd9f-c63c-4c83-9b38-48a77e6b9b79}</formid>
+    <IntroducedVersion>0.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab verticallayout="true" id="{f41558e4-f259-409c-bd00-2afc81809bd8}" IsUserDefined="1" name="{f41558e4-f259-409c-bd00-2afc81809bd8}" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section showlabel="true" showbar="true" IsUserDefined="0" id="{07db2322-78f9-4155-8f4c-4372b1bc705a}" name="makerDetailsSection" columns="1" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Maker Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{2afe4967-bf1d-4c14-bc8c-d7a5ddbe16e0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Display Name" languagecode="1033" />
+                        </labels>
+                        <control id="admin_displayname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="admin_displayname" uniqueid="{9e49720e-11c4-b36e-da83-db75b2e99a08}" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9b63b7a5-a18d-4052-bdb9-feb53cbc67cf}" showlabel="false" locklevel="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{d6bc8656-8cb8-35e2-bc7a-91aa72932045}" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9c8311d4-8707-6c87-a32d-11110361c1ea}" showlabel="false" colspan="1" auto="false" rowspan="6">
+                        <labels>
+                          <label description="Environments (Environment Maker)" languagecode="1033" />
+                        </labels>
+                        <control id="MakerEnvironments" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{5A4FF862-63EE-4B61-BF91-E15901265488}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>admin_EnvironmentMaker</RelationshipName>
+                            <TargetEntityType>admin_environment</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{5A4FF862-63EE-4B61-BF91-E15901265488}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId>{CD098782-FA70-E911-A833-000D3A375590}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="appsSubgridSection" showlabel="true" showbar="true" locklevel="0" id="{867db5c0-2223-dbca-a5a1-3663b00625a0}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Apps" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{32557912-db65-cd3e-7d83-ec152051d42d}" showlabel="false" colspan="1" auto="false" rowspan="6">
+                        <labels>
+                          <label description="PowerApps Apps" languagecode="1033" />
+                        </labels>
+                        <control id="AppsSubgrid" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{0b12786a-1aa8-dc73-0ea6-bc17d3c6ed61}">
+                          <parameters>
+                            <ViewId>{EEFE7AED-996E-E911-A83D-000D3A375888}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>admin_App_AppOwner_admin_Maker</RelationshipName>
+                            <TargetEntityType>admin_app</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{C454B997-4940-436B-B2DB-31F344DDC4BF},{EEFE7AED-996E-E911-A83D-000D3A375888}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{47572420-5bca-7893-519e-e5561394b7d7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Number Of Apps" languagecode="1033" />
+                        </labels>
+                        <control id="admin_numberofapps" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="admin_numberofapps" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="{f41558e4-f259-409c-bd00-2afc81809bd8}_section_3" showlabel="true" showbar="true" locklevel="0" id="{d4db93c8-3cca-36b7-26da-4a69e4546695}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Flows" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d4e7d373-2ec4-d2b5-14c7-9273b03247ee}" showlabel="false" colspan="1" auto="false" rowspan="6">
+                        <labels>
+                          <label description="Flows" languagecode="1033" />
+                        </labels>
+                        <control id="MakerFlows" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{1be2da2b-ec28-6b95-225e-87dd1b65ee56}">
+                          <parameters>
+                            <ViewId>{59E986B5-C270-E911-A833-000D3A375590}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>admin_Flow_FlowCreator_admin_Maker</RelationshipName>
+                            <TargetEntityType>admin_flow</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{3B6D0CB9-B36D-4AC9-A5C4-3FF2FDD92C89},{59E986B5-C270-E911-A833-000D3A375590}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{79de4940-e0e9-d0cb-0d80-4d32bb0cce24}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Number of Flows" languagecode="1033" />
+                        </labels>
+                        <control id="admin_numberofflows" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="admin_numberofflows" disabled="false" uniqueid="{290b4278-a74c-078a-0117-14942516ec62}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions></controlDescriptions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Maker Main Form" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

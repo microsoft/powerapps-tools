@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Connector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <connectorid>de4da0c8-bd02-41df-b0da-bbe0290e8fb4</connectorid>
+  <description>Connects to the Office 365 Management API.</description>
+  <displayname>Office 365 Management API</displayname>
+  <iconbrandcolor>#007ee5</iconbrandcolor>
+  <name>admin_5Foffice-20365-20management-20api</name>
+  <connectortype>1</connectortype>
+  <openapidefinition>/Connector/admin_5Foffice-20365-20management-20api_openapidefinition.json</openapidefinition>
+  <connectionparameters>/Connector/admin_5Foffice-20365-20management-20api_connectionparameters.json</connectionparameters>
+  <policytemplateinstances>/Connector/admin_5Foffice-20365-20management-20api_policytemplateinstances.json</policytemplateinstances>
+  <iconblob>/Connector/admin_5Foffice-20365-20management-20api_iconblob.Jpeg</iconblob>
+</Connector>
