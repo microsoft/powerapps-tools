@@ -68,6 +68,8 @@ generated](.//media/image4.png)
     ![A screenshot of a cell phone Description automatically
     generated](.//media/image5.png)
 
+Note: Please make sure you are selecting English in the "Select a language". You can use the application in any of the 45 languages available in the translation file, but the SPO site needs to be in English. 
+
 6.  Select Next.
 
 7.  Add additional owners for the site (optional).
