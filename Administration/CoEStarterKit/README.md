@@ -7,6 +7,7 @@ Please find all information on how to install and use the kit on https://docs.mi
 ### Latest Update
 Date | Notes
 ---|---
+2020.11.16 | Core Components: Bug fixes to sync flows, new columns in Environment table for Microsoft Teams environment management. Governance components: New flows to manage Microsoft Teams environments. Power BI Dashboard: complete refresh of style.
 2020.10.16 | Find our release notes on docs: https://docs.microsoft.com/en-us/power-platform/guidance/coe/release-notes
 2020.08.14 | Core and Governance Components: Bug fixes, and adding the Audit process for Flows, Chatbots and Custom Connectors - both in Developer Compliance Center, as well as through BPFs in the Power Platform Admin View.
 2020.07.24 | Core Components: Fix to a bug in Admin | Sync Template v2 (Power Apps User Shared With), which caused fetching user permissions in Default environment to fail. Fix to a bug in Admin | Sync Template v2 (Model Driven Apps), which caused environments with crm urls not ending in .crm to fail to sync. Example impact are environments like those with .crm4 in the url. Fix to a bug in Admin | Sync Template v2 (PVA), which caused a failure when syncing a PVA Component’s flow, when that flow has not yet been added to the Flow entity.
