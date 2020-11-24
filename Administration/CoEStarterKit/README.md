@@ -7,6 +7,7 @@ Please find all information on how to install and use the kit on https://docs.mi
 ### Latest Update
 Date | Notes
 ---|---
+2020.11.24 | Core Components: Bug fixes to PVA sync flow and Power Apps User Shared With sync flow, added missing filters in Power BI dasbhoard. Audit Logs: updated to now work with connection references.
 2020.11.16 | Core Components: Bug fixes to sync flows, new columns in Environment table for Microsoft Teams environment management. Governance components: New flows to manage Microsoft Teams environments. Power BI Dashboard: complete refresh of style.
 2020.10.16 | Find our release notes on docs: https://docs.microsoft.com/en-us/power-platform/guidance/coe/release-notes
 2020.08.14 | Core and Governance Components: Bug fixes, and adding the Audit process for Flows, Chatbots and Custom Connectors - both in Developer Compliance Center, as well as through BPFs in the Power Platform Admin View.
