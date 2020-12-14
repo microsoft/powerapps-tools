@@ -102,7 +102,7 @@ Leave the Azure portal open, because you'll need to make some configuration upda
 1. On the left pane, select **Solutions**.
 1. Select the **Power Platform GitHub ALM** solution and open the **PowerOps Admin** app.
 
-![Configure Environment Settings and Deployment Stages after import using the PowerOps Admin app](PowerOps/media/git-24.png "Configure Environment Settings and Deployment Stages after import using the PowerOps Admin app.")
+![Configure Environment Settings and Deployment Stages after import using the PowerOps Admin app](media/git-24.png "Configure Environment Settings and Deployment Stages after import using the PowerOps Admin app.")
 
 ### Setup Deployment Stages
 
