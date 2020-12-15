@@ -108,7 +108,7 @@ Update one row at a time and select **Update** to save your changes.
 
 1. Update the **Stage Owner Email** for each of the three stages (DEV, TEST & PROD). The stage owner will receive notification for approving the project creation and deployment.
 1. Update the **Admin username and password**. These credentials can be a service account or a user account with Power Platform Admin role.
-1. For each of the Test and Production stages, select a pre-existing environment that will be used for Test and Production deployments. Your Dev environment is the environment you installed the solution in
+1. For each of the Test and Production stages, select a pre-existing environment that will be used for Test and Production deployments. Your dev environment is the environment provisioned when you created a project in PowerOps.
 
 ### Update the "Webhook Url" value
 
