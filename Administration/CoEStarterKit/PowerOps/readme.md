@@ -45,8 +45,6 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 1. For Supported Account Type, select **Accounts in any organizational directory (Any Azure AD directory - Multitenant)**
 1. For Advanced Settings, set **Allow Public Client Flows** to **Yes** 
 
-1. Enter the URL you copied from the **Redirect URL** section of the custom connector.
-
 1. Select **Configure**.
 
 1. Select **Overview**, and copy and paste the application (client) ID value to notepad. You'll need this value in the next step as you configure the custom connector.
