@@ -74,7 +74,7 @@ Leave the Azure portal open, because you'll need to make some configuration upda
         - GitHub
         - Power Apps for Makers
         - Power Platform for Admins
-        - Approval
+        - Approvals
         - Content Conversion
 
 1. On the left pane, select **Solutions**.
