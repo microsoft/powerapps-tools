@@ -23,30 +23,29 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 
 1. Select **+ New Registration**.
 
-1. Enter **GithubDevOpsApp** as name, don't change any other setting, and then select **Register**.
+1. Enter **PowerOpsApp** as name, don't change any other setting, and then select **Register**.
+
+   ![Azure AD app registration](media/new-app-registration.PNG "Azure AD New app registration")
 
 1. Select **API Permissions** > **+ Add a permission**.
 
-1. Select **PowerApps Runtime Service**, and configure permissions as follows:
+1. Select **Dynamics CRM**, and configure permissions as follows:
 
-   ![API Permissions - Add a permission](media/git-1.png "Add a permission")
+   ![API Permissions - Add a permission](media/crm-api-registration.png "Add a permission")
 
    1. Select **Delegated permissions**, and then select **user_impersonation**.
 
-      ![Delegated permissions](media/git-2.png "Delegated permissions")
+      ![Delegated permissions](media/crm-api-registration2.png "Delegated permissions")
 
    1. Select **Add permissions**.
 
-1. Under **Overview**, select **Add a Redirect URI**.
+1. Select **Grant admin consent for [Your Organization]**
+   ![Grant Admin Consent](media/crm-api-adminconsent.png "Grant Admin Consent")
 
-1. Select **+ Add a platform** > **Mobile and Desktop Applications**.
-1. Select the **Native Client** and **MSAL Only** option and select **Configure**
-1. For Implicit Access, select **Access Token**
-1. For Supported Account Type, select **Accounts in any organizational directory (Any Azure AD directory - Multitenant)**
-1. For Advanced Settings, set **Allow Public Client Flows** to **Yes** 
-
-1. Select **Configure**.
-
+1. From the left navigation select **Authentication**.
+1. Under **Advanced Settings** > **Allow public client flows** > Toggle **Enable the following mobile and desktop flows** to Yes.
+   ![Allow public client flows](media/crm-api-publicflows.png "Allow public client flows")
+1. Select Save.
 1. Select **Overview**, and copy and paste the application (client) ID value to notepad. You'll need this value in the next step as you configure the custom connector.
 
 Leave the Azure portal open, because you'll need to make some configuration updates after you set up the custom connector.
@@ -66,8 +65,8 @@ Leave the Azure portal open, because you'll need to make some configuration upda
 1. Create connections to all connectors used as part of the solution.
     1. Go to **Data** > **Connections**.
     1. Select **+ New Connection**.
-    1. Search for and select **Common Data Service**.
-     ![Select the Datavsere connector](media/msi-connection.png "Select the Dataverse connector")
+    1. Search for and select **Common Data Service (current environment)**.
+     ![Select the Common Data Service (current environment) connector](media/cds-current-environment.png "Select the Common Data Service (current environment) connector")
     1. Select **+** to create a connection.
     1. Complete the same steps for the following connectors:
         - Office 365 Outlook
