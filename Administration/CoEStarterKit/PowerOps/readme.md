@@ -29,10 +29,9 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 
 1. Select **API Permissions** > **+ Add a permission**.
 
-1. Select **Dynamics CRM\***, and configure permissions as follows:
+1. Select **Dynamics CRM**, and configure permissions as follows:
 
    ![API Permissions - Add a permission](media/crm-api-registration.png "Add a permission")
-   \*Depending on your subscription you may need to use the **PowerApps Runtime Service** in this step. The steps below can be applied to either API Permission.
 
    1. Select **Delegated permissions**, and then select **user_impersonation**.
 
