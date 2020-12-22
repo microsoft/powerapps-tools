@@ -25,7 +25,7 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 
 1. Enter **PowerOpsApp** as name, don't change any other setting, and then select **Register**.
 
-   ![Azure AD app registration](media/new-app-registration.PNG "Azure AD New app registration")
+   ![Azure AD app registration](media/new-app-registration.png "Azure AD New app registration")
 
 1. Select **API Permissions** > **+ Add a permission**.
 
