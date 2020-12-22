@@ -41,7 +41,6 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 
 1. Select **+ Add a platform** > **Mobile and Desktop Applications**.
 1. Select the **Native Client** and **MSAL Only** option and select **Configure**
-1. For Implicit Access, select **Access Token**
 1. For Supported Account Type, select **Accounts in any organizational directory (Any Azure AD directory - Multitenant)**
 1. For Advanced Settings, set **Allow Public Client Flows** to **Yes** 
 
