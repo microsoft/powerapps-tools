@@ -9,7 +9,7 @@ This solution uses [GitHub actions](https://docs.microsoft.com/power-platform/al
 ## Prerequisites
 
 ### Environments
-The application will manage deploying solutions from Development to Testing and to Production. While you can setup PowerOps to use two environments initially (e.g. one for Deploying the PowerOps+ Solution and one for Test and Production. Ultimately, you will want to have seperate environments setup for each of at least PowerOps, Development, Test and Production.
+The application will manage deploying solutions from Development to Testing and to Production. While you can setup PowerOps to use two environments initially (e.g. one for Deploying the PowerOps Solution and one for Test and Production. Ultimately, you will want to have seperate environments setup for each of at least PowerOps, Development, Test and Production.
   - The environment into which you are deploying the PowerOps app will need to be created with a Dataverse database. Additionally, any target environment requires a Dataverse database in order to deploy your solutions.
 - Create a GitHub account at [GitHub.com](https://github.com)
 - Create a [GitHub org](https://docs.github.com/free-pro-team@latest/github/setting-up-and-managing-organizations-and-teams/creating-a-new-organization-from-scratch)
