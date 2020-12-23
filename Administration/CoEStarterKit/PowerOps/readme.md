@@ -19,7 +19,7 @@ In order to complete the steps below you will need the following users and permi
 - A licensed **Power Apps user** with **System Administrator role** in the Dataverse for the environment into which the PowerOps App will be installed. 
 >[!NOTE] This user must not Multi-Factor Authentication enabled until full support of Service Principals are enabled in the GitHub workflows.
 
-- A licensed **Azure user** with Permissions to create App Registrations and Grant Admin consent** to App Registrations in Azure Active Directory.
+- A licensed **Azure user** with Permissions to create **App Registrations and Grant Admin consent** to App Registrations in Azure Active Directory.
 
 
 ## Create an Azure AD app registration
