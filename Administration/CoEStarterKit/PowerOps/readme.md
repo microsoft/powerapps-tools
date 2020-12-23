@@ -15,7 +15,7 @@ The application will manage deploying solutions from Development to Testing and 
 - Create a [GitHub org](https://docs.github.com/free-pro-team@latest/github/setting-up-and-managing-organizations-and-teams/creating-a-new-organization-from-scratch)
 
 ### Users and Permissions
-In order to complete the steps below you will need the following users and permissions in Power Platform, Azure DevOps and Azure.
+In order to complete the steps below you will need the following users and permissions in Power Platform and Azure.
 - A licensed **Power Apps user** with **System Administrator role** in the Dataverse for the environment into which the PowerOps App will be installed. 
 >[!NOTE] This user must not Multi-Factor Authentication enabled as part of the preview until full support of Service Principals are enabled in the pipelines.
 
