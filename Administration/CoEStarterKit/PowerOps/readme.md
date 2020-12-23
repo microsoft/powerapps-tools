@@ -8,8 +8,19 @@ This solution uses [GitHub actions](https://docs.microsoft.com/power-platform/al
 
 ## Prerequisites
 
+### Environments
+The application will manage deploying solutions from Development to Testing and to Production. While you can setup PowerOps to use two environments initially (e.g. one for Deploying the PowerOps+ Solution and one for Test and Production. Ultimately, you will want to have seperate environments setup for each of at least PowerOps, Development, Test and Production.
+  - The environment into which you are deploying the PowerOps app will need to be created with a Dataverse database. Additionally, any target environment requires a Dataverse database in order to deploy your solutions.
 - Create a GitHub account at [GitHub.com](https://github.com)
 - Create a [GitHub org](https://docs.github.com/free-pro-team@latest/github/setting-up-and-managing-organizations-and-teams/creating-a-new-organization-from-scratch)
+
+### Users and Permissions
+In order to complete the steps below you will need the following users and permissions in Power Platform, Azure DevOps and Azure.
+- A licensed **Power Apps user** with **System Administrator role** in the Dataverse for the environment into which the PowerOps App will be installed. 
+>[!NOTE] This user must not Multi-Factor Authentication enabled as part of the preview until full support of Service Principals are enabled in the pipelines.
+
+- A licensed **Azure user** with Permissions to create App Registrations and Grant Admin consent** to App Registrations in Azure Active Directory.
+
 
 ## Create an Azure AD app registration
 
@@ -82,7 +93,7 @@ Leave the Azure portal open, because you'll need to make some configuration upda
 
 1. In the pop-up window, select **Choose File**.
 
-1. Select the PowerOps GitHub ALM solution from File Explorer (PowerPlatformGitHubALM_x_x_x_xx_managed.zip).
+1. Select the PowerOps solution from File Explorer (PowerPlatformGitHubALM_x_x_x_xx_managed.zip).
 
 1. When the compressed (.zip) file has been loaded, select **Next**.
 
