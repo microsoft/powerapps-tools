@@ -7,6 +7,7 @@ Please find all information on how to install and use the kit on https://docs.mi
 ### Latest Update
 Date | Notes
 ---|---
+2021.02.01 | Core Components: New Exclude from Archive flag on PowerApps App and Flow tables. DLP Editor added. Governance Components: Archive flows have been updated to ignore apps and flows that have the Exclude from Archive flag set, and flows have been updated to use the Common Data Service (Current Environment) connector. Nurture Components: Welcome email updated to remove broken links. Audit Log: Updated to avoid duplicate write issue.
 2021.01.06 | Core Components: Sync flows updated to use Common Data Service (Current Environment) connector, as well as bug fixes per GitHub issues. Innovation Backlog: updated to be Dataverse for Teams environment compatible. Power BI dashboard: updated to use new naming conventions (Desktop Flow and Cloud Flow).
 2020.11.24 | Core Components: Bug fixes to PVA sync flow and Power Apps User Shared With sync flow, added missing filters in Power BI dasbhoard. Audit Logs: updated to now work with connection references.
 2020.11.16 | Core Components: Bug fixes to sync flows, new columns in Environment table for Microsoft Teams environment management. Governance components: New flows to manage Microsoft Teams environments. Power BI Dashboard: complete refresh of style.
