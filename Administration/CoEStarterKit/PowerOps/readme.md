@@ -290,3 +290,11 @@ Makers can check the deployment history for their project by navigating to the d
 
 ![View deployment history](media/git-34.png "View deployment history")
 
+## Troubleshooting section
+- If you are seeing error in creating new project.
+  We have identified a known issue in some regions.
+  Where create project flow fails for creating a repo in an organisation with 403 forbidden error.
+
+  You can follow the below workaround until the issue is fixed:
+  In "Power Platform Github ALM" component you can edit the environment variable cat_TemplateRepoName current value to poweralm/repotemplate.
+
