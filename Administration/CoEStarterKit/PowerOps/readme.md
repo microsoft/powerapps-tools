@@ -215,7 +215,7 @@ You can now use the PowerOps components.
 
 # Use PowerOps components
 
-The PowerOps components will help you follow best DevOps practices to source control and move your solution(s) from development to test to production environments using GitHub. More information: [Set up PowerOps components](setup-powerops.md)
+The PowerOps components will help you follow best DevOps practices to source control and move your solution(s) from development to test to production environments using GitHub. More information: [Set up PowerOps components](#set-up-powerops-components)
 
 The PowerOps components enable makers to apply source control strategies using GitHub and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition PowerOps provides makers the ability to work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solutions to source controlling the solution and ultimately pushing their apps to other environments with as few interruptions to their work as possible.
 
