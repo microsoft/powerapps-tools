@@ -5,10 +5,6 @@ With the Power Apps review tool, you can conduct app reviews more efficiently th
 ![PowerApps Review Tool](https://pahandsonlab.blob.core.windows.net/tools/home.png)
 
 
-Check out the intro video 
-
-[![Code Review Tool Video](https://pahandsonlab.blob.core.windows.net/tools/thumbnail.png)](https://youtu.be/ZkXL_IqK4UE "Code Review Tool Video")
-
 ## Creating a Review
 
 Simply add the app name, msapp file and other optional fields
@@ -47,3 +43,6 @@ If you find code defects, you can link it to corresponding the review pattern.
 ![PowerApps Review Tool](https://pahandsonlab.blob.core.windows.net/tools/appchecker.png)
 
  
+Check out the intro video 
+
+[![Code Review Tool Video](https://pahandsonlab.blob.core.windows.net/tools/thumbnail.png)](https://youtu.be/ZkXL_IqK4UE?t=232 "Code Review Tool Video")
