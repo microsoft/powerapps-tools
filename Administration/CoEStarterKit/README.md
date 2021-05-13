@@ -1,3 +1,7 @@
+# WE ARE MOVING TO A NEW REPOSITORY
+
+# THIS PROJECT IS IN TRANSITION TO https://github.com/microsoft/coe-starter-kit. 
+
 # Center of Excellence Starter Kit
 The Center of Excellence (CoE) Starter Kit is a set of templates that are designed to help develop a strategy for adopting, maintaining and supporting the Power Platform, with a focus on Power Apps and Power Automate. The kit includes multiple Power Apps and Power BI analytics reports to view and interact with the data collected.  The kit also provides several assets that provide templates and suggested patterns and practices for implementing CoE efforts. The assets part of the CoE Starter Kit should be seen as a template from which you inherit your individual solution or can serve as inspiration for implementing your own apps and flows.
 
