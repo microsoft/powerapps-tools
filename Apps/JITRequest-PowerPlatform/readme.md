@@ -1,12 +1,13 @@
 # Intro
 
-The below components need to be configured for the solution to work successfully.
+This is a supporting document for the blog we published [here](https://powerapps.microsoft.com/en-us/blog/15807). The below components need to be configured for the solution to work successfully.
 
 Note
 
 - Please remember to share the canvas app with the users expected to gain elevated permissions
 - If you are setting up a new SharePoint site, please use a 'Team' site
-- When importing the solution, do use the new import experience which will allow you to set connection references during import itself
+- When importing the solution, do use the new import experience which will allow you to set connection references during import itself.
+- These flows will need to be configured from a permannent admin account so they can grant elevated permissions.
 
 ## Azure Groups Setup
 
@@ -17,12 +18,9 @@ Two Active Directory Group in Azure (portal.azure.com need to be created and gro
 - Azure Admin users - Users in this group have permanent admin roles.
     Typically consists of service accounts.
 
-Copy the Object ID of the AD group (JIT Users) to set in the "Submit
-Request" flow variable (AD Group ID).
+Copy the Object ID of the AD group (JIT Users) to set in the "AD Group ID" envrionment variable during the solution import.
 
-Copy the Object ID of the AD group (JIT Admin Users) to set in the
-"Submit Request" and "Remove Admin Access" flows variable (AD Admin
-Group ID).
+Copy the Object ID of the AD group (JIT Admin Users) to set in the "AD Admin Group ID" envrionment variable during the solution import.
 
 ![Azure JIT Users](media/AzureJITUsers.png)
 
@@ -66,34 +64,48 @@ imported.
 
 ![Connection References](media/ConnectionReferences.png)
 
-### Submit Request Flow Configuration
+### Environment Variables
 
-After the solution is imported, perform the below steps:
+The below 4 environment variables values should be provided once the solution is imported.
 
-- Edit the flow to set the AD Group ID (Active Directory Group ID) and
-    AD Admin Group ID as below:
+- AD Group ID – the Object ID of the Azure JIT Users AD group
 
-![Azure AD groups variables](media/ADgroups.png)
+- SharePoint Site URL
 
-- Set the SharePoint Site Name and List in "Create Item" and "Update
-    Audit Item" SharePoint actions in the flow as shown below:
+- AD Admin Group ID – the Object ID of the Azure Admin users AD group
 
-![SharePoint Flow create](media/SharepointFlow.png)
+- SharePoint List ID
 
-![Sharepoint Flow Update](media/SharepointUpdateFlow.png)
+![Environment Variables](media/EnvironmentVariables.png)
 
-- Enable the flow.
+To get the SharePoint Site URL go to SharePoint Site home page and copy the URL.
 
-### Remove Admin Access Flow Configuration
+![SharePoint Site URL](media/SharePointSiteURL.png)
 
-- Edit the flow to set the AD Admin Group ID (Active Directory Admin
-    Group ID) as below:
+To get the SharePoint List ID go to the created SharePoint List page, click on the "Settings" button in the top right corner of the page and navigate to List Settings. Then copy SharePoint List ID from the URL (ignore "%7B" and "%7D" parenthesis around the guid).
 
-![Set AD Admin Group ID](media/setADAdminGroup.png)
+![SharePoint List Settings](media/SharePointListSettings.png)
 
-- Set the share point site address and list name in "Get items" step
-    in the flow:
+![SharePoint List ID](media/SharePointListID.png)
 
-![Get SharePoint Items](media/getSharepointItems.png)
+## Troubleshooting
 
-- Enable the flow.
+If after completion of all steps above users cannot submit the request, perform the steps below to troubleshoot the issue.
+
+- Navigate to the "Org Admin Access" canvas app in the edit mode.
+
+![Canvas App Edit](media/CanvasAppEdit.png)
+
+- Click on the "Submit" button, select Action in the top menu and go to the "Power Automate" section.
+- Copy OnSelect function value to paste it back after re-adding the flow.
+
+- Remove "SubmitRequest" flow from the canvas app.
+
+![Remove Flow](media/RemoveFlow.png)
+
+- Add "SubmitRequest" flow back to the canvas app by selecting it in the "Available Flow" section.
+
+![Add Flow](media/AddFlow.png)
+
+- Paste OnSelect function value copied earlier back in the formula bar.
+- Save and publish canvas app.
