@@ -6,7 +6,7 @@ Note
 
 - Please remember to share the canvas app with the users expected to gain elevated permissions
 - If you are setting up a new SharePoint site, please use a 'Team' site
-- When importing the solution, do use the new import experience which will allow you to set connection references during import itself.
+- When importing the solution, do use the new import experience which will allow you to set connection references and environment variables during import itself.
 - These flows will need to be configured from a permannent admin account so they can grant elevated permissions.
 
 ## Azure Groups Setup
@@ -47,7 +47,7 @@ Copy the Object ID of the AD group (JIT Admin Users) to set in the "AD Admin Gro
 
 ![Sharepoint JIT site](media/JITSite.png)
 
-## Flow Configuration
+## Solution Configuration
 
 ### Connections
 
