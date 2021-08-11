@@ -1,6 +1,6 @@
 # Intro
 
-This is a supporting document for the blog we published [here](https://powerapps.microsoft.com/en-us/blog/15807). The below components need to be configured for the solution to work successfully.
+This is a supporting document for the blog we published [here](https://powerapps.microsoft.com/). The below components need to be configured for the solution to work successfully.
 
 Note
 
