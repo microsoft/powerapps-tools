@@ -11,7 +11,7 @@ Note
 
 ## Azure Groups Setup
 
-Two Active Directory Group in Azure (portal.azure.com) need to be created and group ids provided in the flows. They are:
+Two Active Directory Group in Azure (portal.azure.com) need to be created and group ids provided in the environment variables. They are:
 
 - Azure JIT users - This group contains the users allowed for JIT access and get elevated roles.
 
