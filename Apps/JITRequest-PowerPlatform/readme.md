@@ -7,11 +7,11 @@ Note
 - Please remember to share the canvas app with the users expected to gain elevated permissions
 - If you are setting up a new SharePoint site, please use a 'Team' site
 - When importing the solution, do use the new import experience which will allow you to set connection references and environment variables during import itself.
-- These flows will need to be configured from a permannent admin account so they can grant elevated permissions.
+- These flows will need to be configured from a permanent admin account so they can grant elevated permissions.
 
 ## Azure Groups Setup
 
-Two Active Directory Group in Azure (portal.azure.com need to be created and group ids provided in the flows. They are:
+Two Active Directory Group in Azure (portal.azure.com) need to be created and group ids provided in the flows. They are:
 
 - Azure JIT users - This group contains the users allowed for JIT access and get elevated roles.
 
