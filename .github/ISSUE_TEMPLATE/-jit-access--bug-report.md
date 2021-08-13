@@ -1,9 +1,9 @@
 ---
 name: "[JIT Access] Bug report"
-about: Create a report to help us improve
+about: Create a report to help us improve the JIT Access solution
 title: ''
 labels: jitaccess
-assignees: ''
+assignees: ankitchawla23
 
 ---
 
