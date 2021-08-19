@@ -8,6 +8,7 @@ Note
 - If you are setting up a new SharePoint site, please use a 'Team' site
 - When importing the solution, do use the new import experience which will allow you to set connection references and environment variables during import itself.
 - These flows will need to be configured from a permanent admin account so they can grant elevated permissions.
+- Please ensure that users that use the canvas app have global 'Run Flow' and 'Process - Read' permissions (full green circle) in their existing Security Roles.
 
 ## Azure Groups Setup
 
