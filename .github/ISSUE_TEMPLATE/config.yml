@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: [CoE Starter Kit] Issues
+  - name: CoE Starter Kit - Issues
     url: https://github.com/microsoft/coe-starter-kit/issues
     about: Please file issues related to the CoE Starter Kit in the microsoft/coe-starter-kit repository.
