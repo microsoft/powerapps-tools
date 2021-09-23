@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.PowerApps.Tools.AppEntities;
+using System.Collections.Generic;
 
 namespace Microsoft.PowerApps.Tools.AppChangeManager
 {
@@ -24,6 +25,9 @@ namespace Microsoft.PowerApps.Tools.AppChangeManager
     public class ChangedControl
     {
         public string ControlName { get; set; }
+
+        public Template Template { get; set; }
+
         public string Parent { get; set; }
         public List<ExtendedScript> Script { get; set; }
     }
