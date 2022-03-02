@@ -10,7 +10,14 @@ The app also has a screen that lets an admin to search and select a specific use
 
 ![image](https://user-images.githubusercontent.com/71347619/156307584-d8a42591-6721-432f-b83f-1a02a618b82b.png)
 
-# Principles Used
+## Install
+1. Download the app zip file 
+2. In PowerApps studio, select apps and Import Canvas App
+3. Select the zip file from the download location 
+
+    - NOTE: It's observed that the app take upto 5 minutes to show in the apps list in some cases. 
+
+## Principles Used
 The below principles were applied as part of this app development
 - A Canvas app that can be imported as a plug and play, into any environment
 - No Power automate flows are used and only connections used as PowerApps for Makers and Office 365
