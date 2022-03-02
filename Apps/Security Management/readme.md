@@ -8,6 +8,8 @@ As you onboard to start using DataVerse from the complete low code platform (Pow
 
 The app also has a screen that lets an admin to search and select a specific user and see the user's security role, team and field security profile associations. 
 
+![image](https://user-images.githubusercontent.com/71347619/156307584-d8a42591-6721-432f-b83f-1a02a618b82b.png)
+
 # Principles Used
 The below principles were applied as part of this app development
 - A Canvas app that can be imported as a plug and play, into any environment
@@ -25,7 +27,8 @@ The below principles were applied as part of this app development
 This screen shows the roles that are available in this environment. First security role is selected by default and corresponding users and teams associated with this security role are displayed. A picture for users is displayed using the office 365 connector. 
 
     - A new security role can be created (NOTE: the new window will show the default business unit for the security role)
-  
+  ![image](https://user-images.githubusercontent.com/71347619/156307639-23fd7419-3290-4ebb-921d-d4e60aeb7bfa.png)
+
 ## Team Management Screen
 This screen shows the teams that are available, basic information about the team. Selecting a team will show associated users and teams
 
@@ -41,6 +44,7 @@ This screen displays business units and associated security roles and teams. (NO
 
 ## User Profile
 A users picture is displayed with basic information. The security roles, field security profiles and teams that this user is associated are displayed. The can be removed from any of these or added to an existing object in respective area.
+    ![image](https://user-images.githubusercontent.com/71347619/156307660-083ca6ef-135d-445c-a4ea-c6d40c21cd8e.png)
 
 ## Search User screen
 Type in a name of the user and select their name from the result set to see users association with security roles, field security profiles and teams.
