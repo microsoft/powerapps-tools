@@ -1,0 +1,48 @@
+# Security Management
+As you onboard to start using DataVerse from the complete low code platform (Power platform), you are introduced to multiple security constructs. This security management app is an attempt to simplify the management of security with in a single environment. The app also will also allow to add or remove associations between 
+    - Users 
+    - Teams 
+    - Security Roles
+    - Business Units
+    - Field Security Roles
+
+The app also has a screen that lets an admin to search and select a specific user and see the user's security role, team and field security profile associations. 
+
+# Principles Used
+The below principles were applied as part of this app development
+- A Canvas app that can be imported as a plug and play, into any environment
+- No Power automate flows are used and only connections used as PowerApps for Makers and Office 365
+
+    - + button will display option to select a single user/team to the specific role 
+    - X button will get you back to the main users/teams listing 
+    - clicking the assign button at the bottom would create a new association 
+    - Bin button will remove the user from that role (NOTE: this operation is immediate)
+    - i button will launch the record of the associated object in a new tab
+    - clicking on the users name on any screen will take to the user profile screen
+    - All labels and headings are capitalized 
+
+## Security Role Management Screen
+This screen shows the roles that are available in this environment. First security role is selected by default and corresponding users and teams associated with this security role are displayed. A picture for users is displayed using the office 365 connector. 
+
+    - A new security role can be created (NOTE: the new window will show the default business unit for the security role)
+  
+## Team Management Screen
+This screen shows the teams that are available, basic information about the team. Selecting a team will show associated users and teams
+
+    - A new team can be created (NOTE: The window launched will default to Owner team)
+
+## Field security profile management
+This screen shows the field security profiles that are available in this environment. Selecting a field security profile, will show associated users and fields along with permissions that are assigned for each.
+
+    - A new field profile can be created (NOTE: The window launched will default to Owner team)
+
+## Business Units
+This screen displays business units and associated security roles and teams. (NOTE: unless a security role is created for a specific business unit, you will mostly see the same roles for business units. Teams can differ). 
+
+## User Profile
+A users picture is displayed with basic information. The security roles, field security profiles and teams that this user is associated are displayed. The can be removed from any of these or added to an existing object in respective area.
+
+## Search User screen
+Type in a name of the user and select their name from the result set to see users association with security roles, field security profiles and teams.
+
+For any feedback and feature requests, please report them as part of this git hub. 
