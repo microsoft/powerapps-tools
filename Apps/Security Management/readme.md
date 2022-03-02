@@ -15,12 +15,13 @@ The below principles were applied as part of this app development
 - A Canvas app that can be imported as a plug and play, into any environment
 - No Power automate flows are used and only connections used as PowerApps for Makers and Office 365
 
-    - + button will display option to select a single user/team to the specific role 
-    - X button will get you back to the main users/teams listing 
-    - clicking the assign button at the bottom would create a new association 
-    - Bin button will remove the user from that role (NOTE: this operation is immediate)
-    - i button will launch the record of the associated object in a new tab
-    - clicking on the users name on any screen will take to the user profile screen
+    - ![image](https://user-images.githubusercontent.com/71347619/156307977-6346a33c-5fb0-4454-a9e2-f681a44d09ee.png) button will display option to select a single user/team to the specific role 
+    - ![image](https://user-images.githubusercontent.com/71347619/156308274-7069ba94-1733-401f-9c12-7cf56b3ce77e.png) button will get you back to the main users/teams listing 
+    - ![image](https://user-images.githubusercontent.com/71347619/156308048-35b347e1-7c5d-42ce-8357-e2e0006674ff.png) button will remove the user from that role (NOTE: this operation is immediate)
+    - ![image](https://user-images.githubusercontent.com/71347619/156308156-ec2cfd20-1641-4f3f-aa08-d4b4d9a46b92.png) button will launch the record of the associated object in a new tab
+    
+    - Clicking on the users name on any screen will take to the user profile screen
+    - Clicking the assign button at the bottom would create a new association 
     - All labels and headings are capitalized 
 
 ## Security Role Management Screen
@@ -50,3 +51,7 @@ A users picture is displayed with basic information. The security roles, field s
 Type in a name of the user and select their name from the result set to see users association with security roles, field security profiles and teams.
 
 For any feedback and feature requests, please report them as part of this git hub. 
+
+## References 
+- Security concepts in Microsoft Dataverse - https://docs.microsoft.com/en-us/power-platform/admin/wp-security-cds
+- Security in Microsoft Power Platform - https://docs.microsoft.com/en-us/power-platform/admin/security/overview
