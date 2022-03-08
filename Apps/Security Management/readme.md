@@ -62,3 +62,9 @@ For any feedback and feature requests, please report them as part of this git hu
 ## References 
 - Security concepts in Microsoft Dataverse - https://docs.microsoft.com/en-us/power-platform/admin/wp-security-cds
 - Security in Microsoft Power Platform - https://docs.microsoft.com/en-us/power-platform/admin/security/overview
+
+## Support
+Please do not open a support ticket if you encounter any bugs with the solution itself, unless it is related to an underlying platform issue unrelated to the template's implementation. If there are issues related to the solution implementation itself, please [report bugs here](https://github.com/microsoft/powerapps-tools/issues/new?assignees=ankitchawla23&labels=jitaccess&template=-jit-access--bug-report.md&title=).
+
+### Disclaimer
+*This app is a sample and may be used with Microsoft Power Apps and Teams for dissemination of reference information only. This app is not intended or made available for use as a medical device, clinical support, diagnostic tool, or other technology intended to be used in the diagnosis, cure, mitigation, treatment, or prevention of disease or other conditions, and no license or right is granted by Microsoft to use this app for such purposes. This app is not designed or intended to be a substitute for professional medical advice, diagnosis, treatment, or judgement and should not be used as such. Customer bears the sole risk and responsibility for any use of this app. Microsoft does not warrant that the app or any materials provided in connection therewith will be sufficient for any medical purposes or meet the health or medical requirements of any person.*
