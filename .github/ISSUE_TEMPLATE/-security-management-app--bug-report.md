@@ -1,9 +1,9 @@
 ---
-name: "[Regional Emergency Response App] Bug report"
-about: Create a report to help us improve the Regional Emergency Response App
-title: "[BUG]: issue title"
-labels: regemerrespapp
-assignees: ''
+name: "[Security Management App] Bug report"
+about: Create a report to help us improve the Security Management App
+title: "[BUG] Security Management: "
+labels: securitymgmt
+assignees: Ravi-Chada
 
 ---
 
@@ -23,14 +23,15 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Interface(please complete the following information):**
+**Desktop (please complete the following information):**
+ - OS: [e.g. iOS]
  - Browser [e.g. chrome, safari]
- - Version date[e.g. 2020.04.03]
+ - Version [e.g. 22]
 
 **Smartphone (please complete the following information):**
- - Device: [e.g. iPhoneX, SamsungS10]
- - OS: [e.g. iOS12.1]
- - Browser [e.g. Edge (Chromium), safari]
+ - Device: [e.g. iPhone6]
+ - OS: [e.g. iOS8.1]
+ - Browser [e.g. stock browser, safari]
  - Version [e.g. 22]
 
 **Additional context**
