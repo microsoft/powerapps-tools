@@ -1,3 +1,11 @@
+## Install Instruction
+
+- Download the ArchitectureReview_1_0_0_xx_manage solution 
+- Import the solution in your target environment (https://make.preview.powerapps.com/ -> Solutions -> Import)
+- Enable PCF Component in Admin Center ![Admin Center](https://docs.microsoft.com/en-us/powerapps/developer/component-framework/media/enable-pcf-feature.png)
+
+
+
 ## Power Apps Review Tool
 
 With the Power Apps review tool, you can conduct app reviews more efficiently thanks to a customizable checklist of best practices, a 360 view of your app through app checker results, app settings and a free search code viewer.
