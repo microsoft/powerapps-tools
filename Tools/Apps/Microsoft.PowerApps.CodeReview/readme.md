@@ -1,4 +1,4 @@
-## Install Instruction
+## Install Instructions
 
 - Download the ArchitectureReview_1_0_0_xx_manage solution 
 - Import the solution in your target environment (https://make.preview.powerapps.com/ -> Solutions -> Import)
