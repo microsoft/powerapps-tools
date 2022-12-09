@@ -2,7 +2,8 @@
 
 ## Prerequisites
 
-Latest version of Code Review Tool has been redesigned using [Power CAT Creator Kit](https://github.com/microsoft/powercat-creator-kit). As a prerequisite install the [Power CAT Creator Kit](https://github.com/microsoft/powercat-creator-kit) core solution in your target environment by following below instructions.
+- Enable PCF Component in Admin Center ![Admin Center](https://docs.microsoft.com/en-us/powerapps/developer/component-framework/media/enable-pcf-feature.png)
+- Latest version of Code Review Tool has been redesigned using [Power CAT Creator Kit](https://github.com/microsoft/powercat-creator-kit). As a prerequisite install the [Power CAT Creator Kit](https://github.com/microsoft/powercat-creator-kit) core solution in your target environment by following below instructions.
 
 - Download the 'Power CAT Creator Kit' Core solution from [here](https://github.com/microsoft/powercat-creator-kit/releases/download/CreatorKit-November2022/CreatorKitCore_1.0.20221205.2_managed.zip).  
 - Import the solution in your target environment (<https://make.preview.powerapps.com/> -> Solutions -> Import)
@@ -11,7 +12,6 @@ Latest version of Code Review Tool has been redesigned using [Power CAT Creator 
 
 - Download the ArchitectureReview_1_0_0_xx_manage solution
 - Import the solution in your target environment (<https://make.preview.powerapps.com/> -> Solutions -> Import)
-- Enable PCF Component in Admin Center ![Admin Center](https://docs.microsoft.com/en-us/powerapps/developer/component-framework/media/enable-pcf-feature.png)
 
 ## Power Apps Review Tool
 
