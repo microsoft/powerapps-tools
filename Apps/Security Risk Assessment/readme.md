@@ -33,7 +33,7 @@ A new table is created to capture the request. On creation of the record in the 
     - Security roles assessment summary shows the color of the shield based on last assessment
     - Screens from the old app have been converted into custom pages 
 
-# How does the app asess the security role?
+# How does the app assess the security role?
 A base set assessment for each privilege and level is recommended. However, the user can toggle the button to override, provide a reason for toggle and set their own assessments. 
       ![image](https://user-images.githubusercontent.com/71347619/209748800-76f2c20a-91d5-4b5e-ad7b-9d9f5aba5cb5.png)
 Power automate logic retrieves the base assessment rules, retrieves the privileges associated with the flow. Based on the level of the privilege the base assessment is applied to calculate the number of privileges under each role.
@@ -41,13 +41,13 @@ Power automate logic retrieves the base assessment rules, retrieves the privileg
 # Screens and Summary Cards 
 A few new screens are added to the previous version that provide an easy way for administrators and stake holders to understand this better.   
 
-## Security Risk asessment grid
+## Security Risk assessment grid
 This screen shows the risk assessments in a model driven app grid. It gives a quick summary of all assessments with numbers and over all assessment.  
  
  ![image](https://user-images.githubusercontent.com/71347619/209739333-67a1b02c-31e2-417e-9ff2-da58711288ce.png)
 
-## Security Risk asessment summary
-A card presentation of the risk asessment sorted in descending order of created on date. The cards can be filtered by either request number, status reason or assessed risk level. 
+## Security Risk assessment summary
+A card presentation of the risk assessment sorted in descending order of created on date. The cards can be filtered by either request number, status reason or assessed risk level. 
 
  ![image](https://user-images.githubusercontent.com/71347619/209747358-beb41ef2-5ae6-4bb8-ad1f-abe82e5dc113.png)
 
@@ -73,7 +73,7 @@ This screen shows the roles that are available in this environment. First securi
 - A new security role can be created (NOTE: the new window will show the default business unit for the security role)
 
 ## Security Role Privileges Screen
-A new screen added to display privileges for a selected security role. The center screen shows the privileges that are assigned to the role and right most pane displays what privileges are not assigned. Both the center and right pane data is filtered by the text present in the filter box. The center top section summarizes the privileges by Table name if they belong to a table or as a individual privilege. Upon selecting one of the values, the text is set for filtering privileges in both assigned and unassigned sections. In the below example even though fle activityfileattachment is a seperate table it shows up as unassigned since it matches by the name acitivity.  
+A new screen added to display privileges for a selected security role. The center screen shows the privileges that are assigned to the role and right most pane displays what privileges are not assigned. Both the center and right pane data is filtered by the text present in the filter box. The center top section summarizes the privileges by Table name if they belong to a table or as a individual privilege. Upon selecting one of the values, the text is set for filtering privileges in both assigned and unassigned sections. In the below example even though fle activityfileattachment is a separate table it shows up as unassigned since it matches by the name activity.  
 
 ![image](https://user-images.githubusercontent.com/71347619/209850222-7309ffa8-a06a-4e6c-aaf3-0bbb59383bec.png)
 
