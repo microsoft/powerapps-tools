@@ -33,7 +33,7 @@ A new table is created to capture the request. On creation of the record in the 
     - Security roles assessment summary shows the color of the shield based on last assessment
     - Screens from the old app have been converted into custom pages 
 
-# How does the app asess the security role?
+# How does the app assess the security role?
 A base set assessment for each privilege and level is recommended. However, the user can toggle the button to override, provide a reason for toggle and set their own assessments. 
       ![image](https://user-images.githubusercontent.com/71347619/209748800-76f2c20a-91d5-4b5e-ad7b-9d9f5aba5cb5.png)
 Power automate logic retrieves the base assessment rules, retrieves the privileges associated with the flow. Based on the level of the privilege the base assessment is applied to calculate the number of privileges under each role.
@@ -41,13 +41,13 @@ Power automate logic retrieves the base assessment rules, retrieves the privileg
 # Screens and Summary Cards 
 A few new screens are added to the previous version that provide an easy way for administrators and stake holders to understand this better.   
 
-## Security Risk asessment grid
+## Security Risk assessment grid
 This screen shows the risk assessments in a model driven app grid. It gives a quick summary of all assessments with numbers and over all assessment.  
  
  ![image](https://user-images.githubusercontent.com/71347619/209739333-67a1b02c-31e2-417e-9ff2-da58711288ce.png)
 
-## Security Risk asessment summary
-A card presentation of the risk asessment sorted in descending order of created on date. The cards can be filtered by either request number, status reason or assessed risk level. 
+## Security Risk assessment summary
+A card presentation of the risk assessment sorted in descending order of created on date. The cards can be filtered by either request number, status reason or assessed risk level. 
 
  ![image](https://user-images.githubusercontent.com/71347619/209747358-beb41ef2-5ae6-4bb8-ad1f-abe82e5dc113.png)
 
@@ -68,11 +68,20 @@ The same summary presented with alls security roles shows additional information
 ## Security Role Management Screen
 This screen shows the roles that are available in this environment. First security role is selected by default and corresponding users and teams associated with this security role are displayed. A picture for users is displayed using the office 365 connector. 
 
-    - A new security role can be created (NOTE: the new window will show the default business unit for the security role)
-  ![image](https://user-images.githubusercontent.com/71347619/156307639-23fd7419-3290-4ebb-921d-d4e60aeb7bfa.png)
+![image](https://user-images.githubusercontent.com/71347619/209877294-ea86fec2-25fd-4e54-86eb-bc4e9454a1b8.png)
+
+- A new security role can be created (NOTE: the new window will show the default business unit for the security role)
+
+## Security Role Privileges Screen
+A new screen added to display privileges for a selected security role. The center screen shows the privileges that are assigned to the role and right most pane displays what privileges are not assigned. Both the center and right pane data is filtered by the text present in the filter box. The center top section summarizes the privileges by Table name if they belong to a table or as a individual privilege. Upon selecting one of the values, the text is set for filtering privileges in both assigned and unassigned sections. In the below example even though fle activityfileattachment is a separate table it shows up as unassigned since it matches by the name activity.  
+
+![image](https://user-images.githubusercontent.com/71347619/209850222-7309ffa8-a06a-4e6c-aaf3-0bbb59383bec.png)
+
 
 ## Team Management Screen
 This screen shows the teams that are available, basic information about the team. Selecting a team will show associated users and teams
+
+![image](https://user-images.githubusercontent.com/71347619/209878116-12c9567b-4cad-4653-a0a5-39e9577fe5de.png)
 
     - A new team can be created (NOTE: The window launched will default to Owner team)
 
@@ -81,12 +90,10 @@ This screen shows the column security profiles that are available in this enviro
 
     - A new field profile can be created (NOTE: The window launched will default to Owner team)
 
-## Business Units
-This screen displays business units and associated security roles and teams. (NOTE: unless a security role is created for a specific business unit, you will mostly see the same roles for business units. Teams can differ). 
-
 ## User Profile
 A users picture is displayed with basic information. The security roles, field security profiles and teams that this user is associated are displayed. The can be removed from any of these or added to an existing object in respective area.
-    ![image](https://user-images.githubusercontent.com/71347619/156307660-083ca6ef-135d-445c-a4ea-c6d40c21cd8e.png)
+        
+![image](https://user-images.githubusercontent.com/71347619/209879892-02462457-c264-415e-9842-1cde6f91400c.png)
 
 For any feedback and feature requests, please report them as part of this git hub. 
 
