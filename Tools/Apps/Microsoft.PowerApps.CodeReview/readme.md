@@ -17,13 +17,13 @@
 
 With the Power Apps review tool, you can conduct app reviews more efficiently thanks to a customizable checklist of best practices, a 360 view of your app through app checker results, app settings and a free search code viewer.
 
-![PowerApps Review Tool](https://pahandsonlab.blob.core.windows.net/tools/crtlandingpage.png)
+![PowerApps Review Tool](https://pahandsonlab.blob.core.windows.net/tools/crtlandingpage_new.png)
 
 ## Creating a Review
 
 To start a new Review click on '+ New' from home screen. You can either attach a [Dataverse solution](https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm) file or the App file (.msapp) and click on 'Submit' to initiate the Review.
 
-![PowerApps Review Tool](https://pahandsonlab.blob.core.windows.net/tools/crtcreatereview.png)
+![PowerApps Review Tool](https://pahandsonlab.blob.core.windows.net/tools/crtcreatereview_new.png)
 
 ## Open a Review
 
