@@ -35,7 +35,7 @@ A few know issues/features are:
 ## Approach
 A new table is created to capture the request for security role risk assessment. On creation of the record, in the table a power automate flow triggers. The flow retrieves base risk assessment and loop that through for privileges associated with the security role. Once the process is complete that same record, is updated with risk assessment and a count of all privileges at various levels. A sample of the report generated can be seen below:
 
-
+![image](https://user-images.githubusercontent.com/71347619/210735948-5361f17e-9368-44d3-b262-fb001cc49aca.png)
 
 - An assessment can be left in draft state before setting to submitted processing. 
 - An assessment can be initiated from the Security roles assessment summary page by clicking on the shield icon
