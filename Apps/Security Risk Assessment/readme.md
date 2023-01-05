@@ -1,9 +1,9 @@
 
 # Security Risk Assessment and Management
-The version 1 of the app - [Security Management](https://github.com/microsoft/powerapps-tools/tree/master/Apps/Security%20Management), provided features for admins to manage security roles assignment, column security role management, team members management and view user profile with all their security aspects. This new version of the app, is a Model Driven app with custom pages, that has all the same screens from the previous app and also includes Security role risk assessment. The new screen displays a list of security roles from the current environment and you can select one to display the privileges that are associated with that security role. You can also visualize the grouping of these privileges by table or individual privilege. 
+The version 1 of the app - [Security Management](https://github.com/microsoft/powerapps-tools/tree/master/Apps/Security%20Management), provided features for administrator to manage security roles assignment, column security role management, team members management and view user profile with all their security aspects. This new version of the app, is a Model Driven app with custom pages, that has all the same screens from the previous app and also includes Security role risk assessment. The new screen displays a list of security roles from the current environment and you can select one to display the privileges that are associated with that security role. You can also visualize the grouping of these privileges by table or individual privilege. 
 
 ## Purpose
-As you onboard to start using DataVerse from the complete low code platform (Power platform), you are introduced to multiple security constructs. This security risk assessment and management app is an attempt to simplify the management of security with in a single environment and also provide a way for admins to get an assessment of these security roles. This app provides administrators and users a way to know what security privilege are assigned to a security role and how they will impact the end users interaction. The app will have the below screens:
+As you on-board to start using DataVerse from the complete low code platform (Power platform), you are introduced to multiple security constructs. This security risk assessment and management app is an attempt to simplify the management of security with in a single environment and also provide a way for administrator to get an assessment of these security roles. This app provides administrators and users a way to know what security privilege are assigned to a security role and how they will impact the end users interaction. The app will have the below screens:
 *  Security Roles assignment management
 *  Team users assignment management
 *  Column security roles assignment management
@@ -22,7 +22,7 @@ The previous version of the app was purely one zip file. This version packs a lo
 ## Known Issues
 A few know issues/features are:
 - Security role summary screen displaying the cards takes time to load
-- Privileges screen pane #3 shows only 2000 rows at max. This particularly effects secuirty roles with a lot of privileges like System Administrator
+- Privileges screen pane #3 shows only 2000 rows at max. This particularly effects security roles with a lot of privileges like System Administrator
 - Addition or Removal of privileges from the System Administrator or System Customizer is restricted (buttons are disabled)
 - Addition of privilege to a security role will only add the privilege at the least level possible
     
@@ -33,7 +33,10 @@ A few know issues/features are:
 4. Select the Dataverse connection during import 
 
 ## Approach
-A new table is created to capture the request. On creation of the record in the table a power automate flow triggers. As prt of the flow base assessment is retrieved and applied for privileges associated with the security role. Once the process is complete the same record is updated with risk assessment and a count of all privileges at various levels. 
+A new table is created to capture the request for security role risk assessment. On creation of the record, in the table a power automate flow triggers. The flow retrieves base risk assessment and loop that through for privileges associated with the security role. Once the process is complete that same record, is updated with risk assessment and a count of all privileges at various levels. A sample of the report generated can be seen below:
+
+
+
 - An assessment can be left in draft state before setting to submitted processing. 
 - An assessment can be initiated from the Security roles assessment summary page by clicking on the shield icon
 - Security roles assessment summary shows the color of the shield based on last assessment
@@ -71,7 +74,7 @@ A new screen added to display privileges for a selected security role. There are
 - The second pane summarizes the privileges by Table name if they belong to a table or as a individual privilege.
 - The third pane shows the privileges that are assigned to the role and 
 - The fourth pane displays all privileges. A + icon is enabled next to a privilege if its not already assigned to the role. As you scroll down more rows get loaded based on the delegation used with Common Dataverse.
-- #5 in screenshot shows a filter text box that will filter in both #3 and #4. If a selection is made from #2 the value gets populated in this filter text field to show the privileges with that text
+- #5 in screen shot shows a filter text box that will filter in both #3 and #4. If a selection is made from #2 the value gets populated in this filter text field to show the privileges with that text
 - #6 is summary of numbers across the various panes. 
     
     Upon selecting one of the values, the text is set for filtering privileges in both assigned and unassigned panes. In the below example even though Connection Reference is a separate table it shows up as unassigned since it matches by the name activity.  
@@ -107,4 +110,4 @@ For any feedback and feature requests, please report them as part of this git hu
 Please do not open a support ticket if you encounter any bugs with the solution itself, unless it is related to an underlying platform issue unrelated to the template's implementation. If there are issues related to the solution implementation itself, please [report bugs here](https://github.com/microsoft/powerapps-tools/issues/new?assignees=Ravi-Chada&labels=securitymgmt&template=-security-management-app--bug-report.md&title=%5BBUG%5D+Security+Management%3A+).
 
 ### Disclaimer
-*This app is a sample and may be used with Microsoft Power Apps and Teams for dissemination of reference information only. This app is not intended or made available for use as a medical device, clinical support, diagnostic tool, or other technology intended to be used in the diagnosis, cure, mitigation, treatment, or prevention of disease or other conditions, and no license or right is granted by Microsoft to use this app for such purposes. This app is not designed or intended to be a substitute for professional medical advice, diagnosis, treatment, or judgement and should not be used as such. Customer bears the sole risk and responsibility for any use of this app. Microsoft does not warrant that the app or any materials provided in connection therewith will be sufficient for any medical purposes or meet the health or medical requirements of any person.*
+*This app is a sample and may be used with Microsoft Power Apps and Teams for dissemination of reference information only. This app is not intended or made available for use as a medical device, clinical support, diagnostic tool, or other technology intended to be used in the diagnosis, cure, mitigation, treatment, or prevention of disease or other conditions, and no license or right is granted by Microsoft to use this app for such purposes. This app is not designed or intended to be a substitute for professional medical advice, diagnosis, treatment, or judgment and should not be used as such. Customer bears the sole risk and responsibility for any use of this app. Microsoft does not warrant that the app or any materials provided in connection therewith will be sufficient for any medical purposes or meet the health or medical requirements of any person.*
