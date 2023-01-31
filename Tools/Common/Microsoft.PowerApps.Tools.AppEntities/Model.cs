@@ -12,6 +12,31 @@ namespace Microsoft.PowerApps.Tools.AppEntities
         public List<UserTemplate> UsedTemplates { get; set; }
     }
 
+    [Serializable]
+    public class PropertyData
+    {
+        public string Author { get; set; }
+        public string Name { get; set; }
+        public string Id { get; set; }
+        public string FileID { get; set; }
+        public string LocalConnectionReferences { get; set; }
+        public string LocalDatabaseReferences { get; set; }
+        public List<string> AppPreviewFlagsKey { get; set; }
+        public int DocumentLayoutWidth { get; set; }
+        public int DocumentLayoutHeight { get; set; }
+        public string DocumentLayoutOrientation { get; set; }
+        public bool DocumentLayoutScaleToFit { get; set; }
+        public bool DocumentLayoutMaintainAspectRatio { get; set; }
+        public bool DocumentLayoutLockOrientation { get; set; }
+        public string OriginatingVersion { get; set; }
+        public string DocumentAppType { get; set; }
+        public string AppCreationSource { get; set; }
+        public string AppDescription { get; set; }
+        public int LastControlUniqueId { get; set; }
+        public int DefaultConnectedDataSourceMaxGetRowsCount { get; set; }
+        public int ErrorCount { get; set; }
+    }
+
     public class OverridableProperties
     {
     }
