@@ -23,7 +23,7 @@ With the Power Apps review tool, you can conduct app reviews more efficiently th
 
 To start a new Review click on '+ New' from home screen. You can either attach a [Dataverse solution](https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm) file or the App file (.msapp) or select the available App from the 'Select an app to review' grid and click on 'Submit' to initiate the Review. (Note : Use 'Clear app selection' link bottom of the grid to reset your 'App' selection. By default first App in the list will be selected).
 
-![PowerApps Review Tool](https://pahandsonlab.blob.core.windows.net/tools/crtcreatereview_new.png)
+
 
 ## Open a Review
 
