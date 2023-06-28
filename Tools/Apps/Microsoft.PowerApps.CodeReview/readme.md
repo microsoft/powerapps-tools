@@ -69,6 +69,11 @@ The code review results section provides graphical representation of 'Failed pat
 
 ![PowerApps Review Tool](https://pahandsonlab.blob.core.windows.net/tools/crtcodereviewresults.png)
 
+## Code Reviews Access Levels
+
+Users with either the 'System Administrator' or 'Code Review User - Admin' roles can access all the 'Reviews'
+Users with either the 'Code Review User - External' or 'Code Review User - Internal' roles can only access their own 'Reviews'
+
 Check out the intro video
 
 [![Code Review Tool Video](https://pahandsonlab.blob.core.windows.net/tools/thumbnail.png)](https://youtu.be/ZkXL_IqK4UE?t=232 "Code Review Tool Video")
