@@ -17,13 +17,13 @@
 
 With the Power Apps review tool, you can conduct app reviews more efficiently thanks to a customizable checklist of best practices, a 360 view of your app through app checker results, app settings and a free search code viewer.
 
-![PowerApps Review Tool](https://pahandsonlab.blob.core.windows.net/tools/crtlandingpage.png)
+![PowerApps Review Tool](https://pahandsonlab.blob.core.windows.net/tools/crtlandingpage_new.png)
 
 ## Creating a Review
 
-To start a new Review click on '+ New' from home screen. You can either attach a [Dataverse solution](https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm) file or the App file (.msapp) and click on 'Submit' to initiate the Review.
+To start a new Review click on '+ New' from home screen. You can either attach a [Dataverse solution](https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm) file or the App file (.msapp) or select the available App from the 'Select an app to review' grid and click on 'Submit' to initiate the Review. (Note : Use 'Clear app selection' link bottom of the grid to reset your 'App' selection. By default first App in the list will be selected).
 
-![PowerApps Review Tool](https://pahandsonlab.blob.core.windows.net/tools/crtcreatereview.png)
+![PowerApps Review Tool](https://pahandsonlab.blob.core.windows.net/tools/crtcreatereview_latest.png)
 
 ## Open a Review
 
@@ -68,6 +68,11 @@ If you find code defects, you can link it to corresponding the review pattern.
 The code review results section provides graphical representation of 'Failed patterns by category' and 'Failed patterns by severity' along with Score, Grade and Passed Patterns ratio.
 
 ![PowerApps Review Tool](https://pahandsonlab.blob.core.windows.net/tools/crtcodereviewresults.png)
+
+## Code Reviews Access Levels
+
+Users with either the 'System Administrator' or 'Code Review User - Admin' roles can access all the 'Reviews'
+Users with either the 'Code Review User - External' or 'Code Review User - Internal' roles can only access their own 'Reviews'
 
 Check out the intro video
 
