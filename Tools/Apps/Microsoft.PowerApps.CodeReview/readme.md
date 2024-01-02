@@ -5,7 +5,7 @@
 - Enable PCF Component in Admin Center ![Admin Center](https://docs.microsoft.com/en-us/powerapps/developer/component-framework/media/enable-pcf-feature.png)
 - Latest version of Code Review Tool has been redesigned using [Power CAT Creator Kit](https://github.com/microsoft/powercat-creator-kit). As a prerequisite install the [Power CAT Creator Kit](https://github.com/microsoft/powercat-creator-kit) core solution in your target environment by following below instructions.
 
-- Download the 'Power CAT Creator Kit' Core solution from [here](https://github.com/microsoft/powercat-creator-kit/releases/download/CreatorKit-November2022/CreatorKitCore_1.0.20221205.2_managed.zip).  
+- Download the 'Power CAT Creator Kit' Core solution from [here]([https://github.com/microsoft/powercat-creator-kit/releases/download/CreatorKit-November2022/CreatorKitCore_1.0.20221205.2_managed.zip](https://github.com/microsoft/powercat-creator-kit/releases/tag/CreatorKit-July2023)).  
 - Import the solution in your target environment (<https://make.preview.powerapps.com/> -> Solutions -> Import)
 
 ## Install Instructions
