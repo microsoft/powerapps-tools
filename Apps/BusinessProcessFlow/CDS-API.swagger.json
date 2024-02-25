@@ -156,7 +156,7 @@
     },
     "/api/data/v9.0/new_orbit_initiative_approval_process": {},
     "/api/data/v9.0/ORBIT_Initiative_Approval_Process": {},
-    "/api/data/v9.0/{entityName}": {},
+    "/api/data/v9.0/{entityname}": {},
     "/api/data/v9.0/annotations(ec43573d-170b-ea11-a811-000d3a337c9e)": {},
     "/{URL}": {},
     "/api/data/v9.0/annotations({DocumentID})": {},
