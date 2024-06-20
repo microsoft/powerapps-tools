@@ -8,10 +8,11 @@
 
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:common="clr-namespace:Microsoft.PowerApps.Tools.AppChangeFinder.Common"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="PowerAppps Review Tool" Height="950" Width="1800" Icon="palogo.ico"
+        Title="{Binding Title}" Height="950" Width="1200" Icon="palogo.ico"
         StateChanged="Window_StateChanged" >
     <Window.DataContext>
         <local:ChangeFinderViewModel />
@@ -50,12 +51,17 @@
                 </Trigger>
             </ControlTemplate.Triggers>
         </ControlTemplate>
+        <Style x:Key="HeaderTextBlockStyle" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontSize" Value="16"></Setter>
+            <Setter Property="Margin" Value="0 0 0 0"></Setter>
+            <Setter Property="TextAlignment" Value="Center"></Setter>
+            <Setter Property="Background" Value="LightGray"></Setter>
+        </Style>
         <ItemsPanelTemplate x:Key="ItemsPanelTemplate">
-            <VirtualizingStackPanel Orientation="Horizontal" IsItemsHost="True" />
+            <VirtualizingStackPanel Orientation="Vertical" IsItemsHost="True" />
         </ItemsPanelTemplate>
         <DataTemplate x:Key="DataTemplateDiff">
             <StackPanel Orientation="Vertical">
-                <!--<TextBlock Text="{Binding Name}" MinWidth="100" Background="#FFCEF37E" />-->
                 <TextBlock Text="{Binding Value}" MinWidth="100" Margin="0" Padding="3">
                     <TextBlock.Style>
                         <Style TargetType="{x:Type TextBlock}">
@@ -72,8 +78,29 @@
                 </TextBlock>
             </StackPanel>
         </DataTemplate>
+        <DataTemplate x:Key="DataTemplatePropDiff">
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="{Binding Value}" TextWrapping="Wrap" MinWidth="100">
+                    <TextBlock.Style>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Background" Value="White" />
+                            <Setter Property="Foreground" Value="Black" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsBaseLine}" Value="True">
+                                    <Setter Property="Background" Value="#FFCEF37E" />
+                                    <Setter Property="Foreground" Value="Black" />
+                                    <Setter Property="Margin" Value="0 5" />
+                                    <Setter Property="Visibility" Value="{Binding ElementName=ShowBaselineCheckBox, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+            </StackPanel>
+        </DataTemplate>
+        <common:EnumBooleanConverter x:Key="enumBoolConverter" />
     </Window.Resources>
-    <Grid Margin="20 20 20 20">
+    <Grid Margin="0 0 0 0">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -82,133 +109,112 @@
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid>
+        <Grid Margin="0,0,0.2,0.2" Grid.Row="1" >
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="0.1*" />
+                <ColumnDefinition Width="0.2*"/>
+                <ColumnDefinition Width="0.4*"/>
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
-            <TextBox materialDesign:HintAssist.Hint="Path to PowerApps (*.msapp)"
-  Style="{StaticResource MaterialDesignFloatingHintTextBox}"  x:Name="PathtxtBox" MinHeight="22" Text="{Binding PathTxtBox, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Center" VerticalContentAlignment="Stretch" Margin="0,0,8,0" />
-
-            <Button x:Name="BrowseBtn" Content="Open" HorizontalAlignment="Left" MinHeight="22"  VerticalAlignment="Center" Width="100" MinWidth="75" Command="{Binding BrowseBtnClick}" Margin="0,-2,0,0" Grid.Column="1" />
+            <Menu x:Name="menu" HorizontalAlignment="Left" Width="232" Grid.Column="0" Margin="0,10" Grid.ColumnSpan="2">
+                <MenuItem Header="File" Height="23">
+                    <MenuItem Header="Open" Command="{Binding BrowseBtnClick}" />
+                    <MenuItem Header="Exit"  />
+                </MenuItem>
+            </Menu>
+            <StackPanel Orientation="Horizontal" Grid.Column="1" Margin="1.8,0,0.2,0">
+                <Label FontWeight="Bold" Margin="0,9,0,0" Width="128">Application Options</Label>
+                <CheckBox IsChecked="{Binding ShowBaseline}" Margin="0,0" Height="16" x:Name="ShowBaselineCheckBox" Content="Show Baseline"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="50,20,10.2,20" Grid.Column="2">
+                <TextBox BorderThickness="1" Background="White" Text="{Binding SearchTextBox, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextChanged="SearchTextBox_TextChanged" VerticalContentAlignment="Stretch" VerticalAlignment="Center" Width="273" HorizontalAlignment="Right" Margin="0,-14,0,-8" Height="22" />
+                <Button  Command="{Binding SearchBtnClick}" Style="{DynamicResource MaterialDesignToolButton}" x:Name="SearchButton" CommandParameter="{Binding Text, ElementName=SearchBox}" Height="Auto" Width="20" Margin="0,-14,0,-8">
+                    <materialDesign:PackIcon Kind="Magnify" VerticalAlignment="Stretch" HorizontalAlignment="Left" RenderTransformOrigin="-0.175,0.525" />
+                </Button>
+                <Button  Command="{Binding ClearSearchBtnClick}" Style="{DynamicResource MaterialDesignToolButton}" x:Name="ClearSearchButton" Height="Auto" Width="22" Margin="0,-14,0,-8">
+                    <materialDesign:PackIcon Kind="Close" VerticalAlignment="Stretch" HorizontalAlignment="Left" RenderTransformOrigin="-0.175,0.525" />
+                </Button>
+                <RadioButton IsChecked="{Binding SearchFilter, ConverterParameter={x:Static local:SearchFilters.All}, Converter={StaticResource enumBoolConverter}, Mode=TwoWay}" Margin="10,-12,0,-8" GroupName="SearchFilter" Content="All" Width="36"/>
+                <RadioButton IsChecked="{Binding SearchFilter, ConverterParameter={x:Static local:SearchFilters.Controls}, Converter={StaticResource enumBoolConverter}, Mode=TwoWay}" Margin="10,-12,0,-8" GroupName="SearchFilter" Content="Controls" Width="66"/>
+                <RadioButton IsChecked="{Binding SearchFilter, ConverterParameter={x:Static local:SearchFilters.Properties}, Converter={StaticResource enumBoolConverter}, Mode=TwoWay}" Margin="10,-12,0,-8" GroupName="SearchFilter" Content="Properties" Width="76"/>
+                <RadioButton IsChecked="{Binding SearchFilter, ConverterParameter={x:Static local:SearchFilters.Events}, Converter={StaticResource enumBoolConverter}, Mode=TwoWay}" Margin="10,-12,0,-8" GroupName="SearchFilter" Content="Events" Width="76"/>
+            </StackPanel>
         </Grid>
-        <Grid Margin="0,17,0,0" Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <!--<ColumnDefinition Width="130" />-->
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="Auto" />
-            </Grid.ColumnDefinitions>
-            <!--<Button Width="130" Content="Save as HTML" Grid.Column="0"  Command="{Binding DownloadHTMLBtnClick}" MinHeight="22" ></Button>-->
-            <TextBox  Text="{Binding SearchTextBox, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextChanged="SearchTextBox_TextChanged" VerticalContentAlignment="Stretch" VerticalAlignment="Center" Width="400" HorizontalAlignment="Right" />
-            <Button  Command="{Binding SearchBtnClick}" Style="{DynamicResource MaterialDesignToolButton}"
-                x:Name="SearchButton"
-                CommandParameter="{Binding Text, ElementName=SearchBox}"
-                Height="32" Width="32" Margin="0" Grid.Column="2">
-                <materialDesign:PackIcon Kind="Magnify" VerticalAlignment="Stretch" HorizontalAlignment="Left" />
-            </Button>
-        </Grid>
-        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Width="125" Content="Save as HTML"  Height="Auto" Command="{Binding DownloadHTMLBtnClick}" Margin="0,10,10,-6" ></Button>
-            <Button  Content="Export " Height="Auto" Width="87" Command="{Binding ExportToJSONBtnClick}" Margin="0,10,0,-6" />
-        </StackPanel>
         <xctk:BusyIndicator IsBusy="{Binding IsLoading}" x:Name="BusyIndicator"  Grid.Row="2" Margin="0,0,0,-1">
-            <TabControl >
-                <TabItem>
-                    <TabItem.Header>
-                        <materialDesign:PackIcon Kind="ViewGrid" />
-                    </TabItem.Header>
-                    <ListView x:Name="CustomFieldList" Width="Auto"  ItemsSource="{Binding ScreenList}" ScrollViewer.CanContentScroll="False" BorderThickness="0 0 0 0" Focusable="False" Margin="0 0 0 0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" ItemContainerStyle="{DynamicResource ListViewItemStyle}">
-                        <ListView.ItemTemplate>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="2" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="0">Screen</TextBlock>
+                <TextBlock Grid.Row="0" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="2">Control</TextBlock>
+                <TextBlock Grid.Row="0" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="4">Property</TextBlock>
+                <Border Grid.Row="1" Grid.ColumnSpan="7" BorderBrush="Black" BorderThickness="1"></Border>
+                <ScrollViewer MaxHeight="800" VerticalScrollBarVisibility="Auto" Grid.Row="2" Grid.Column="0" >
+                    <ListView ItemsSource="{Binding ScreenList}" SelectedItem="{Binding SelectedScreen}" Margin="0,0,0.2,0.4">
+                        <ListView.ItemTemplate >
                             <DataTemplate>
-                                <StackPanel Orientation="Horizontal" Height="Auto" Width="Auto">
-                                    <Border Width="80" BorderThickness="0,0,0,1" BorderBrush="{DynamicResource LineBrushColor}">
-                                        <TextBlock Text= "{Binding ScreenName}" TextWrapping="Wrap" Height="Auto" />
-                                    </Border>
-                                    <ListView  x:Name="Controls" ItemsSource="{Binding Controls}" BorderThickness="0 0 0 0" IsEnabled="True" ItemContainerStyle="{DynamicResource ListViewItemStyle}">
-                                        <ListView.ItemTemplate>
-                                            <DataTemplate>
-
-                                                <StackPanel Orientation="Horizontal" Height="Auto" Width="Auto">
-                                                    <Border BorderBrush="{DynamicResource LineBrushColor}" BorderThickness="0,0,0,1">
-                                                        <TextBlock Text="{Binding ControlName}" Width="120" TextWrapping="Wrap" />
-                                                    </Border>
-                                                    <ListView ItemsSource="{Binding Properties}" BorderThickness="0 0 0 0" ItemContainerStyle="{DynamicResource ListViewItemStyle}">
-                                                        <ListView.ItemTemplate>
-                                                            <DataTemplate>
-                                                                <Border BorderThickness="0,0,0,1" BorderBrush="{DynamicResource LineBrushColor}">
-                                                                    <StackPanel Orientation="Horizontal" Height="Auto" Width="Auto">
-                                                                        <TextBlock Text="{Binding PropertyName}" Width="120" TextWrapping="Wrap" />
-                                                                        <ListView ItemsSource="{Binding Properties}" Width="1200" BorderThickness="0 0 0 0" IsEnabled="True" ItemContainerStyle="{DynamicResource ListViewItemStyle}" ItemsPanel="{DynamicResource ItemsPanelTemplate}" ItemTemplate="{DynamicResource DataTemplateDiff}" />
-                                                                        <TextBox materialDesign:HintAssist.Hint="Add comment here..." Width="150" Text="{Binding Comments, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" ></TextBox>
-                                                                    </StackPanel>
-                                                                </Border>
-                                                            </DataTemplate>
-                                                        </ListView.ItemTemplate>
-                                                    </ListView>
-                                                </StackPanel>
-                                            </DataTemplate>
-                                        </ListView.ItemTemplate>
-                                    </ListView>
+                                <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0"  Height="20">
+                                    <Image Source="{Binding ScreenIcon}" Width="14" />
+                                    <TextBlock Text="{Binding ScreenName}" Margin="5, 1"></TextBlock>
                                 </StackPanel>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                </TabItem>
-                <TabItem>
-                    <TabItem.Header>
-                        <materialDesign:PackIcon Kind="FileTree" />
-                    </TabItem.Header>
-                    <TreeView  ItemsSource="{Binding ScreenList}" Margin="0,5,0,0"  VerticalAlignment="Top">
-                        <TreeView.ItemTemplate>
-                            <HierarchicalDataTemplate ItemsSource="{Binding Controls}">
-                                <Label Content="{Binding ScreenName}" />
-                                <HierarchicalDataTemplate.ItemTemplate>
-                                    <HierarchicalDataTemplate ItemsSource="{Binding Properties}">
-                                        <Label Content="{Binding ControlName}" />
-                                        <HierarchicalDataTemplate.ItemTemplate>
-                                            <HierarchicalDataTemplate ItemsSource="{Binding Properties}">
-                                                <Label Content="{Binding PropertyName}" />
-                                                <HierarchicalDataTemplate.ItemTemplate>
-                                                    <DataTemplate DataType="{x:Type local:PropertyDetails}">
-                                                        <StackPanel Orientation="Horizontal">
-                                                            <TextBlock Text="{Binding Value}" MinWidth="100" Margin="0" Padding="3">
-                                                                <TextBlock.Style>
-                                                                    <Style TargetType="{x:Type TextBlock}">
-                                                                        <Setter Property="Background" Value="#FFCEF37E" />
-                                                                        <Setter Property="Foreground" Value="Black" />
-                                                                        <Style.Triggers>
-                                                                            <DataTrigger Binding="{Binding IsBaseLine}" Value="False">
-                                                                                <Setter Property="Background" Value="#FFFFA7A7" />
-                                                                                <Setter Property="Foreground" Value="Black" />
-                                                                            </DataTrigger>
-                                                                        </Style.Triggers>
-                                                                    </Style>
-                                                                </TextBlock.Style>
-                                                            </TextBlock>
-                                                        </StackPanel>
-                                                    </DataTemplate>
-                                                </HierarchicalDataTemplate.ItemTemplate>
-                                            </HierarchicalDataTemplate>
-                                        </HierarchicalDataTemplate.ItemTemplate>
-                                    </HierarchicalDataTemplate>
-                                </HierarchicalDataTemplate.ItemTemplate>
-                            </HierarchicalDataTemplate>
-                        </TreeView.ItemTemplate>
-                    </TreeView>
-                </TabItem>
-            </TabControl>
+                </ScrollViewer>
+                <GridSplitter Grid.Row="2"  Grid.Column="1" Width="5" HorizontalAlignment="Stretch" />
+                <ScrollViewer MaxHeight="800" VerticalScrollBarVisibility="Auto" Grid.Row="2" Grid.Column="2">
+                    <ListView ItemsSource="{Binding SelectedControls}" SelectedItem="{Binding SelectedControl}" Margin="0,0,0.2,0.4">
+                        <ListView.ItemTemplate >
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" Height="20">
+                                    <Image Source="{Binding ControlIcon}" Width="16" />
+                                    <TextBlock Text="{Binding ControlName}" Margin="5, 0"></TextBlock>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </ScrollViewer>
+                <GridSplitter Grid.Row="2" Grid.Column="3" Width="5" HorizontalAlignment="Stretch" />
+                <ScrollViewer MaxHeight="800" VerticalScrollBarVisibility="Auto" Grid.Row="2" Grid.Column="4" >
+                    <ListView ItemsSource="{Binding SelectedProperties}" Margin="0,0,0.2,0.4" ItemContainerStyle="{DynamicResource ListViewItemStyle}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Border BorderBrush="LightGray" BorderThickness="0 0 0 1">
+                                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                        <StackPanel Orientation="Horizontal" Height="Auto" >
+                                            <Border BorderBrush="LightGray" BorderThickness="0 0 1 0" Height="25">
+                                                <TextBlock Text="{Binding PropertyName}" Width="120" Height="15" VerticalAlignment="Center" Margin="10, 7" FontWeight="Bold" TextWrapping="Wrap" />
+                                            </Border>
+                                            <ListView ItemsSource="{Binding Properties}" Width="490" ScrollViewer.HorizontalScrollBarVisibility="Disabled" BorderThickness="0 0 0 0" IsEnabled="True" ItemTemplate="{DynamicResource DataTemplatePropDiff}" Height="Auto" />
+                                        </StackPanel>
+                                    </ScrollViewer>
+                                </Border>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </ScrollViewer>
+            </Grid>
         </xctk:BusyIndicator>
-        <Grid Margin="0" Grid.RowSpan="1" Grid.Row="4">
+        <Grid Margin="10,1,-9.8,13.8" Grid.RowSpan="2" Grid.Row="3">
             <StackPanel Margin="0" Orientation="Vertical" VerticalAlignment="Center">
-                <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal" Height="40">
                     <Rectangle Fill="#FFCEF37E" HorizontalAlignment="Left" Height="7.517" VerticalAlignment="Center" Width="24" Margin="0" />
                     <TextBlock Text="Baseline value" VerticalAlignment="Center" Foreground="#DD575757" FontSize="10" HorizontalAlignment="Left" Margin="5,0,0,0" />
                 </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <Rectangle Fill="#FFFFA7A7" HorizontalAlignment="Left" Height="7.517" VerticalAlignment="Center" Width="24" Margin="0" />
-                    <TextBlock Text="New value" VerticalAlignment="Center" Foreground="#DD575757" FontSize="10" HorizontalAlignment="Left" Margin="5,0,0,0" />
-                </StackPanel>
             </StackPanel>
         </Grid>
+        <StackPanel Margin="0,10,10.2,13.8" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right" Grid.RowSpan="2">
+            <Button Width="125" Content="Save as HTML"  Height="Auto" Command="{Binding DownloadHTMLBtnClick}" Margin="0,10,10,-6" ></Button>
+            <Button  Content="Export " Height="Auto" Width="87" Command="{Binding ExportToJSONBtnClick}" Margin="0,10,0,-6" />
+        </StackPanel>
     </Grid>
 </Window>

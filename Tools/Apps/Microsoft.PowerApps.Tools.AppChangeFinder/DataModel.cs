@@ -7,6 +7,8 @@ namespace Microsoft.PowerApps.Tools.AppChangeFinder
         //Screen Name
         public string ScreenName { get; set; }
 
+        public string ScreenIcon { get; set; }
+
         private List<Controls> _controls = new List<Controls>();
 
         public List<Controls> Controls
@@ -19,6 +21,8 @@ namespace Microsoft.PowerApps.Tools.AppChangeFinder
     public class Controls
     {
         public string ControlName { get; set; }
+
+        public string ControlIcon { get; set; }
 
         private List<Property> _properties = new List<Property>();
 
@@ -49,5 +53,13 @@ namespace Microsoft.PowerApps.Tools.AppChangeFinder
         public string Name { get; set; }
         public string Value { get; set; }
         public bool IsBaseLine { get; set; }
+    }
+
+    public enum SearchFilters
+    {
+        All,
+        Controls,
+        Properties,
+        Events
     }
 }

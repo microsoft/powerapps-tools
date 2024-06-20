@@ -23,6 +23,23 @@ namespace Microsoft.PowerApps.Tools.AppChangeManager
             defaultEntities = GetDefaultSetting(DefaultAppSetting);
         }
 
+
+        public string GetAppTitle(string filePath)
+        {
+
+            var fileName = GetFileName(filePath);
+            var extension = Path.GetExtension(filePath);
+            var guid = new Guid();
+            var tempPath = $"{Path.GetTempPath()}{ fileName}_{guid}";
+
+            Utility.ExtactApp(filePath, tempPath);
+
+            var properties = JsonConvert.DeserializeObject<PropertyData>(
+                File.ReadAllText(Path.Combine(tempPath, Constants.AppFileName.Properties)));
+
+            return properties.Name;
+        }
+
         public List<ModifiedResult> GetModifiedControleList(string filePath)
         {
             var entityList = GetScreenList(filePath, new string[]
@@ -48,6 +65,7 @@ namespace Microsoft.PowerApps.Tools.AppChangeManager
                     result.Add(new ChangedControl
                     {
                         ControlName = child.Name,
+                        Template = child.Template,
                         Parent = child.Parent,
                         Script = modifiedControl
                     });
@@ -61,6 +79,7 @@ namespace Microsoft.PowerApps.Tools.AppChangeManager
                         result.Add(new ChangedControl
                         {
                             ControlName = gChild.Name,
+                            Template = gChild.Template,
                             Parent = gChild.Parent,
                             Script = modifiedControl
                         });
