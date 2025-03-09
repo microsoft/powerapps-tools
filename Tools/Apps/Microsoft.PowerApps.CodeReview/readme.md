@@ -1,3 +1,10 @@
+![Deprecated](https://img.shields.io/badge/status-deprecated-red)
+
+This repository is no longer maintained and has been deprecated. Please visit the [Microsoft Power-CAT Tools](https://github.com/microsoft/Power-CAT-Tools) repository for the active version and further development.
+
+### Important Links
+- [Microsoft Power-CAT Tools](https://github.com/microsoft/Power-CAT-Tools)
+
 # Code Review Tool Reference Document
 
 ## Prerequisites
